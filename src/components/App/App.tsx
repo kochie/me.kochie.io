@@ -1,8 +1,6 @@
 import * as React from "react";
 
-import Sidebar from "./components/Sidebar";
-
-import Main from "./components/Main";
+import { Sidebar, Main } from "..";
 
 import "./styles/App.scss";
 
@@ -11,7 +9,6 @@ export default class App extends React.Component {
     return (
       <div className="container">
         <Sidebar />
-
         <Main />
       </div>
     );

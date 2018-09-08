@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee);
-
 .header {
   background-color: lightgray;
   grid-area: header;
@@ -13,7 +11,7 @@
   top: 0px;
   line-height: 0.79;
   vertical-align: baseline;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   font-size: 100px;
   font-style: normal;
 }
@@ -23,13 +21,13 @@
   bottom: 0px;
   line-height: 0.73;
   vertical-align: baseline;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: "Bowlby One SC", cursive;
   font-size: 100px;
   font-style: normal;
 }
 
-.backchart{
-  height: 150px
+.backchart {
+  height: 150px;
 }
 
 .gradient {
@@ -38,9 +36,10 @@
   position: absolute;
   top: 0;
   background: linear-gradient(
-    to right, rgba(211,211,211,1) 0%,
-    rgba(211,211,211,1) 31%
-    ,rgba(211,211,211,0) 67%,
-    rgba(211,211,211,0) 100%
+    to right,
+    rgba(211, 211, 211, 1) 0%,
+    rgba(211, 211, 211, 1) 31%,
+    rgba(211, 211, 211, 0) 67%,
+    rgba(211, 211, 211, 0) 100%
   );
 }

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import "./constants";
+@import "../styles/constants";
 
 .middle {
   padding-top: 100px;
@@ -9,20 +8,20 @@
   grid-area: middle;
   height: 100%;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     padding: 0px 7%;
   }
 }
 
 .middle h1 {
   color: #787878;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
 }
 
 .middle p {
-  color: #B2B2B2;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #b2b2b2;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.85em;
 }
 
@@ -30,13 +29,13 @@
   display: flex;
   justify-content: center;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.email-resume button:active{
+.email-resume button:active {
   border-bottom-width: 0px;
   border-left-style: solid;
   border-left-width: 4px;
@@ -67,14 +66,13 @@
   padding: 10px;
   text-align: center;
   width: 230px;
-
 }
 
 .email-resume > a {
   margin: 30px 10px;
   color: black;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     margin: 10px;
   }
 }

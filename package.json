@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "prettier": "prettier --write src/**/*.{tsx,ts,scss}"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/react": "^16.4.13",
     "@types/chart.js": "^2.7.32",
+    "@types/react-dom": "^16.0.7",
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
     "prettier": "^1.14.2",

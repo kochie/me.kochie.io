@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Chart } from "chart.js";
 
-import "../styles/Header.scss";
+import "./Header.scss";
 
 export default class Header extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
@@ -43,7 +43,7 @@ export default class Header extends React.Component {
         },
         maintainAspectRatio: false,
         layout: {
-          padding: { 
+          padding: {
             bottom: 0
           }
         },
@@ -68,7 +68,7 @@ export default class Header extends React.Component {
 
   updateChart() {
     console.log("updated");
-    const list = this.chart.data.datasets[0].data
+    const list = this.chart.data.datasets[0].data;
     list.splice(0, 1);
     list.push(Math.random() * 10);
     this.chart.update();

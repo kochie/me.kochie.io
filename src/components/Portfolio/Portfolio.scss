@@ -1,10 +1,10 @@
-@import './constants';
+@import "../styles/constants";
 
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5%;
+  grid-gap: 7%;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
     only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     grid-template-columns: 1fr;
@@ -14,29 +14,28 @@
 .portfolio-image {
   width: 100%;
   border-radius: 0.35em;
-  opacity: 0.5;
   transition: opacity 0.2s ease-in-out;
-  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
-    opacity: 1;
-  }
+  opacity: 1;
 }
 
 .portfolio-image-wrapper {
   background-color: black;
-  border-radius: 0.35em;
+  border-radius: 0.4em;
 }
 
 .portfolio-image:hover {
-  opacity: 1;
+  opacity: 0.5;
   transition: opacity 0.2s ease-in-out;
+  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    opacity: 1;
+  }
 }
 
 .portfolio-item {
   place-self: center;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     text-align: center;
   }
 }
-
