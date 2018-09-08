@@ -1,0 +1,9 @@
+.main {
+  grid-area: main;
+  height: 100vh;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "middle" "footer";
+}

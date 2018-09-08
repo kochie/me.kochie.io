@@ -1,0 +1,41 @@
+{
+  "name": "me.kochie.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kochie/me.kochie.io.git"
+  },
+  "keywords": [],
+  "author": "robert@kochie.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kochie/me.kochie.io/issues"
+  },
+  "homepage": "https://github.com/kochie/me.kochie.io#readme",
+  "devDependencies": {
+    "@types/react": "^16.4.13",
+    "@types/chart.js": "^2.7.32",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "^1.14.2",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.2",
+    "chart.js": "^2.7.2",
+    "react": "^16.5.0",
+    "react-device-detect": "^1.5.9",
+    "react-dom": "^16.5.0",
+    "react-ga": "^2.5.3"
+  }
+}
