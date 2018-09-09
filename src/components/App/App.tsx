@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Sidebar, Main } from "..";
 
-import "./styles/App.scss";
+import "./App.scss";
 
 export default class App extends React.Component {
   render() {

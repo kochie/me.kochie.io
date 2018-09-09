@@ -1,0 +1,58 @@
+@import '../../styles/constants';
+
+.email-resume {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+      only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+.email-resume button:active {
+  border-bottom-width: 0px;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right-width: 0px;
+  border-top-style: solid;
+  border-top-width: 4px;
+}
+
+.email-resume button {
+  background-color: grey;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-left-width: 0px;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  // font-family: fa5-proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 0px;
+  // margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 230px;
+}
+
+.email-resume > a {
+  margin: 30px 10px;
+  color: black;
+  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    margin: 10px;
+  }
+}
+
+.icon-center {
+  vertical-align: middle;
+  padding-right: 10px;
+}

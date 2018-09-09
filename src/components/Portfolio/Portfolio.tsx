@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "../styles/Portfolio.scss";
+import "./Portfolio.scss";
 
 import Space from "./images/space.png";
 
@@ -28,18 +28,21 @@ const projects = [
 export default class Portfolio extends React.Component {
   render() {
     return (
-      <div className="portfolio">
-        {projects.map(project => (
-          <div className="portfolio-item">
-            <div className="portfolio-image-wrapper">
-              <a href={project.link}>
-                <img src={project.image} className="portfolio-image" />
-              </a>
+      <div>
+        <h2>Recent Work</h2>
+        <div className="portfolio">
+          {projects.map(project => (
+            <div className="portfolio-item">
+              <div className="portfolio-image-wrapper">
+                <a href={project.link}>
+                  <img src={project.image} className="portfolio-image" />
+                </a>
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
             </div>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     );
   }

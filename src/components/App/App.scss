@@ -1,4 +1,4 @@
-@import "constants";
+@import "../../styles/constants";
 
 body {
   margin: 0;
@@ -7,7 +7,7 @@ body {
 .container {
   display: grid;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   grid-template-areas: "sidebar main";
