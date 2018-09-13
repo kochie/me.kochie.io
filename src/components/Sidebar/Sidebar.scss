@@ -6,7 +6,7 @@
   opacity: 0.6;
 }
 
-.image {
+.canvas {
   // transform: scale(1.1);
   height: 100%;
   width: 100%;
@@ -19,13 +19,43 @@
   // background-image: url("./images/background.jpg");
   // perspective: 1px;
   // transform: translateZ(-1px) scale(2);
+  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    display: none
+  }
+}
+
+.bg-image {
+    // transform: scale(1.1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    // filter: blur(2px);
+    // background-size: cover;
+    // background-image: url("./images/background.jpg");
+    // perspective: 1px;
+    // transform: translateZ(-1px) scale(2);
+    @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+      background-image: url("./images/background-1.jpg");
+      opacity: 0.5;
+      background-color: black;
+      background-position: center;
+      background-size: cover;
+      filter: blur(2px);
+      transform: scale(1.1);
+    }
 }
 
 .sidebar {
   position: fixed;
   // min-height: 100vh;
   height: 100vh;
-  // overflow-x: hidden;
+  overflow: hidden;
+  background-color: black;
   // overflow-y: auto;
   // perspective: 1px;
   width: 33vw;
@@ -39,7 +69,7 @@
 }
 
 .sidebar-header {
-  position: absolute;
+  position: relative;
   display: flex;
   top: 0px;
   left: 0px;

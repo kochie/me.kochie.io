@@ -42,7 +42,7 @@ export default class Sidebar extends React.Component {
     // this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
     // this.backgroundDiv.current.style.top = `${-parallaxAmount}px`;
     const blurSize = 2*window.devicePixelRatio;
-    let scale = 4/window.devicePixelRatio
+    let scale = 2/window.devicePixelRatio
     
     const imgHeight = this.image.naturalHeight;
     const imgWidth = this.image.naturalWidth;
@@ -91,7 +91,8 @@ export default class Sidebar extends React.Component {
           <div className="quote">{quote}</div>
           <Connections />
         </div>
-        <canvas className="image" ref={this.canvas}/>
+        <canvas className="canvas" ref={this.canvas}/>
+        <div className="bg-image" />
       </div>
     );
   }
