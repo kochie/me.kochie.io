@@ -4,53 +4,94 @@ import { Connections } from "..";
 
 import "./Sidebar.scss";
 import avatar from "./images/me.jpg";
+import background from "./images/background-2.jpg"
 
 export default class Sidebar extends React.Component {
-  backgroundDiv: React.RefObject<HTMLDivElement>
-  jumbotronDiv: React.RefObject<HTMLDivElement>
-  containerDiv: React.RefObject<HTMLDivElement>
+  canvas: React.RefObject<HTMLCanvasElement>
+  image: HTMLImageElement
   constructor(props) {
     super(props)
-    this.backgroundDiv = React.createRef()
-    this.containerDiv = React.createRef()
-    this.jumbotronDiv = React.createRef()
+    this.canvas = React.createRef()
     this.parallax = this.parallax.bind(this)
+    this.image = new Image()
+    this.image.src = background
+    window.addEventListener("scroll", this.parallax);
+    window.addEventListener("resize", this.parallax);
   }
 
   componentDidMount() {
-    console.log("HEllo")
-    window.addEventListener("scroll", this.parallax);
+    // console.log("HEllo")
+    this.image.onload = () => {
+      this.parallax()
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.parallax);
+    window.removeEventListener("resize", this.parallax);
   }
   
   parallax() {
-    console.log("HEllo")
-    const jumboHeight = this.jumbotronDiv.current.offsetHeight;
-    const imageHeight = this.backgroundDiv.current.offsetHeight;
-    const m = (jumboHeight-imageHeight)/((window.innerHeight+jumboHeight));
-    const parallaxAmount = (this.containerDiv.current.getBoundingClientRect().top-window.innerHeight)*m;
-    console.log(parallaxAmount)
-    this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
+    // console.log("HEllo")
+    // const jumboHeight = this.jumbotronDiv.current.offsetHeight;
+    // const imageHeight = 1080 // this.backgroundDiv.current.offsetHeight;
+    // console.log(jumboHeight, imageHeight, document.body.scrollTop)
+    // const m = (jumboHeight-imageHeight)/((window.innerHeight+jumboHeight));
+    // const parallaxAmount = (this.containerDiv.current.getBoundingClientRect().top-window.innerHeight)*m;
+    // console.log(parallaxAmount)
+    // this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
+    // this.backgroundDiv.current.style.top = `${-parallaxAmount}px`;
+    const blurSize = 2*window.devicePixelRatio;
+    let scale = 4/window.devicePixelRatio
+    
+    const imgHeight = this.image.naturalHeight;
+    const imgWidth = this.image.naturalWidth;
+    
+    const innerHeight = document.documentElement.clientHeight;
+    const innerWidth = document.documentElement.clientWidth/3;
+    
+    const docHeight = document.body.scrollHeight;
+    
+    if (imgHeight <= innerHeight) {
+      scale = 1/scale
+    }
+    
+    const m = (imgHeight - innerHeight*scale)/(docHeight - innerHeight)
+    const sy = m*window.scrollY
+    const ctx = this.canvas.current.getContext('2d')
+    ctx.restore()
+    ctx.save()
+    this.canvas.current.height = innerHeight
+    this.canvas.current.width = innerWidth
+    ctx.fillRect(0, 0, innerWidth, innerHeight);
+    ctx.filter = `blur(${blurSize}px)`;
+    ctx.globalAlpha = 0.7;
+    ctx.drawImage(
+      this.image, 
+      Math.round((imgWidth-innerWidth*scale)*0.5), 
+      Math.round(sy), 
+      Math.round(scale*innerWidth), 
+      Math.round(scale*innerHeight), 
+      -blurSize, 
+      -blurSize, 
+      Math.round(innerWidth)+blurSize*2, 
+      Math.round(innerHeight)+blurSize*2
+    )
   }
 
   render() {
     const quote =
       "I build things, write the code for them, and run from the resulting explosion.";
     return (
-      <div className="sidebar" ref={this.containerDiv}>
-        <div className="image" ref={this.backgroundDiv}>
-          <div className="blur" />
-        </div>
-        <div className="sidebar-header" ref={this.jumbotronDiv}>
+      <div className="sidebar">
+        <div className="sidebar-header">
           <div className="avatar">
             <img src={avatar} />
           </div>
           <div className="quote">{quote}</div>
           <Connections />
         </div>
+        <canvas className="image" ref={this.canvas}/>
       </div>
     );
   }

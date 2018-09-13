@@ -33,11 +33,12 @@ export default class Portfolio extends React.Component {
         <div className="portfolio">
           {projects.map(project => (
             <div className="portfolio-item">
-              <div className="portfolio-image-wrapper">
+              <figure className="portfolio-image-wrapper">
                 <a href={project.link}>
                   <img src={project.image} className="portfolio-image" />
+                  {/* <span className="portfolio-text">View</span> */}
                 </a>
-              </div>
+              </figure>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </div>

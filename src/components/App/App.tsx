@@ -7,9 +7,11 @@ import "./App.scss";
 export default class App extends React.Component {
   render() {
     return (
-      <div className="container">
-        <Sidebar />
-        <Main />
+      <div className="app">
+        <Sidebar />  
+        <div className="container"> 
+          <Main />
+        </div>
       </div>
     );
   }
