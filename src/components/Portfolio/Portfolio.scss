@@ -3,11 +3,12 @@
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 7%;
+  grid-auto-rows: max-content;
+  grid-gap: 40px;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
     only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
     grid-gap: 0;
   }
 }
@@ -72,6 +73,5 @@
 
 .portfolio-image::after {
   content: "view";
-
 }
 

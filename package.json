@@ -21,11 +21,13 @@
   },
   "homepage": "https://github.com/kochie/me.kochie.io#readme",
   "devDependencies": {
-    "@types/react": "^16.4.13",
     "@types/chart.js": "^2.7.32",
+    "@types/mapbox-gl": "^0.48.0",
+    "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
+    "parcel-plugin-markdown": "^0.3.1",
     "prettier": "^1.14.2",
     "typescript": "^3.0.3"
   },
@@ -35,6 +37,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
     "@fortawesome/react-fontawesome": "^0.1.2",
     "chart.js": "^2.7.2",
+    "mapbox-gl": "^0.49.0",
     "react": "^16.5.0",
     "react-device-detect": "^1.5.9",
     "react-dom": "^16.5.0",

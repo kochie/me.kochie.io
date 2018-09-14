@@ -1,0 +1,1 @@
+If you'd like to get in contact, feel free to write a message or send an email. You can also grab a copy of my resume below.

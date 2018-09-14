@@ -19,6 +19,7 @@
   // background-image: url("./images/background.jpg");
   // perspective: 1px;
   // transform: translateZ(-1px) scale(2);
+
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
   only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     display: none
@@ -59,6 +60,13 @@
   // overflow-y: auto;
   // perspective: 1px;
   width: 33vw;
+  @media only screen and (max-width: $tablet-width) and (max-height: $tablet-height) and (min-resolution: $tablet-resolution),
+  only screen and (max-width: $tablet-height) and (max-height: $tablet-width) and (min-resolution: $tablet-resolution) {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
   only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     position: absolute;
@@ -82,8 +90,8 @@
   padding-top: 5vh;
   // width: 100%;
   // height: 100%;
-  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+  @media only screen and (max-width: $tablet-width) and (max-height: $tablet-height) and (min-resolution: $tablet-resolution),
+    only screen and (max-width: $tablet-height) and (max-height: $tablet-width) and (min-resolution: $tablet-resolution) {
     justify-content: center;
     padding: 0px;
     height: inherit;

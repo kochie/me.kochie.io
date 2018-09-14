@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./Connections.scss";
+import { createHash } from "crypto";
 
 const connections = [
   {
@@ -56,7 +57,7 @@ export default class Connections extends React.Component {
     return (
       <div className="connections">
         {connections.map(connection => (
-          <div className="grow">
+          <div className="grow" key={createHash('md5').update(connection.href).digest("base64")}>
             <a href={connection.href} className={`${connection.color} grow`}>
               <FontAwesomeIcon
                 icon={connection.icon}

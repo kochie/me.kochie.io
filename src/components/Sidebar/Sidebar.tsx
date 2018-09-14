@@ -13,10 +13,12 @@ export default class Sidebar extends React.Component {
     super(props)
     this.canvas = React.createRef()
     this.parallax = this.parallax.bind(this)
+    this.vsyncParallax = this.vsyncParallax.bind(this)
     this.image = new Image()
     this.image.src = background
-    window.addEventListener("scroll", this.parallax);
-    window.addEventListener("resize", this.parallax);
+    window.addEventListener("scroll", this.vsyncParallax);
+    window.addEventListener("resize", this.vsyncParallax);
+    // window.requestAnimationFrame(this.parallax)
   }
 
   componentDidMount() {
@@ -27,8 +29,12 @@ export default class Sidebar extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.parallax);
-    window.removeEventListener("resize", this.parallax);
+    // window.removeEventListener("scroll", this.parallax);
+    // window.removeEventListener("resize", this.parallax);
+  }
+
+  vsyncParallax() {
+    window.requestAnimationFrame(this.parallax)
   }
   
   parallax() {
@@ -42,27 +48,30 @@ export default class Sidebar extends React.Component {
     // this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
     // this.backgroundDiv.current.style.top = `${-parallaxAmount}px`;
     const blurSize = 2*window.devicePixelRatio;
-    let scale = 2/window.devicePixelRatio
+    // let scale = 2/window.devicePixelRatio
     
     const imgHeight = this.image.naturalHeight;
     const imgWidth = this.image.naturalWidth;
     
     const innerHeight = document.documentElement.clientHeight;
-    const innerWidth = document.documentElement.clientWidth/3;
+    const innerWidth = this.canvas.current.clientWidth;
     
     const docHeight = document.body.scrollHeight;
-    
-    if (imgHeight <= innerHeight) {
-      scale = 1/scale
-    }
+
+    let scale = (imgHeight)/(innerHeight*1.1*window.devicePixelRatio)
+
+    // if (imgHeight <= innerHeight) {
+    //   scale = 1/scale
+    // }
     
     const m = (imgHeight - innerHeight*scale)/(docHeight - innerHeight)
-    const sy = m*window.scrollY
+    const sy = m*Math.min(Math.max(window.scrollY,0), docHeight - innerHeight)
     const ctx = this.canvas.current.getContext('2d')
     ctx.restore()
     ctx.save()
-    this.canvas.current.height = innerHeight
-    this.canvas.current.width = innerWidth
+    this.canvas.current.height = this.canvas.current.clientHeight
+    this.canvas.current.width = this.canvas.current.clientWidth
+    // console.log()
     ctx.fillRect(0, 0, innerWidth, innerHeight);
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
