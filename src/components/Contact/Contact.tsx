@@ -48,11 +48,11 @@ export default class Contact extends React.Component<{}, State> {
         <h2>Contact</h2>
         <div dangerouslySetInnerHTML={{__html: contact}} />
         <div id="map" />
-        <form action="https://formspree.io/robert@kochie.io">
+        <form action="https://formspree.io/robert@kochie.io" method="POST">
           <div className="form">
             <div className="contact-info">
-              <input type="text" placeholder="Name" name="name" value={this.state.name} onChange={e => this.name(e)}/>
-              <input type="text" placeholder="Email" name="email" value={this.state.email} onChange={e => this.email(e)}/>
+              <input className="name" type="text" placeholder="Name" name="name" value={this.state.name} onChange={e => this.name(e)}/>
+              <input className="email" type="text" placeholder="Email" name="email" value={this.state.email} onChange={e => this.email(e)}/>
             </div>
             <div className="message">
               <textarea placeholder="Message" name="message" rows={4} value={this.state.message} onChange={e => this.message(e)}/>

@@ -1,6 +1,33 @@
+@import '../../styles/constants';
+
 .contact-info {
   display: flex;
-  flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+	@media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+	only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.name {
+	margin-bottom: 2%;
+	margin-right: 2%;
+	@media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+	only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+		margin: 2%;
+		box-sizing: border-box;
+	}
+}
+
+.email {
+	margin-bottom: 2%;
+	@media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+	only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+		margin: 0 2% 2% 2%;
+		box-sizing: border-box;
+	}
 }
 
 $button-colour: #7998a5;
@@ -218,6 +245,8 @@ input[type="button"]:disabled,
 
 	textarea {
 		padding: 0.75em;
+		font-family: 'Source Sans Pro';
+		box-sizing: border-box;
 	}
 
 	input[type="checkbox"],

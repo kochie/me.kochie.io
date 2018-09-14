@@ -18,7 +18,7 @@ export default class ContactButton extends React.Component<Props, {}> {
   render() {
     const {name, message} = this.props
     return (
-      <div>
+      <div className="button-row">
         <a>
           <button type="submit "className="button">
             <FontAwesomeIcon
