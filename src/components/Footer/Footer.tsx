@@ -4,11 +4,20 @@ import "./Footer.scss";
 
 export default class Footer extends React.Component {
   render() {
-    const updateTime = new Date().toDateString()
+    const updateTime = new Date().toDateString();
     return (
-      <div className="footer">
-        <span>Updated on <time dateTime={updateTime}>{updateTime}</time></span>
-      </div>
+      <nav className="footer">
+		<ul>
+			<li>
+				Robert Koch
+			</li>
+			<li>
+        		<span>
+          			Updated on <time dateTime={updateTime}>{updateTime}</time>
+        		</span>
+			</li>
+		</ul>
+      </nav>
     );
   }
 }

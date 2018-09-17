@@ -5,7 +5,7 @@
   grid-template-columns: 30% 1fr;
   column-gap: 5%;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     grid-template-columns: 1fr;
   }
 
@@ -22,8 +22,8 @@
   h3 {
     margin-top: 0px;
   }
-  
+
   img:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 }

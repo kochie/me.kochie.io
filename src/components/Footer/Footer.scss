@@ -2,4 +2,17 @@
   background-color: darkgrey;
   grid-area: footer;
   height: 75px;
+
+  li::before {
+  	border-left: 2px solid #1f2326;
+  }
+
+  li {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  	float: left;
+  }
+
+  ul {
+  	list-style: none
+  }
 }

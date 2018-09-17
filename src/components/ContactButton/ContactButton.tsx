@@ -1,26 +1,30 @@
 import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFileDownload, faFileUpload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faFileDownload,
+  faFileUpload
+} from "@fortawesome/free-solid-svg-icons";
 
 import Resume from "./Robert_Koch.pdf";
 
-import './ContactButton.scss'
+import "./ContactButton.scss";
 
 const emailAddress = "robert@kochie.io";
 
 interface Props {
-  name: string,
-  email: string,
-  message: string
+  name: string;
+  email: string;
+  message: string;
 }
 
 export default class ContactButton extends React.Component<Props, {}> {
   render() {
-    const {name, message} = this.props
+    const { name, message } = this.props;
     return (
       <div className="button-row">
         <a>
-          <button type="submit "className="button">
+          <button type="submit " className="button">
             <FontAwesomeIcon
               icon={faFileUpload}
               size="2x"
@@ -29,7 +33,11 @@ export default class ContactButton extends React.Component<Props, {}> {
             <span>Send Message</span>
           </button>
         </a>
-        <a href={encodeURI(`mailto:${emailAddress}?Subject=Hi I'm ${name}&body=${message}`)}>
+        <a
+          href={encodeURI(
+            `mailto:${emailAddress}?Subject=Hi I'm ${name}&body=${message}`
+          )}
+        >
           <button className="button" type="button">
             <FontAwesomeIcon
               icon={faEnvelope}

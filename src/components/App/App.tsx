@@ -8,8 +8,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Sidebar />  
-        <div className="container"> 
+        <Sidebar />
+        <div className="container">
           <Main />
         </div>
       </div>

@@ -1,25 +1,26 @@
-@import '../../styles/constants';
+@import "../../styles/constants";
 
 .button-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-      only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-.button-row a, button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-	only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.button-row a,
+button {
+  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     width: 100%;
     margin-bottom: 2%;
-	}
+  }
 }
-  
+
 .email-resume button:active {
   border-bottom-width: 0px;
   border-left-style: solid;

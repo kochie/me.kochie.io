@@ -11,8 +11,8 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 1;
   // filter: blur(2px);
   // background-size: cover;
@@ -21,34 +21,34 @@
   // transform: translateZ(-1px) scale(2);
 
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
-    display: none
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    display: none;
   }
 }
 
 .bg-image {
-    // transform: scale(1.1);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 1;
-    // filter: blur(2px);
-    // background-size: cover;
-    // background-image: url("./images/background.jpg");
-    // perspective: 1px;
-    // transform: translateZ(-1px) scale(2);
-    @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
+  // transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  // filter: blur(2px);
+  // background-size: cover;
+  // background-image: url("./images/background.jpg");
+  // perspective: 1px;
+  // transform: translateZ(-1px) scale(2);
+  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
     only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
-      background-image: url("./images/background-1.jpg");
-      opacity: 0.5;
-      background-color: black;
-      background-position: center;
-      background-size: cover;
-      filter: blur(2px);
-      transform: scale(1.1);
-    }
+    background-image: url("./images/background-1.jpg");
+    opacity: 0.5;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    transform: scale(1.1);
+  }
 }
 
 .sidebar {
@@ -61,14 +61,14 @@
   // perspective: 1px;
   width: 33vw;
   @media only screen and (max-width: $tablet-width) and (max-height: $tablet-height) and (min-resolution: $tablet-resolution),
-  only screen and (max-width: $tablet-height) and (max-height: $tablet-width) and (min-resolution: $tablet-resolution) {
+    only screen and (max-width: $tablet-height) and (max-height: $tablet-width) and (min-resolution: $tablet-resolution) {
     position: absolute;
     top: 0px;
     width: 100vw;
     height: 100vh;
   }
   @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-  only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
     position: absolute;
     top: 0px;
     width: 100vw;
