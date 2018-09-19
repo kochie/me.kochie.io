@@ -7,7 +7,7 @@
     "test": "jest",
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "prettier": "prettier --write src/**/*.{tsx,ts,scss}"
+    "prettier": "prettier --write \"src/**/*.{tsx,ts,scss}\""
   },
   "repository": {
     "type": "git",

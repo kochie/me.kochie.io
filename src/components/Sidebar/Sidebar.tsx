@@ -9,6 +9,7 @@ import background from "./images/background-2.jpg";
 export default class Sidebar extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
   image: HTMLImageElement;
+  imageY: number;
   constructor(props) {
     super(props);
     this.canvas = React.createRef();
@@ -16,9 +17,10 @@ export default class Sidebar extends React.Component {
     this.vsyncParallax = this.vsyncParallax.bind(this);
     this.image = new Image();
     this.image.src = background;
-    window.addEventListener("scroll", this.vsyncParallax);
-    window.addEventListener("resize", this.vsyncParallax);
-    // window.requestAnimationFrame(this.parallax)
+    // window.addEventListener("scroll", this.vsyncParallax);
+    // window.addEventListener("resize", this.vsyncParallax);
+    window.requestAnimationFrame(this.parallax);
+    this.imageY = 0;
   }
 
   componentDidMount() {
@@ -65,8 +67,9 @@ export default class Sidebar extends React.Component {
     // }
 
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight);
-    const sy =
-      m * Math.min(Math.max(window.scrollY, 0), docHeight - innerHeight);
+    const displacement = window.scrollY - this.imageY;
+    this.imageY += displacement * 0.01;
+    const sy = m * Math.min(Math.max(this.imageY, 0), docHeight - innerHeight);
     const ctx = this.canvas.current.getContext("2d");
     ctx.restore();
     ctx.save();
@@ -87,6 +90,7 @@ export default class Sidebar extends React.Component {
       Math.round(innerWidth) + blurSize * 2,
       Math.round(innerHeight) + blurSize * 2
     );
+    window.requestAnimationFrame(this.parallax);
   }
 
   render() {

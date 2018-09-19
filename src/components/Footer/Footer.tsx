@@ -7,16 +7,14 @@ export default class Footer extends React.Component {
     const updateTime = new Date().toDateString();
     return (
       <nav className="footer">
-		<ul>
-			<li>
-				Robert Koch
-			</li>
-			<li>
-        		<span>
-          			Updated on <time dateTime={updateTime}>{updateTime}</time>
-        		</span>
-			</li>
-		</ul>
+        <ul>
+          <li>Robert Koch</li>
+          <li>
+            <span>
+              Updated on <time dateTime={updateTime}>{updateTime}</time>
+            </span>
+          </li>
+        </ul>
       </nav>
     );
   }

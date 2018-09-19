@@ -47,7 +47,7 @@ export default class ContactButton extends React.Component<Props, {}> {
             <span>Email</span>
           </button>
         </a>
-        <a href={Resume} download="Robert_Koch.pdf">
+        <a href={Resume} download="Robert_Koch">
           <button className="button" type="button">
             <FontAwesomeIcon
               icon={faFileDownload}

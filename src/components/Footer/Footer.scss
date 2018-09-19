@@ -4,15 +4,15 @@
   height: 75px;
 
   li::before {
-  	border-left: 2px solid #1f2326;
+    border-left: 2px solid #1f2326;
   }
 
   li {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-  	float: left;
+    float: left;
   }
 
   ul {
-  	list-style: none
+    list-style: none;
   }
 }
