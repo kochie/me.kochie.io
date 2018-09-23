@@ -9,8 +9,10 @@ import RecentArticles from "./RecentArticles/RecentArticles";
 import ContactButton from "./ContactButton/ContactButton";
 import App from "./App/App";
 import Contact from "./Contact/Contact";
+import BuyMeACoffee from "./BuyMeACoffee/BuyMeACoffee"
 
 export {
+  BuyMeACoffee,
   ContactButton,
   RecentArticles,
   Connections,
