@@ -1,0 +1,19 @@
+# me.kochie.io
+
+This repo has has a few facelifts over the past couple of years but I'm pretty happy with it now. This repo contains a sire I've made to display some basic stuff about myself and what I'm currently working on. It's a simple react app built on top of `now`.
+
+## To Build
+
+```
+npm install
+npm run dev
+```
+
+## To Deploy
+
+```
+now && now alias
+```
+
+## Caveats
+It's currently not a generalised site, If you want to copy it you'll have to sanitise my personal information out of it.
