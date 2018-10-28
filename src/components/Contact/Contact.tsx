@@ -5,7 +5,7 @@ import { ContactButton } from "..";
 
 import "./Contact.scss";
 
-import contact from "./contact.md";
+// import contact from "./contact.md";
 
 interface State {
   name: string;
@@ -46,7 +46,7 @@ export default class Contact extends React.Component<{}, State> {
     return (
       <div>
         <h2>Contact</h2>
-        <div dangerouslySetInnerHTML={{ __html: contact }} />
+        {/* <div dangerouslySetInnerHTML={{ __html: contact }} /> */}
         <div id="map" />
         <form action="https://formspree.io/robert@kochie.io" method="POST">
           <div className="form">

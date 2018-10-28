@@ -1,9 +1,5 @@
 {
-	"type": "static",
-	"alias": [
-		"me.kochie.io",
-		"kochie.now.sh",
-		"robertkoch.me"
-	],
-	"public": true
+  "type": "static",
+  "alias": ["me.kochie.io", "kochie.now.sh", "robertkoch.me"],
+  "public": true
 }

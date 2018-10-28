@@ -2,11 +2,10 @@
   "name": "me.kochie.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "jest",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html --detailed-report",
     "prettier": "prettier --write \"src/**/*.{tsx,ts,scss}\""
   },
   "repository": {
@@ -22,7 +21,6 @@
   "homepage": "https://github.com/kochie/me.kochie.io#readme",
   "devDependencies": {
     "@types/chart.js": "^2.7.32",
-    "@types/mapbox-gl": "^0.48.0",
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
     "jest": "^23.6.0",
@@ -38,10 +36,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
     "@fortawesome/react-fontawesome": "^0.1.2",
     "chart.js": "^2.7.2",
-    "mapbox-gl": "^0.49.0",
-    "react": "^16.5.0",
-    "react-device-detect": "^1.5.9",
-    "react-dom": "^16.5.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-ga": "^2.5.3"
   }
 }

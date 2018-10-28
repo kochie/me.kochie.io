@@ -3,8 +3,8 @@ import * as React from "react";
 import { Connections } from "..";
 
 import "./Sidebar.scss";
-import avatar from "./images/me.jpg";
-import background from "./images/background-2.jpg";
+import avatar from "./images/me.jpeg";
+import background from "./images/background-2.jpeg";
 
 export default class Sidebar extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;

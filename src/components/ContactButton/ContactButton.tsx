@@ -24,7 +24,7 @@ export default class ContactButton extends React.Component<Props, {}> {
     return (
       <div className="button-row">
         <a>
-          <button type="submit " className="button">
+          <button type="submit" className="button">
             <FontAwesomeIcon
               icon={faFileUpload}
               size="2x"
