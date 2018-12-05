@@ -47,6 +47,11 @@ export default class Contact extends React.Component<{}, State> {
       <div>
         <h2>Contact</h2>
         {/* <div dangerouslySetInnerHTML={{ __html: contact }} /> */}
+        <div>
+          <p>
+            If you'd like to get in contact, feel free to write a message or send an email. You can also grab a copy of my resume below.
+          </p>
+        </div>
         <div id="map" />
         <form action="https://formspree.io/robert@kochie.io" method="POST">
           <div className="form">

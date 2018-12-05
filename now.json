@@ -1,5 +1,11 @@
 {
-  "type": "static",
+  "version": 2,
   "alias": ["me.kochie.io", "kochie.now.sh", "robertkoch.me"],
-  "public": true
+  "public": true,
+  "builds": [
+  	{ "src": "dist/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/dist/$1" }
+  ]
 }
