@@ -6,6 +6,7 @@
     "test": "jest",
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --detailed-report",
+    "now-build": "parcel build ./src/index.html --detailed-report",
     "prettier": "prettier --write \"src/**/*.{tsx,ts,scss}\""
   },
   "repository": {
@@ -25,7 +26,7 @@
     "@types/react-dom": "^16.0.7",
     "jest": "^23.6.0",
     "node-sass": "^4.9.3",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "^1.10.3",
     "parcel-plugin-markdown": "^0.3.1",
     "prettier": "^1.14.2",
     "typescript": "^3.0.3"
