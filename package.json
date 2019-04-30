@@ -4,8 +4,10 @@
   "description": "",
   "scripts": {
     "test": "jest",
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --detailed-report",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "now-build": "next build && next export -o dist",
     "prettier": "prettier --write \"src/**/*.{tsx,ts,scss}\""
   },
   "repository": {
@@ -20,24 +22,34 @@
   },
   "homepage": "https://github.com/kochie/me.kochie.io#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
     "@types/chart.js": "^2.7.32",
     "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
-    "jest": "^23.6.0",
-    "node-sass": "^4.9.3",
-    "parcel-bundler": "^1.9.7",
+    "jest": "^24.7.1",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3",
     "parcel-plugin-markdown": "^0.3.1",
     "prettier": "^1.14.2",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "webpack": "^4.28.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-brands-svg-icons": "^5.3.1",
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
     "@fortawesome/react-fontawesome": "^0.1.2",
+    "@mdx-js/loader": "^1.0.15",
+    "@next/mdx": "^8.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
     "chart.js": "^2.7.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "next": "^8.1.0",
+    "next-images": "^1.1.1",
+    "postcss-css-variables": "^0.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-ga": "^2.5.3"
   }
 }

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Chart } from "chart.js";
 
-import "./Header.scss";
+import "./Header.css";
 
 export default class Header extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;

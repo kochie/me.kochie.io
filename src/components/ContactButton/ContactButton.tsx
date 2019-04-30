@@ -6,9 +6,7 @@ import {
   faFileUpload
 } from "@fortawesome/free-solid-svg-icons";
 
-import Resume from "./Robert_Koch.pdf";
-
-import "./ContactButton.scss";
+import "./ContactButton.css";
 
 const emailAddress = "robert@kochie.io";
 
@@ -47,7 +45,7 @@ export default class ContactButton extends React.Component<Props, {}> {
             <span>Email</span>
           </button>
         </a>
-        <a href={Resume} download="Robert_Koch">
+        <a href={"/static/Robert_Koch.pdf"} download="Robert_Koch">
           <button className="button" type="button">
             <FontAwesomeIcon
               icon={faFileDownload}

@@ -1,0 +1,82 @@
+@import "../../styles/constants.css";
+
+.connections {
+  color: wheat;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
+  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+    .connections {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .grow {
+      padding: 0px 1px;
+    }
+
+    .grow:hover {
+      padding: 0px 1px;
+    }
+}
+
+.connections > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.connections span {
+  padding-left: 5px;
+  color: wheat;
+}
+
+.connections a {
+  color: wheat;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.hover-active:hover {
+  color: green;
+}
+
+.gitlab:hover {
+  color: #db3b21;
+}
+
+.medium:hover {
+  color: #000000;
+}
+
+.github:hover {
+  color: #333333;
+}
+
+.instagram:hover {
+  color: #833ab4;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+}
+.grow:hover {
+  transform: scale(1.1);
+  padding: 5px;
+}

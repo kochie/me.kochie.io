@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./RecentArticles.scss";
+import "./RecentArticles.css";
 import { createHash } from "crypto";
 
 const recentArticles = [

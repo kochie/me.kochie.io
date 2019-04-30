@@ -10,7 +10,7 @@ import {
   faGitlab
 } from "@fortawesome/free-brands-svg-icons";
 
-import "./Connections.scss";
+import "./Connections.css";
 import { createHash } from "crypto";
 
 const connections = [

@@ -1,37 +1,40 @@
-@import "../../styles/constants";
+@import "../../styles/constants.css";
 
-.contact-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
+  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+  .contact-info {
     flex-direction: column;
     align-items: center;
   }
-}
-
-.name {
-  margin-bottom: 2%;
-  margin-right: 2%;
-  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+  .name {
     margin: 2%;
     box-sizing: border-box;
   }
-}
-
-.email {
-  margin-bottom: 2%;
-  @media only screen and (max-width: $mobile-width) and (max-height: $mobile-height) and (min-resolution: $mobile-resolution),
-    only screen and (max-width: $mobile-height) and (max-height: $mobile-width) and (min-resolution: $mobile-resolution) {
+  .email {
     margin: 0 2% 2% 2%;
     box-sizing: border-box;
   }
 }
 
-$button-colour: #7998a5;
-$inactive-colour: #b2b2b2;
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name {
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.email {
+  margin-bottom: 2%;
+}
+
+:root {
+  --button-colour: #7998a5;
+  --inactive-colour: #b2b2b2;
+}
 
 input[type="submit"],
 input[type="reset"],
@@ -42,8 +45,8 @@ input[type="button"],
     border-color 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 0.35em;
-  border: solid 3px $inactive-colour;
-  color: $inactive-colour;
+  border: solid 3px --inactive-colour;
+  color: --inactive-colour;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -61,8 +64,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 .button:hover {
-  border-color: $button-colour;
-  color: $button-colour;
+  border-color: --button-colour;
+  color: --button-colour;
 }
 
 input[type="submit"]:active,
@@ -70,8 +73,8 @@ input[type="reset"]:active,
 input[type="button"]:active,
 .button:active {
   background-color: rgba(73, 191, 157, 0.1);
-  border-color: $button-colour;
-  color: $button-colour;
+  border-color: --button-colour;
+  color: --button-colour;
 }
 
 input[type="submit"].icon,
@@ -116,8 +119,8 @@ input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
 .button.special {
-  background-color: $button-colour;
-  border-color: $button-colour;
+  background-color: --button-colour;
+  border-color: --button-colour;
   color: #ffffff;
 }
 
@@ -125,16 +128,16 @@ input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 input[type="button"].special:hover,
 .button.special:hover {
-  background-color: $button-colour;
-  border-color: $button-colour;
+  background-color: --button-colour;
+  border-color: --button-colour;
 }
 
 input[type="submit"].special:active,
 input[type="reset"].special:active,
 input[type="button"].special:active,
 .button.special:active {
-  background-color: $button-colour;
-  border-color: $button-colour;
+  background-color: --button-colour;
+  border-color: --button-colour;
 }
 
 input[type="submit"].disabled,
@@ -151,12 +154,11 @@ input[type="button"]:disabled,
   cursor: default;
 }
 
-.form {
-  form {
+  .form form {
     margin: 0 0 2em 0;
   }
 
-  label {
+  .form label {
     color: #787878;
     display: block;
     font-size: 0.9em;
@@ -164,11 +166,11 @@ input[type="button"]:disabled,
     margin: 0 0 1em 0;
   }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select,
-  textarea {
+  .form input[type="text"],
+  .form input[type="password"],
+  .form input[type="email"],
+  .form select,
+  .form textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -184,29 +186,29 @@ input[type="button"]:disabled,
     width: 100%;
   }
 
-  input[type="text"]:invalid,
-  input[type="password"]:invalid,
-  input[type="email"]:invalid,
-  select:invalid,
-  textarea:invalid {
+  .form input[type="text"]:invalid,
+  .form input[type="password"]:invalid,
+  .form input[type="email"]:invalid,
+  .form select:invalid,
+  .form textarea:invalid {
     box-shadow: none;
   }
 
-  input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="email"]:focus,
-  select:focus,
-  textarea:focus {
-    border-color: $button-colour;
+  .form input[type="text"]:focus,
+  .form input[type="password"]:focus,
+  .form input[type="email"]:focus,
+  .form select:focus,
+  .form textarea:focus {
+    border-color: --button-colour;
   }
 
-  .select-wrapper {
+  .form .select-wrapper {
     text-decoration: none;
     display: block;
     position: relative;
   }
 
-  .select-wrapper:before {
+  .form .select-wrapper:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;
@@ -215,7 +217,7 @@ input[type="button"]:disabled,
     text-transform: none !important;
   }
 
-  .select-wrapper:before {
+  .form .select-wrapper:before {
     color: #dfdfdf;
     content: "\f078";
     display: block;
@@ -229,25 +231,25 @@ input[type="button"]:disabled,
     width: 2.75em;
   }
 
-  .select-wrapper select::-ms-expand {
+  .form .select-wrapper select::-ms-expand {
     display: none;
   }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
+  .form input[type="text"],
+  .form input[type="password"],
+  .form input[type="email"],
+  .form select {
     height: 2.75em;
   }
 
-  textarea {
+  .form textarea {
     padding: 0.75em;
     font-family: "Source Sans Pro";
     box-sizing: border-box;
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  .form input[type="checkbox"],
+  .form input[type="radio"] {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -260,8 +262,8 @@ input[type="button"]:disabled,
     z-index: -1;
   }
 
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
+  .form input[type="checkbox"] + label,
+  .form input[type="radio"] + label {
     text-decoration: none;
     color: #a2a2a2;
     cursor: pointer;
@@ -273,8 +275,8 @@ input[type="button"]:disabled,
     position: relative;
   }
 
-  input[type="checkbox"] + label:before,
-  input[type="radio"] + label:before {
+  .form input[type="checkbox"] + label:before,
+  .form input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;
@@ -283,8 +285,8 @@ input[type="button"]:disabled,
     text-transform: none !important;
   }
 
-  input[type="checkbox"] + label:before,
-  input[type="radio"] + label:before {
+  .form input[type="checkbox"] + label:before,
+  .form input[type="radio"] + label:before {
     background: #f7f7f7;
     border-radius: 0.35em;
     border: solid 2px transparent;
@@ -299,49 +301,49 @@ input[type="button"]:disabled,
     width: 1.65em;
   }
 
-  input[type="checkbox"]:checked + label:before,
-  input[type="radio"]:checked + label:before {
+  .form input[type="checkbox"]:checked + label:before,
+  .form input[type="radio"]:checked + label:before {
     background: #787878;
     border-color: #787878;
     color: #fff;
     content: "\f00c";
   }
 
-  input[type="checkbox"]:focus + label:before,
-  input[type="radio"]:focus + label:before {
-    border-color: $button-colour;
+  .form input[type="checkbox"]:focus + label:before,
+  .form input[type="radio"]:focus + label:before {
+    border-color: --button-colour;
   }
 
-  input[type="checkbox"] + label:before {
+  .form input[type="checkbox"] + label:before {
     border-radius: 0.35em;
   }
 
-  input[type="radio"] + label:before {
+  .form input[type="radio"] + label:before {
     border-radius: 100%;
   }
 
-  ::-webkit-input-placeholder {
+  .form ::-webkit-input-placeholder {
     color: #b2b2b2 !important;
     opacity: 1;
   }
 
-  :-moz-placeholder {
+  .form :-moz-placeholder {
     color: #b2b2b2 !important;
     opacity: 1;
   }
 
-  ::-moz-placeholder {
+  .form ::-moz-placeholder {
     color: #b2b2b2 !important;
     opacity: 1;
   }
 
-  :-ms-input-placeholder {
+  .form :-ms-input-placeholder {
     color: #b2b2b2 !important;
     opacity: 1;
   }
 
-  .formerize-placeholder {
+  .form .formerize-placeholder {
     color: #b2b2b2 !important;
     opacity: 1;
   }
-}
+

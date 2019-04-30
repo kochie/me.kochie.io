@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import './BuyMeACoffee.scss'
+import './BuyMeACoffee.css'
 
 interface Props {
   username: String

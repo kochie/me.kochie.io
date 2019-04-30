@@ -1,0 +1,71 @@
+@import "../../styles/constants.css";
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-gap: 40px;
+}
+
+.portfolio-text {
+  color: white;
+  border-radius: 0.3em;
+  padding: 5px 10px;
+  border: 1px double white;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.portfolio-image {
+  border-radius: 0.35em;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-image-wrapper {
+  background-color: rgba(0,0,0,0.8);
+
+  text-align: center;
+  border-radius: 0.4em;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 25% 0%;
+}
+
+@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
+  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+    .portfolio {
+      grid-template-columns: 1fr;
+      grid-auto-rows: max-content;
+      grid-gap: 0;
+    }
+
+    .portfolio-item {
+      text-align: center;
+    }
+
+    .portfolio-image:hover {
+      opacity: 1;
+    }
+}
+
+.portfolio-image:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.portfolio-image::after {
+  content: "view";
+}

@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import "./Portfolio.scss";
+import "./Portfolio.css";
 
-import Space from "./images/space.png";
-import Particlez from "./images/particlez.png";
-import Guardian from "./images/guardian.png";
-import Tensorflow from "./images/tensorflow.jpeg";
-import Juice from "./images/juice.png";
-import Keyboard from "./images/keyboard.png";
+const Space = "/static/images/space.png";
+const Particlez = "/static/images/particlez.png";
+const Guardian = "/static/images/guardian.png";
+const Tensorflow = "/static/tensorflow.jpeg";
+const Juice = "/static/images/juice.png";
+const Keyboard = "/static/images/keyboard.png";
 import { createHash } from "crypto";
 
 const projects = [

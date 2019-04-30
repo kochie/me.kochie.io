@@ -2,9 +2,10 @@ import * as React from "react";
 
 import { Connections } from "..";
 
-import "./Sidebar.scss";
-import avatar from "./images/me.jpeg";
-import background from "./images/background-2.jpeg";
+import "./Sidebar.css";
+
+const avatar = "/static/images/me.jpeg";
+const background = "/static/images/background-2.jpeg";
 
 export default class Sidebar extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
@@ -15,16 +16,13 @@ export default class Sidebar extends React.Component {
     this.canvas = React.createRef();
     this.parallax = this.parallax.bind(this);
     this.vsyncParallax = this.vsyncParallax.bind(this);
-    this.image = new Image();
-    this.image.src = background;
-    // window.addEventListener("scroll", this.vsyncParallax);
-    // window.addEventListener("resize", this.vsyncParallax);
-    window.requestAnimationFrame(this.parallax);
     this.imageY = 0;
   }
 
   componentDidMount() {
-    // console.log("HEllo")
+    this.image = new Image();
+    this.image.src = background;
+    window.requestAnimationFrame(this.parallax);
     this.image.onload = () => {
       this.parallax();
     };
@@ -40,17 +38,7 @@ export default class Sidebar extends React.Component {
   }
 
   parallax() {
-    // console.log("HEllo")
-    // const jumboHeight = this.jumbotronDiv.current.offsetHeight;
-    // const imageHeight = 1080 // this.backgroundDiv.current.offsetHeight;
-    // console.log(jumboHeight, imageHeight, document.body.scrollTop)
-    // const m = (jumboHeight-imageHeight)/((window.innerHeight+jumboHeight));
-    // const parallaxAmount = (this.containerDiv.current.getBoundingClientRect().top-window.innerHeight)*m;
-    // console.log(parallaxAmount)
-    // this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
-    // this.backgroundDiv.current.style.top = `${-parallaxAmount}px`;
     const blurSize = 2 * window.devicePixelRatio;
-    // let scale = 2/window.devicePixelRatio
 
     const imgHeight = this.image.naturalHeight;
     const imgWidth = this.image.naturalWidth;
@@ -62,10 +50,6 @@ export default class Sidebar extends React.Component {
 
     let scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio);
 
-    // if (imgHeight <= innerHeight) {
-    //   scale = 1/scale
-    // }
-
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight);
     const displacement = window.scrollY - this.imageY;
     this.imageY += displacement * 0.01;
@@ -75,7 +59,6 @@ export default class Sidebar extends React.Component {
     ctx.save();
     this.canvas.current.height = this.canvas.current.clientHeight;
     this.canvas.current.width = this.canvas.current.clientWidth;
-    // console.log()
     ctx.fillRect(0, 0, innerWidth, innerHeight);
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
