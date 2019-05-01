@@ -1,30 +1,27 @@
 import * as React from "react";
+import Head from "next/head";
 
 import { Connections } from "..";
 
-import "./Sidebar.scss";
-import avatar from "./images/me.jpeg";
-import background from "./images/background-2.jpeg";
+const avatar = "/static/images/me.jpeg";
+const background = "/static/images/background-2.jpeg";
 
 export default class Sidebar extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
-  image: HTMLImageElement;
+  image?: HTMLImageElement;
   imageY: number;
-  constructor(props) {
+  constructor(props: Readonly<{}>) {
     super(props);
     this.canvas = React.createRef();
     this.parallax = this.parallax.bind(this);
     this.vsyncParallax = this.vsyncParallax.bind(this);
-    this.image = new Image();
-    this.image.src = background;
-    // window.addEventListener("scroll", this.vsyncParallax);
-    // window.addEventListener("resize", this.vsyncParallax);
-    window.requestAnimationFrame(this.parallax);
     this.imageY = 0;
   }
 
   componentDidMount() {
-    // console.log("HEllo")
+    this.image = new Image();
+    this.image.src = background;
+    window.requestAnimationFrame(this.parallax);
     this.image.onload = () => {
       this.parallax();
     };
@@ -40,17 +37,11 @@ export default class Sidebar extends React.Component {
   }
 
   parallax() {
-    // console.log("HEllo")
-    // const jumboHeight = this.jumbotronDiv.current.offsetHeight;
-    // const imageHeight = 1080 // this.backgroundDiv.current.offsetHeight;
-    // console.log(jumboHeight, imageHeight, document.body.scrollTop)
-    // const m = (jumboHeight-imageHeight)/((window.innerHeight+jumboHeight));
-    // const parallaxAmount = (this.containerDiv.current.getBoundingClientRect().top-window.innerHeight)*m;
-    // console.log(parallaxAmount)
-    // this.backgroundDiv.current.style.transform = `translate3d(0, ${-parallaxAmount}px, 0)`;
-    // this.backgroundDiv.current.style.top = `${-parallaxAmount}px`;
+    if (this.image === undefined) return;
+    if (this.canvas.current === null) return;
+    const ctx = this.canvas.current.getContext("2d");
+    if (ctx === null) return;
     const blurSize = 2 * window.devicePixelRatio;
-    // let scale = 2/window.devicePixelRatio
 
     const imgHeight = this.image.naturalHeight;
     const imgWidth = this.image.naturalWidth;
@@ -62,20 +53,14 @@ export default class Sidebar extends React.Component {
 
     let scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio);
 
-    // if (imgHeight <= innerHeight) {
-    //   scale = 1/scale
-    // }
-
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight);
     const displacement = window.scrollY - this.imageY;
     this.imageY += displacement * 0.01;
     const sy = m * Math.min(Math.max(this.imageY, 0), docHeight - innerHeight);
-    const ctx = this.canvas.current.getContext("2d");
     ctx.restore();
     ctx.save();
     this.canvas.current.height = this.canvas.current.clientHeight;
     this.canvas.current.width = this.canvas.current.clientWidth;
-    // console.log()
     ctx.fillRect(0, 0, innerWidth, innerHeight);
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
@@ -97,17 +82,22 @@ export default class Sidebar extends React.Component {
     const quote =
       "I build things, write the code for them, and run from the resulting explosion.";
     return (
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <div className="avatar">
-            <img src={avatar} />
+      <>
+        <Head>
+          <link rel="stylesheet" href="/static/styles/sidebar.css" />
+        </Head>
+        <div className="sidebar">
+          <div className="sidebar-header">
+            <div className="avatar">
+              <img src={avatar} />
+            </div>
+            <div className="quote">{quote}</div>
+            <Connections />
           </div>
-          <div className="quote">{quote}</div>
-          <Connections />
+          <canvas className="canvas" ref={this.canvas} />
+          <div className="bg-image" />
         </div>
-        <canvas className="canvas" ref={this.canvas} />
-        <div className="bg-image" />
-      </div>
+      </>
     );
   }
 }

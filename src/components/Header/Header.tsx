@@ -1,19 +1,24 @@
 import * as React from "react";
 import { Chart } from "chart.js";
-
-import "./Header.scss";
+import Head from "next/head";
 
 export default class Header extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
-  chart: Chart;
+  chart?: Chart;
 
-  constructor(props) {
+  constructor(props: Readonly<{}>) {
     super(props);
     this.canvas = React.createRef();
   }
 
   componentDidMount() {
+    if (this.canvas.current === null) {
+      return;
+    }
     const ctx = this.canvas.current.getContext("2d");
+    if (ctx === null) {
+      return;
+    }
     const options = {
       type: "line",
       data: {
@@ -68,7 +73,13 @@ export default class Header extends React.Component {
 
   updateChart() {
     console.log("updated");
+    if (!this.chart || !this.chart.data.datasets) {
+      return;
+    }
     const list = this.chart.data.datasets[0].data;
+    if (typeof list === "undefined") {
+      return;
+    }
     list.splice(0, 1);
     list.push(Math.random() * 10);
     this.chart.update();
@@ -76,13 +87,18 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div className="header">
-        <canvas className="backchart" ref={this.canvas} />
-        <div className="gradient" />
-        <span className="title-firstname">ROBERT</span>
-        <br />
-        <span className="title-lastname">KOCH</span>
-      </div>
+      <>
+        <Head>
+          <link rel="stylesheet" href="/static/styles/header.css" />
+        </Head>
+        <div className="header">
+          <canvas className="backchart" ref={this.canvas} />
+          <div className="gradient" />
+          <span className="title-firstname">ROBERT</span>
+          <br />
+          <span className="title-lastname">KOCH</span>
+        </div>
+      </>
     );
   }
 }

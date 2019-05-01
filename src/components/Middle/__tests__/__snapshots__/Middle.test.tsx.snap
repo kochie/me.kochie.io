@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`middle renders correctly 1`] = `
+<div
+  className="middle"
+>
+  <h1>
+    I’m Rob, a university student from Melbourne, Australia.
+  </h1>
+  <p>
+    I currently study Electrical Engineering, Computer Science, and Mathematics at Monash University where I was the president of the IT society 
+    <a
+      href="http://wired.org.au"
+    >
+      wired
+    </a>
+     in 2017.
+  </p>
+  <p>
+    I'm also apart of the 
+    <a
+      href="https://unihack.net"
+    >
+      Unihack
+    </a>
+     team based in Melbourne, we run hackathons for students around Australia. 
+  </p>
+  <p>
+    Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
+  </p>
+  <div
+    className="bmc-button-container"
+  >
+    <a
+      className="bmc-button"
+      href="https://www.buymeacoffee.com/kochie"
+      target="_blank"
+    >
+      <img
+        alt="Buy me a coffee"
+        src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+      />
+      <span
+        className="bmc-span"
+      >
+        Buy me a coffee
+      </span>
+    </a>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Recent Work
+    </h2>
+    <div
+      className="portfolio"
+    >
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://kochie.space"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/images/space.png"
+            />
+          </a>
+        </figure>
+        <h3>
+          Space
+        </h3>
+        <p>
+          A small webapp that follows the mouse.
+        </p>
+      </div>
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://3body.now.sh"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/images/particlez.png"
+            />
+          </a>
+        </figure>
+        <h3>
+          Particlez
+        </h3>
+        <p>
+          A real time n-body particle simulator for the web.
+        </p>
+      </div>
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://github.com/kochie/guardian-server"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/images/guardian.png"
+            />
+          </a>
+        </figure>
+        <h3>
+          Guardian
+        </h3>
+        <p>
+          An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.
+        </p>
+      </div>
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://bitbucket.org/kochie/fyp"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/tensorflow.jpeg"
+            />
+          </a>
+        </figure>
+        <h3>
+          Optimising Neural Networks for Embedded Systems
+        </h3>
+        <p>
+          My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
+        </p>
+      </div>
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://github.com/kochie/juice"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/images/juice.png"
+            />
+          </a>
+        </figure>
+        <h3>
+          Juice
+        </h3>
+        <p>
+          A Json-Web-Token analyser.
+        </p>
+      </div>
+      <div
+        className="portfolio-item"
+      >
+        <figure
+          className="portfolio-image-wrapper"
+        >
+          <a
+            href="https://github.com/kochie/mcgurrin"
+          >
+            <img
+              className="portfolio-image"
+              src="/static/images/keyboard.png"
+            />
+          </a>
+        </figure>
+        <h3>
+          McGurrin
+        </h3>
+        <p>
+          A tool to help with learning to touch type.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Recent Articles
+    </h2>
+    <div
+      className="card"
+    >
+      <div>
+        <a
+          href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+        >
+          <img
+            src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
+          />
+        </a>
+      </div>
+      <div>
+        <h3>
+          Why build an app when you can build a phone?
+        </h3>
+        <p>
+          Over the last 5 years, UNIHACK has been predominantly focused on software and design. It is not well known that some of UNIHACK’s most creative entire
+          ... 
+          <a
+            href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+          >
+            more
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div>
+    <h2>
+      Contact
+    </h2>
+    <p>
+      If you'd like to get in contact, feel free to write a message or send an email. You can also grab a copy of my resume below.
+    </p>
+    <div
+      id="map"
+    />
+    <form
+      action="https://formspree.io/robert@kochie.io"
+      method="POST"
+    >
+      <div
+        className="form"
+      >
+        <div
+          className="contact-info"
+        >
+          <input
+            className="name"
+            name="name"
+            onChange={[Function]}
+            placeholder="Name"
+            type="text"
+            value=""
+          />
+          <input
+            className="email"
+            name="email"
+            onChange={[Function]}
+            placeholder="Email"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="message"
+        >
+          <textarea
+            name="message"
+            onChange={[Function]}
+            placeholder="Message"
+            rows={4}
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="button-row"
+      >
+        <a>
+          <button
+            className="button"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-upload fa-w-12 fa-2x icon-center"
+              data-icon="file-upload"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm65.18 216.01H224v80c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-80H94.82c-14.28 0-21.41-17.29-11.27-27.36l96.42-95.7c6.65-6.61 17.39-6.61 24.04 0l96.42 95.7c10.15 10.07 3.03 27.36-11.25 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span>
+              Send Message
+            </span>
+          </button>
+        </a>
+        <a
+          href="mailto:robert@kochie.io?Subject=Hi%20I'm%20&body="
+        >
+          <button
+            className="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-envelope fa-w-16 fa-2x icon-center"
+              data-icon="envelope"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span>
+              Email
+            </span>
+          </button>
+        </a>
+        <a
+          download="Robert_Koch"
+          href="/static/Robert_Koch.pdf"
+        >
+          <button
+            className="button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-download fa-w-12 fa-2x icon-center"
+              data-icon="file-download"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            <span>
+              Download Resume
+            </span>
+          </button>
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;

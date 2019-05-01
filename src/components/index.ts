@@ -1,27 +1,12 @@
-import App from "./App/App";
-import ContactButton from "./ContactButton/ContactButton";
-import Connections from "./Connections/Connections";
-import BuyMeACoffee from "./BuyMeACoffee/BuyMeACoffee"
-import Footer from "./Footer/Footer";
-import RecentArticles from "./RecentArticles/RecentArticles";
-import Portfolio from "./Portfolio/Portfolio";
-import Header from "./Header/Header";
-import Middle from "./Middle/Middle";
-import Contact from "./Contact/Contact";
-import Sidebar from "./Sidebar/Sidebar";
-import Main from "./Main/Main";
-
-export {
-  App,
-  ContactButton,
-  Connections,
-  BuyMeACoffee,
-  Footer,
-  RecentArticles,
-  Portfolio,
-  Header,
-  Middle,
-  Contact,
-  Sidebar,
-  Main,
-};
+export { default as App } from "./App/App";
+export { default as ContactButton } from "./ContactButton/ContactButton";
+export { default as Connections } from "./Connections/Connections";
+export { default as BuyMeACoffee } from "./BuyMeACoffee/BuyMeACoffee";
+export { default as Footer } from "./Footer/Footer";
+export { default as RecentArticles } from "./RecentArticles/RecentArticles";
+export { default as Portfolio } from "./Portfolio/Portfolio";
+export { default as Header } from "./Header/Header";
+export { default as Middle } from "./Middle/Middle";
+export { default as Contact } from "./Contact/Contact";
+export { default as Sidebar } from "./Sidebar/Sidebar";
+export { default as Main } from "./Main/Main";
