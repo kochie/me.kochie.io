@@ -6,8 +6,9 @@ const config = {
 }
 
 module.exports = {
-    ...config,
     env: {
+        production: config,
+        development: config,
         test: {}
     }
 }
