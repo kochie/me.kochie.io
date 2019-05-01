@@ -1,11 +1,10 @@
 import * as React from "react";
-
-import "./RecentArticles.css";
-import { createHash } from "crypto";
+import Head from "next/head";
 
 const recentArticles = [
   {
     name: "Why build an app when you can build a phone?",
+    id: "1",
     image:
       "https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg",
     link:
@@ -18,31 +17,32 @@ const recentArticles = [
 export default class RecentArticles extends React.Component {
   render() {
     return (
-      <div>
-        <h2>Recent Articles</h2>
-        <div className="card">
-          {recentArticles.map(article => (
-            <React.Fragment
-              key={createHash("md5")
-                .update(article.name)
-                .digest("base64")}
-            >
-              <div>
-                <a href={article.link}>
-                  <img src={article.image} />
-                </a>
-              </div>
-              <div>
-                <h3>{article.name}</h3>
-                <p>
-                  {article.first.substr(0, 150)}
-                  ... <a href={article.link}>more</a>
-                </p>
-              </div>
-            </React.Fragment>
-          ))}
+      <>
+        <Head>
+          <link rel="stylesheet" href="/static/styles/recent-articles.css" />
+        </Head>
+        <div>
+          <h2>Recent Articles</h2>
+          <div className="card">
+            {recentArticles.map(article => (
+              <React.Fragment key={article.id}>
+                <div>
+                  <a href={article.link}>
+                    <img src={article.image} />
+                  </a>
+                </div>
+                <div>
+                  <h3>{article.name}</h3>
+                  <p>
+                    {article.first.substr(0, 150)}
+                    ... <a href={article.link}>more</a>
+                  </p>
+                </div>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }

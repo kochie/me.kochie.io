@@ -10,8 +10,7 @@ import {
   faGitlab
 } from "@fortawesome/free-brands-svg-icons";
 
-import "./Connections.css";
-import { createHash } from "crypto";
+import Head from "next/head";
 
 const connections = [
   {
@@ -55,27 +54,25 @@ const connections = [
 export default class Connections extends React.Component {
   render() {
     return (
-      <div className="connections">
-        {connections.map(connection => (
-          <div
-            className="grow"
-            key={createHash("md5")
-              .update(connection.href)
-              .digest("base64")}
-          >
-            <a href={connection.href} className={`${connection.color} grow`}>
-              <FontAwesomeIcon
-                icon={connection.icon}
-                //color={connection.color}
-                size="2x"
-                fixedWidth
-                className="vertical-middle"
-              />
-              {/* <span>{connection.name}</span> */}
-            </a>
-          </div>
-        ))}
-      </div>
+      <>
+        <Head>
+          <link rel="stylesheet" href="/static/styles/connections.css" />
+        </Head>
+        <div className="connections">
+          {connections.map(connection => (
+            <div className="grow" key={connection.color}>
+              <a href={connection.href} className={`${connection.color} grow`}>
+                <FontAwesomeIcon
+                  icon={connection.icon}
+                  size="2x"
+                  fixedWidth
+                  className="vertical-middle"
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      </>
     );
   }
 }

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer renders correctly 1`] = `
+<nav
+  className="footer"
+>
+  <ul>
+    <li>
+      Robert Koch
+    </li>
+    <li>
+      <span>
+        Updated on 
+        <time
+          dateTime="Wed May 01 2019"
+        >
+          Wed May 01 2019
+        </time>
+      </span>
+    </li>
+  </ul>
+</nav>
+`;

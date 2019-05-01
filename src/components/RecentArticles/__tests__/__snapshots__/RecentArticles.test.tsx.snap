@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recent articles renders correctly 1`] = `
+<div>
+  <h2>
+    Recent Articles
+  </h2>
+  <div
+    className="card"
+  >
+    <div>
+      <a
+        href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+      >
+        <img
+          src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
+        />
+      </a>
+    </div>
+    <div>
+      <h3>
+        Why build an app when you can build a phone?
+      </h3>
+      <p>
+        Over the last 5 years, UNIHACK has been predominantly focused on software and design. It is not well known that some of UNIHACK’s most creative entire
+        ... 
+        <a
+          href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+        >
+          more
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

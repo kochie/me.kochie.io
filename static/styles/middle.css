@@ -1,4 +1,4 @@
-@import "../../styles/constants.css";
+@import "/static/styles/constants.css";
 
 @media only screen and (max-width: --tablet-width) and (max-height: --tablet-height) and (min-resolution: --tablet-resolution),
   only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution) {
@@ -13,7 +13,6 @@
   padding-right: 18%;
   grid-area: middle;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-
 }
 
 .middle hr {

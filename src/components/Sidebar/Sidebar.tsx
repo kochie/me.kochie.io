@@ -1,17 +1,16 @@
 import * as React from "react";
+import Head from "next/head";
 
 import { Connections } from "..";
-
-import "./Sidebar.css";
 
 const avatar = "/static/images/me.jpeg";
 const background = "/static/images/background-2.jpeg";
 
 export default class Sidebar extends React.Component {
   canvas: React.RefObject<HTMLCanvasElement>;
-  image: HTMLImageElement;
+  image?: HTMLImageElement;
   imageY: number;
-  constructor(props) {
+  constructor(props: Readonly<{}>) {
     super(props);
     this.canvas = React.createRef();
     this.parallax = this.parallax.bind(this);
@@ -38,6 +37,10 @@ export default class Sidebar extends React.Component {
   }
 
   parallax() {
+    if (this.image === undefined) return;
+    if (this.canvas.current === null) return;
+    const ctx = this.canvas.current.getContext("2d");
+    if (ctx === null) return;
     const blurSize = 2 * window.devicePixelRatio;
 
     const imgHeight = this.image.naturalHeight;
@@ -54,7 +57,6 @@ export default class Sidebar extends React.Component {
     const displacement = window.scrollY - this.imageY;
     this.imageY += displacement * 0.01;
     const sy = m * Math.min(Math.max(this.imageY, 0), docHeight - innerHeight);
-    const ctx = this.canvas.current.getContext("2d");
     ctx.restore();
     ctx.save();
     this.canvas.current.height = this.canvas.current.clientHeight;
@@ -80,17 +82,22 @@ export default class Sidebar extends React.Component {
     const quote =
       "I build things, write the code for them, and run from the resulting explosion.";
     return (
-      <div className="sidebar">
-        <div className="sidebar-header">
-          <div className="avatar">
-            <img src={avatar} />
+      <>
+        <Head>
+          <link rel="stylesheet" href="/static/styles/sidebar.css" />
+        </Head>
+        <div className="sidebar">
+          <div className="sidebar-header">
+            <div className="avatar">
+              <img src={avatar} />
+            </div>
+            <div className="quote">{quote}</div>
+            <Connections />
           </div>
-          <div className="quote">{quote}</div>
-          <Connections />
+          <canvas className="canvas" ref={this.canvas} />
+          <div className="bg-image" />
         </div>
-        <canvas className="canvas" ref={this.canvas} />
-        <div className="bg-image" />
-      </div>
+      </>
     );
   }
 }
