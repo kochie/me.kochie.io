@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "jest",
-    "dev": "next",
+    "dev": "now dev",
     "build": "next build",
     "start": "next start",
     "now-build": "next build && next export -o dist",
@@ -44,6 +44,7 @@
     "eslint": "^5.16.0",
     "jest": "^24.7.1",
     "next": "^8.1.0",
+    "next-offline": "^3.3.8",
     "now": "^15.0.11",
     "postcss-css-variables": "^0.12.0",
     "prettier": "^1.14.2",

@@ -3,12 +3,8 @@ const withMDX = require('@next/mdx')({
     extension: /\.mdx?$/
 })
 const withCss = require('@zeit/next-css')
+const withOffline = require('next-offline')
 
-module.exports = 
-    withCss(
-        withMDX(
-            withTypescript({
-    sassLoaderOptions: {
-        import: true
-    }
-})))
+const config = {}
+
+module.exports = withOffline(withCss(withMDX(withTypescript(config))))
