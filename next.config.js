@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const withTypescript = require('@zeit/next-typescript')
 const withMDX = require('@next/mdx')({
     extension: /\.mdx?$/
@@ -5,6 +6,8 @@ const withMDX = require('@next/mdx')({
 const withCss = require('@zeit/next-css')
 const withOffline = require('next-offline')
 
-const config = {}
+const config = {
+    target: "serverless"
+}
 
 module.exports = withOffline(withCss(withMDX(withTypescript(config))))
