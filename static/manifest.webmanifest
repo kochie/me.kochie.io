@@ -1,0 +1,26 @@
+{
+    "short_name": "Robert Koch",
+    "name": "me.kochie.io",
+    "icons": [
+      {
+        "src": "/static/images/favicon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/static/images/favicon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/static/images/favicon-1024.png",
+        "type": "image/png",
+        "sizes": "1024x1024"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#333144",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#333144"
+  }

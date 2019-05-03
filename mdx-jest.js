@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const mdx = require("@mdx-js/mdx");
 const babel = require("@babel/core");
 
 module.exports = {
-    process(src, filename) {
+    process(src) {
         // Convert .MDX file into JSX
         const rawJSX = mdx.sync(src);
     
