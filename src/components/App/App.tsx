@@ -9,14 +9,6 @@ export default class App extends React.Component {
   componentDidMount() {
     ReactGA.initialize("UA-59674915-3");
     ReactGA.pageview(window.location.pathname + window.location.search);
-
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/sw.js")
-        .catch(err => console.error("Service worker registration failed", err));
-    } else {
-      console.log("Service worker not supported");
-    }
   }
 
   render() {
