@@ -34,7 +34,7 @@ export default class App extends React.Component {
             content="I6EWS0ziNrDQdDV1TNtuF1fWq9IFHR767zb6YIFu9wk"
           />
 
-          <link rel="icon" sizes="192x192" href="/static/images/favicon.png" />
+          <link rel="icon" sizes="512x512" href="/static/images/favicon-512.png" />
           <link rel="stylesheet" href="/static/styles/app.css" />
           <link
             href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
