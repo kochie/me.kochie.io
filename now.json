@@ -2,5 +2,6 @@
   "version": 2,
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "alias": ["me.kochie.io", "kochie.now.sh", "robertkoch.me"],
-  "public": true
+  "public": true,
+  "name": "me.kochie.io"
 }

@@ -7,7 +7,8 @@ import {
   faInstagram,
   faGithub,
   faMediumM,
-  faGitlab
+  faGitlab,
+  faMastodon
 } from "@fortawesome/free-brands-svg-icons";
 
 import Head from "next/head";
@@ -21,7 +22,7 @@ const connections = [
   },
   {
     icon: faTwitter,
-    href: "https://twitter.com/rkkochie",
+    href: "https://twitter.com/kochie",
     name: "rkkochie",
     color: "twitter"
   },
@@ -48,6 +49,12 @@ const connections = [
     href: "https://gitlab.com/kochie",
     name: "kochie",
     color: "gitlab"
+  },
+  {
+    icon: faMastodon,
+    href: "https://melb.social/@kochie",
+    name: "kochie",
+    color: "mastodon"
   }
 ];
 

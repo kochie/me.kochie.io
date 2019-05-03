@@ -72,6 +72,10 @@
   color: #0077b5;
 }
 
+.mastodon:hover {
+  color: #008ada;
+}
+
 .grow {
   transition: all 0.2s ease-in-out;
   padding: 5px;
