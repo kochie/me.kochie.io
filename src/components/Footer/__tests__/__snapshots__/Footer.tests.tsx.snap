@@ -12,9 +12,9 @@ exports[`footer renders correctly 1`] = `
       <span>
         Updated on 
         <time
-          dateTime="Wed May 01 2019"
+          dateTime="Fri May 03 2019"
         >
-          Wed May 01 2019
+          Fri May 03 2019
         </time>
       </span>
     </li>

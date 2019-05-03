@@ -3,7 +3,7 @@ import * as React from "react";
 const Space = "/static/images/space.png";
 const Particlez = "/static/images/particlez.png";
 const Guardian = "/static/images/guardian.png";
-const Tensorflow = "/static/tensorflow.jpeg";
+const Tensorflow = "/static/images/tensorflow.jpeg";
 const Juice = "/static/images/juice.png";
 const Keyboard = "/static/images/keyboard.png";
 import Head from "next/head";

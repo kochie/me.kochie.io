@@ -132,7 +132,7 @@ exports[`middle renders correctly 1`] = `
           >
             <img
               className="portfolio-image"
-              src="/static/tensorflow.jpeg"
+              src="/static/images/tensorflow.jpeg"
             />
           </a>
         </figure>
