@@ -11,11 +11,7 @@ exports[`footer renders correctly 1`] = `
     <li>
       <span>
         Updated on 
-        <time
-          dateTime="Sat May 04 2019"
-        >
-          Sat May 04 2019
-        </time>
+        <time />
       </span>
     </li>
   </ul>

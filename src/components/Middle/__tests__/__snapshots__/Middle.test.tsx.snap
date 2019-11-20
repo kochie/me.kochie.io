@@ -29,10 +29,10 @@ exports[`middle renders correctly 1`] = `
     Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
   </p>
   <div
-    className="bmc-button-container"
+    className="bmcButtonContainer"
   >
     <a
-      className="bmc-button"
+      className="bmcButton"
       href="https://www.buymeacoffee.com/kochie"
       target="_blank"
     >
@@ -41,7 +41,7 @@ exports[`middle renders correctly 1`] = `
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
       />
       <span
-        className="bmc-span"
+        className="bmcSpan"
       >
         Buy me a coffee
       </span>
@@ -56,17 +56,17 @@ exports[`middle renders correctly 1`] = `
       className="portfolio"
     >
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://kochie.space"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/space.png"
+              className="portfolioImage"
+              src="/images/space.png"
             />
           </a>
         </figure>
@@ -78,17 +78,17 @@ exports[`middle renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://3body.now.sh"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/particlez.png"
+              className="portfolioImage"
+              src="/images/particlez.png"
             />
           </a>
         </figure>
@@ -100,17 +100,17 @@ exports[`middle renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://github.com/kochie/guardian-server"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/guardian.png"
+              className="portfolioImage"
+              src="/images/guardian.png"
             />
           </a>
         </figure>
@@ -122,17 +122,17 @@ exports[`middle renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://bitbucket.org/kochie/fyp"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/tensorflow.jpeg"
+              className="portfolioImage"
+              src="/images/tensorflow.jpeg"
             />
           </a>
         </figure>
@@ -144,17 +144,17 @@ exports[`middle renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://github.com/kochie/juice"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/juice.png"
+              className="portfolioImage"
+              src="/images/juice.png"
             />
           </a>
         </figure>
@@ -166,17 +166,17 @@ exports[`middle renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="portfolio-item"
+        className="portfolioItem"
       >
         <figure
-          className="portfolio-image-wrapper"
+          className="portfolioImageWrapper"
         >
           <a
             href="https://github.com/kochie/mcgurrin"
           >
             <img
-              className="portfolio-image"
-              src="/static/images/keyboard.png"
+              className="portfolioImage"
+              src="/images/keyboard.png"
             />
           </a>
         </figure>
@@ -241,7 +241,7 @@ exports[`middle renders correctly 1`] = `
         className="form"
       >
         <div
-          className="contact-info"
+          className="contactInfo"
         >
           <input
             className="name"
@@ -273,7 +273,7 @@ exports[`middle renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="button-row"
+        className="buttonRow"
       >
         <a>
           <button
@@ -282,7 +282,7 @@ exports[`middle renders correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-upload fa-w-12 fa-2x icon-center"
+              className="svg-inline--fa fa-file-upload fa-w-12 fa-2x iconCenter"
               data-icon="file-upload"
               data-prefix="fas"
               focusable="false"
@@ -311,7 +311,7 @@ exports[`middle renders correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-envelope fa-w-16 fa-2x icon-center"
+              className="svg-inline--fa fa-envelope fa-w-16 fa-2x iconCenter"
               data-icon="envelope"
               data-prefix="fas"
               focusable="false"
@@ -333,7 +333,7 @@ exports[`middle renders correctly 1`] = `
         </a>
         <a
           download="Robert_Koch"
-          href="/static/Robert_Koch.pdf"
+          href="/Robert_Koch.pdf"
         >
           <button
             className="button"
@@ -341,7 +341,7 @@ exports[`middle renders correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-download fa-w-12 fa-2x icon-center"
+              className="svg-inline--fa fa-file-download fa-w-12 fa-2x iconCenter"
               data-icon="file-download"
               data-prefix="fas"
               focusable="false"

@@ -2,10 +2,10 @@
 
 exports[`by me a coffee renders correctly 1`] = `
 <div
-  className="bmc-button-container"
+  className="bmcButtonContainer"
 >
   <a
-    className="bmc-button"
+    className="bmcButton"
     href="https://www.buymeacoffee.com/test"
     target="_blank"
   >
@@ -14,7 +14,7 @@ exports[`by me a coffee renders correctly 1`] = `
       src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
     />
     <span
-      className="bmc-span"
+      className="bmcSpan"
     >
       Buy me a coffee
     </span>

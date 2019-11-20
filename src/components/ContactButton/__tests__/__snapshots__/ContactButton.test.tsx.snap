@@ -2,7 +2,7 @@
 
 exports[`contact button renders correctly 1`] = `
 <div
-  className="button-row"
+  className="buttonRow"
 >
   <a>
     <button
@@ -11,7 +11,7 @@ exports[`contact button renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-file-upload fa-w-12 fa-2x icon-center"
+        className="svg-inline--fa fa-file-upload fa-w-12 fa-2x iconCenter"
         data-icon="file-upload"
         data-prefix="fas"
         focusable="false"
@@ -40,7 +40,7 @@ exports[`contact button renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-envelope fa-w-16 fa-2x icon-center"
+        className="svg-inline--fa fa-envelope fa-w-16 fa-2x iconCenter"
         data-icon="envelope"
         data-prefix="fas"
         focusable="false"
@@ -62,7 +62,7 @@ exports[`contact button renders correctly 1`] = `
   </a>
   <a
     download="Robert_Koch"
-    href="/static/Robert_Koch.pdf"
+    href="/Robert_Koch.pdf"
   >
     <button
       className="button"
@@ -70,7 +70,7 @@ exports[`contact button renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-file-download fa-w-12 fa-2x icon-center"
+        className="svg-inline--fa fa-file-download fa-w-12 fa-2x iconCenter"
         data-icon="file-download"
         data-prefix="fas"
         focusable="false"

@@ -13,7 +13,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-linkedin fa-w-14 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-linkedin fa-w-14 fa-fw fa-2x verticalMiddle"
         data-icon="linkedin"
         data-prefix="fab"
         focusable="false"
@@ -39,7 +39,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-twitter fa-w-16 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-twitter fa-w-16 fa-fw fa-2x verticalMiddle"
         data-icon="twitter"
         data-prefix="fab"
         focusable="false"
@@ -65,7 +65,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-instagram fa-w-14 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-instagram fa-w-14 fa-fw fa-2x verticalMiddle"
         data-icon="instagram"
         data-prefix="fab"
         focusable="false"
@@ -91,7 +91,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-github fa-w-16 fa-fw fa-2x verticalMiddle"
         data-icon="github"
         data-prefix="fab"
         focusable="false"
@@ -117,7 +117,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-medium-m fa-w-16 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-medium-m fa-w-16 fa-fw fa-2x verticalMiddle"
         data-icon="medium-m"
         data-prefix="fab"
         focusable="false"
@@ -143,7 +143,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-gitlab fa-w-16 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-gitlab fa-w-16 fa-fw fa-2x verticalMiddle"
         data-icon="gitlab"
         data-prefix="fab"
         focusable="false"
@@ -169,7 +169,7 @@ exports[`connections renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-mastodon fa-w-14 fa-fw fa-2x vertical-middle"
+        className="svg-inline--fa fa-mastodon fa-w-14 fa-fw fa-2x verticalMiddle"
         data-icon="mastodon"
         data-prefix="fab"
         focusable="false"
