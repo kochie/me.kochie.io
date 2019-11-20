@@ -1,12 +1,18 @@
-import * as React from "react";
+import React from "react";
 
-const Space = "/static/images/space.png";
-const Particlez = "/static/images/particlez.png";
-const Guardian = "/static/images/guardian.png";
-const Tensorflow = "/static/images/tensorflow.jpeg";
-const Juice = "/static/images/juice.png";
-const Keyboard = "/static/images/keyboard.png";
-import Head from "next/head";
+import {
+  portfolio,
+  portfolioItem,
+  portfolioImageWrapper,
+  portfolioImage
+} from "./portfolio.css";
+
+const Space = "/images/space.png";
+const Particlez = "/images/particlez.png";
+const Guardian = "/images/guardian.png";
+const Tensorflow = "/images/tensorflow.jpeg";
+const Juice = "/images/juice.png";
+const Keyboard = "/images/keyboard.png";
 
 const projects = [
   {
@@ -55,31 +61,22 @@ const projects = [
   }
 ];
 
-export default class Portfolio extends React.Component {
-  render() {
-    return (
-      <>
-        <Head>
-          <link rel="stylesheet" href="/static/styles/portfolio.css" />
-        </Head>
-        <div>
-          <h2>Recent Work</h2>
-          <div className="portfolio">
-            {projects.map(project => (
-              <div className="portfolio-item" key={project.id}>
-                <figure className="portfolio-image-wrapper">
-                  <a href={project.link}>
-                    <img src={project.image} className="portfolio-image" />
-                    {/* <span className="portfolio-text">View</span> */}
-                  </a>
-                </figure>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            ))}
-          </div>
+export default () => (
+  <div>
+    <h2>Recent Work</h2>
+    <div className={portfolio}>
+      {projects.map(project => (
+        <div className={portfolioItem} key={project.id}>
+          <figure className={portfolioImageWrapper}>
+            <a href={project.link}>
+              <img src={project.image} className={portfolioImage} />
+              {/* <span className="portfolio-text">View</span> */}
+            </a>
+          </figure>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
         </div>
-      </>
-    );
-  }
-}
+      ))}
+    </div>
+  </div>
+);

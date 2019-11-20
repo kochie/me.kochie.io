@@ -1,71 +1,62 @@
-import * as React from "react";
-import Head from "next/head";
+import React, { useRef, useState, useEffect } from "react";
 
 import { Connections } from "..";
 
-const avatar = "/static/images/me.jpeg";
-const background = "/static/images/background-2.jpeg";
+import {
+  sidebar,
+  sidebarHeader,
+  avatar as avatarStyle,
+  quote as quoteStyle,
+  canvas as canvasStyle,
+  bgImage
+} from "./sidebar.css";
 
-export default class Sidebar extends React.Component {
-  canvas: React.RefObject<HTMLCanvasElement>;
-  image?: HTMLImageElement;
-  imageY: number;
-  constructor(props: Readonly<{}>) {
-    super(props);
-    this.canvas = React.createRef();
-    this.parallax = this.parallax.bind(this);
-    this.vsyncParallax = this.vsyncParallax.bind(this);
-    this.imageY = 0;
-  }
+const avatar = "/images/me.jpeg";
+const background = "/images/background-2.jpeg";
 
-  componentDidMount() {
-    this.image = new Image();
-    this.image.src = background;
-    window.requestAnimationFrame(this.parallax);
-    this.image.onload = () => {
-      this.parallax();
+export default () => {
+  const canvas = useRef<HTMLCanvasElement>(null);
+  let image: HTMLImageElement;
+  let imageY = 0;
+
+  useEffect(() => {
+    image = new Image();
+    image.src = background;
+    image.onload = () => {
+      window.requestAnimationFrame(parallax);
     };
-  }
+  }, []);
 
-  componentWillUnmount() {
-    // window.removeEventListener("scroll", this.parallax);
-    // window.removeEventListener("resize", this.parallax);
-  }
-
-  vsyncParallax() {
-    window.requestAnimationFrame(this.parallax);
-  }
-
-  parallax() {
-    if (this.image === undefined) return;
-    if (this.canvas.current === null) return;
-    const ctx = this.canvas.current.getContext("2d");
+  const parallax = () => {
+    if (image === undefined) return;
+    if (canvas.current === null) return;
+    const ctx = canvas.current.getContext("2d");
     if (ctx === null) return;
     const blurSize = 2 * window.devicePixelRatio;
 
-    const imgHeight = this.image.naturalHeight;
-    const imgWidth = this.image.naturalWidth;
+    const imgHeight = image.naturalHeight;
+    const imgWidth = image.naturalWidth;
 
     const innerHeight = document.documentElement.clientHeight;
-    const innerWidth = this.canvas.current.clientWidth;
+    const innerWidth = canvas.current.clientWidth;
 
     const docHeight = document.body.scrollHeight;
 
     let scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio);
 
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight);
-    const displacement = window.scrollY - this.imageY;
-    this.imageY += displacement * 0.01;
-    const sy = m * Math.min(Math.max(this.imageY, 0), docHeight - innerHeight);
+    const displacement = window.scrollY - imageY;
+    imageY += displacement * 0.01;
+    const sy = m * Math.min(Math.max(imageY, 0), docHeight - innerHeight);
     ctx.restore();
     ctx.save();
-    this.canvas.current.height = this.canvas.current.clientHeight;
-    this.canvas.current.width = this.canvas.current.clientWidth;
+    canvas.current.height = canvas.current.clientHeight;
+    canvas.current.width = canvas.current.clientWidth;
     ctx.fillRect(0, 0, innerWidth, innerHeight);
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
     ctx.drawImage(
-      this.image,
+      image,
       Math.round((imgWidth - innerWidth * scale) * 0.5),
       Math.round(sy),
       Math.round(scale * innerWidth),
@@ -75,29 +66,23 @@ export default class Sidebar extends React.Component {
       Math.round(innerWidth) + blurSize * 2,
       Math.round(innerHeight) + blurSize * 2
     );
-    window.requestAnimationFrame(this.parallax);
-  }
+    window.requestAnimationFrame(parallax);
+  };
 
-  render() {
-    const quote =
-      "I build things, write the code for them, and run from the resulting explosion.";
-    return (
-      <>
-        <Head>
-          <link rel="stylesheet" href="/static/styles/sidebar.css" />
-        </Head>
-        <div className="sidebar">
-          <div className="sidebar-header">
-            <div className="avatar">
-              <img src={avatar} />
-            </div>
-            <div className="quote">{quote}</div>
-            <Connections />
-          </div>
-          <canvas className="canvas" ref={this.canvas} />
-          <div className="bg-image" />
+  const quote =
+    "I build things, write the code for them, and run from the resulting explosion.";
+
+  return (
+    <div className={sidebar}>
+      <div className={sidebarHeader}>
+        <div className={avatarStyle}>
+          <img src={avatar} />
         </div>
-      </>
-    );
-  }
-}
+        <div className={quoteStyle}>{quote}</div>
+        <Connections />
+      </div>
+      <canvas className={canvasStyle} ref={canvas} />
+      <div className={bgImage} />
+    </div>
+  );
+};

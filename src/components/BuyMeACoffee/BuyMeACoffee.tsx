@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-import Head from "next/head";
+import { bmcButtonContainer, bmcButton, bmcSpan } from "./buy-me-a-coffee.css";
 
 interface Props {
   username: String;
@@ -8,24 +8,15 @@ interface Props {
 
 const coffee = "https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg";
 
-const BuyMeACoffee: React.SFC<Props> = ({ username }) => {
-  return (
-    <>
-      <Head>
-        <link rel="stylesheet" href="/static/styles/buy-me-a-coffee.css" />
-      </Head>
-      <div className="bmc-button-container">
-        <a
-          className="bmc-button"
-          target="_blank"
-          href={`https://www.buymeacoffee.com/${username}`}
-        >
-          <img src={coffee} alt="Buy me a coffee" />
-          <span className="bmc-span">Buy me a coffee</span>
-        </a>
-      </div>
-    </>
-  );
-};
-
-export default BuyMeACoffee;
+export default ({ username }: Props) => (
+  <div className={bmcButtonContainer}>
+    <a
+      className={bmcButton}
+      target="_blank"
+      href={`https://www.buymeacoffee.com/${username}`}
+    >
+      <img src={coffee} alt="Buy me a coffee" />
+      <span className={bmcSpan}>Buy me a coffee</span>
+    </a>
+  </div>
+);

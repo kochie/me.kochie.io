@@ -10,3 +10,4 @@ export { default as Middle } from "./Middle/Middle";
 export { default as Contact } from "./Contact/Contact";
 export { default as Sidebar } from "./Sidebar/Sidebar";
 export { default as Main } from "./Main/Main";
+export { default as Head } from "./Head/Head";

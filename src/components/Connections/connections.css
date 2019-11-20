@@ -1,4 +1,4 @@
-@import "/static/styles/constants.css";
+@import "/styles/constants.css";
 
 .connections {
   color: wheat;
@@ -10,18 +10,18 @@
 
 @media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
   only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
-    .connections {
-      flex-direction: row;
-      justify-content: center;
-    }
+  .connections {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .grow {
-      padding: 0px 1px;
-    }
+  .grow {
+    padding: 0px 1px;
+  }
 
-    .grow:hover {
-      padding: 0px 1px;
-    }
+  .grow:hover {
+    padding: 0px 1px;
+  }
 }
 
 .connections > ul {

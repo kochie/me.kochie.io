@@ -1,5 +1,6 @@
-import * as React from "react";
-import Head from "next/head";
+import React from "react";
+
+import { card } from "./recent-articles.css";
 
 const recentArticles = [
   {
@@ -14,35 +15,26 @@ const recentArticles = [
   }
 ];
 
-export default class RecentArticles extends React.Component {
-  render() {
-    return (
-      <>
-        <Head>
-          <link rel="stylesheet" href="/static/styles/recent-articles.css" />
-        </Head>
-        <div>
-          <h2>Recent Articles</h2>
-          <div className="card">
-            {recentArticles.map(article => (
-              <React.Fragment key={article.id}>
-                <div>
-                  <a href={article.link}>
-                    <img src={article.image} />
-                  </a>
-                </div>
-                <div>
-                  <h3>{article.name}</h3>
-                  <p>
-                    {article.first.substr(0, 150)}
-                    ... <a href={article.link}>more</a>
-                  </p>
-                </div>
-              </React.Fragment>
-            ))}
+export default () => (
+  <div>
+    <h2>Recent Articles</h2>
+    <div className={card}>
+      {recentArticles.map(article => (
+        <React.Fragment key={article.id}>
+          <div>
+            <a href={article.link}>
+              <img src={article.image} />
+            </a>
           </div>
-        </div>
-      </>
-    );
-  }
-}
+          <div>
+            <h3>{article.name}</h3>
+            <p>
+              {article.first.substr(0, 150)}
+              ... <a href={article.link}>more</a>
+            </p>
+          </div>
+        </React.Fragment>
+      ))}
+    </div>
+  </div>
+);

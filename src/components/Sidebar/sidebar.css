@@ -1,4 +1,4 @@
-@import "/static/styles/constants.css";
+@import "/styles/constants.css";
 
 .blur {
   background-color: black;
@@ -16,12 +16,12 @@
 }
 
 @media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
   .canvas {
-    display: none
+    display: none;
   }
   .bg-image {
-    background-image: url("/static/images/background-1.jpeg");
+    background-image: url("/images/background-1.jpeg");
     opacity: 0.5;
     background-color: black;
     background-position: center;
@@ -52,12 +52,12 @@ only screen and (max-width: --mobile-height) and (max-height: --mobile-width) an
   only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution),
   only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
   only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
-    .sidebar {
-      position: absolute;
-      top: 0px;
-      width: 100vw;
-      height: 100vh;
-    }
+  .sidebar {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .sidebar-header {
@@ -76,11 +76,11 @@ only screen and (max-width: --mobile-height) and (max-height: --mobile-width) an
 
 @media only screen and (max-width: --tablet-width) and (max-height: --tablet-height) and (min-resolution: --tablet-resolution),
   only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution) {
-    .sidebar-header{
-      justify-content: center;
-      padding: 0px;
-      height: inherit;
-    }  
+  .sidebar-header {
+    justify-content: center;
+    padding: 0px;
+    height: inherit;
+  }
 }
 
 .avatar {
