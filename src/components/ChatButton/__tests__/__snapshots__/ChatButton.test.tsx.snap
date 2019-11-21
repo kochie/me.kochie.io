@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`by me a coffee renders correctly 1`] = `
+<div
+  className="button"
+/>
+`;

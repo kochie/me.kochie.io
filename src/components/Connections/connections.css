@@ -63,7 +63,7 @@
 .grow {
   transition: all 0.2s ease-in-out;
   width: 35px;
-  padding: 5px 0
+  padding: 5px 0;
 }
 .grow:hover {
   transform: scale(1.1);
