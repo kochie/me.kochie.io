@@ -4,18 +4,36 @@
     "icons": [
       {
         "src": "/images/favicon-192.webp",
-        "type": "image/png",
+        "type": "image/webp",
         "sizes": "192x192",
         "purpose": "maskable"
       },
       {
         "src": "/images/favicon-512.webp",
-        "type": "image/png",
+        "type": "image/webp",
         "sizes": "512x512",
         "purpose": "maskable"
       },
       {
         "src": "/images/favicon-1024.webp",
+        "type": "image/webp",
+        "sizes": "1024x1024",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/images/favicon-192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/images/favicon-512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/images/favicon-1024.png",
         "type": "image/png",
         "sizes": "1024x1024",
         "purpose": "maskable"
