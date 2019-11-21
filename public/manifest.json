@@ -24,19 +24,19 @@
         "src": "/images/favicon-192.png",
         "type": "image/png",
         "sizes": "192x192 144x144",
-        "purpose": "maskable"
+        "purpose": "any maskable"
       },
       {
         "src": "/images/favicon-512.png",
         "type": "image/png",
         "sizes": "512x512",
-        "purpose": "maskable"
+        "purpose": "any maskable"
       },
       {
         "src": "/images/favicon-1024.png",
         "type": "image/png",
         "sizes": "1024x1024",
-        "purpose": "maskable"
+        "purpose": "any maskable"
       }
     ],
     "start_url": "/",
