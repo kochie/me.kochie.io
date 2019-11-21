@@ -1,5 +1,4 @@
 export const connections: string;
-export const grow: string;
 export const verticalMiddle: string;
 export const hoverActive: string;
 export const gitlab: string;
@@ -9,3 +8,4 @@ export const instagram: string;
 export const twitter: string;
 export const linkedin: string;
 export const mastodon: string;
+export const grow: string;

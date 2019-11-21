@@ -50,7 +50,7 @@ const connections: Connection[] = [
     color: github
   },
   {
-    icon: "medium",
+    icon: "medium-m",
     href: "https://medium.com/@kochie",
     name: "kochie",
     color: medium

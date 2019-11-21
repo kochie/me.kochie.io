@@ -13,21 +13,6 @@
   z-index: 1;
 }
 
-@media (--mobile-size) {
-  .canvas {
-    display: none;
-  }
-  .bg-image {
-    background-image: url("/images/background-1.jpeg");
-    opacity: 0.5;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    filter: blur(2px);
-    transform: scale(1.1);
-  }
-}
-
 .bg-image {
   height: 100%;
   width: 100%;
@@ -43,21 +28,6 @@
   overflow: hidden;
   background-color: black;
   width: 33vw;
-}
-
-@media (--tablet-size) {
-  .sidebar {
-    position: absolute;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .sidebar-header {
-    justify-content: center;
-    padding: 0px;
-    height: inherit;
-  }
 }
 
 .sidebar-header {
@@ -108,4 +78,34 @@
 
 .container {
   z-index: -1;
+}
+
+@media (--mobile-size) {
+  .canvas {
+    display: none;
+  }
+  .bg-image {
+    background-image: url("/images/background-1.jpeg");
+    opacity: 0.5;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    transform: scale(1.1);
+  }
+}
+
+@media (--tablet-size) {
+  .sidebar {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+    padding: 0px;
+    height: inherit;
+  }
 }

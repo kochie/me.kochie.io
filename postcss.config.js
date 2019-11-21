@@ -12,7 +12,7 @@ module.exports = {
 
           const customMedia = {
             "--tablet-size": `(max-width: ${tabletWidth}px) and (max-height: ${tabletHeight}px), (max-width: ${tabletHeight}px) and (max-height: ${tabletWidth}px)`,
-            "--phone-size": `(max-width: ${mobileWidth}px) and (max-height: ${mobileHeight}px), (max-width: ${mobileHeight}px) and (max-height: ${mobileWidth}px)`
+            "--mobile-size": `(max-width: ${mobileWidth}px) and (max-height: ${mobileHeight}px), (max-width: ${mobileHeight}px) and (max-height: ${mobileWidth}px)`
           }
           const environmentVariables = {
             "--mobile-width": `${mobileWidth}px`,

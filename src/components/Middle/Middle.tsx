@@ -4,6 +4,7 @@ import { Portfolio, RecentArticles, Contact, BuyMeACoffee } from "..";
 
 import Hello from "./intro.mdx";
 import { middle } from "./middle.css";
+import ChatButton from "../ChatButton/ChatButton";
 
 export default () => (
   <div className={middle}>
@@ -13,7 +14,8 @@ export default () => (
     <Portfolio />
     <hr />
     <RecentArticles />
-    <hr />
-    <Contact />
+    <ChatButton />
+    {/* <hr /> */}
+    {/* <Contact /> */}
   </div>
 );

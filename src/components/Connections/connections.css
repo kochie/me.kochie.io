@@ -4,21 +4,8 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-}
-
-@media (--mobile-size) {
-  .connections {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .grow {
-    padding: 0px 1px;
-  }
-
-  .grow:hover {
-    padding: 0px 1px;
-  }
+  align-items: center;
+  gap: 10px
 }
 
 .connections > ul {
@@ -75,10 +62,15 @@
 
 .grow {
   transition: all 0.2s ease-in-out;
-  padding: 5px 0;
   width: 35px;
 }
 .grow:hover {
   transform: scale(1.1);
-  padding: 5px;
+}
+
+@media (--mobile-size) {
+  .connections {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

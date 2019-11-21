@@ -42,6 +42,15 @@
   padding: 25% 0%;
 }
 
+.portfolio-image:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.portfolio-image::after {
+  content: "view";
+}
+
 @media (--mobile-size) {
   .portfolio {
     grid-template-columns: 1fr;
@@ -56,13 +65,4 @@
   .portfolio-image:hover {
     opacity: 1;
   }
-}
-
-.portfolio-image:hover {
-  opacity: 0.5;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.portfolio-image::after {
-  content: "view";
 }
