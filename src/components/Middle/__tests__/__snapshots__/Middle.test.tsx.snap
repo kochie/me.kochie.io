@@ -222,8 +222,5 @@ exports[`middle renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="button"
-  />
 </div>
 `;
