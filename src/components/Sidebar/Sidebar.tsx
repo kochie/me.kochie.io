@@ -11,8 +11,8 @@ import {
   bgImage
 } from "./sidebar.css";
 
-import avatar from "../../assets/images/me.png";
-import background from "../../assets/images/background-2.jpeg";
+import avatar from "../../assets/images/me.webp";
+import background from "../../assets/images/background-2.webp";
 
 export default () => {
   const canvas = useRef<HTMLCanvasElement>(null);

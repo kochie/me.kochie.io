@@ -3,19 +3,19 @@
     "name": "me.kochie.io",
     "icons": [
       {
-        "src": "/images/favicon-192.png",
+        "src": "/images/favicon-192.webp",
         "type": "image/png",
         "sizes": "192x192",
         "purpose": "maskable"
       },
       {
-        "src": "/images/favicon-512.png",
+        "src": "/images/favicon-512.webp",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "maskable"
       },
       {
-        "src": "/images/favicon-1024.png",
+        "src": "/images/favicon-1024.webp",
         "type": "image/png",
         "sizes": "1024x1024",
         "purpose": "maskable"

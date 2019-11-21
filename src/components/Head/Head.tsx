@@ -17,20 +17,19 @@ export default () => (
     />
     <meta name="author" content="Robert Koch" />
     <meta name="theme-color" content="#333144" />
-    <link rel="icon" sizes="192x192" href="/images/favicon-129.png" />
-
-    <link rel="apple-touch-icon" href="/images/favicon-129.png" />
+    <link rel="icon" sizes="192x192" href="/images/favicon-192.webp" />
+    <link rel="icon" sizes="512x512" href="/images/favicon-512.webp" />
+    <link rel="apple-touch-icon" href="/images/favicon-192.webp" />
 
     <meta
       name="msapplication-square310x310logo"
-      content="/images/favicon-129.png"
+      content="/images/favicon-192.webp"
     />
     <meta
       name="google-site-verification"
       content="I6EWS0ziNrDQdDV1TNtuF1fWq9IFHR767zb6YIFu9wk"
     />
 
-    <link rel="icon" sizes="512x512" href="/images/favicon-512.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Cookie|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
       rel="stylesheet"

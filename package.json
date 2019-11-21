@@ -46,6 +46,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "husky": "^2.2.0",
+    "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^7.1.0",
     "jest": "^24.7.1",

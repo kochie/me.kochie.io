@@ -7,12 +7,12 @@ import {
   portfolioImage
 } from "./portfolio.css";
 
-import Space from "../../assets/images/space.png";
-import Particlez from "../../assets/images/particlez.png";
-import Guardian from "../../assets/images/guardian.png";
-import Tensorflow from "../../assets/images/tensorflow.jpeg";
-import Juice from "../../assets/images/juice.png";
-import Keyboard from "../../assets/images/keyboard.png";
+import Space from "../../assets/images/space.webp";
+import Particlez from "../../assets/images/particlez.webp";
+import Guardian from "../../assets/images/guardian.webp";
+import Tensorflow from "../../assets/images/tensorflow.webp";
+import Juice from "../../assets/images/juice.webp";
+import Keyboard from "../../assets/images/keyboard.webp";
 
 const projects = [
   {
