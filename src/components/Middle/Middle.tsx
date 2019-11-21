@@ -14,7 +14,7 @@ export default () => (
     <Portfolio />
     <hr />
     <RecentArticles />
-    <ChatButton />
+    {/* <ChatButton /> */}
     {/* <hr /> */}
     {/* <Contact /> */}
   </div>

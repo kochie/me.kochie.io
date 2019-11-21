@@ -55,8 +55,8 @@ export default () => {
     ctx.fillRect(0, 0, innerWidth, innerHeight);
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
-    const sx = (imgWidth - innerWidth * scale) * 0.5
-    if (sy === 0 || sx === 0) return
+    const sx = (imgWidth - innerWidth * scale) * 0.5;
+    if (sy === 0 || sx === 0) return;
     ctx.drawImage(
       image,
       Math.round(sx),

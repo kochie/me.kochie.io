@@ -26,7 +26,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="linkedin grow"
+          className="linkedin"
           href="https://linkedin.com/in/rkkochie"
         />
       </div>
@@ -34,7 +34,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="twitter grow"
+          className="twitter"
           href="https://twitter.com/kochie"
         />
       </div>
@@ -42,7 +42,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="instagram grow"
+          className="instagram"
           href="https://instagram.com/rkkochie"
         />
       </div>
@@ -50,7 +50,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="github grow"
+          className="github"
           href="https://github.com/kochie"
         />
       </div>
@@ -58,7 +58,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="medium grow"
+          className="medium"
           href="https://medium.com/@kochie"
         />
       </div>
@@ -66,7 +66,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="gitlab grow"
+          className="gitlab"
           href="https://gitlab.com/kochie"
         />
       </div>
@@ -74,7 +74,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
-          className="mastodon grow"
+          className="mastodon"
           href="https://melb.social/@kochie"
         />
       </div>
