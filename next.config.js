@@ -9,7 +9,6 @@ const optimizedImages = require('next-optimized-images');
 
 const config = {
   target: "serverless",
-  optimizeImagesInDev: true,
   cssModules: true,
   cssLoaderOptions: {
     camelCase: true,

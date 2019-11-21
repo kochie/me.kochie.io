@@ -76,7 +76,11 @@ export default () => (
       const iconDefinition = findIconDefinition(lookup);
       return (
         <div className={grow} key={connection.color}>
-          <a href={connection.href} className={`${connection.color}`} aria-label={connection.icon}>
+          <a
+            href={connection.href}
+            className={`${connection.color}`}
+            aria-label={connection.icon}
+          >
             <FontAwesomeIcon
               icon={iconDefinition}
               size="2x"

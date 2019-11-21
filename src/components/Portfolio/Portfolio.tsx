@@ -7,12 +7,12 @@ import {
   portfolioImage
 } from "./portfolio.css";
 
-import Space from "../../assets/images/space.png"
-import Particlez from "../../assets/images/particlez.png"
-import Guardian  from "../../assets/images/guardian.png"
-import Tensorflow from "../../assets/images/tensorflow.jpeg"
-import Juice from "../../assets/images/juice.png"
-import Keyboard from "../../assets/images/keyboard.png"
+import Space from "../../assets/images/space.png";
+import Particlez from "../../assets/images/particlez.png";
+import Guardian from "../../assets/images/guardian.png";
+import Tensorflow from "../../assets/images/tensorflow.jpeg";
+import Juice from "../../assets/images/juice.png";
+import Keyboard from "../../assets/images/keyboard.png";
 
 const projects = [
   {
@@ -69,7 +69,11 @@ export default () => (
         <div className={portfolioItem} key={project.id}>
           <figure className={portfolioImageWrapper}>
             <a href={project.link}>
-              <img src={project.image} alt={project.title} className={portfolioImage} />
+              <img
+                src={project.image}
+                alt={project.title}
+                className={portfolioImage}
+              />
               {/* <span className="portfolio-text">View</span> */}
             </a>
           </figure>

@@ -7,6 +7,7 @@ exports[`by me a coffee renders correctly 1`] = `
   <a
     className="bmcButton"
     href="https://www.buymeacoffee.com/test"
+    rel="noopener"
     target="_blank"
   >
     <img

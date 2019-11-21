@@ -14,7 +14,8 @@ exports[`app renders correctly 1`] = `
         className="avatar"
       >
         <img
-          src="/images/me.png"
+          alt="me"
+          src="image-mock.png"
         />
       </div>
       <div
@@ -29,6 +30,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="linkedin"
             className="linkedin"
             href="https://linkedin.com/in/rkkochie"
           />
@@ -37,6 +39,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="twitter"
             className="twitter"
             href="https://twitter.com/kochie"
           />
@@ -45,6 +48,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="instagram"
             className="instagram"
             href="https://instagram.com/rkkochie"
           />
@@ -53,6 +57,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="github"
             className="github"
             href="https://github.com/kochie"
           />
@@ -61,6 +66,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="medium-m"
             className="medium"
             href="https://medium.com/@kochie"
           />
@@ -69,6 +75,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="gitlab"
             className="gitlab"
             href="https://gitlab.com/kochie"
           />
@@ -77,6 +84,7 @@ exports[`app renders correctly 1`] = `
           className="grow"
         >
           <a
+            aria-label="mastodon"
             className="mastodon"
             href="https://melb.social/@kochie"
           />
@@ -129,6 +137,7 @@ exports[`app renders correctly 1`] = `
           <a
             className="bmcButton"
             href="https://www.buymeacoffee.com/kochie"
+            rel="noopener"
             target="_blank"
           >
             <img
@@ -160,8 +169,9 @@ exports[`app renders correctly 1`] = `
                   href="https://kochie.space"
                 >
                   <img
+                    alt="Space"
                     className="portfolioImage"
-                    src="/images/space.png"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -182,8 +192,9 @@ exports[`app renders correctly 1`] = `
                   href="https://3body.now.sh"
                 >
                   <img
+                    alt="Particlez"
                     className="portfolioImage"
-                    src="/images/particlez.png"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -204,8 +215,9 @@ exports[`app renders correctly 1`] = `
                   href="https://github.com/kochie/guardian-server"
                 >
                   <img
+                    alt="Guardian"
                     className="portfolioImage"
-                    src="/images/guardian.png"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -226,8 +238,9 @@ exports[`app renders correctly 1`] = `
                   href="https://bitbucket.org/kochie/fyp"
                 >
                   <img
+                    alt="Optimising Neural Networks for Embedded Systems"
                     className="portfolioImage"
-                    src="/images/tensorflow.jpeg"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -248,8 +261,9 @@ exports[`app renders correctly 1`] = `
                   href="https://github.com/kochie/juice"
                 >
                   <img
+                    alt="Juice"
                     className="portfolioImage"
-                    src="/images/juice.png"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -270,8 +284,9 @@ exports[`app renders correctly 1`] = `
                   href="https://github.com/kochie/mcgurrin"
                 >
                   <img
+                    alt="McGurrin"
                     className="portfolioImage"
-                    src="/images/keyboard.png"
+                    src="image-mock.png"
                   />
                 </a>
               </figure>
@@ -295,8 +310,10 @@ exports[`app renders correctly 1`] = `
             <div>
               <a
                 href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+                rel="noopener"
               >
                 <img
+                  alt="Why build an app when you can build a phone?"
                   src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
                 />
               </a>
@@ -311,7 +328,7 @@ exports[`app renders correctly 1`] = `
                 <a
                   href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
                 >
-                  more
+                  continue reading on medium
                 </a>
               </p>
             </div>

@@ -34,6 +34,7 @@ exports[`middle renders correctly 1`] = `
     <a
       className="bmcButton"
       href="https://www.buymeacoffee.com/kochie"
+      rel="noopener"
       target="_blank"
     >
       <img
@@ -65,8 +66,9 @@ exports[`middle renders correctly 1`] = `
             href="https://kochie.space"
           >
             <img
+              alt="Space"
               className="portfolioImage"
-              src="/images/space.png"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -87,8 +89,9 @@ exports[`middle renders correctly 1`] = `
             href="https://3body.now.sh"
           >
             <img
+              alt="Particlez"
               className="portfolioImage"
-              src="/images/particlez.png"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -109,8 +112,9 @@ exports[`middle renders correctly 1`] = `
             href="https://github.com/kochie/guardian-server"
           >
             <img
+              alt="Guardian"
               className="portfolioImage"
-              src="/images/guardian.png"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -131,8 +135,9 @@ exports[`middle renders correctly 1`] = `
             href="https://bitbucket.org/kochie/fyp"
           >
             <img
+              alt="Optimising Neural Networks for Embedded Systems"
               className="portfolioImage"
-              src="/images/tensorflow.jpeg"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -153,8 +158,9 @@ exports[`middle renders correctly 1`] = `
             href="https://github.com/kochie/juice"
           >
             <img
+              alt="Juice"
               className="portfolioImage"
-              src="/images/juice.png"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -175,8 +181,9 @@ exports[`middle renders correctly 1`] = `
             href="https://github.com/kochie/mcgurrin"
           >
             <img
+              alt="McGurrin"
               className="portfolioImage"
-              src="/images/keyboard.png"
+              src="image-mock.png"
             />
           </a>
         </figure>
@@ -200,8 +207,10 @@ exports[`middle renders correctly 1`] = `
       <div>
         <a
           href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+          rel="noopener"
         >
           <img
+            alt="Why build an app when you can build a phone?"
             src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
           />
         </a>
@@ -216,7 +225,7 @@ exports[`middle renders correctly 1`] = `
           <a
             href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
           >
-            more
+            continue reading on medium
           </a>
         </p>
       </div>

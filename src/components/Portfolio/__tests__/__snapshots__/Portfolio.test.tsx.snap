@@ -18,8 +18,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://kochie.space"
         >
           <img
+            alt="Space"
             className="portfolioImage"
-            src="/images/space.png"
+            src="image-mock.png"
           />
         </a>
       </figure>
@@ -40,8 +41,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://3body.now.sh"
         >
           <img
+            alt="Particlez"
             className="portfolioImage"
-            src="/images/particlez.png"
+            src="image-mock.png"
           />
         </a>
       </figure>
@@ -62,8 +64,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://github.com/kochie/guardian-server"
         >
           <img
+            alt="Guardian"
             className="portfolioImage"
-            src="/images/guardian.png"
+            src="image-mock.png"
           />
         </a>
       </figure>
@@ -84,8 +87,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://bitbucket.org/kochie/fyp"
         >
           <img
+            alt="Optimising Neural Networks for Embedded Systems"
             className="portfolioImage"
-            src="/images/tensorflow.jpeg"
+            src="image-mock.png"
           />
         </a>
       </figure>
@@ -106,8 +110,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://github.com/kochie/juice"
         >
           <img
+            alt="Juice"
             className="portfolioImage"
-            src="/images/juice.png"
+            src="image-mock.png"
           />
         </a>
       </figure>
@@ -128,8 +133,9 @@ exports[`portfolio renders correctly 1`] = `
           href="https://github.com/kochie/mcgurrin"
         >
           <img
+            alt="McGurrin"
             className="portfolioImage"
-            src="/images/keyboard.png"
+            src="image-mock.png"
           />
         </a>
       </figure>

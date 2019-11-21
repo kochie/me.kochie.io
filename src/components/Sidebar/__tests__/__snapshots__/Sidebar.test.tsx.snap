@@ -11,7 +11,8 @@ exports[`sidebar renders correctly 1`] = `
       className="avatar"
     >
       <img
-        src="/images/me.png"
+        alt="me"
+        src="image-mock.png"
       />
     </div>
     <div
@@ -26,6 +27,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="linkedin"
           className="linkedin"
           href="https://linkedin.com/in/rkkochie"
         />
@@ -34,6 +36,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="twitter"
           className="twitter"
           href="https://twitter.com/kochie"
         />
@@ -42,6 +45,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="instagram"
           className="instagram"
           href="https://instagram.com/rkkochie"
         />
@@ -50,6 +54,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="github"
           className="github"
           href="https://github.com/kochie"
         />
@@ -58,6 +63,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="medium-m"
           className="medium"
           href="https://medium.com/@kochie"
         />
@@ -66,6 +72,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="gitlab"
           className="gitlab"
           href="https://gitlab.com/kochie"
         />
@@ -74,6 +81,7 @@ exports[`sidebar renders correctly 1`] = `
         className="grow"
       >
         <a
+          aria-label="mastodon"
           className="mastodon"
           href="https://melb.social/@kochie"
         />

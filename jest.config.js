@@ -8,6 +8,7 @@ module.exports = {
     "^.+\\.mdx?$": "<rootDir>/mdx-jest.js"
   },
   moduleNameMapper: {
+    "\\.(jpg|jpeg|png|svg)$": "<rootDir>/image-mock.js",
     "^.+\\.css?$": "<rootDir>/node_modules/jest-css-modules"
   },
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
