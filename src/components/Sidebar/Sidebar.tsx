@@ -11,7 +11,7 @@ import {
   bgImage
 } from "./sidebar.css";
 
-const avatar = "/images/me.jpeg";
+const avatar = "/images/me.png";
 const background = "/images/background-2.jpeg";
 
 export default () => {
@@ -39,7 +39,7 @@ export default () => {
 
     const innerHeight = document.documentElement.clientHeight;
     const innerWidth = canvas.current.clientWidth;
-    if (innerWidth === 0) return
+    if (innerWidth === 0) return;
 
     const docHeight = document.body.scrollHeight;
 

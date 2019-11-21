@@ -11,7 +11,7 @@ exports[`sidebar renders correctly 1`] = `
       className="avatar"
     >
       <img
-        src="/images/me.jpeg"
+        src="/images/me.png"
       />
     </div>
     <div
