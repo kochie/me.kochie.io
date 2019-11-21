@@ -44,6 +44,6 @@
 
 @media (--tablet-size) {
   .middle {
-    padding: 0px 7%;
+    padding: 0px 7% 100px 7%;
   }
 }

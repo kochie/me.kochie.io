@@ -39,6 +39,7 @@ export default () => {
 
     const innerHeight = document.documentElement.clientHeight;
     const innerWidth = canvas.current.clientWidth;
+    if (innerWidth === 0) return
 
     const docHeight = document.body.scrollHeight;
 
@@ -56,7 +57,7 @@ export default () => {
     ctx.filter = `blur(${blurSize}px)`;
     ctx.globalAlpha = 0.7;
     const sx = (imgWidth - innerWidth * scale) * 0.5;
-    if (sy === 0 || sx === 0) return;
+    // if (sy === 0) return;
     ctx.drawImage(
       image,
       Math.round(sx),
