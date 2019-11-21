@@ -23,7 +23,6 @@ export default () => (
     />
 
     <link rel="icon" sizes="512x512" href="/images/favicon-512.png" />
-    <link rel="stylesheet" href="/styles/app.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
       rel="stylesheet"
