@@ -11,8 +11,8 @@ import {
   bgImage
 } from "./sidebar.css";
 
-const avatar = "/images/me.png";
-const background = "/images/background-2.jpeg";
+import avatar from "../../assets/images/me.png";
+import background from "../../assets/images/background-2.jpeg";
 
 export default () => {
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -79,7 +79,7 @@ export default () => {
     <div className={sidebar}>
       <div className={sidebarHeader}>
         <div className={avatarStyle}>
-          <img src={avatar} />
+          <img alt="me" src={avatar} />
         </div>
         <div className={quoteStyle}>{quote}</div>
         <Connections />

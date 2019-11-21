@@ -22,15 +22,15 @@ export default () => (
       {recentArticles.map(article => (
         <React.Fragment key={article.id}>
           <div>
-            <a href={article.link}>
-              <img src={article.image} />
+            <a rel="noopener" href={article.link}>
+              <img alt={article.name} src={article.image} />
             </a>
           </div>
           <div>
             <h3>{article.name}</h3>
             <p>
               {article.first.substr(0, 150)}
-              ... <a href={article.link}>more</a>
+              ... <a href={article.link}>continue reading on medium</a>
             </p>
           </div>
         </React.Fragment>

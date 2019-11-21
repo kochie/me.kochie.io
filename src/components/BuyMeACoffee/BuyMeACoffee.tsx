@@ -13,6 +13,7 @@ export default ({ username }: Props) => (
     <a
       className={bmcButton}
       target="_blank"
+      rel="noopener"
       href={`https://www.buymeacoffee.com/${username}`}
     >
       <img src={coffee} alt="Buy me a coffee" />

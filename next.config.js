@@ -5,9 +5,11 @@ const withMDX = require('@next/mdx')({
 })
 const withCss = require('@zeit/next-css')
 const withOffline = require('next-offline')
+const optimizedImages = require('next-optimized-images');
 
 const config = {
   target: "serverless",
+  optimizeImagesInDev: true,
   cssModules: true,
   cssLoaderOptions: {
     camelCase: true,
@@ -53,7 +55,8 @@ const config = {
 const plugins = [
   withOffline,
   withCss,
-  withMDX
+  withMDX,
+  optimizedImages
 ]
 
 module.exports = withPlugins(plugins, config);

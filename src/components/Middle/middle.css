@@ -39,7 +39,8 @@
 }
 
 .middle a {
-  color: #7998a5;
+  /* color: #7998a5; */
+  color: #225a71
 }
 
 @media (--tablet-size) {

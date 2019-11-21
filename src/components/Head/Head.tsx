@@ -17,6 +17,14 @@ export default () => (
     />
     <meta name="author" content="Robert Koch" />
     <meta name="theme-color" content="#333144" />
+    <link rel="icon" sizes="192x192" href="/images/favicon-129.png" />
+
+    <link rel="apple-touch-icon" href="/images/favicon-129.png" />
+
+    <meta
+      name="msapplication-square310x310logo"
+      content="/images/favicon-129.png"
+    />
     <meta
       name="google-site-verification"
       content="I6EWS0ziNrDQdDV1TNtuF1fWq9IFHR767zb6YIFu9wk"
@@ -24,7 +32,7 @@ export default () => (
 
     <link rel="icon" sizes="512x512" href="/images/favicon-512.png" />
     <link
-      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
+      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Cookie|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
       rel="stylesheet"
     />
   </Head>
