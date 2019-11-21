@@ -1,7 +1,4 @@
-@import "/styles/constants.css";
-
-@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+@media (--mobile-size) {
   .card {
     grid-template-columns: 1fr;
   }

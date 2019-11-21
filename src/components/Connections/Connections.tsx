@@ -76,11 +76,12 @@ export default () => (
       const iconDefinition = findIconDefinition(lookup);
       return (
         <div className={grow} key={connection.color}>
-          <a href={connection.href} className={`${connection.color} ${grow}`}>
+          <a href={connection.href} className={`${connection.color}`}>
             <FontAwesomeIcon
               icon={iconDefinition}
               size="2x"
-              fixedWidth
+              // listItem
+              // fixedWidth
               className={verticalMiddle}
             />
           </a>

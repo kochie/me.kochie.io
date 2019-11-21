@@ -1,5 +1,3 @@
-@import "/styles/constants.css";
-
 .blur {
   background-color: black;
   height: 100%;
@@ -15,8 +13,7 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+@media (--mobile-size) {
   .canvas {
     display: none;
   }
@@ -48,15 +45,18 @@
   width: 33vw;
 }
 
-@media only screen and (max-width: --tablet-width) and (max-height: --tablet-height) and (min-resolution: --tablet-resolution),
-  only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution),
-  only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+@media (--tablet-size) {
   .sidebar {
     position: absolute;
     top: 0px;
     width: 100vw;
     height: 100vh;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+    padding: 0px;
+    height: inherit;
   }
 }
 
@@ -72,15 +72,6 @@
   align-content: center;
   text-align: center;
   padding-top: 5vh;
-}
-
-@media only screen and (max-width: --tablet-width) and (max-height: --tablet-height) and (min-resolution: --tablet-resolution),
-  only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution) {
-  .sidebar-header {
-    justify-content: center;
-    padding: 0px;
-    height: inherit;
-  }
 }
 
 .avatar {

@@ -1,11 +1,8 @@
-@import "/styles/constants.css";
-
 body {
   margin: 0;
 }
 
-@media only screen and (max-width: --tablet-width) and (max-height: --tablet-height) and (min-resolution: --tablet-resolution),
-  only screen and (max-width: --tablet-height) and (max-height: --tablet-width) and (min-resolution: --tablet-resolution) {
+@media (--tablet-size) {
   .container {
     height: 100%;
     min-height: 100vh;
@@ -15,8 +12,7 @@ body {
   }
 }
 
-@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+@media (--phone-size) {
   .container {
     height: 100%;
     min-height: 100vh;

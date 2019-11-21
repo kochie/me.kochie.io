@@ -1,5 +1,3 @@
-@import "/styles/constants.css";
-
 .connections {
   color: wheat;
   font-family: "Roboto Mono", monospace;
@@ -8,8 +6,7 @@
   flex-direction: column;
 }
 
-@media only screen and (max-width: --mobile-width) and (max-height: --mobile-height) and (min-resolution: --mobile-resolution),
-  only screen and (max-width: --mobile-height) and (max-height: --mobile-width) and (min-resolution: --mobile-resolution) {
+@media (--mobile-size) {
   .connections {
     flex-direction: row;
     justify-content: center;
@@ -78,7 +75,8 @@
 
 .grow {
   transition: all 0.2s ease-in-out;
-  padding: 5px;
+  padding: 5px 0;
+  width: 35px;
 }
 .grow:hover {
   transform: scale(1.1);
