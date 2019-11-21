@@ -1,15 +1,8 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faTwitter,
-  faInstagram,
-  faGithub,
-  faMediumM,
-  faGitlab,
-  faMastodon
-} from "@fortawesome/free-brands-svg-icons";
+import { IconLookup, IconName } from "@fortawesome/free-brands-svg-icons";
+import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 import {
   connections as connectionContainer,
@@ -24,45 +17,52 @@ import {
   mastodon
 } from "./connections.css";
 
-const connections = [
+interface Connection {
+  icon: IconName;
+  href: string;
+  name: string;
+  color: string;
+}
+
+const connections: Connection[] = [
   {
-    icon: faLinkedin,
+    icon: "linkedin",
     href: "https://linkedin.com/in/rkkochie",
     name: "rkkochie",
     color: linkedin
   },
   {
-    icon: faTwitter,
+    icon: "twitter",
     href: "https://twitter.com/kochie",
     name: "kochie",
     color: twitter
   },
   {
-    icon: faInstagram,
+    icon: "instagram",
     href: "https://instagram.com/rkkochie",
     name: "rkkochie",
     color: instagram
   },
   {
-    icon: faGithub,
+    icon: "github",
     href: "https://github.com/kochie",
     name: "kochie",
     color: github
   },
   {
-    icon: faMediumM,
+    icon: "medium",
     href: "https://medium.com/@kochie",
     name: "kochie",
     color: medium
   },
   {
-    icon: faGitlab,
+    icon: "gitlab",
     href: "https://gitlab.com/kochie",
     name: "kochie",
     color: gitlab
   },
   {
-    icon: faMastodon,
+    icon: "mastodon",
     href: "https://melb.social/@kochie",
     name: "kochie",
     color: mastodon
@@ -71,17 +71,21 @@ const connections = [
 
 export default () => (
   <div className={connectionContainer}>
-    {connections.map(connection => (
-      <div className={grow} key={connection.color}>
-        <a href={connection.href} className={`${connection.color} ${grow}`}>
-          <FontAwesomeIcon
-            icon={connection.icon}
-            size="2x"
-            fixedWidth
-            className={verticalMiddle}
-          />
-        </a>
-      </div>
-    ))}
+    {connections.map(connection => {
+      const lookup: IconLookup = { prefix: "fab", iconName: connection.icon };
+      const iconDefinition = findIconDefinition(lookup);
+      return (
+        <div className={grow} key={connection.color}>
+          <a href={connection.href} className={`${connection.color} ${grow}`}>
+            <FontAwesomeIcon
+              icon={iconDefinition}
+              size="2x"
+              fixedWidth
+              className={verticalMiddle}
+            />
+          </a>
+        </div>
+      );
+    })}
   </div>
 );

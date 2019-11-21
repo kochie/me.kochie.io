@@ -1,0 +1,87 @@
+[[connections]]
+href = 'https://linkedin.com/in/rkkochie'
+name = 'rkkochie'
+icon = 'linkedin'
+color = '#0077b5'
+
+[[connections]]
+href = 'https://twitter.com/kochie'
+name = 'kochie'
+icon = 'twitter'
+color = '#1da1f2'
+
+[[connections]]
+href = 'https://instagram.com/rkkochie'
+name = 'rkkochie'
+icon = 'instagram'
+color = '#833ab4'
+
+[[connections]]
+href = 'https://github.com/kochie'
+name = 'kochie'
+icon = 'github'
+color = '#333333'
+
+[[connections]]
+href = 'https://medium.com/@kochie'
+name = 'kochie'
+icon = 'medium'
+color = '#000000'
+
+[[connections]]
+href = 'https://gitlab.com/kochie'
+name = 'kochie'
+icon = 'gitlab'
+color = '#db3b21'
+
+[[connections]]
+href = 'https://melb.social/@kochie'
+name = 'kochie'
+icon = 'mastodon'
+color = '#008ada'
+
+[[projects]]
+image = '/images/space.png'
+title = 'Space'
+description = 'A small webapp that follows the mouse.'
+link = 'https://kochie.space'
+
+[[projects]]
+image = '/images/particlez.png'
+title = 'Particlez'
+description = 'A real time n-body particle simulator for the web.'
+link = 'https://3body.now.sh'
+
+[[projects]]
+image = '/images/guardian.png'
+title = 'Guardian'
+description = 'An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.'
+link = 'https://github.com/kochie/guardian-server'
+
+[[projects]]
+image = '/images/tensorflow.jpeg'
+title = 'Optimising Neural Networks for Embedded Systems'
+description = 'My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.'
+link = 'https://bitbucket.org/kochie/fyp'
+
+[[projects]]
+image = '/images/juice.png'
+title = 'Juice'
+description = 'A Json-Web-Token analyser.'
+link = 'https://github.com/kochie/juice'
+
+[[projects]]
+image = '/images/keyboard.png'
+title = 'McGurrin'
+description = 'A tool to help with learning to touch type.'
+link = 'https://github.com/kochie/mcgurrin'
+
+[[articles]]
+name = 'Why build an app when you can build a phone?'
+image = 'https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg'
+link = 'https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104'
+first = 'Over the last 5 years, UNIHACK has been predominantly focused on software and design. It is not well known that some of UNIHACK’s most creative entires have been in the field of hardware.'
+
+[owner]
+name = 'Robert Koch'
+email = 'robert@kochie.io'
