@@ -5,25 +5,46 @@ exports[`middle renders correctly 1`] = `
   className="middle"
 >
   <h1>
-    I’m Rob, a university student from Melbourne, Australia.
+    I’m Rob, an engineer from Melbourne, Australia.
   </h1>
   <p>
-    I currently study Electrical Engineering, Computer Science, and Mathematics at Monash University where I was the president of the IT society 
+    I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
     <a
       href="http://wired.org.au"
     >
       wired
     </a>
-     in 2017.
+    , where I held the title of President in 2017.
   </p>
   <p>
-    I'm also apart of the 
+    I currently work as a Cloud Architect for 
+    <a
+      href="https://aws.amazon.com"
+    >
+      Amazon Web Services
+    </a>
+    , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
+  </p>
+  <p>
+    Before that I worked as a Software Engineer at 
+    <a
+      href="https://localz.com"
+    >
+      Localz
+    </a>
+     who are providing last mile solutions for people around the world.
+  </p>
+  <p>
+    I also helped run the 
     <a
       href="https://unihack.net"
     >
       Unihack
     </a>
-     team based in Melbourne, we run hackathons for students around Australia. 
+     organisation in Melbourne, where we ran hackathons for students around Australia. 
+  </p>
+  <p>
+    I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
   </p>
   <p>
     Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
