@@ -23,20 +23,20 @@
       {
         "src": "/images/favicon-192.png",
         "type": "image/png",
-        "sizes": "192x192 144x144",
-        "purpose": "maskable any"
+        "sizes": "192x192",
+        "purpose": "any"
       },
       {
         "src": "/images/favicon-512.png",
         "type": "image/png",
         "sizes": "512x512",
-        "purpose": "maskable any"
+        "purpose": "any"
       },
       {
         "src": "/images/favicon-1024.png",
         "type": "image/png",
         "sizes": "1024x1024",
-        "purpose": "maskable any"
+        "purpose": "any"
       }
     ],
     "start_url": "/",
