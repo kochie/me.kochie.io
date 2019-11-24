@@ -4,51 +4,55 @@ exports[`middle renders correctly 1`] = `
 <div
   className="middle"
 >
-  <h1>
-    I’m Rob, an engineer from Melbourne, Australia.
-  </h1>
-  <p>
-    I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
-    <a
-      href="http://wired.org.au"
-    >
-      wired
-    </a>
-    , where I held the title of President in 2017.
-  </p>
-  <p>
-    I currently work as a Cloud Architect for 
-    <a
-      href="https://aws.amazon.com"
-    >
-      Amazon Web Services
-    </a>
-    , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
-  </p>
-  <p>
-    Before that I worked as a Software Engineer at 
-    <a
-      href="https://localz.com"
-    >
-      Localz
-    </a>
-     who are providing last mile solutions for people around the world.
-  </p>
-  <p>
-    I also helped run the 
-    <a
-      href="https://unihack.net"
-    >
-      Unihack
-    </a>
-     organisation in Melbourne, where we ran hackathons for students around Australia. 
-  </p>
-  <p>
-    I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
-  </p>
-  <p>
-    Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
-  </p>
+  <div
+    className="content"
+  >
+    <h1>
+      I’m Rob, an engineer from Melbourne, Australia.
+    </h1>
+    <p>
+      I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
+      <a
+        href="http://wired.org.au"
+      >
+        wired
+      </a>
+      , where I held the title of President in 2017.
+    </p>
+    <p>
+      I currently work as a Cloud Architect for 
+      <a
+        href="https://aws.amazon.com"
+      >
+        Amazon Web Services
+      </a>
+      , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
+    </p>
+    <p>
+      Before that I worked as a Software Engineer at 
+      <a
+        href="https://localz.com"
+      >
+        Localz
+      </a>
+       who are providing last mile solutions for people around the world.
+    </p>
+    <p>
+      I also helped run the 
+      <a
+        href="https://unihack.net"
+      >
+        Unihack
+      </a>
+       organisation in Melbourne, where we ran hackathons for students around Australia. 
+    </p>
+    <p>
+      I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
+    </p>
+    <p>
+      Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
+    </p>
+  </div>
   <div
     className="bmcButtonContainer"
   >
@@ -69,186 +73,238 @@ exports[`middle renders correctly 1`] = `
       </span>
     </a>
   </div>
-  <hr />
-  <div>
-    <h2>
-      Recent Work
-    </h2>
-    <div
-      className="portfolio"
+  <a
+    className="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-user fa-w-12 fa-1x "
+      data-icon="file-user"
+      data-prefix="fad"
+      focusable="false"
+      role="img"
+      style={
+        Object {
+          "--fa-primary-color": "red",
+        }
+      }
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <div
-        className="portfolioItem"
+      <g
+        className="fa-group"
+        style={Object {}}
       >
-        <figure
-          className="portfolioImageWrapper"
-        >
-          <a
-            href="https://kochie.space"
-          >
-            <img
-              alt="Space"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          Space
-        </h3>
-        <p>
-          A small webapp that follows the mouse.
-        </p>
-      </div>
+        <path
+          className="fa-secondary"
+          d="M384 128H272a16 16 0 0 1-16-16V0H24A23.94 23.94 0 0 0 0 23.88V488a23.94 23.94 0 0 0 23.88 24H360a23.94 23.94 0 0 0 24-23.88V128zm-192 64a64 64 0 1 1-64 64 64 64 0 0 1 64-64zm112 236.8c0 10.61-10 19.2-22.4 19.2H102.4C90 448 80 439.4 80 428.8v-19.2c0-31.81 30.09-57.6 67.1-57.6h5a103.22 103.22 0 0 0 79.7 0h5c37.11 0 67.2 25.79 67.2 57.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+        <path
+          className="fa-primary"
+          d="M377 105L279.1 7a24 24 0 0 0-17-7H256v112a16 16 0 0 0 16 16h112v-6.1a23.9 23.9 0 0 0-7-16.9zM192 320a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm44.8 32h-5a103.22 103.22 0 0 1-79.7 0h-5c-37 0-67.1 25.79-67.1 57.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.37 0 22.4-8.59 22.4-19.2v-19.2c0-31.81-30.09-57.6-67.2-57.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </g>
+    </svg>
+    <span>
+      Download Resume
+    </span>
+  </a>
+  <hr
+    className="divider"
+  />
+  <div
+    className="content"
+  >
+    <div>
+      <h2>
+        Recent Work
+      </h2>
       <div
-        className="portfolioItem"
+        className="portfolio"
       >
-        <figure
-          className="portfolioImageWrapper"
+        <div
+          className="portfolioItem"
         >
-          <a
-            href="https://3body.now.sh"
+          <figure
+            className="portfolioImageWrapper"
           >
-            <img
-              alt="Particlez"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          Particlez
-        </h3>
-        <p>
-          A real time n-body particle simulator for the web.
-        </p>
-      </div>
-      <div
-        className="portfolioItem"
-      >
-        <figure
-          className="portfolioImageWrapper"
+            <a
+              href="https://kochie.space"
+            >
+              <img
+                alt="Space"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            Space
+          </h3>
+          <p>
+            A small webapp that follows the mouse.
+          </p>
+        </div>
+        <div
+          className="portfolioItem"
         >
-          <a
-            href="https://github.com/kochie/guardian-server"
+          <figure
+            className="portfolioImageWrapper"
           >
-            <img
-              alt="Guardian"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          Guardian
-        </h3>
-        <p>
-          An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.
-        </p>
-      </div>
-      <div
-        className="portfolioItem"
-      >
-        <figure
-          className="portfolioImageWrapper"
+            <a
+              href="https://3body.now.sh"
+            >
+              <img
+                alt="Particlez"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            Particlez
+          </h3>
+          <p>
+            A real time n-body particle simulator for the web.
+          </p>
+        </div>
+        <div
+          className="portfolioItem"
         >
-          <a
-            href="https://bitbucket.org/kochie/fyp"
+          <figure
+            className="portfolioImageWrapper"
           >
-            <img
-              alt="Optimising Neural Networks for Embedded Systems"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          Optimising Neural Networks for Embedded Systems
-        </h3>
-        <p>
-          My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
-        </p>
-      </div>
-      <div
-        className="portfolioItem"
-      >
-        <figure
-          className="portfolioImageWrapper"
+            <a
+              href="https://github.com/kochie/guardian-server"
+            >
+              <img
+                alt="Guardian"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            Guardian
+          </h3>
+          <p>
+            An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.
+          </p>
+        </div>
+        <div
+          className="portfolioItem"
         >
-          <a
-            href="https://github.com/kochie/juice"
+          <figure
+            className="portfolioImageWrapper"
           >
-            <img
-              alt="Juice"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          Juice
-        </h3>
-        <p>
-          A Json-Web-Token analyser.
-        </p>
-      </div>
-      <div
-        className="portfolioItem"
-      >
-        <figure
-          className="portfolioImageWrapper"
+            <a
+              href="https://bitbucket.org/kochie/fyp"
+            >
+              <img
+                alt="Optimising Neural Networks for Embedded Systems"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            Optimising Neural Networks for Embedded Systems
+          </h3>
+          <p>
+            My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
+          </p>
+        </div>
+        <div
+          className="portfolioItem"
         >
-          <a
-            href="https://github.com/kochie/mcgurrin"
+          <figure
+            className="portfolioImageWrapper"
           >
-            <img
-              alt="McGurrin"
-              className="portfolioImage"
-              src="image-mock.png"
-            />
-          </a>
-        </figure>
-        <h3>
-          McGurrin
-        </h3>
-        <p>
-          A tool to help with learning to touch type.
-        </p>
+            <a
+              href="https://github.com/kochie/juice"
+            >
+              <img
+                alt="Juice"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            Juice
+          </h3>
+          <p>
+            A Json-Web-Token analyser.
+          </p>
+        </div>
+        <div
+          className="portfolioItem"
+        >
+          <figure
+            className="portfolioImageWrapper"
+          >
+            <a
+              href="https://github.com/kochie/mcgurrin"
+            >
+              <img
+                alt="McGurrin"
+                className="portfolioImage"
+                src="image-mock.png"
+              />
+            </a>
+          </figure>
+          <h3>
+            McGurrin
+          </h3>
+          <p>
+            A tool to help with learning to touch type.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <hr />
-  <div>
-    <h2>
-      Recent Articles
-    </h2>
-    <div
-      className="card"
-    >
-      <div>
-        <a
-          href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
-          rel="noopener"
-        >
-          <img
-            alt="Why build an app when you can build a phone?"
-            src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
-          />
-        </a>
-      </div>
-      <div>
-        <h3>
-          Why build an app when you can build a phone?
-        </h3>
-        <p>
-          Over the last 5 years, UNIHACK has been predominantly focused on software and design. It is not well known that some of UNIHACK’s most creative entire
-          ... 
+  <hr
+    className="divider"
+  />
+  <div
+    className="content"
+  >
+    <div>
+      <h2>
+        Recent Articles
+      </h2>
+      <div
+        className="card"
+      >
+        <div>
           <a
             href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+            rel="noopener"
           >
-            continue reading on medium
+            <img
+              alt="Why build an app when you can build a phone?"
+              src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
+            />
           </a>
-        </p>
+        </div>
+        <div>
+          <h3>
+            Why build an app when you can build a phone?
+          </h3>
+          <p>
+            Over the last 5 years, UNIHACK has been predominantly focused on software and design. It is not well known that some of UNIHACK’s most creative entire
+            ... 
+            <a
+              href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
+            >
+              continue reading on medium
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

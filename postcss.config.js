@@ -1,5 +1,6 @@
 module.exports = {
   plugins: {
+    // "postcss-css-variables": {},
     "postcss-custom-media": {
       importFrom: [
         () => {
@@ -14,18 +15,8 @@ module.exports = {
             "--tablet-size": `(max-width: ${tabletWidth}px) and (max-height: ${tabletHeight}px), (max-width: ${tabletHeight}px) and (max-height: ${tabletWidth}px)`,
             "--mobile-size": `(max-width: ${mobileWidth}px) and (max-height: ${mobileHeight}px), (max-width: ${mobileHeight}px) and (max-height: ${mobileWidth}px)`
           }
-          const environmentVariables = {
-            "--mobile-width": `${mobileWidth}px`,
-            "--mobile-height": `${mobileHeight}px`,
-            "--mobile-resolution": `${resolution}dppx`,
-            "--mobile-dpr": `${mobileDpr}`,
 
-            "--tablet-width": `${tabletWidth}px`,
-            "--tablet-height": `${tabletHeight}px`,
-            "--tablet-resolution": `${resolution}dppx`
-          }
-
-          return {environmentVariables, customMedia}
+          return {customMedia}
         }
       ]
     }

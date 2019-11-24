@@ -15,9 +15,7 @@ exports[`contact renders correctly 1`] = `
     action="https://formspree.io/robert@kochie.io"
     method="POST"
   >
-    <div
-      className="form"
-    >
+    <div>
       <div
         className="contactInfo"
       >

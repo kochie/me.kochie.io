@@ -8,37 +8,31 @@
   padding-bottom: 100px;
 }
 
-.middle hr {
-  border-color: #efefef;
-  background-color: #efefef;
-  margin: 10vh 0px;
-}
-
-.middle h1 {
+.content h1 {
   color: #353535;
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 400;
 }
 
-.middle h2 {
+.content h2 {
   color: #353535;
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 400;
 }
 
-.middle h3 {
+.content h3 {
   color: #353535;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-.middle p {
+.content p {
   color: #313131;
 }
 
-.middle a {
+.content a {
   /* color: #7998a5; */
   color: #225a71;
 }

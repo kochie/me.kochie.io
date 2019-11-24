@@ -6,7 +6,7 @@ import {
   faFileUpload
 } from "@fortawesome/free-solid-svg-icons";
 
-import { buttonRow, iconCenter } from "./contact-button.css";
+import { buttonRow, iconCenter } from "./contact-button.module.css";
 
 const emailAddress = "robert@kochie.io";
 

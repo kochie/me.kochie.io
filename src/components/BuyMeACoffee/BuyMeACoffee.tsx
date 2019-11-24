@@ -1,6 +1,6 @@
 import React from "react";
 
-import { bmcButtonContainer, bmcButton, bmcSpan } from "./buy-me-a-coffee.css";
+import { bmcButtonContainer, bmcButton, bmcSpan } from "./buy-me-a-coffee.module.css";
 
 interface Props {
   username: String;

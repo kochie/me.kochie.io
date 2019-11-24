@@ -4,11 +4,10 @@ import { ContactButton } from "..";
 
 import ContactInfo from "./contact.mdx";
 import {
-  form,
   contactInfo,
   name as nameStyle,
   email as emailStyle
-} from "./contact.css";
+} from "./contact.module.css";
 
 export default () => {
   const [name, setName] = useState("");
@@ -21,7 +20,7 @@ export default () => {
       <ContactInfo />
       <div id="map" />
       <form action="https://formspree.io/robert@kochie.io" method="POST">
-        <div className={form}>
+        <div>
           <div className={contactInfo}>
             <input
               className={nameStyle}

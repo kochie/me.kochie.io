@@ -18,7 +18,7 @@
   --inactive-colour: #b2b2b2;
 }
 
-input[type="submit"],
+/* input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .button {
@@ -342,4 +342,4 @@ input[type="button"]:disabled,
     margin: 0 2% 2% 2%;
     box-sizing: border-box;
   }
-}
+} */

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { button } from "./chat-button.css";
+import { button } from "./chat-button.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { footer } from "./footer.css";
+import { footer } from "./footer.module.css";
 
 export default () => {
   const updateTime = process.env.buildTime;

@@ -9,7 +9,7 @@ import {
   quote as quoteStyle,
   canvas as canvasStyle,
   bgImage
-} from "./sidebar.css";
+} from "./sidebar.module.css";
 
 import avatar from "../../assets/images/me.webp";
 import background from "../../assets/images/background-2.webp";

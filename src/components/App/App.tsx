@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 
-import { app, container } from "./app.css";
+import { app, container } from "./app.module.css";
 import { Sidebar, Main } from "..";
 
 export default () => {
@@ -12,8 +12,8 @@ export default () => {
 
   return (
     <div className={app}>
-      <Sidebar />
       <div className={container}>
+        <Sidebar />
         <Main />
       </div>
     </div>

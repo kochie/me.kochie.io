@@ -1,6 +1,6 @@
 import React from "react";
 
-import { card } from "./recent-articles.css";
+import { card } from "./recent-articles.module.css";
 
 const recentArticles = [
   {

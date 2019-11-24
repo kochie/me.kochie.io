@@ -15,7 +15,7 @@ import {
   medium,
   gitlab,
   mastodon
-} from "./connections.css";
+} from "./connections.module.css";
 
 interface Connection {
   icon: IconName;

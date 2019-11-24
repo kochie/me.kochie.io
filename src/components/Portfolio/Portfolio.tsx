@@ -5,7 +5,7 @@ import {
   portfolioItem,
   portfolioImageWrapper,
   portfolioImage
-} from "./portfolio.css";
+} from "./portfolio.module.css";
 
 import Space from "../../assets/images/space.webp";
 import Particlez from "../../assets/images/particlez.webp";
