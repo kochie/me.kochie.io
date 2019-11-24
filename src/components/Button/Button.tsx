@@ -4,8 +4,8 @@ import {button} from "./button.module.css"
 
 export default ({children}) => {
     return (
-            <a className={button}>
+            <div className={button}>
                 {children}
-            </a>
+            </div>
     )
 }
