@@ -13,7 +13,7 @@
   ],
   "build": {
     "env": {
-      "FONTAWESOME_NPM_TOKEN": "@fontawesome_npm_auth_token"
+      "FONTAWESOME_NPM_AUTH_TOKEN": "@fontawesome_npm_auth_token"
     }
   },
   "alias": ["me.kochie.io", "kochie.now.sh", "robertkoch.me"],
