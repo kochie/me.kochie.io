@@ -8,7 +8,7 @@ import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { fad } from "@fortawesome/pro-duotone-svg-icons";
 
 import "../assets/styles/fa-styles.scss"; // Import the CSS
-import "../assets/styles/global.css";
+import "../assets/styles/global.scss";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 library.add(fab, fas, fad, faComment);

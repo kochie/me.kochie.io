@@ -29,10 +29,5 @@ export default () => (
       name="google-site-verification"
       content="I6EWS0ziNrDQdDV1TNtuF1fWq9IFHR767zb6YIFu9wk"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Cookie|Bungee|Source+Sans+Pro|Lato&subset=latin,latin-ext"
-      rel="stylesheet"
-    />
   </Head>
 );
