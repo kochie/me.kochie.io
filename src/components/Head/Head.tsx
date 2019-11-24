@@ -21,6 +21,8 @@ export default () => (
     <link rel="icon" sizes="512x512" href="/images/favicon-512.webp" />
     <link rel="apple-touch-icon" href="/images/favicon-192.webp" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
     <meta
       name="msapplication-square310x310logo"
       content="/images/favicon-192.webp"
