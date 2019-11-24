@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require('path')
+// const path = require('path')
 const withSass = require('@zeit/next-sass')
 const withPlugins = require('next-compose-plugins');
 const withMDX = require('@next/mdx')({
@@ -19,10 +19,11 @@ const config = {
   env: {
     buildTime: new Date().toDateString(),
   },
+  /* eslint-disable @typescript-eslint/explicit-function-return-type */
   webpack(config, options) {
     if (!options.isServer) {
       /* Using next-css */
-      for (let entry of options.defaultLoaders.css) {
+      for (const entry of options.defaultLoaders.css) {
         if (entry.loader === 'css-loader') {
           entry.loader = 'typings-for-css-modules-loader'
           break
@@ -30,7 +31,7 @@ const config = {
       }
 
       /* Using next-sass */
-      for (let entry of options.defaultLoaders.sass) {
+      for (const entry of options.defaultLoaders.sass) {
         if (entry.loader === 'css-loader') {
           entry.loader = 'typings-for-css-modules-loader';
           break;

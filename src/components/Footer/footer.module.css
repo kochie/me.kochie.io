@@ -1,23 +1,21 @@
 .footer {
   background-color: darkgrey;
   grid-area: footer;
-  height: 75px;
-}
-
-.footer li::before {
-  border-left: 2px solid #1f2326;
-}
-
-.footer li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  float: left;
+  align-items: center;
 }
 
-.footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
+.name {
+  text-align: start;
+}
+.guitar {
+  text-align: center;
+}
+.update {
+  text-align: end;
 }
 
 @keyframes jello {
@@ -64,12 +62,12 @@
   }
 }
 
-.guitar {
+.guitar svg {
   transition: all 0.5s;
   transform-origin: center;
 }
 
-.guitar:hover {
+.guitar svg:hover {
   --fa-primary-color: brown;
   --fa-secondary-color: gold;
   transform: scale(1.5);

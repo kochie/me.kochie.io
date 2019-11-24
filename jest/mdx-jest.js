@@ -3,6 +3,7 @@ const mdx = require("@mdx-js/mdx");
 const babel = require("@babel/core");
 
 module.exports = {
+    /* eslint-disable @typescript-eslint/explicit-function-return-type */
     process(src) {
         // Convert .MDX file into JSX
         const rawJSX = mdx.sync(src);
