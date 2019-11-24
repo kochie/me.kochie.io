@@ -97,7 +97,7 @@
 
 @media (--tablet-size) {
   .sidebar {
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 100vw;
     height: fit-content;
