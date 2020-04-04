@@ -44,7 +44,7 @@
     "@typescript-eslint/typescript-estree": "^2.8.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "acorn": "^7.1.0",
+    "acorn": "^7.1.1",
     "animate.css": "^3.7.2",
     "babel-jest": "^24.9.0",
     "chart.js": "^2.7.2",
