@@ -1,6 +1,4 @@
 {
-  "version": 2,
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
   "routes": [
     {
       "src": "^/service-worker.js$",
@@ -13,10 +11,7 @@
   ],
   "build": {
     "env": {
-      "FONTAWESOME_NPM_AUTH_TOKEN": "@fontawesome_npm_auth_token"
+      "FONTAWESOME_TOKEN": "@fontawesome_npm_auth_token"
     }
-  },
-  "alias": ["me.kochie.io", "kochie.now.sh", "robertkoch.me"],
-  "public": true,
-  "name": "me.kochie.io"
+  }
 }

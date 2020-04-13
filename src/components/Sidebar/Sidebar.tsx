@@ -16,7 +16,7 @@ import background from '../../assets/images/background-2.webp'
 
 const Sidebar = (): ReactElement => {
   const canvas = useRef<HTMLCanvasElement>(null)
-  const image = useRef<HTMLImageElement>(new Image())
+  const image = useRef<HTMLImageElement>(null)
   let imageY = 0
 
   const parallax = (): void => {
@@ -65,7 +65,7 @@ const Sidebar = (): ReactElement => {
   }
 
   useEffect(() => {
-    // image.current = new Image();
+    image.current = new Image()
     image.current.src = background
     image.current.onload = (): void => {
       window.requestAnimationFrame(parallax)
