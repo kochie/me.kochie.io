@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from 'react'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconLookup, IconName } from "@fortawesome/free-brands-svg-icons";
-import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconLookup, IconName } from '@fortawesome/fontawesome-common-types'
+import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 import {
   connections as connectionContainer,
@@ -14,83 +14,88 @@ import {
   github,
   medium,
   gitlab,
-  mastodon
-} from "./connections.module.css";
+  mastodon,
+} from './connections.module.css'
 
 interface Connection {
-  icon: IconName;
-  href: string;
-  name: string;
-  color: string;
+  icon: IconName
+  href: string
+  name: string
+  color: string
 }
 
 const connections: Connection[] = [
   {
-    icon: "linkedin",
-    href: "https://linkedin.com/in/rkkochie",
-    name: "rkkochie",
-    color: linkedin
+    icon: 'linkedin',
+    href: 'https://linkedin.com/in/rkkochie',
+    name: 'rkkochie',
+    color: linkedin,
   },
   {
-    icon: "twitter",
-    href: "https://twitter.com/kochie",
-    name: "kochie",
-    color: twitter
+    icon: 'twitter',
+    href: 'https://twitter.com/kochie',
+    name: 'kochie',
+    color: twitter,
   },
   {
-    icon: "instagram",
-    href: "https://instagram.com/rkkochie",
-    name: "rkkochie",
-    color: instagram
+    icon: 'instagram',
+    href: 'https://instagram.com/rkkochie',
+    name: 'rkkochie',
+    color: instagram,
   },
   {
-    icon: "github",
-    href: "https://github.com/kochie",
-    name: "kochie",
-    color: github
+    icon: 'github',
+    href: 'https://github.com/kochie',
+    name: 'kochie',
+    color: github,
   },
   {
-    icon: "medium-m",
-    href: "https://medium.com/@kochie",
-    name: "kochie",
-    color: medium
+    icon: 'medium-m',
+    href: 'https://medium.com/@kochie',
+    name: 'kochie',
+    color: medium,
   },
   {
-    icon: "gitlab",
-    href: "https://gitlab.com/kochie",
-    name: "kochie",
-    color: gitlab
+    icon: 'gitlab',
+    href: 'https://gitlab.com/kochie',
+    name: 'kochie',
+    color: gitlab,
   },
   {
-    icon: "mastodon",
-    href: "https://melb.social/@kochie",
-    name: "kochie",
-    color: mastodon
-  }
-];
+    icon: 'mastodon',
+    href: 'https://melb.social/@kochie',
+    name: 'kochie',
+    color: mastodon,
+  },
+]
 
-export default () => (
-  <div className={connectionContainer}>
-    {connections.map(connection => {
-      const lookup: IconLookup = { prefix: "fab", iconName: connection.icon };
-      const iconDefinition = findIconDefinition(lookup);
-      return (
-        <div className={grow} key={connection.color}>
-          <a
-            href={connection.href}
-            className={`${connection.color}`}
-            aria-label={connection.icon}
-          >
-            <FontAwesomeIcon
-              icon={iconDefinition}
-              size="2x"
-              // listItem
-              // fixedWidth
-              className={verticalMiddle}
-            />
-          </a>
-        </div>
-      );
-    })}
-  </div>
-);
+export default function Connections(): ReactElement {
+  return (
+    <div className={connectionContainer}>
+      {connections.map((connection) => {
+        const lookup: IconLookup = {
+          prefix: 'fab',
+          iconName: connection.icon,
+        }
+        const iconDefinition = findIconDefinition(lookup)
+        return (
+          <div className={grow} key={connection.color}>
+            <a
+              href={connection.href}
+              className={`${connection.color}`}
+              aria-label={connection.icon}
+            >
+              <FontAwesomeIcon
+                icon={iconDefinition}
+                size="2x"
+                // listItem
+                // fixedWidth
+                className={verticalMiddle}
+              />
+            </a>
+          </div>
+        )
+      })}
+    </div>
+  )
+}

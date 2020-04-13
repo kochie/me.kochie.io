@@ -1,36 +1,44 @@
-import React, { useRef } from "react";
+import React, { ReactElement } from 'react'
 
-import { footer, guitar, jello, name, update } from "./footer.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { footer, guitar, jello, name, update } from './footer.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 
-import "animate.css";
+// import "animate.css";
 
-export default () => {
-  const playSound = () => {
-    const g = document.getElementById("guitar");
-    g.classList.add(jello);
-    g.addEventListener("animationend", () => {
-      g.classList.remove(jello);
-    });
+export default function Footer(): ReactElement {
+  const playSound = (): void => {
+    const g = document.getElementById('guitar')
+    g.classList.add(jello)
+    g.addEventListener('animationend', () => {
+      g.classList.remove(jello)
+    })
 
-    const sound = new Audio("/audio/AcousticPopMelody.mp3");
-    sound.play();
-  };
-  const updateTime = process.env.buildTime;
+    const sound = new Audio('/audio/AcousticPopMelody.mp3')
+    sound.play()
+  }
+
+  const updateTime = process.env.buildTime
+
   return (
     <nav className={footer}>
       <div className={name}>
         <FontAwesomeIcon
-          style={{ paddingRight: "5px" }}
-          icon={findIconDefinition({ prefix: "fad", iconName: "copyright" })}
+          style={{ paddingRight: '5px' }}
+          icon={findIconDefinition({
+            prefix: 'fad',
+            iconName: 'copyright',
+          })}
         />
         Robert Koch
       </div>
       <div id="guitar" className={guitar}>
         <FontAwesomeIcon
           onClick={playSound}
-          icon={findIconDefinition({ prefix: "fad", iconName: "guitar" })}
+          icon={findIconDefinition({
+            prefix: 'fad',
+            iconName: 'guitar',
+          })}
         />
       </div>
       <div className={update}>
@@ -39,5 +47,5 @@ export default () => {
         </span>
       </div>
     </nav>
-  );
-};
+  )
+}

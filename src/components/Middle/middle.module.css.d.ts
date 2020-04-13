@@ -1,2 +1,2 @@
-export const middle: string;
-export const content: string;
+export const middle: string
+export const content: string

@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, ReactElement } from 'react'
 
-import { ContactButton } from "..";
+import { ContactButton } from '..'
 
-import ContactInfo from "./contact.mdx";
+import ContactInfo from './contact.mdx'
 import {
   contactInfo,
   name as nameStyle,
-  email as emailStyle
-} from "./contact.module.css";
+  email as emailStyle,
+} from './contact.module.css'
 
-export default () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+export default function Contact(): ReactElement {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   return (
     <div>
@@ -28,7 +28,7 @@ export default () => {
               placeholder="Name"
               name="name"
               value={name}
-              onChange={e => setName(e.target.value)}
+              onChange={(e): void => setName(e.target.value)}
             />
             <input
               className={emailStyle}
@@ -36,7 +36,7 @@ export default () => {
               placeholder="Email"
               name="email"
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e): void => setEmail(e.target.value)}
             />
           </div>
           <div className="message">
@@ -45,12 +45,12 @@ export default () => {
               name="message"
               rows={4}
               value={message}
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e): void => setMessage(e.target.value)}
             />
           </div>
         </div>
         <ContactButton message={message} name={name} />
       </form>
     </div>
-  );
-};
+  )
+}

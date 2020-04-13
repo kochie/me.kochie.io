@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, ReactElement } from 'react'
 
-import { Connections } from "..";
+import { Connections } from '..'
 
 import {
   sidebar,
@@ -8,58 +8,50 @@ import {
   avatar as avatarStyle,
   quote as quoteStyle,
   canvas as canvasStyle,
-  bgImage
-} from "./sidebar.module.css";
+  bgImage,
+} from './sidebar.module.css'
 
-import avatar from "../../assets/images/me.webp";
-import background from "../../assets/images/background-2.webp";
+import avatar from '../../assets/images/me.webp'
+import background from '../../assets/images/background-2.webp'
 
-export default () => {
-  const canvas = useRef<HTMLCanvasElement>(null);
-  let image: HTMLImageElement;
-  let imageY = 0;
+const Sidebar = (): ReactElement => {
+  const canvas = useRef<HTMLCanvasElement>(null)
+  const image = useRef<HTMLImageElement>(new Image())
+  let imageY = 0
 
-  useEffect(() => {
-    image = new Image();
-    image.src = background;
-    image.onload = () => {
-      window.requestAnimationFrame(parallax);
-    };
-  }, []);
+  const parallax = (): void => {
+    if (!image.current) return
+    if (canvas.current === null) return
+    const ctx = canvas.current.getContext('2d')
+    if (ctx === null) return
+    const blurSize = 2 * window.devicePixelRatio
 
-  const parallax = () => {
-    if (!image) return;
-    if (canvas.current === null) return;
-    const ctx = canvas.current.getContext("2d");
-    if (ctx === null) return;
-    const blurSize = 2 * window.devicePixelRatio;
+    const imgHeight = image.current.naturalHeight
+    const imgWidth = image.current.naturalWidth
 
-    const imgHeight = image.naturalHeight;
-    const imgWidth = image.naturalWidth;
+    const innerHeight = document.documentElement.clientHeight
+    const innerWidth = canvas.current.clientWidth
+    if (innerWidth === 0) return
 
-    const innerHeight = document.documentElement.clientHeight;
-    const innerWidth = canvas.current.clientWidth;
-    if (innerWidth === 0) return;
+    const docHeight = document.body.scrollHeight
 
-    const docHeight = document.body.scrollHeight;
+    const scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio)
 
-    let scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio);
-
-    const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight);
-    const displacement = window.scrollY - imageY;
-    imageY += displacement * 0.01;
-    const sy = m * Math.min(Math.max(imageY, 0), docHeight - innerHeight);
-    ctx.restore();
-    ctx.save();
-    canvas.current.height = canvas.current.clientHeight;
-    canvas.current.width = canvas.current.clientWidth;
-    ctx.fillRect(0, 0, innerWidth, innerHeight);
-    ctx.filter = `blur(${blurSize}px)`;
-    ctx.globalAlpha = 0.7;
-    const sx = (imgWidth - innerWidth * scale) * 0.5;
+    const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
+    const displacement = window.scrollY - imageY
+    imageY += displacement * 0.01
+    const sy = m * Math.min(Math.max(imageY, 0), docHeight - innerHeight)
+    ctx.restore()
+    ctx.save()
+    canvas.current.height = canvas.current.clientHeight
+    canvas.current.width = canvas.current.clientWidth
+    ctx.fillRect(0, 0, innerWidth, innerHeight)
+    ctx.filter = `blur(${blurSize}px)`
+    ctx.globalAlpha = 0.7
+    const sx = (imgWidth - innerWidth * scale) * 0.5
     // if (sy === 0) return;
     ctx.drawImage(
-      image,
+      image.current,
       Math.round(sx),
       Math.round(sy),
       Math.round(scale * innerWidth),
@@ -68,12 +60,20 @@ export default () => {
       -blurSize,
       Math.round(innerWidth) + blurSize * 2,
       Math.round(innerHeight) + blurSize * 2
-    );
-    window.requestAnimationFrame(parallax);
-  };
+    )
+    window.requestAnimationFrame(parallax)
+  }
+
+  useEffect(() => {
+    // image.current = new Image();
+    image.current.src = background
+    image.current.onload = (): void => {
+      window.requestAnimationFrame(parallax)
+    }
+  }, [])
 
   const quote =
-    "I build things, write the code for them, and run from the resulting explosion.";
+    'I build things, write the code for them, and run from the resulting explosion.'
 
   return (
     <div className={sidebar}>
@@ -87,5 +87,7 @@ export default () => {
       <canvas className={canvasStyle} ref={canvas} />
       <div className={bgImage} />
     </div>
-  );
-};
+  )
+}
+
+export default Sidebar

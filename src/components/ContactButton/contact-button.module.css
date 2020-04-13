@@ -52,8 +52,7 @@
     align-items: center;
   }
 
-  .button-row a,
-  button {
+  .button-row a {
     width: 100%;
     margin-bottom: 2%;
   }

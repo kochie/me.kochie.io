@@ -1,13 +1,14 @@
-import React from "react";
+import React, { ReactElement } from 'react'
 
-import { Footer } from "..";
-import { Middle } from "..";
+import { Footer, Middle } from '..'
 
-import { main } from "./main.module.css";
+import { main } from './main.module.css'
 
-export default () => (
-  <div className={main}>
-    <Middle />
-    <Footer />
-  </div>
-);
+export default function Main(): ReactElement {
+  return (
+    <div className={main}>
+      <Middle />
+      <Footer />
+    </div>
+  )
+}

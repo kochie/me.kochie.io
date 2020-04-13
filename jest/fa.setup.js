@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { fab } = require("@fortawesome/free-brands-svg-icons");
 const { fas } = require("@fortawesome/free-solid-svg-icons");
 const { faComment } = require("@fortawesome/free-solid-svg-icons");

@@ -4,5 +4,5 @@
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "middle" "footer";
+  grid-template-areas: 'middle' 'footer';
 }

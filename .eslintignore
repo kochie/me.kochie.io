@@ -1,2 +1,9 @@
 dist/
 .next/
+node_modules/
+
+next.config.js
+postcss.config.js
+jest.config.js
+
+jest/

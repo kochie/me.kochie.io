@@ -1,1 +1,1 @@
-export const faSpin: string;
+export const faSpin: string

@@ -48,7 +48,7 @@
 }
 
 .portfolio-image::after {
-  content: "view";
+  content: 'view';
 }
 
 @media (--mobile-size) {

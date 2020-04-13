@@ -1,6 +1,6 @@
 .connections {
   color: wheat;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   padding-top: 50px;
   display: flex;
   flex-direction: column;

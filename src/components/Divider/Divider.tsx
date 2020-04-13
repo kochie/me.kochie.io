@@ -1,5 +1,7 @@
-import React from "react";
+import React, { ReactElement } from 'react'
 
-import { divider } from "./divider.module.css";
+import { divider } from './divider.module.css'
 
-export default () => <hr className={divider} />;
+export default function Divider(): ReactElement {
+  return <hr className={divider} />
+}
