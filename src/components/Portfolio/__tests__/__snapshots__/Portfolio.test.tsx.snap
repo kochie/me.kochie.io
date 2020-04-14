@@ -9,17 +9,17 @@ exports[`portfolio renders correctly 1`] = `
     className="portfolio"
   >
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://kochie.space"
         >
           <img
             alt="Space"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>
@@ -32,17 +32,17 @@ exports[`portfolio renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://3body.now.sh"
         >
           <img
             alt="Particlez"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>
@@ -55,17 +55,17 @@ exports[`portfolio renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://github.com/kochie/guardian-server"
         >
           <img
             alt="Guardian"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>
@@ -78,17 +78,17 @@ exports[`portfolio renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://bitbucket.org/kochie/fyp"
         >
           <img
             alt="Optimising Neural Networks for Embedded Systems"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>
@@ -101,17 +101,17 @@ exports[`portfolio renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://github.com/kochie/juice"
         >
           <img
             alt="Juice"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>
@@ -124,17 +124,17 @@ exports[`portfolio renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="portfolioItem"
+      className="portfolio-item"
     >
       <figure
-        className="portfolioImageWrapper"
+        className="portfolio-image-wrapper"
       >
         <a
           href="https://github.com/kochie/mcgurrin"
         >
           <img
             alt="McGurrin"
-            className="portfolioImage"
+            className="portfolio-image"
             src="image-mock.png"
           />
         </a>

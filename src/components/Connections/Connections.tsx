@@ -4,18 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconLookup, IconName } from '@fortawesome/fontawesome-common-types'
 import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 
-import {
-  connections as connectionContainer,
-  verticalMiddle,
-  grow,
-  linkedin,
-  twitter,
-  instagram,
-  github,
-  medium,
-  gitlab,
-  mastodon,
-} from './connections.module.css'
+import style from './connections.module.css'
 
 interface Connection {
   icon: IconName
@@ -29,49 +18,49 @@ const connections: Connection[] = [
     icon: 'linkedin',
     href: 'https://linkedin.com/in/rkkochie',
     name: 'rkkochie',
-    color: linkedin,
+    color: style.linkedin,
   },
   {
     icon: 'twitter',
     href: 'https://twitter.com/kochie',
     name: 'kochie',
-    color: twitter,
+    color: style.twitter,
   },
   {
     icon: 'instagram',
     href: 'https://instagram.com/rkkochie',
     name: 'rkkochie',
-    color: instagram,
+    color: style.instagram,
   },
   {
     icon: 'github',
     href: 'https://github.com/kochie',
     name: 'kochie',
-    color: github,
+    color: style.github,
   },
   {
     icon: 'medium-m',
     href: 'https://medium.com/@kochie',
     name: 'kochie',
-    color: medium,
+    color: style.medium,
   },
   {
     icon: 'gitlab',
     href: 'https://gitlab.com/kochie',
     name: 'kochie',
-    color: gitlab,
+    color: style.gitlab,
   },
   {
     icon: 'mastodon',
     href: 'https://melb.social/@kochie',
     name: 'kochie',
-    color: mastodon,
+    color: style.mastodon,
   },
 ]
 
 export default function Connections(): ReactElement {
   return (
-    <div className={connectionContainer}>
+    <div className={style.connections}>
       {connections.map((connection) => {
         const lookup: IconLookup = {
           prefix: 'fab',
@@ -79,7 +68,7 @@ export default function Connections(): ReactElement {
         }
         const iconDefinition = findIconDefinition(lookup)
         return (
-          <div className={grow} key={connection.color}>
+          <div className={style.grow} key={connection.color}>
             <a
               href={connection.href}
               className={`${connection.color}`}
@@ -90,7 +79,7 @@ export default function Connections(): ReactElement {
                 size="2x"
                 // listItem
                 // fixedWidth
-                className={verticalMiddle}
+                className={style['vertical-middle']}
               />
             </a>
           </div>

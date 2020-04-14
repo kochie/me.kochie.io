@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 
-import { card } from './recent-articles.module.css'
+import style from './recent-articles.module.css'
 
 const recentArticles = [
   {
@@ -19,7 +19,7 @@ export default function RecentArticles(): ReactElement {
   return (
     <div>
       <h2>Recent Articles</h2>
-      <div className={card}>
+      <div className={style.card}>
         {recentArticles.map((article) => (
           <React.Fragment key={article.id}>
             <div>

@@ -22,6 +22,15 @@ export default function Heading(): ReactElement {
       <link rel="icon" sizes="512x512" href="/images/favicon-512.webp" />
       <link rel="apple-touch-icon" href="/images/favicon-192.webp" />
 
+      <style>
+        {`
+          .guitar {
+            --fa-primary-color: blue;
+            --fa-secondary-color: red;
+          }
+        `}
+      </style>
+
       <meta
         name="msapplication-square310x310logo"
         content="/images/favicon-192.webp"

@@ -6,7 +6,7 @@ import {
   faFileUpload,
 } from '@fortawesome/free-solid-svg-icons'
 
-import { buttonRow, iconCenter } from './contact-button.module.css'
+import style from './contact-button.module.css'
 
 const emailAddress = 'robert@kochie.io'
 
@@ -17,13 +17,13 @@ interface Props {
 
 export default function ContactButton({ name, message }: Props): ReactElement {
   return (
-    <div className={buttonRow}>
+    <div className={style['button-row']}>
       <a>
         <button type="submit" className="button">
           <FontAwesomeIcon
             icon={faFileUpload}
             size="2x"
-            className={iconCenter}
+            className={style['icon-center']}
           />
           <span>Send Message</span>
         </button>
@@ -34,7 +34,11 @@ export default function ContactButton({ name, message }: Props): ReactElement {
         )}
       >
         <button className="button" type="button">
-          <FontAwesomeIcon icon={faEnvelope} size="2x" className={iconCenter} />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            size="2x"
+            className={style['icon-center']}
+          />
           <span>Email</span>
         </button>
       </a>
@@ -43,7 +47,7 @@ export default function ContactButton({ name, message }: Props): ReactElement {
           <FontAwesomeIcon
             icon={faFileDownload}
             size="2x"
-            className={iconCenter}
+            className={style['icon-center']}
           />
           <span>Download Resume</span>
         </button>

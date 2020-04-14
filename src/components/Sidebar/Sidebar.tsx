@@ -2,14 +2,7 @@ import React, { useRef, useEffect, ReactElement } from 'react'
 
 import { Connections } from '..'
 
-import {
-  sidebar,
-  sidebarHeader,
-  avatar as avatarStyle,
-  quote as quoteStyle,
-  canvas as canvasStyle,
-  bgImage,
-} from './sidebar.module.css'
+import style from './sidebar.module.css'
 
 import avatar from '../../assets/images/me.webp'
 import background from '../../assets/images/background-2.webp'
@@ -76,16 +69,16 @@ const Sidebar = (): ReactElement => {
     'I build things, write the code for them, and run from the resulting explosion.'
 
   return (
-    <div className={sidebar}>
-      <div className={sidebarHeader}>
-        <div className={avatarStyle}>
+    <div className={style.sidebar}>
+      <div className={style['sidebar-header']}>
+        <div className={style.avatar}>
           <img alt="me" src={avatar} />
         </div>
-        <div className={quoteStyle}>{quote}</div>
+        <div className={style.quote}>{quote}</div>
         <Connections />
       </div>
-      <canvas className={canvasStyle} ref={canvas} />
-      <div className={bgImage} />
+      <canvas className={style.canvas} ref={canvas} />
+      <div className={style['bg-image']} />
     </div>
   )
 }

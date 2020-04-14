@@ -3,11 +3,7 @@ import React, { useState, ReactElement } from 'react'
 import { ContactButton } from '..'
 
 import ContactInfo from './contact.mdx'
-import {
-  contactInfo,
-  name as nameStyle,
-  email as emailStyle,
-} from './contact.module.css'
+import style from './contact.module.css'
 
 export default function Contact(): ReactElement {
   const [name, setName] = useState('')
@@ -21,9 +17,9 @@ export default function Contact(): ReactElement {
       <div id="map" />
       <form action="https://formspree.io/robert@kochie.io" method="POST">
         <div>
-          <div className={contactInfo}>
+          <div className={style['contact-info']}>
             <input
-              className={nameStyle}
+              className={style.name}
               type="text"
               placeholder="Name"
               name="name"
@@ -31,7 +27,7 @@ export default function Contact(): ReactElement {
               onChange={(e): void => setName(e.target.value)}
             />
             <input
-              className={emailStyle}
+              className={style.email}
               type="text"
               placeholder="Email"
               name="email"

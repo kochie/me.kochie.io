@@ -1,11 +1,6 @@
 import React, { ReactElement } from 'react'
 
-import {
-  portfolio,
-  portfolioItem,
-  portfolioImageWrapper,
-  portfolioImage,
-} from './portfolio.module.css'
+import style from './portfolio.module.css'
 
 import Space from '../../assets/images/space.webp'
 import Particlez from '../../assets/images/particlez.webp'
@@ -65,15 +60,15 @@ export default function Portfolio(): ReactElement {
   return (
     <div>
       <h2>Recent Work</h2>
-      <div className={portfolio}>
+      <div className={style.portfolio}>
         {projects.map((project) => (
-          <div className={portfolioItem} key={project.id}>
-            <figure className={portfolioImageWrapper}>
+          <div className={style['portfolio-item']} key={project.id}>
+            <figure className={style['portfolio-image-wrapper']}>
               <a href={project.link}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={portfolioImage}
+                  className={style['portfolio-image']}
                 />
                 {/* <span className="portfolio-text">View</span> */}
               </a>

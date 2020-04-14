@@ -17,7 +17,7 @@ exports[`contact renders correctly 1`] = `
   >
     <div>
       <div
-        className="contactInfo"
+        className="contact-info"
       >
         <input
           className="name"
@@ -49,7 +49,7 @@ exports[`contact renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="buttonRow"
+      className="button-row"
     >
       <a>
         <button
@@ -58,7 +58,7 @@ exports[`contact renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-file-upload fa-w-12 fa-2x iconCenter"
+            className="svg-inline--fa fa-file-upload fa-w-12 fa-2x icon-center"
             data-icon="file-upload"
             data-prefix="fas"
             focusable="false"
@@ -87,7 +87,7 @@ exports[`contact renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-envelope fa-w-16 fa-2x iconCenter"
+            className="svg-inline--fa fa-envelope fa-w-16 fa-2x icon-center"
             data-icon="envelope"
             data-prefix="fas"
             focusable="false"
@@ -117,7 +117,7 @@ exports[`contact renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-file-download fa-w-12 fa-2x iconCenter"
+            className="svg-inline--fa fa-file-download fa-w-12 fa-2x icon-center"
             data-icon="file-download"
             data-prefix="fas"
             focusable="false"

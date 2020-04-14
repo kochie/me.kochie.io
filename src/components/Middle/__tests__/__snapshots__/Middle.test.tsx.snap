@@ -54,12 +54,12 @@ exports[`middle renders correctly 1`] = `
     </p>
   </div>
   <div
-    className="bmcButtonContainer"
+    className="bmc-button-container"
   >
     <a
-      className="bmcButton"
+      className="bmc-button"
       href="https://www.buymeacoffee.com/kochie"
-      rel="noopener"
+      rel="noopener noreferrer"
       target="_blank"
     >
       <img
@@ -67,7 +67,7 @@ exports[`middle renders correctly 1`] = `
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
       />
       <span
-        className="bmcSpan"
+        className="bmc-span"
       >
         Buy me a coffee
       </span>
@@ -156,17 +156,17 @@ exports[`middle renders correctly 1`] = `
         className="portfolio"
       >
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://kochie.space"
             >
               <img
                 alt="Space"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>
@@ -179,17 +179,17 @@ exports[`middle renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://3body.now.sh"
             >
               <img
                 alt="Particlez"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>
@@ -202,17 +202,17 @@ exports[`middle renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://github.com/kochie/guardian-server"
             >
               <img
                 alt="Guardian"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>
@@ -225,17 +225,17 @@ exports[`middle renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://bitbucket.org/kochie/fyp"
             >
               <img
                 alt="Optimising Neural Networks for Embedded Systems"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>
@@ -248,17 +248,17 @@ exports[`middle renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://github.com/kochie/juice"
             >
               <img
                 alt="Juice"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>
@@ -271,17 +271,17 @@ exports[`middle renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="portfolioItem"
+          className="portfolio-item"
         >
           <figure
-            className="portfolioImageWrapper"
+            className="portfolio-image-wrapper"
           >
             <a
               href="https://github.com/kochie/mcgurrin"
             >
               <img
                 alt="McGurrin"
-                className="portfolioImage"
+                className="portfolio-image"
                 src="image-mock.png"
               />
             </a>

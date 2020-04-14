@@ -7,6 +7,7 @@ exports[`footer renders correctly 1`] = `
   <div
     className="name"
   >
+    Robert Koch
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-copyright fa-w-16 "
@@ -16,7 +17,7 @@ exports[`footer renders correctly 1`] = `
       role="img"
       style={
         Object {
-          "paddingRight": "5px",
+          "padding": "0 5px",
         }
       }
       viewBox="0 0 512 512"
@@ -40,7 +41,7 @@ exports[`footer renders correctly 1`] = `
         />
       </g>
     </svg>
-    Robert Koch
+    2020
   </div>
   <div
     className="guitar"

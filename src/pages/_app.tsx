@@ -7,10 +7,10 @@ import { fas, faComment } from '@fortawesome/free-solid-svg-icons'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fad } from '@fortawesome/pro-duotone-svg-icons'
 
-import '@nightborn/signum/dist/index.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
-import '../assets/styles/fa-styles.scss' // Import the CSS
-import '../assets/styles/global.scss'
+import '../assets/styles/global.css'
+
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 library.add(fab, fas, fad, faComment)
