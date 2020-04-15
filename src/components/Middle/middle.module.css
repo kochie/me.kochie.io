@@ -1,41 +1,47 @@
 .middle {
   padding-top: 100px;
-  background-color: whitesmoke;
+  background-color: var(--background-color);
   padding-left: 7%;
   padding-right: 7%;
   grid-area: middle;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   padding-bottom: 100px;
   display: inline-grid;
+  transition: 0.3s;
 }
 
 .content h1 {
-  color: #353535;
+  color: var(--heading-color);
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 400;
+  transition: 0.3s;
 }
 
 .content h2 {
-  color: #353535;
+  color: var(--heading-color);
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 400;
+  transition: 0.3s;
 }
 
 .content h3 {
-  color: #353535;
+  color: var(--heading-color);
   font-size: 1em;
   line-height: 1.5em;
+  transition: 0.3s;
 }
 
 .content p {
-  color: #313131;
+  color: var(--text-color);
+  transition: 0.3s;
 }
 
 .content a {
-  /* color: #7998a5; */
-  color: #225a71;
+  /* color: ; */
+  color: var(--link-color);
+  transition: 0.3s;
 }
 
 @media (--tablet-size) {
