@@ -6,14 +6,14 @@
   /* color: red; */
   background-color: var(--icon-color);
 
-  text-align: center;
+  /* text-align: center; */
   /* vertical-align: middle; */
   /* line-height: 50px; */
   margin: 18px;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
   top: 0;
   right: 0;
@@ -118,5 +118,34 @@
 
 .iconDiv {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
+}
+
+@keyframes spin-out {
+	0% {
+    transform: rotateZ(0);
+    opacity: 1
+  }
+	100% {
+    transform: rotateZ(360deg);
+    opacity: 0;
+	}
+}
+@keyframes spin-in {
+	0% {
+    transform: rotateZ(0);
+    opacity: 0
+  }
+	100% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+	}
+}
+
+.exit {
+  animation: spin-out 1s ease-in-out
+}
+
+.enter {
+  animation: spin-in 1s ease-in-out
 }

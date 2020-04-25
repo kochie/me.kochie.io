@@ -1,94 +1,91 @@
-import React, { ReactElement, useState, useEffect } from 'react'
+import React, { ReactElement, useState, useEffect, useRef } from 'react'
 
 import styles from './theme.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 enum THEME {
-  dark = 'DARK',
-  light = 'LIGHT',
+    dark = "DARK",
+    light = "LIGHT"
 }
 
 export default function Theme(): ReactElement {
-  const [theme, setTheme] = useState(THEME.dark)
-  const bulbOff = findIconDefinition({
-    prefix: 'fad',
-    iconName: 'lightbulb-slash',
-  })
-
-  const bulbOn = findIconDefinition({
-    prefix: 'fad',
-    iconName: 'lightbulb-on',
-  })
-
-  const toggleMode = (newTheme: string): void => {
-    console.log('currently:', theme, 'setting to:', newTheme)
-    const isDark = theme === THEME.dark
-
-    if (
-      (newTheme === THEME.light && isDark) ||
-      (newTheme === THEME.dark && !isDark)
-    ) {
-      document.body.classList.toggle('dark-theme')
-      setTheme(isDark ? THEME.light : THEME.dark)
+    const isDarkMode = (): boolean => {
+        if (window.localStorage.getItem('theme') === null) {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches
+        }
+        return window.localStorage.getItem('theme') === THEME.dark
     }
-  }
+    
+    const currentIcon = useRef(null)
 
-  useEffect(() => {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (isDarkMode) document.body.classList.add('dark-theme')
-    // const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
-    // const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches;
+    const [theme, setTheme] = useState(null)
+    const [animateMoon, setMoonAnimation] = useState(false)
+    const [animateSun, setSunAnimation] = useState(false)
+    const bulbOff = findIconDefinition({
+        prefix: 'fad',
+        iconName: 'lightbulb-slash',
+    })
 
-    setTheme(
-      (window.localStorage.getItem('theme') as THEME) || isDarkMode
-        ? THEME.dark
-        : THEME.light
+    const bulbOn = findIconDefinition({
+        prefix: 'fad',
+        iconName: 'lightbulb-on',
+    })
+
+    const toggleMode = (newTheme: THEME): void => {
+        if (newTheme === THEME.light) {
+            document.body.classList.remove('dark-theme')
+        } else if (newTheme === THEME.dark) {
+            document.body.classList.add('dark-theme')
+        }
+
+            // setMoonAnimation(!anima)
+            // setSunAnimation(!animateSun)
+        setTheme(newTheme)
+    };
+
+    useEffect(() => {
+        if (isDarkMode()) document.body.classList.add('dark-theme')
+
+        setTheme(isDarkMode() ? THEME.dark : THEME.light)
+
+        const switchToLight = (e: MediaQueryListEvent): void => e.matches && toggleMode(THEME.light)
+        const switchToDark = (e: MediaQueryListEvent): void => e.matches && toggleMode(THEME.dark)
+
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(switchToDark);
+        window.matchMedia('(prefers-color-scheme: light)').addListener(switchToLight);
+
+        return (): void => {
+            window.matchMedia('(prefers-color-scheme: light)').removeListener(switchToDark);
+            window.matchMedia('(prefers-color-scheme: dark)').removeListener(switchToLight);
+        }
+    }, [])
+
+    useEffect(() => {
+        window.localStorage.setItem('theme', theme)
+    }, [theme])
+
+    const sunDiv = (
+        <div onClick={(): void => {
+            setSunAnimation(true)
+            toggleMode(THEME.dark)
+        }} onAnimationEnd={():void => setSunAnimation(false)} className={`${styles.iconDiv}`}>
+            <FontAwesomeIcon icon={bulbOff} size={'2x'} transform={{x: 5, y: 7.5}}/>
+        </div>
+    )
+    const moonDiv = (
+        <div onClick={(): void => {
+            setMoonAnimation(true)
+            toggleMode(THEME.light)
+        }} onAnimationEnd={():void => setMoonAnimation(false)} className={`${styles.iconDiv}`}>
+            <FontAwesomeIcon icon={bulbOn} size={'2x'} transform={{x: 5, y: 7.5}}/>
+        </div>
     )
 
-    const switchLight = (e: MediaQueryListEvent): void =>
-      e.matches && toggleMode(THEME.dark)
-    const switchDark = (e: MediaQueryListEvent): void =>
-      e.matches && toggleMode(THEME.light)
-
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(switchLight)
-    window.matchMedia('(prefers-color-scheme: light)').addListener(switchDark)
-
-    return (): void => {
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeListener(switchLight)
-      window
-        .matchMedia('(prefers-color-scheme: light)')
-        .removeListener(switchDark)
-    }
-  }, [])
-
-  useEffect(() => {
-    window.localStorage.setItem('theme', theme)
-  }, [theme])
-
-  const sunDiv = (
-    <div
-      onClick={(): void => toggleMode(THEME.dark)}
-      className={styles.iconDiv}
-    >
-      <FontAwesomeIcon icon={bulbOff} size={'2x'} />
-    </div>
-  )
-  const moonDiv = (
-    <div
-      onClick={(): void => toggleMode(THEME.light)}
-      className={styles.iconDiv}
-    >
-      <FontAwesomeIcon icon={bulbOn} size={'2x'} />
-    </div>
-  )
-
-  return (
-    <div className={styles.button}>
-      {theme === THEME.light ? sunDiv : null}
-      {theme === THEME.dark ? moonDiv : null}
-    </div>
-  )
+    return (
+        <div className={styles.button} ref={currentIcon}>
+            {theme === THEME.light ? sunDiv : null}
+            {theme === THEME.dark ? moonDiv : null}
+        </div>
+    )
 }
