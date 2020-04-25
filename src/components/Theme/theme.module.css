@@ -122,30 +122,36 @@
 }
 
 @keyframes spin-out {
-	0% {
+  0% {
     transform: rotateZ(0);
-    opacity: 1
+    opacity: 1;
   }
-	100% {
+  100% {
     transform: rotateZ(360deg);
     opacity: 0;
-	}
+  }
 }
 @keyframes spin-in {
-	0% {
+  0% {
     transform: rotateZ(0);
-    opacity: 0
+    opacity: 0;
   }
-	100% {
+  100% {
     transform: rotateZ(360deg);
     opacity: 1;
-	}
+  }
 }
 
 .exit {
-  animation: spin-out 1s ease-in-out
+  animation: spin-out 1s ease-in-out;
 }
 
 .enter {
-  animation: spin-in 1s ease-in-out
+  animation: spin-in 1s ease-in-out;
+}
+
+@media (--mobile-size) {
+  .button {
+    display: none;
+  }
 }
