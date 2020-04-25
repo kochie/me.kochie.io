@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { IconLookup } from '@fortawesome/fontawesome-common-types'
 
-import { Portfolio, RecentArticles, Divider, BuyMeACoffee, Button } from '..'
+import { Portfolio, RecentArticles, Divider, Button } from '..'
 
 import Hello from './intro.mdx'
 import style from './middle.module.css'
@@ -19,7 +19,7 @@ export default function Middle(): ReactElement {
       <div className={style.content}>
         <Hello />
       </div>
-      <BuyMeACoffee username="kochie" />
+      {/* <BuyMeACoffee username="kochie" /> */}
       <Divider />
       <Button>
         <a
