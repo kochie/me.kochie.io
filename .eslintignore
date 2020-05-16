@@ -1,9 +1,11 @@
 dist/
-.next/
+public/
 node_modules/
+jest/
+out/
+
+.next/
 
 next.config.js
 postcss.config.js
 jest.config.js
-
-jest/

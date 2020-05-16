@@ -11,12 +11,15 @@ on:
 
 jobs:
   build:
+    
+    env: 
+      FONT_AWESOME_TOKEN: ${{ secrets.FONT_AWESOME_TOKEN }} 
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x, 12.x, 13.x, 14.x]
 
     steps:
     - uses: actions/checkout@v2
