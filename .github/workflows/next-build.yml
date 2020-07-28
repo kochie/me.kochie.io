@@ -13,7 +13,7 @@ jobs:
   build:
 
     env: 
-      FONT_AWESOME_TOKEN: ${{ secrets.FONT_AWESOME_TOKEN }} 
+      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} 
 
     runs-on: ubuntu-latest
 
