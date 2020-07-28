@@ -54,7 +54,7 @@
     "husky": "^4.2.5",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^7.1.0",
+    "imagemin-optipng": "^8.0.0",
     "jest": "^26.1.0",
     "jest-css-modules": "^2.1.0",
     "lqip-loader": "^2.2.0",
