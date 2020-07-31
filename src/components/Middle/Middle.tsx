@@ -1,7 +1,9 @@
 import React, { ReactElement } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { IconLookup } from '@fortawesome/fontawesome-common-types'
+import {
+  findIconDefinition,
+  IconLookup,
+} from '@fortawesome/fontawesome-svg-core'
 
 import { Portfolio, RecentArticles, Divider, Button } from '..'
 

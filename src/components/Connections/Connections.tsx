@@ -1,8 +1,11 @@
 import React, { ReactElement } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconLookup, IconName } from '@fortawesome/fontawesome-common-types'
-import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
+import {
+  findIconDefinition,
+  IconLookup,
+  IconName,
+} from '@fortawesome/fontawesome-svg-core'
 
 import style from './connections.module.css'
 
