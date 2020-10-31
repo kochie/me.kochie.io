@@ -35,7 +35,7 @@ class MyDocument extends Document {
             m=f.getElementsByTagName('script')[0];
             o.async=1; o.src=t; o.id='fathom-script';
             m.parentNode.insertBefore(o,m)
-            })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+            })(document, window, 'https://kite.kochie.io/tracker.js', 'fathom');
             fathom('set', 'siteId', 'FLIWZIHK');
             fathom('trackPageview');
           `,
