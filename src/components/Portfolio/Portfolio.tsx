@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Image from 'next/image'
 
 import style from './portfolio.module.css'
 
@@ -65,7 +66,8 @@ export default function Portfolio(): ReactElement {
           <div className={style['portfolio-item']} key={project.id}>
             <figure className={style['portfolio-image-wrapper']}>
               <a href={project.link}>
-                <img
+                <Image
+                  unsized
                   src={project.image}
                   alt={project.title}
                   className={style['portfolio-image']}
