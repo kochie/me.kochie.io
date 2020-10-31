@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, CSSProperties } from 'react'
+import NextImage from 'next/image'
 import { sharpen, blur } from './image.css'
 import styles from '../App/app.module.css'
 
-export interface Image {
+export interface ImageProps {
   lqip: string
   src: string
   width?: number | string
@@ -22,7 +23,7 @@ const Image = ({
   alt,
   className = '',
   loadOnObserve = false,
-}: Image) => {
+}: ImageProps) => {
   const imgRef = useRef<HTMLImageElement>(null)
 
   async function getImage() {
@@ -75,7 +76,7 @@ const Image = ({
 
   return (
     <div className={containerClasses} style={{ ...style, width, height }}>
-      <img
+      <Image
         ref={imgRef}
         src={lqip}
         width={'100%'}

@@ -13,10 +13,17 @@ exports[`recent articles renders correctly 1`] = `
         href="https://medium.com/unihack-blog/why-build-an-app-when-you-can-build-a-phone-88b5ce7d0104"
         rel="noopener"
       >
-        <img
-          alt="Why build an app when you can build a phone?"
-          src="https://cdn-images-1.medium.com/max/800/1*ijymAR61qIf690CHOV3Hcw.jpeg"
-        />
+        <div>
+          <div>
+            
+            <img
+              alt="Why build an app when you can build a phone?"
+              className="__lazy"
+              data-src="/_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=1200&q=75"
+              data-srcset="/_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F800%2F1*ijymAR61qIf690CHOV3Hcw.jpeg&w=1200&q=75 1200w"
+            />
+          </div>
+        </div>
       </a>
     </div>
     <div>
