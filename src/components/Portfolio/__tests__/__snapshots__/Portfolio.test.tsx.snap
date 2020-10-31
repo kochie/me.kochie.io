@@ -17,11 +17,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://kochie.space"
         >
-          <img
-            alt="Space"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="Space"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>
@@ -40,11 +46,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://3body.now.sh"
         >
-          <img
-            alt="Particlez"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="Particlez"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>
@@ -63,11 +75,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://github.com/kochie/guardian-server"
         >
-          <img
-            alt="Guardian"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="Guardian"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>
@@ -86,11 +104,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://bitbucket.org/kochie/fyp"
         >
-          <img
-            alt="Optimising Neural Networks for Embedded Systems"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="Optimising Neural Networks for Embedded Systems"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>
@@ -109,11 +133,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://github.com/kochie/juice"
         >
-          <img
-            alt="Juice"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="Juice"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>
@@ -132,11 +162,17 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://github.com/kochie/mcgurrin"
         >
-          <img
-            alt="McGurrin"
-            className="portfolio-image"
-            src="image-mock.png"
-          />
+          <div>
+            <div>
+              
+              <img
+                alt="McGurrin"
+                className="portfolio-image __lazy"
+                data-src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75"
+                data-srcset="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+              />
+            </div>
+          </div>
         </a>
       </figure>
       <h3>

@@ -1,1 +1,1 @@
-module.exports = "image-mock.png"
+module.exports = "https://me.kochie.io/public/image-mock.png"
