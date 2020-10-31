@@ -67,7 +67,7 @@ export default function Portfolio(): ReactElement {
             <figure className={style['portfolio-image-wrapper']}>
               <a href={project.link}>
                 <Image
-                  unsized
+                  layout='fill'
                   src={project.image}
                   alt={project.title}
                   className={style['portfolio-image']}

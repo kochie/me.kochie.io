@@ -1,5 +1,6 @@
 const Enzyme = require('enzyme')
-const Adapter = require('enzyme-adapter-react-16')
+// const Adapter = require('enzyme-adapter-react-16')
+const Adapter = require('@wojtekmaj/enzyme-adapter-react-17')
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -8,7 +9,7 @@ process.env = {
     __NEXT_IMAGE_OPTS: {
         deviceSizes: [320, 420, 768, 1024, 1200],
         imageSizes: [],
-        domains: ['me.kochie.io'],
+        domains: ['me.kochie.io', 'cdn-images-1.medium.com'],
         path: '/_next/image',
         loader: 'default',
     },

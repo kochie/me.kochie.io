@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react'
 import App from 'next/app'
+import { init } from '../utils/sentry'
 
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas, faComment } from '@fortawesome/free-solid-svg-icons'
@@ -14,6 +15,8 @@ import '../assets/styles/global.css'
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 library.add(fab, fas, fad, faComment)
+
+init()
 
 class MyApp extends App {
   render(): ReactElement {
