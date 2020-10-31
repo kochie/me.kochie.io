@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Image from 'next/image'
 
 import style from './recent-articles.module.css'
 
@@ -24,7 +25,7 @@ export default function RecentArticles(): ReactElement {
           <React.Fragment key={article.id}>
             <div>
               <a rel="noopener" href={article.link}>
-                <img alt={article.name} src={article.image} />
+                <Image unsized alt={article.name} src={article.image} />
               </a>
             </div>
             <div>
