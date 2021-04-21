@@ -3,7 +3,7 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/
 })
 const withOffline = require('next-offline')
-const optimizedImages = require('next-optimized-images');
+// const optimizedImages = require('next-optimized-images');
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const {
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
@@ -31,6 +31,9 @@ const config = {
   },
   images: {
     domains: ['cdn-images-1.medium.com']
+  },
+  future: {
+    webpack5: true,
   },
   workboxOpts: {
     swDest: 'static/service-worker.js',
