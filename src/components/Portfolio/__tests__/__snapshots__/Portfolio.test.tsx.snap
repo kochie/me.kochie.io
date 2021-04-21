@@ -37,8 +37,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="Space"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/space.webp"
+                srcSet="/_next/image?url=%2Fimages%2Fspace.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fspace.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fspace.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fspace.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fspace.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -130,8 +130,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="Particlez"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/particlez.webp"
+                srcSet="/_next/image?url=%2Fimages%2Fparticlez.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -223,8 +223,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="Guardian"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/guardian.webp"
+                srcSet="/_next/image?url=%2Fimages%2Fguardian.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fguardian.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fguardian.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fguardian.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fguardian.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -316,8 +316,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="Optimising Neural Networks for Embedded Systems"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/tensorflow.webp"
+                srcSet="/_next/image?url=%2Fimages%2Ftensorflow.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -409,8 +409,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="Juice"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/juice.webp"
+                srcSet="/_next/image?url=%2Fimages%2Fjuice.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fjuice.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fjuice.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fjuice.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fjuice.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -502,8 +502,8 @@ exports[`portfolio renders correctly 1`] = `
                 alt="McGurrin"
                 className="portfolio-image"
                 decoding="async"
-                src="https://me.kochie.io/public/image-mock.png"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fpublic%2Fimage-mock.png&w=1200&q=75 1200w"
+                src="/images/keyboard.webp"
+                srcSet="/_next/image?url=%2Fimages%2Fkeyboard.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
