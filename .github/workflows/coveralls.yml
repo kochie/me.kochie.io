@@ -17,9 +17,9 @@ jobs:
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
-        node-version: 14.x
+        node-version: 10.x
 
-    - name: npm ci, make test-coverage
+    - name: run coverage
       run: |
         npm ci
         npm run test-coverage
