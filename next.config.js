@@ -29,6 +29,9 @@ const config = {
   env: {
     buildTime: new Date().toDateString(),
   },
+  images: {
+    domains: ['cdn-images-1.medium.com']
+  },
   workboxOpts: {
     swDest: 'static/service-worker.js',
     runtimeCaching: [
