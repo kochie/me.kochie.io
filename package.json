@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write \"src/**/*.{tsx,ts,js,jsx,css}\"",
+    "test-coverage": "jest --coverage",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
