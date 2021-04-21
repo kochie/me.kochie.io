@@ -4,8 +4,8 @@ import { Connections } from '..'
 
 import style from './sidebar.module.css'
 
-const avatar = '/public/images/me.webp'
-const background = '/public/images/background-2.webp'
+const avatar = '/images/me.webp'
+const background = '/images/background-2.webp'
 
 const Sidebar = (): ReactElement => {
   const canvas = useRef<HTMLCanvasElement>(null)

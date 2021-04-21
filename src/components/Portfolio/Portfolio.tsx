@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 import style from './portfolio.module.css'
 
-const Space = '/public/images/space.webp'
-const Particlez = '/public/images/particlez.webp'
-const Guardian = '/public/images/guardian.webp'
-const Tensorflow = '/public/images/tensorflow.webp'
-const Juice = '/public/images/juice.webp'
-const Keyboard = '/public/images/keyboard.webp'
+const Space = '/images/space.webp'
+const Particlez = '/images/particlez.webp'
+const Guardian = '/images/guardian.webp'
+const Tensorflow = '/images/tensorflow.webp'
+const Juice = '/images/juice.webp'
+const Keyboard = '/images/keyboard.webp'
 
 const projects = [
   {
