@@ -66,6 +66,7 @@
     "next-offline": "^5.0.5",
     "next-optimized-images": "^3.0.0-canary.10",
     "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
     "postcss-css-variables": "^0.17.0",
     "postcss-custom-media": "^8.0.0",
     "postcss-custom-properties": "^11.0.0",
