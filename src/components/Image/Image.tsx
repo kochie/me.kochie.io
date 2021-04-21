@@ -24,68 +24,68 @@ const Image = ({
   className = '',
   loadOnObserve = false,
 }: ImageProps) => {
-  const imgRef = useRef<HTMLImageElement>(null)
+  // const imgRef = useRef<HTMLImageElement>(null)
 
-  async function getImage() {
-    // console.log("WOAH")
-    try {
-      const image = await fetch(src).catch((error) => {
-        throw error
-      })
+  // async function getImage() {
+  //   // console.log("WOAH")
+  //   try {
+  //     const image = await fetch(src).catch((error) => {
+  //       throw error
+  //     })
 
-      if (!image.ok) return
+  //     if (!image.ok) return
 
-      const blob = await image.blob()
+  //     const blob = await image.blob()
 
-      if (imgRef.current) {
-        imgRef.current.src = URL.createObjectURL(blob)
-        imgRef.current.classList.add(sharpen)
-      } else {
-        console.warn('imgRef does not have a current reference!')
-      }
-    } catch (error) {
-      console.error(error)
-    }
-  }
+  //     if (imgRef.current) {
+  //       imgRef.current.src = URL.createObjectURL(blob)
+  //       imgRef.current.classList.add(sharpen)
+  //     } else {
+  //       console.warn('imgRef does not have a current reference!')
+  //     }
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
 
-  function createIntersectionObserver(): IntersectionObserver {
-    const observer = new IntersectionObserver((entries, observer) => {
-      // console.log(entries.length)
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && imgRef.current) {
-          getImage()
-          observer.unobserve(imgRef.current)
-        }
-      })
-    })
-    if (imgRef.current) observer.observe(imgRef.current)
-    return observer
-  }
+  // function createIntersectionObserver(): IntersectionObserver {
+  //   const observer = new IntersectionObserver((entries, observer) => {
+  //     // console.log(entries.length)
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting && imgRef.current) {
+  //         getImage()
+  //         observer.unobserve(imgRef.current)
+  //       }
+  //     })
+  //   })
+  //   if (imgRef.current) observer.observe(imgRef.current)
+  //   return observer
+  // }
 
-  useEffect(() => {
-    if (!loadOnObserve) getImage()
-    else {
-      const observer = createIntersectionObserver()
-      return () => {
-        if (imgRef.current) observer.unobserve(imgRef.current)
-      }
-    }
-  })
+  // useEffect(() => {
+  //   if (!loadOnObserve) getImage()
+  //   else {
+  //     const observer = createIntersectionObserver()
+  //     return () => {
+  //       if (imgRef.current) observer.unobserve(imgRef.current)
+  //     }
+  //   }
+  // })
 
-  const containerClasses = [styles.container, className].join(' ')
+  // const containerClasses = [styles.container, className].join(' ')
 
-  return (
-    <div className={containerClasses} style={{ ...style, width, height }}>
-      <Image
-        ref={imgRef}
-        src={lqip}
-        width={'100%'}
-        height={'100%'}
-        className={blur}
-        alt={alt}
-      />
-    </div>
-  )
+  // return (
+  //   <div className={containerClasses} style={{ ...style, width, height }}>
+  //     <Image
+  //       ref={imgRef}
+  //       src={lqip}
+  //       width={'100%'}
+  //       height={'100%'}
+  //       className={blur}
+  //       alt={alt}
+  //     />
+  //   </div>
+  // )
 }
 
 export default Image

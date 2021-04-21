@@ -109,7 +109,7 @@ const config = {
 const plugins = [
   withOffline,
   withMDX,
-  optimizedImages
+  // optimizedImages
 ]
 
 module.exports = withPlugins(plugins, config);

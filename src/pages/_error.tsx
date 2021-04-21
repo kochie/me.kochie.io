@@ -20,15 +20,18 @@ const MyError = ({ statusCode, hasGetInitialPropsRun, err }: MyErrorProps) => {
   return <NextErrorComponent statusCode={statusCode} />
 }
 
-MyError.getInitialProps = async ({ res, err, asPath }) => {
+MyError.getInitialProps = async ({ res, err, asPath, pathname, query, AppTree }) => {
   const errorInitialProps = await NextErrorComponent.getInitialProps({
     res,
     err,
+    pathname,
+    query,
+    AppTree
   })
 
   // Workaround for https://github.com/vercel/next.js/issues/8592, mark when
   // getInitialProps has run
-  errorInitialProps.hasGetInitialPropsRun = true
+  errorInitialProps["hasGetInitialPropsRun"] = true
 
   // Running on the server, the response object (`res`) is available.
   //

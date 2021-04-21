@@ -85,7 +85,7 @@
     display: none;
   }
   .bg-image {
-    background-image: url('../../assets/images/background-1.webp');
+    background-image: url('/public/images/background-1.webp');
     opacity: 0.5;
     background-color: black;
     background-position: center;

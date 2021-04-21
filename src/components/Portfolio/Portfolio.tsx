@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 import style from './portfolio.module.css'
 
-import Space from '../../assets/images/space.webp'
-import Particlez from '../../assets/images/particlez.webp'
-import Guardian from '../../assets/images/guardian.webp'
-import Tensorflow from '../../assets/images/tensorflow.webp'
-import Juice from '../../assets/images/juice.webp'
-import Keyboard from '../../assets/images/keyboard.webp'
+const Space = 'public/images/space.webp'
+const Particlez = 'public/images/particlez.webp'
+const Guardian = 'public/images/guardian.webp'
+const Tensorflow = 'public/images/tensorflow.webp'
+const Juice = 'public/images/juice.webp'
+const Keyboard = 'public/images/keyboard.webp'
 
 const projects = [
   {
