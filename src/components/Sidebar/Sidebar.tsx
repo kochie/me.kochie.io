@@ -4,7 +4,7 @@ import { Connections } from '..'
 
 import style from './sidebar.module.css'
 
-const avatar = '/images/me.webp'
+const avatar = '/images/AfterRunning_Square.png'
 const background = '/images/background-2.webp'
 
 const Sidebar = (): ReactElement => {

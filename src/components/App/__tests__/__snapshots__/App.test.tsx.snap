@@ -18,7 +18,7 @@ exports[`app renders correctly 1`] = `
         >
           <img
             alt="me"
-            src="/images/me.webp"
+            src="/images/AfterRunning_Square.png"
           />
         </div>
         <div
