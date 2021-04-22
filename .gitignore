@@ -4,3 +4,4 @@ dist/
 .next/
 .now
 out/
+coverage/

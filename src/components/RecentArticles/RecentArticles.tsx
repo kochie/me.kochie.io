@@ -23,10 +23,12 @@ export default function RecentArticles(): ReactElement {
       <div className={style.card}>
         {recentArticles.map((article) => (
           <React.Fragment key={article.id}>
-            <div>
+            <div className={style.imageContainer}>
+            <div className={style.image}>
               <a rel="noopener" href={article.link}>
-                <Image unsized alt={article.name} src={article.image} />
+                <Image layout='fill' objectFit='cover' objectPosition='center' alt={article.name} src={article.image} />
               </a>
+            </div>
             </div>
             <div>
               <h3>{article.name}</h3>

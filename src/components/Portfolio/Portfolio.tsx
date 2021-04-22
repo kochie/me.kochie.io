@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 import style from './portfolio.module.css'
 
-import Space from '../../assets/images/space.webp'
-import Particlez from '../../assets/images/particlez.webp'
-import Guardian from '../../assets/images/guardian.webp'
-import Tensorflow from '../../assets/images/tensorflow.webp'
-import Juice from '../../assets/images/juice.webp'
-import Keyboard from '../../assets/images/keyboard.webp'
+const Space = '/images/space.webp'
+const Particlez = '/images/particlez.webp'
+const Guardian = '/images/guardian.webp'
+const Tensorflow = '/images/tensorflow.webp'
+const Juice = '/images/juice.webp'
+const Keyboard = '/images/keyboard.webp'
 
 const projects = [
   {
@@ -67,7 +67,7 @@ export default function Portfolio(): ReactElement {
             <figure className={style['portfolio-image-wrapper']}>
               <a href={project.link}>
                 <Image
-                  unsized
+                  layout='fill'
                   src={project.image}
                   alt={project.title}
                   className={style['portfolio-image']}

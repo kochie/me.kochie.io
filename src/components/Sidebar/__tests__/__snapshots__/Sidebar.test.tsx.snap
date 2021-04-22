@@ -12,7 +12,7 @@ exports[`sidebar renders correctly 1`] = `
     >
       <img
         alt="me"
-        src="https://me.kochie.io/public/image-mock.png"
+        src="/images/me.webp"
       />
     </div>
     <div
