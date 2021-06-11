@@ -62,7 +62,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-offline": "^5.0.5",
     "node-sass": "^5.0.0",
-    "postcss": "^8.2.10",
+    "postcss": "^8.3.2",
     "postcss-css-variables": "^0.17.0",
     "postcss-custom-media": "^8.0.0",
     "postcss-custom-properties": "^11.0.0",
