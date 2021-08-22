@@ -9,11 +9,13 @@ export default function Contact(): ReactElement {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  
+  console.log(ContactInfo)
 
   return (
     <div>
       <h2>Contact</h2>
-      <ContactInfo />
+      {/* <ContactInfo /> */}
       <div id="map" />
       <form action="https://formspree.io/robert@kochie.io" method="POST">
         <div>

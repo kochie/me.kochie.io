@@ -18,6 +18,7 @@ process.env.SENTRY_DSN = SENTRY_DSN
 const basePath = ''
 
 const config = {
+  experimental: { esmExternals: true },
   productionBrowserSourceMaps: true,
   env: {
     // Make the COMMIT_SHA available to the client so that Sentry events can be
@@ -31,9 +32,6 @@ const config = {
   },
   images: {
     domains: ['cdn-images-1.medium.com']
-  },
-  future: {
-    webpack5: true,
   },
   workboxOpts: {
     swDest: 'static/service-worker.js',
