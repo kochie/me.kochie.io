@@ -1,27 +1,29 @@
 {
-    "short_name": "Robert Koch",
-    "name": "me.kochie.io",
-    "icons": [
-      {
-        "src": "/images/favicon-192.png",
-        "type": "image/png",
-        "sizes": "48x48 72x72 96x96 144x144 192x192 192x192",
-        "purpose": "maskable"
-      },
-      {
-        "src": "/images/favicon-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "/images/favicon-1024.png",
-        "type": "image/png",
-        "sizes": "1024x1024"
-      }
-    ],
-    "start_url": "/",
-    "background_color": "#333144",
-    "display": "standalone",
-    "scope": "/",
-    "theme_color": "#333144"
-  }
+  "short_name": "Robert Koch",
+  "name": "me.kochie.io",
+  "icons": [
+    {
+      "src": "/images/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicon-1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#333144",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#333144"
+}
