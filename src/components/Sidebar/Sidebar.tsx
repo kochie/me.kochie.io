@@ -28,7 +28,8 @@ const Sidebar = (): ReactElement => {
 
     const docHeight = document.body.scrollHeight
 
-    const scale = imgHeight / (innerHeight * 1.1 * window.devicePixelRatio)
+    const scale = imgHeight / (innerHeight * 1 * window.devicePixelRatio)
+    // const scale = 0.85
 
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
     const displacement = window.scrollY - imageY
