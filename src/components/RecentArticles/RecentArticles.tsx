@@ -51,7 +51,7 @@ export default function RecentArticles(): ReactElement {
   )
   if (error) return <div>{error}</div>
   if (!data) return <div></div>
-  console.log(data)
+  // console.log(data)
   return (
     <div>
       <h2 className="text-xl mb-6">Recent Articles</h2>
