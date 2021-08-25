@@ -1,6 +1,6 @@
-const withPlugins = require('next-compose-plugins');
+const withPlugins = require('next-compose-plugins')
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/
+  extension: /\.mdx?$/,
 })
 const withOffline = require('next-offline')
 // const optimizedImages = require('next-optimized-images');
@@ -25,35 +25,37 @@ const config = {
     // outside of Vercel
     NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
   },
-  target: "serverless",
+  target: 'serverless',
   env: {
     buildTime: new Date().toDateString(),
   },
   images: {
-    domains: ['cdn-images-1.medium.com']
-  },
-  future: {
-    webpack5: true,
+    domains: ['cdn-images-1.medium.com'],
   },
   workboxOpts: {
-    swDest: 'static/service-worker.js',
+    swDest: process.env.NEXT_EXPORT
+      ? 'service-worker.js'
+      : 'static/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
         handler: 'NetworkFirst',
         options: {
-          cacheName: 'https-calls',
-          networkTimeoutSeconds: 15,
+          cacheName: 'offlineCache',
           expiration: {
-            maxEntries: 150,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
+            maxEntries: 200,
           },
         },
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/service-worker.js',
+        destination: '/_next/static/service-worker.js',
+      },
+    ]
   },
   webpack: (config, options) => {
     // In `pages/_app.js`, Sentry is imported from @sentry/browser. While
@@ -109,7 +111,7 @@ const config = {
     }
     return config
   },
-  basePath
+  basePath,
 }
 
 const plugins = [
@@ -118,4 +120,4 @@ const plugins = [
   // optimizedImages
 ]
 
-module.exports = withPlugins(plugins, config);
+module.exports = withPlugins(plugins, config)
