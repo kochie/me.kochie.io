@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react'
 
-import { Head, App, Theme, BuyMeACoffee } from '../components'
+import { Head, App, BuyMeACoffee } from '@/components/index'
 
 const Index = (): ReactElement => (
   <>
     <Head />
     <App />
-    <Theme />
     <BuyMeACoffee />
   </>
 )

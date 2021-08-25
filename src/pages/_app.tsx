@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppProps): ReactElement {
     //  - If you're using www. for your domain, make sure you include that here.
     Fathom.load('FLIWZIHK', {
       includedDomains: ['me.kochie.io'],
-      url: 'https://kit.kochie.io/script.js',
+      url: 'https://kite.kochie.io/script.js',
     })
 
     function onRouteChangeComplete() {

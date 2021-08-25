@@ -61,22 +61,30 @@ export default function Portfolio(): ReactElement {
   return (
     <div>
       <h2>Recent Work</h2>
-      <div className={style.portfolio}>
+      <div className="grid grid-cols-2 grid-flow-row gap-10 auto-cols-max">
         {projects.map((project) => (
-          <div className={style['portfolio-item']} key={project.id}>
-            <figure className={style['portfolio-image-wrapper']}>
+          <div className="group rounded-md bg-white" key={project.id}>
+            <div
+              className="relative rounded-md overflow-hidden"
+              style={{ padding: '30% 0' }}
+            >
               <a href={project.link}>
                 <Image
-                  layout='fill'
+                  layout="fill"
                   src={project.image}
                   alt={project.title}
-                  className={style['portfolio-image']}
+                  objectFit="cover"
+                  className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                 />
                 {/* <span className="portfolio-text">View</span> */}
               </a>
-            </figure>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            </div>
+            <div className="p-2">
+              <h3 className="text-xl font-bold group-hover:text-red-600 py-3">
+                {project.title}
+              </h3>
+              <p>{project.description}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -30,7 +30,7 @@ const config = {
     buildTime: new Date().toDateString(),
   },
   images: {
-    domains: ['cdn-images-1.medium.com'],
+    domains: ['blog.kochie.io'],
   },
   workboxOpts: {
     swDest: process.env.NEXT_EXPORT

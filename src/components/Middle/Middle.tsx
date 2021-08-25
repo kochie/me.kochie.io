@@ -5,7 +5,7 @@ import {
   IconLookup,
 } from '@fortawesome/fontawesome-svg-core'
 
-import { Portfolio, RecentArticles, Divider, Button } from '..'
+import { Portfolio, RecentArticles, Divider, Button } from '@/components/index'
 
 import Hello from './intro.mdx'
 import style from './middle.module.css'
@@ -17,7 +17,7 @@ export default function Middle(): ReactElement {
   const fileUser: IconLookup = { prefix: 'fad', iconName: 'file-user' }
 
   return (
-    <div className={style.middle}>
+    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700">
       <div className={style.content}>
         <Hello />
       </div>
@@ -60,7 +60,7 @@ export default function Middle(): ReactElement {
         </a>
       </Button>
       <Divider />
-      <div className={style.content}>
+      <div className="">
         <Portfolio />
       </div>
       <Divider />
