@@ -1,7 +1,6 @@
 export { default as App } from './App/App'
 export { default as ContactButton } from './ContactButton/ContactButton'
 export { default as Connections } from './Connections/Connections'
-export { default as BuyMeACoffee } from './BuyMeACoffee/widget'
 export { default as Button } from './Button/Button'
 export { default as Footer } from './Footer/Footer'
 export { default as RecentArticles } from './RecentArticles/RecentArticles'

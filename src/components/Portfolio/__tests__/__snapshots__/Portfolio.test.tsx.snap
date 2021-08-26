@@ -6,10 +6,10 @@ exports[`portfolio renders correctly 1`] = `
     Recent Work
   </h2>
   <div
-    className="grid grid-cols-2 grid-flow-row gap-10 auto-cols-max"
+    className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-10 auto-cols-max"
   >
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"
@@ -116,7 +116,7 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"
@@ -223,7 +223,7 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"
@@ -330,7 +330,7 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"
@@ -437,7 +437,7 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"
@@ -544,7 +544,7 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-md bg-white"
+      className="group rounded-md"
     >
       <div
         className="relative rounded-md overflow-hidden"

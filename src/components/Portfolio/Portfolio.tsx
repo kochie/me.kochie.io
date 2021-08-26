@@ -61,9 +61,9 @@ export default function Portfolio(): ReactElement {
   return (
     <div>
       <h2>Recent Work</h2>
-      <div className="grid grid-cols-2 grid-flow-row gap-10 auto-cols-max">
+      <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-10 auto-cols-max">
         {projects.map((project) => (
-          <div className="group rounded-md bg-white" key={project.id}>
+          <div className="group rounded-md" key={project.id}>
             <div
               className="relative rounded-md overflow-hidden"
               style={{ padding: '30% 0' }}

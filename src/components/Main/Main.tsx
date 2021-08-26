@@ -6,7 +6,10 @@ import style from './main.module.css'
 
 export default function Main(): ReactElement {
   return (
-    <div className={style.main}>
+    <div
+      id="main"
+      className="flex flex-col flex-1 lg:overflow-y-scroll lg:h-screen"
+    >
       <Middle />
       <Footer />
     </div>

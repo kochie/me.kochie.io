@@ -2,10 +2,11 @@
 
 exports[`main renders correctly 1`] = `
 <div
-  className="main"
+  className="flex flex-col flex-1 lg:overflow-y-scroll lg:h-screen"
+  id="main"
 >
   <div
-    className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700"
+    className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose max-w-none"
   >
     <div
       className="content"
@@ -136,10 +137,10 @@ exports[`main renders correctly 1`] = `
           Recent Work
         </h2>
         <div
-          className="grid grid-cols-2 grid-flow-row gap-10 auto-cols-max"
+          className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-10 auto-cols-max"
         >
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
@@ -246,7 +247,7 @@ exports[`main renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
@@ -353,7 +354,7 @@ exports[`main renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
@@ -460,7 +461,7 @@ exports[`main renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
@@ -567,7 +568,7 @@ exports[`main renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
@@ -674,7 +675,7 @@ exports[`main renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="group rounded-md bg-white"
+            className="group rounded-md"
           >
             <div
               className="relative rounded-md overflow-hidden"
