@@ -17,11 +17,10 @@ export default function Middle(): ReactElement {
   const fileUser: IconLookup = { prefix: 'fad', iconName: 'file-user' }
 
   return (
-    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700">
+    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose max-w-none">
       <div className={style.content}>
         <Hello />
       </div>
-      {/* <BuyMeACoffee username="kochie" /> */}
       <Divider />
       <Button>
         <a

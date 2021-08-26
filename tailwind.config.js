@@ -20,5 +20,5 @@ module.exports = {
       grayscale: ['group-hover'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

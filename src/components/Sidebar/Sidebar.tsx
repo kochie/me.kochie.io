@@ -1,10 +1,11 @@
 import React, { useRef, useEffect, ReactElement } from 'react'
+import NextImage from 'next/image'
 
 import { Connections } from '..'
 
 import style from './sidebar.module.css'
 
-const avatar = '/images/AfterRunning_Square.png'
+import avatar from '@/images/AfterRunning_Square.png'
 const background = '/images/background-2.webp'
 
 const Sidebar = (): ReactElement => {
@@ -13,8 +14,14 @@ const Sidebar = (): ReactElement => {
   let imageY = 0
 
   const parallax = (): void => {
+    // console.log(document.getElementById('main').scrollTop)
+
     if (!image.current) return
     if (canvas.current === null) return
+    if (!document.getElementById('main')) return
+
+    const main = document.getElementById('main')
+
     const ctx = canvas.current.getContext('2d')
     if (ctx === null) return
     const blurSize = 2 * window.devicePixelRatio
@@ -26,13 +33,13 @@ const Sidebar = (): ReactElement => {
     const innerWidth = canvas.current.clientWidth
     if (innerWidth === 0) return
 
-    const docHeight = document.body.scrollHeight
+    const docHeight = main.scrollHeight
 
     const scale = imgHeight / (innerHeight * 1 * window.devicePixelRatio)
     // const scale = 0.85
 
     const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
-    const displacement = window.scrollY - imageY
+    const displacement = main.scrollTop - imageY
     imageY += displacement * 0.01
     const sy = m * Math.min(Math.max(imageY, 0), docHeight - innerHeight)
     ctx.restore()
@@ -59,10 +66,15 @@ const Sidebar = (): ReactElement => {
   }
 
   useEffect(() => {
+    let num: number
     image.current = new Image()
     image.current.src = background
     image.current.onload = (): void => {
-      window.requestAnimationFrame(parallax)
+      num = window.requestAnimationFrame(parallax)
+    }
+
+    return () => {
+      window.cancelAnimationFrame(num)
     }
   }, [])
 
@@ -70,10 +82,10 @@ const Sidebar = (): ReactElement => {
     'I build things, write the code for them, and run from the resulting explosion.'
 
   return (
-    <div className={style.sidebar}>
-      <div className={style['sidebar-header']}>
-        <div className={style.avatar}>
-          <img alt="me" src={avatar} />
+    <div className="relative top-0 w-screen min-h-screen flex flex-col justify-center lg:h-screen lg:overflow-hidden lg:bg-black lg:w-1/3">
+      <div className="flex flex-col z-10 text-center items-center h-full mt-20">
+        <div className="rounded-full w-40 h-40 overflow-hidden">
+          <NextImage layout="responsive" src={avatar} alt="me" />
         </div>
         <div className={style.quote}>{quote}</div>
         <Connections />
