@@ -2,10 +2,10 @@
 
 exports[`app renders correctly 1`] = `
 <div
-  className="flex flex-col lg:flex-row"
+  className="flex flex-col xl:flex-row"
 >
   <div
-    className="relative top-0 w-screen min-h-screen flex flex-col justify-center lg:h-screen lg:overflow-hidden lg:bg-black lg:w-1/3"
+    className="relative top-0 w-screen min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-black xl:w-1/3"
   >
     <div
       className="flex flex-col z-10 text-center items-center h-full mt-20"
