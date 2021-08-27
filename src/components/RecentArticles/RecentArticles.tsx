@@ -41,10 +41,13 @@ export default function RecentArticles(): ReactElement {
   return (
     <div>
       <h2 className="text-xl mb-6">Recent Articles</h2>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-10">
         {data.items.slice(0, 3).map((article) => (
-          <div className="group flex" key={article.id}>
-            <div className="overflow-hidden rounded-md flex-none relative h-40 w-80">
+          <div
+            className="group flex rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+            key={article.id}
+          >
+            <div className="overflow-hidden rounded-l-xl flex-none relative h-40 w-80">
               <a href={article.url}>
                 <Image
                   className="group-hover:scale-110 transition transform-gpu duration-100"

@@ -8,13 +8,13 @@ exports[`recent articles renders correctly 1`] = `
     Recent Articles
   </h2>
   <div
-    className="flex flex-col gap-8"
+    className="flex flex-col gap-10"
   >
     <div
-      className="group flex"
+      className="group flex rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
     >
       <div
-        className="overflow-hidden rounded-md flex-none relative h-40 w-80"
+        className="overflow-hidden rounded-l-xl flex-none relative h-40 w-80"
       >
         <a
           href="https://blog.kochie.io/articles/02-contact-tracing"
