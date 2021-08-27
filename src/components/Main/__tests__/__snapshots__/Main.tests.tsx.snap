@@ -6,10 +6,10 @@ exports[`main renders correctly 1`] = `
   id="main"
 >
   <div
-    className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose max-w-none"
+    className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose dark:prose-light max-w-none"
   >
     <div
-      className="content"
+      className=""
     >
       <h1>
         I’m Rob, an engineer from Melbourne, Australia.
@@ -140,10 +140,10 @@ exports[`main renders correctly 1`] = `
           className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-10 auto-cols-max"
         >
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -171,7 +171,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="Space"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -203,7 +203,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="Space"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -234,23 +234,29 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                Space
+                <a
+                  href="https://kochie.space"
+                >
+                  Space
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 A small webapp that follows the mouse.
               </p>
             </div>
           </div>
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -278,7 +284,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="Particlez"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -310,7 +316,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="Particlez"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -341,23 +347,29 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                Particlez
+                <a
+                  href="https://3body.now.sh"
+                >
+                  Particlez
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 A real time n-body particle simulator for the web.
               </p>
             </div>
           </div>
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -385,7 +397,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="Guardian"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -417,7 +429,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="Guardian"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -448,23 +460,29 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                Guardian
+                <a
+                  href="https://github.com/kochie/guardian-server"
+                >
+                  Guardian
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.
               </p>
             </div>
           </div>
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -492,7 +510,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="Optimising Neural Networks for Embedded Systems"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -524,7 +542,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="Optimising Neural Networks for Embedded Systems"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -555,23 +573,29 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                Optimising Neural Networks for Embedded Systems
+                <a
+                  href="https://bitbucket.org/kochie/fyp"
+                >
+                  Optimising Neural Networks for Embedded Systems
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
               </p>
             </div>
           </div>
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -599,7 +623,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="Juice"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -631,7 +655,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="Juice"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -662,23 +686,29 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                Juice
+                <a
+                  href="https://github.com/kochie/juice"
+                >
+                  Juice
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 A Json-Web-Token analyser.
               </p>
             </div>
           </div>
           <div
-            className="group rounded-md"
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
           >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={
                 Object {
                   "padding": "30% 0",
@@ -706,7 +736,7 @@ exports[`main renders correctly 1`] = `
                   <noscript>
                     <img
                       alt="McGurrin"
-                      className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                      className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                       data-nimg={true}
                       decoding="async"
                       sizes="100vw"
@@ -738,7 +768,7 @@ exports[`main renders correctly 1`] = `
                   </noscript>
                   <img
                     alt="McGurrin"
-                    className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                     data-nimg={true}
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -769,14 +799,20 @@ exports[`main renders correctly 1`] = `
               </a>
             </div>
             <div
-              className="p-2"
+              className="px-5"
             >
               <h3
-                className="text-xl font-bold group-hover:text-red-600 py-3"
+                className="text-lg mt-0"
               >
-                McGurrin
+                <a
+                  href="https://github.com/kochie/mcgurrin"
+                >
+                  McGurrin
+                </a>
               </h3>
-              <p>
+              <p
+                className="text-sm"
+              >
                 A tool to help with learning to touch type.
               </p>
             </div>
@@ -788,7 +824,7 @@ exports[`main renders correctly 1`] = `
       className="divider"
     />
     <div
-      className="content"
+      className=""
     >
       <div>
         <h2
@@ -797,13 +833,13 @@ exports[`main renders correctly 1`] = `
           Recent Articles
         </h2>
         <div
-          className="flex flex-col gap-8"
+          className="flex flex-col gap-10"
         >
           <div
-            className="group flex"
+            className="group flex rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
           >
             <div
-              className="overflow-hidden rounded-md flex-none relative h-40 w-80"
+              className="overflow-hidden rounded-l-xl flex-none relative h-40 w-80"
             >
               <a
                 href="https://blog.kochie.io/articles/02-contact-tracing"

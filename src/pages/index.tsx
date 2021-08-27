@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react'
 import Script from 'next/script'
 
-import { Head, App } from '@/components/index'
+import App from '@/components/App/App'
+import Head from '@/components/Head/Head'
 
 const Index = (): ReactElement => (
   <>

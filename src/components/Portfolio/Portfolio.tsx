@@ -63,9 +63,12 @@ export default function Portfolio(): ReactElement {
       <h2>Recent Work</h2>
       <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-10 auto-cols-max">
         {projects.map((project) => (
-          <div className="group rounded-md" key={project.id}>
+          <div
+            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+            key={project.id}
+          >
             <div
-              className="relative rounded-md overflow-hidden"
+              className="relative rounded-t-xl overflow-hidden"
               style={{ padding: '30% 0' }}
             >
               <a href={project.link}>
@@ -74,16 +77,16 @@ export default function Portfolio(): ReactElement {
                   src={project.image}
                   alt={project.title}
                   objectFit="cover"
-                  className="absolute top=0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                 />
                 {/* <span className="portfolio-text">View</span> */}
               </a>
             </div>
-            <div className="p-2">
-              <h3 className="text-xl font-bold group-hover:text-red-600 py-3">
-                {project.title}
+            <div className="px-5">
+              <h3 className="text-lg mt-0">
+                <a href={project.link}>{project.title}</a>
               </h3>
-              <p>{project.description}</p>
+              <p className="text-sm">{project.description}</p>
             </div>
           </div>
         ))}

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, ReactElement } from 'react'
 import NextImage from 'next/image'
 
-import { Connections } from '..'
+import Connections from '@/components/Connections/Connections'
 
 import style from './sidebar.module.css'
 
@@ -90,8 +90,13 @@ const Sidebar = (): ReactElement => {
         <div className={style.quote}>{quote}</div>
         <Connections />
       </div>
-      <canvas className={style.canvas} ref={canvas} />
-      <div className={style['bg-image']} />
+      <canvas
+        className="absolute top-0 h-screen w-full invisible xl:visible"
+        ref={canvas}
+      />
+      <div className="overflow-hidden h-screen w-screen absolute xl:hidden">
+        <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm scale-110 transform-gpu top-0" />
+      </div>
     </div>
   )
 }

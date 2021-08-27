@@ -5,20 +5,20 @@ import {
   IconLookup,
 } from '@fortawesome/fontawesome-svg-core'
 
-import { Portfolio, RecentArticles, Divider, Button } from '@/components/index'
+import Button from '@/components/Button/Button'
+import Divider from '@/components/Divider/Divider'
+import RecentArticles from '@/components/RecentArticles/RecentArticles'
+import Portfolio from '@/components/Portfolio/Portfolio'
 
 import Hello from './intro.mdx'
 import style from './middle.module.css'
-
-// import { faFileUser } from "@fortawesome/pro-duotone-svg-icons"
-// import ChatButton from "../ChatButton/ChatButton";
 
 export default function Middle(): ReactElement {
   const fileUser: IconLookup = { prefix: 'fad', iconName: 'file-user' }
 
   return (
-    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose max-w-none">
-      <div className={style.content}>
+    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose dark:prose-light max-w-none">
+      <div className="">
         <Hello />
       </div>
       <Divider />
@@ -63,12 +63,9 @@ export default function Middle(): ReactElement {
         <Portfolio />
       </div>
       <Divider />
-      <div className={style.content}>
+      <div className="">
         <RecentArticles />
       </div>
-      {/* <ChatButton /> */}
-      {/* <hr /> */}
-      {/* <Contact /> */}
     </div>
   )
 }
