@@ -82,7 +82,7 @@ const Sidebar = (): ReactElement => {
     'I build things, write the code for them, and run from the resulting explosion.'
 
   return (
-    <div className="relative top-0 w-screen min-h-screen flex flex-col justify-center lg:h-screen lg:overflow-hidden lg:bg-black lg:w-1/3">
+    <div className="relative top-0 w-screen min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-black xl:w-1/3">
       <div className="flex flex-col z-10 text-center items-center h-full mt-20">
         <div className="rounded-full w-40 h-40 overflow-hidden">
           <NextImage layout="responsive" src={avatar} alt="me" />

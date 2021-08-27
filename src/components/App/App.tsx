@@ -11,7 +11,7 @@ export default function App(): ReactElement {
   // }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col xl:flex-row">
       <Sidebar />
       <Main />
     </div>
