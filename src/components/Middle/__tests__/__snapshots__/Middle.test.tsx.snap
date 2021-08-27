@@ -53,9 +53,6 @@ exports[`middle renders correctly 1`] = `
       Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
     </p>
   </div>
-  <hr
-    className="divider"
-  />
   <div
     className="button"
   >
@@ -122,9 +119,6 @@ exports[`middle renders correctly 1`] = `
       </span>
     </a>
   </div>
-  <hr
-    className="divider"
-  />
   <div
     className=""
   >
@@ -816,9 +810,6 @@ exports[`middle renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <hr
-    className="divider"
-  />
   <div
     className=""
   >

@@ -21,7 +21,6 @@ export default function Middle(): ReactElement {
       <div className="">
         <Hello />
       </div>
-      <Divider />
       <Button>
         <a
           href={'/Robert_Koch.pdf'}
@@ -58,11 +57,9 @@ export default function Middle(): ReactElement {
           </span>
         </a>
       </Button>
-      <Divider />
       <div className="">
         <Portfolio />
       </div>
-      <Divider />
       <div className="">
         <RecentArticles />
       </div>
