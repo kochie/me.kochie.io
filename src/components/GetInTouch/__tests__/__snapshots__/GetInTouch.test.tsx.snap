@@ -111,9 +111,11 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
+          aria-label="resume"
           className="hover:text-yellow-600"
           download="resume_robert_koch.pdf"
           href="/Robert_Koch.pdf"
+          title="My Resume"
         >
           <svg
             aria-hidden="true"
@@ -150,8 +152,10 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
+          aria-label="cotton bureau"
           className="hover:text-cottonBureau"
           href="https://cottonbureau.com/people/robert-koch"
+          title="Cotton Bureau"
         >
           <svg
             aria-hidden="true"
@@ -176,8 +180,10 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
+          aria-label="buy me a coffee"
           className="hover:text-amber-900"
           href="https://buymeacoffee.com/kochie"
+          title="Buy Me A Coffee"
         >
           <svg
             aria-hidden="true"
@@ -214,8 +220,10 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
+          aria-label="rss"
           className="hover:text-orange-600"
           href="https://blog.kochie.io/feed/rss.xml"
+          title="Article RSS Feed"
         >
           <svg
             aria-hidden="true"
@@ -252,8 +260,10 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
+          aria-label="blog"
           className="hover:text-green-600"
           href="https://blog.kochie.io"
+          title="My Blog"
         >
           <svg
             aria-hidden="true"

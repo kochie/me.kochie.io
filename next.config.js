@@ -1,9 +1,12 @@
+/**
+ * @type {import('next').NextConfig}
+ */
+
 const withPlugins = require('next-compose-plugins')
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 })
 const withOffline = require('next-offline')
-// const optimizedImages = require('next-optimized-images');
 const SentryWebpackPlugin = require('@sentry/webpack-plugin')
 const {
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
@@ -20,15 +23,13 @@ const basePath = ''
 const config = {
   experimental: { esmExternals: true },
   productionBrowserSourceMaps: true,
+  target: 'serverless',
   env: {
     // Make the COMMIT_SHA available to the client so that Sentry events can be
     // marked for the release they belong to. It may be undefined if running
     // outside of Vercel
-    NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
-  },
-  target: 'serverless',
-  env: {
     buildTime: new Date().toDateString(),
+    NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
   },
   images: {
     domains: ['blog.kochie.io'],

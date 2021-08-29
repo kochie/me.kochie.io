@@ -18,7 +18,7 @@ module.exports = {
         25: '25%',
       },
       colors: {
-        'light-blue': colors.lightBlue,
+        sky: colors.sky,
         cyan: colors.cyan,
         gitlab: '#db3b21',
         medium: '#000000',

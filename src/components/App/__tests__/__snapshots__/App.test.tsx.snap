@@ -301,8 +301,12 @@ exports[`app renders correctly 1`] = `
       className="overflow-hidden h-screen w-screen absolute xl:hidden"
     >
       <div
-        className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm scale-110 transform-gpu top-0"
-      />
+        className="transform-gpu scale-110"
+      >
+        <div
+          className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0"
+        />
+      </div>
     </div>
   </div>
   <div
@@ -323,6 +327,7 @@ exports[`app renders correctly 1`] = `
         I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
         <a
           className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+          href="http://wired.org.au"
         >
           wired
         </a>
@@ -334,6 +339,7 @@ exports[`app renders correctly 1`] = `
         I currently work as a Cloud Architect for 
         <a
           className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+          href="https://aws.amazon.com"
         >
           Amazon Web Services
         </a>
@@ -345,6 +351,7 @@ exports[`app renders correctly 1`] = `
         Before that I worked as a Software Engineer at 
         <a
           className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+          href="https://localz.com"
         >
           Localz
         </a>
@@ -356,6 +363,7 @@ exports[`app renders correctly 1`] = `
         I also helped run the 
         <a
           className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+          href="https://unihack.net"
         >
           Unihack
         </a>
@@ -481,9 +489,11 @@ exports[`app renders correctly 1`] = `
               className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
             >
               <a
+                aria-label="resume"
                 className="hover:text-yellow-600"
                 download="resume_robert_koch.pdf"
                 href="/Robert_Koch.pdf"
+                title="My Resume"
               >
                 <svg
                   aria-hidden="true"
@@ -520,8 +530,10 @@ exports[`app renders correctly 1`] = `
               className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
             >
               <a
+                aria-label="cotton bureau"
                 className="hover:text-cottonBureau"
                 href="https://cottonbureau.com/people/robert-koch"
+                title="Cotton Bureau"
               >
                 <svg
                   aria-hidden="true"
@@ -546,8 +558,10 @@ exports[`app renders correctly 1`] = `
               className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
             >
               <a
+                aria-label="buy me a coffee"
                 className="hover:text-amber-900"
                 href="https://buymeacoffee.com/kochie"
+                title="Buy Me A Coffee"
               >
                 <svg
                   aria-hidden="true"
@@ -584,8 +598,10 @@ exports[`app renders correctly 1`] = `
               className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
             >
               <a
+                aria-label="rss"
                 className="hover:text-orange-600"
                 href="https://blog.kochie.io/feed/rss.xml"
+                title="Article RSS Feed"
               >
                 <svg
                   aria-hidden="true"
@@ -622,8 +638,10 @@ exports[`app renders correctly 1`] = `
               className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
             >
               <a
+                aria-label="blog"
                 className="hover:text-green-600"
                 href="https://blog.kochie.io"
+                title="My Blog"
               >
                 <svg
                   aria-hidden="true"
