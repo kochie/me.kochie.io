@@ -65,9 +65,17 @@ const GetInTouch = () => {
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
             <a
               href="https://blog.kochie.io/feed/rss.xml"
-              className=" hover:text-orange-600"
+              className="hover:text-orange-600"
             >
               <FontAwesomeIcon icon={['fad', 'rss']} size="2x" fixedWidth />
+            </a>
+          </div>
+          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
+            <a
+              href="https://blog.kochie.io"
+              className="hover:text-green-600"
+            >
+              <FontAwesomeIcon icon={['fad', 'blog']} size="2x" fixedWidth />
             </a>
           </div>
         </div>
