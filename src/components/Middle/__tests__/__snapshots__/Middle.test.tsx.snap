@@ -127,10 +127,14 @@ exports[`middle renders correctly 1`] = `
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
             Object {
+              "backgroundImage": "url(\\"0123456789\\")",
+              "backgroundPosition": "0% 0%",
+              "backgroundSize": "cover",
               "border": "none",
               "bottom": 0,
               "boxSizing": "border-box",
               "display": "block",
+              "filter": "blur(20px)",
               "height": 0,
               "left": 0,
               "margin": "auto",
@@ -444,10 +448,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -558,10 +566,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -672,10 +684,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -786,10 +802,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -900,10 +920,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -1014,10 +1038,14 @@ exports[`middle renders correctly 1`] = `
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"0123456789\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",

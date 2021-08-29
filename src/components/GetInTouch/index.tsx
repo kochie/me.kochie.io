@@ -13,6 +13,7 @@ const GetInTouch = () => {
           alt="XPS laptop on bench"
           layout="fill"
           objectFit="cover"
+          placeholder="blur"
         />
       </div>
       <div className="ml-6">

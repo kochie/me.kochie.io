@@ -77,6 +77,7 @@ export default function Portfolio(): ReactElement {
                   src={project.image}
                   alt={project.title}
                   objectFit="cover"
+                  placeholder="blur"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
                 />
                 {/* <span className="portfolio-text">View</span> */}
