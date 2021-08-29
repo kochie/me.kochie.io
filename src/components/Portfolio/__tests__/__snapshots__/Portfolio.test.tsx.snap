@@ -14,7 +14,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -42,7 +42,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Contact Tracing"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -74,7 +74,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Contact Tracing"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -132,7 +132,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -160,7 +160,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Space"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -192,7 +192,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Space"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -250,7 +250,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -278,7 +278,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Particlez"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -310,7 +310,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Particlez"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -368,7 +368,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -396,7 +396,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Optimising Neural Networks for Embedded Systems"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -428,7 +428,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Optimising Neural Networks for Embedded Systems"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -486,7 +486,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -514,7 +514,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Stonks"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -546,7 +546,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Stonks"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -604,7 +604,7 @@ exports[`portfolio renders correctly 1`] = `
       className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
-        className="relative rounded-t-xl overflow-hidden"
+        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
           Object {
             "padding": "30% 0",
@@ -632,7 +632,7 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="benchtop-js"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 sizes="100vw"
@@ -664,7 +664,7 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="benchtop-js"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"

@@ -14,7 +14,7 @@ exports[`recent articles renders correctly 1`] = `
       className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
     >
       <div
-        className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80"
+        className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
       >
         <a
           href="https://blog.kochie.io/articles/02-contact-tracing"

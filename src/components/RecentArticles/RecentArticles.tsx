@@ -49,7 +49,7 @@ export default function RecentArticles(): ReactElement {
             className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
             key={article.id}
           >
-            <div className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80">
+            <div className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0">
               <a href={article.url}>
                 <Image
                   className="group-hover:scale-110 transition transform-gpu duration-100"

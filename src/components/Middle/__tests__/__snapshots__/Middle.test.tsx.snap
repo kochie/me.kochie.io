@@ -68,10 +68,10 @@ exports[`middle renders correctly 1`] = `
     Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
   </p>
   <div
-    className="rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
+    className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
   >
     <div
-      className="relative h-48 lg:h-full w-full lg:w-48"
+      className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0"
     >
       <div
         style={
@@ -91,6 +91,7 @@ exports[`middle renders correctly 1`] = `
         <noscript>
           <img
             alt="XPS laptop on bench"
+            className="group-hover:scale-110 transition transform-gpu duration-100"
             data-nimg={true}
             decoding="async"
             sizes="100vw"
@@ -122,6 +123,7 @@ exports[`middle renders correctly 1`] = `
         </noscript>
         <img
           alt="XPS laptop on bench"
+          className="group-hover:scale-110 transition transform-gpu duration-100"
           data-nimg={true}
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -382,7 +384,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -410,7 +412,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="Contact Tracing"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -442,7 +444,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="Contact Tracing"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -500,7 +502,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -528,7 +530,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="Space"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -560,7 +562,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="Space"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -618,7 +620,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -646,7 +648,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="Particlez"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -678,7 +680,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="Particlez"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -736,7 +738,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -764,7 +766,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="Optimising Neural Networks for Embedded Systems"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -796,7 +798,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="Optimising Neural Networks for Embedded Systems"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -854,7 +856,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -882,7 +884,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="Stonks"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -914,7 +916,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="Stonks"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -972,7 +974,7 @@ exports[`middle renders correctly 1`] = `
         className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
       >
         <div
-          className="relative rounded-t-xl overflow-hidden"
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
           style={
             Object {
               "padding": "30% 0",
@@ -1000,7 +1002,7 @@ exports[`middle renders correctly 1`] = `
               <noscript>
                 <img
                   alt="benchtop-js"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg={true}
                   decoding="async"
                   sizes="100vw"
@@ -1032,7 +1034,7 @@ exports[`middle renders correctly 1`] = `
               </noscript>
               <img
                 alt="benchtop-js"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                 data-nimg={true}
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -1101,7 +1103,7 @@ exports[`middle renders correctly 1`] = `
         className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
       >
         <div
-          className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80"
+          className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
         >
           <a
             href="https://blog.kochie.io/articles/02-contact-tracing"

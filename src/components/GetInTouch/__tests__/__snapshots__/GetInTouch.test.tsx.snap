@@ -2,10 +2,10 @@
 
 exports[`footer renders correctly 1`] = `
 <div
-  className="rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
+  className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
 >
   <div
-    className="relative h-48 lg:h-full w-full lg:w-48"
+    className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0"
   >
     <div
       style={
@@ -25,6 +25,7 @@ exports[`footer renders correctly 1`] = `
       <noscript>
         <img
           alt="XPS laptop on bench"
+          className="group-hover:scale-110 transition transform-gpu duration-100"
           data-nimg={true}
           decoding="async"
           sizes="100vw"
@@ -56,6 +57,7 @@ exports[`footer renders correctly 1`] = `
       </noscript>
       <img
         alt="XPS laptop on bench"
+        className="group-hover:scale-110 transition transform-gpu duration-100"
         data-nimg={true}
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
