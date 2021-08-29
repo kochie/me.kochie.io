@@ -2,7 +2,7 @@
 
 exports[`footer renders correctly 1`] = `
 <nav
-  className="footer"
+  className="bg-cool-gray-400 dark:bg-cool-gray-900 text-cool-gray-900 dark:text-cool-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center"
 >
   <div
     className="name"
@@ -10,16 +10,12 @@ exports[`footer renders correctly 1`] = `
     Robert Koch
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-copyright fa-w-16 "
+      className="svg-inline--fa fa-copyright fa-w-16 fa-1x mx-1"
       data-icon="copyright"
       data-prefix="fad"
       focusable="false"
       role="img"
-      style={
-        Object {
-          "padding": "0 5px",
-        }
-      }
+      style={Object {}}
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -49,7 +45,7 @@ exports[`footer renders correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-guitar fa-w-16 "
+      className="svg-inline--fa fa-guitar fa-w-16 fa-2x "
       data-icon="guitar"
       data-prefix="fad"
       focusable="false"

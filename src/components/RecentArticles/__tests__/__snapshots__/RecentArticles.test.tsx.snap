@@ -3,18 +3,18 @@
 exports[`recent articles renders correctly 1`] = `
 <div>
   <h2
-    className="text-xl mb-6"
+    className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6"
   >
     Recent Articles
   </h2>
   <div
-    className="flex flex-col gap-10"
+    className="flex flex-col gap-4 lg:gap-10 mb-5"
   >
     <div
-      className="group flex rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+      className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
     >
       <div
-        className="overflow-hidden rounded-l-xl flex-none relative h-40 w-80"
+        className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80"
       >
         <a
           href="https://blog.kochie.io/articles/02-contact-tracing"
@@ -107,7 +107,7 @@ exports[`recent articles renders correctly 1`] = `
         className="ml-5"
       >
         <h3
-          className="hover:underline"
+          className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3"
         >
           <a
             href="https://blog.kochie.io/articles/02-contact-tracing"
@@ -117,7 +117,9 @@ exports[`recent articles renders correctly 1`] = `
             Building a Contact Tracing Platform
           </a>
         </h3>
-        <p>
+        <p
+          className="dark:text-gray-300 text-gray-700 mr-3 mb-4"
+        >
           Learn how to automate and build an application to trace exposures using Amazon's Cloud Development Kit (CDK)
         </p>
       </div>
