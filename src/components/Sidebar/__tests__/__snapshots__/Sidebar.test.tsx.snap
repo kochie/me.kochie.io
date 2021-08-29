@@ -2,18 +2,95 @@
 
 exports[`sidebar renders correctly 1`] = `
 <div
-  className="sidebar"
+  className="relative top-0 w-screen min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-black xl:w-1/3"
 >
   <div
-    className="sidebar-header"
+    className="flex flex-col z-10 text-center items-center h-full mt-20"
   >
     <div
-      className="avatar"
+      className="rounded-full w-40 h-40 overflow-hidden"
     >
-      <img
-        alt="me"
-        src="/images/AfterRunning_Square.png"
-      />
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "block",
+            "margin": 0,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "block",
+              "paddingTop": "100%",
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="me"
+            data-nimg={true}
+            decoding="async"
+            sizes="100vw"
+            src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+            srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+        <img
+          alt="me"
+          data-nimg={true}
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </div>
     </div>
     <div
       className="quote"
@@ -21,19 +98,19 @@ exports[`sidebar renders correctly 1`] = `
       I build things, write the code for them, and run from the resulting explosion.
     </div>
     <div
-      className="connections"
+      className="text-wheat pt-12 flex xl:flex-col flex-row items-center gap-3"
     >
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="linkedin"
-          className="linkedin"
+          className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin fa-w-14 fa-2x vertical-middle"
+            className="svg-inline--fa fa-linkedin fa-w-14 fa-2x align-middle"
             data-icon="linkedin"
             data-prefix="fab"
             focusable="false"
@@ -51,16 +128,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="twitter"
-          className="twitter"
+          className="hover:text-twitter"
           href="https://twitter.com/kochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-twitter fa-w-16 fa-2x vertical-middle"
+            className="svg-inline--fa fa-twitter fa-w-16 fa-2x align-middle"
             data-icon="twitter"
             data-prefix="fab"
             focusable="false"
@@ -78,16 +155,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="instagram"
-          className="instagram"
+          className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-instagram fa-w-14 fa-2x vertical-middle"
+            className="svg-inline--fa fa-instagram fa-w-14 fa-2x align-middle"
             data-icon="instagram"
             data-prefix="fab"
             focusable="false"
@@ -105,16 +182,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="github"
-          className="github"
+          className="hover:text-github"
           href="https://github.com/kochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github fa-w-16 fa-2x vertical-middle"
+            className="svg-inline--fa fa-github fa-w-16 fa-2x align-middle"
             data-icon="github"
             data-prefix="fab"
             focusable="false"
@@ -132,16 +209,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="medium-m"
-          className="medium"
+          className="hover:text-medium"
           href="https://medium.com/@kochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-medium-m fa-w-16 fa-2x vertical-middle"
+            className="svg-inline--fa fa-medium-m fa-w-16 fa-2x align-middle"
             data-icon="medium-m"
             data-prefix="fab"
             focusable="false"
@@ -159,16 +236,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="gitlab"
-          className="gitlab"
+          className="hover:text-gitlab"
           href="https://gitlab.com/kochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-gitlab fa-w-16 fa-2x vertical-middle"
+            className="svg-inline--fa fa-gitlab fa-w-16 fa-2x align-middle"
             data-icon="gitlab"
             data-prefix="fab"
             focusable="false"
@@ -186,16 +263,16 @@ exports[`sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="grow"
+        className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="mastodon"
-          className="mastodon"
+          className="hover:text-mastodon"
           href="https://melb.social/@kochie"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mastodon fa-w-14 fa-2x vertical-middle"
+            className="svg-inline--fa fa-mastodon fa-w-14 fa-2x align-middle"
             data-icon="mastodon"
             data-prefix="fab"
             focusable="false"
@@ -215,10 +292,14 @@ exports[`sidebar renders correctly 1`] = `
     </div>
   </div>
   <canvas
-    className="canvas"
+    className="absolute top-0 h-screen w-full invisible xl:visible"
   />
   <div
-    className="bg-image"
-  />
+    className="overflow-hidden h-screen w-screen absolute xl:hidden"
+  >
+    <div
+      className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm scale-110 transform-gpu top-0"
+    />
+  </div>
 </div>
 `;

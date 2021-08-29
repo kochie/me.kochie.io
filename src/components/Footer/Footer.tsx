@@ -22,15 +22,16 @@ export default function Footer(): ReactElement {
 
   return (
     <>
-      <nav className={style.footer}>
+      <nav className="bg-cool-gray-400 dark:bg-cool-gray-900 text-cool-gray-900 dark:text-cool-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
         <div className={style.name}>
           Robert Koch
           <FontAwesomeIcon
-            style={{ padding: '0 5px' }}
             icon={findIconDefinition({
               prefix: 'fad',
               iconName: 'copyright',
             })}
+            size="1x"
+            className="mx-1"
           />
           {new Date().getFullYear()}
         </div>
@@ -41,6 +42,7 @@ export default function Footer(): ReactElement {
               prefix: 'fad',
               iconName: 'guitar',
             })}
+            size="2x"
           />
         </div>
         <div className={style.update}>

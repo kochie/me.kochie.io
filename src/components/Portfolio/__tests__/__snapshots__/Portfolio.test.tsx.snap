@@ -2,17 +2,138 @@
 
 exports[`portfolio renders correctly 1`] = `
 <div>
-  <h2>
+  <h2
+    className="text-gray-900 dark:text-white font-bold text-2xl mt-8 mb-6"
+  >
     Recent Work
   </h2>
   <div
-    className="portfolio"
+    className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max"
   >
     <div
-      className="portfolio-item"
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <figure
-        className="portfolio-image-wrapper"
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
+      >
+        <a
+          href="https://ct.vercel.app"
+        >
+          <div
+            style={
+              Object {
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "left": 0,
+                "margin": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <noscript>
+              <img
+                alt="Contact Tracing"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": "cover",
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+            <img
+              alt="Contact Tracing"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": "cover",
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://ct.vercel.app"
+          >
+            Contact Tracing
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          A technology demonstration website to showcase a proof of concept contact tracing application using the AWS Cloud Development Kit.
+        </p>
+      </div>
+    </div>
+    <div
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+    >
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
       >
         <a
           href="https://kochie.space"
@@ -35,10 +156,12 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Space"
-                className="portfolio-image"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
                 decoding="async"
-                src="/images/space.webp"
-                srcSet="/_next/image?url=%2Fimages%2Fspace.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fspace.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fspace.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fspace.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fspace.webp&w=1200&q=75 1200w"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -52,7 +175,7 @@ exports[`portfolio renders correctly 1`] = `
                     "maxWidth": "100%",
                     "minHeight": "100%",
                     "minWidth": "100%",
-                    "objectFit": undefined,
+                    "objectFit": "cover",
                     "objectPosition": undefined,
                     "padding": 0,
                     "position": "absolute",
@@ -65,7 +188,8 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Space"
-              className="portfolio-image"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -81,7 +205,7 @@ exports[`portfolio renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -93,19 +217,37 @@ exports[`portfolio renders correctly 1`] = `
             />
           </div>
         </a>
-      </figure>
-      <h3>
-        Space
-      </h3>
-      <p>
-        A small webapp that follows the mouse.
-      </p>
+      </div>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://kochie.space"
+          >
+            Space
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          A small webapp that follows the mouse.
+        </p>
+      </div>
     </div>
     <div
-      className="portfolio-item"
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <figure
-        className="portfolio-image-wrapper"
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
       >
         <a
           href="https://3body.now.sh"
@@ -128,10 +270,12 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Particlez"
-                className="portfolio-image"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
                 decoding="async"
-                src="/images/particlez.webp"
-                srcSet="/_next/image?url=%2Fimages%2Fparticlez.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fparticlez.webp&w=1200&q=75 1200w"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -145,7 +289,7 @@ exports[`portfolio renders correctly 1`] = `
                     "maxWidth": "100%",
                     "minHeight": "100%",
                     "minWidth": "100%",
-                    "objectFit": undefined,
+                    "objectFit": "cover",
                     "objectPosition": undefined,
                     "padding": 0,
                     "position": "absolute",
@@ -158,7 +302,8 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Particlez"
-              className="portfolio-image"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -174,7 +319,7 @@ exports[`portfolio renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -186,112 +331,37 @@ exports[`portfolio renders correctly 1`] = `
             />
           </div>
         </a>
-      </figure>
-      <h3>
-        Particlez
-      </h3>
-      <p>
-        A real time n-body particle simulator for the web.
-      </p>
-    </div>
-    <div
-      className="portfolio-item"
-    >
-      <figure
-        className="portfolio-image-wrapper"
+      </div>
+      <div
+        className="px-5 "
       >
-        <a
-          href="https://github.com/kochie/guardian-server"
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
         >
-          <div
-            style={
-              Object {
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "left": 0,
-                "margin": 0,
-                "overflow": "hidden",
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-              }
-            }
+          <a
+            className="hover:underline"
+            href="https://3body.now.sh"
           >
-            <noscript>
-              <img
-                alt="Guardian"
-                className="portfolio-image"
-                decoding="async"
-                src="/images/guardian.webp"
-                srcSet="/_next/image?url=%2Fimages%2Fguardian.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fguardian.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fguardian.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fguardian.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fguardian.webp&w=1200&q=75 1200w"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-            <img
-              alt="Guardian"
-              className="portfolio-image"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </div>
-        </a>
-      </figure>
-      <h3>
-        Guardian
-      </h3>
-      <p>
-        An experiment in transferring cyptographic keys between devices without the user needing to copy keys themselves.
-      </p>
+            Particlez
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          A real time n-body particle simulator for the web.
+        </p>
+      </div>
     </div>
     <div
-      className="portfolio-item"
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <figure
-        className="portfolio-image-wrapper"
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
       >
         <a
           href="https://bitbucket.org/kochie/fyp"
@@ -314,10 +384,12 @@ exports[`portfolio renders correctly 1`] = `
             <noscript>
               <img
                 alt="Optimising Neural Networks for Embedded Systems"
-                className="portfolio-image"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
                 decoding="async"
-                src="/images/tensorflow.webp"
-                srcSet="/_next/image?url=%2Fimages%2Ftensorflow.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Ftensorflow.webp&w=1200&q=75 1200w"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -331,7 +403,7 @@ exports[`portfolio renders correctly 1`] = `
                     "maxWidth": "100%",
                     "minHeight": "100%",
                     "minWidth": "100%",
-                    "objectFit": undefined,
+                    "objectFit": "cover",
                     "objectPosition": undefined,
                     "padding": 0,
                     "position": "absolute",
@@ -344,7 +416,8 @@ exports[`portfolio renders correctly 1`] = `
             </noscript>
             <img
               alt="Optimising Neural Networks for Embedded Systems"
-              className="portfolio-image"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -360,7 +433,7 @@ exports[`portfolio renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -372,22 +445,40 @@ exports[`portfolio renders correctly 1`] = `
             />
           </div>
         </a>
-      </figure>
-      <h3>
-        Optimising Neural Networks for Embedded Systems
-      </h3>
-      <p>
-        My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
-      </p>
+      </div>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://bitbucket.org/kochie/fyp"
+          >
+            Optimising Neural Networks for Embedded Systems
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
+        </p>
+      </div>
     </div>
     <div
-      className="portfolio-item"
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <figure
-        className="portfolio-image-wrapper"
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
       >
         <a
-          href="https://github.com/kochie/juice"
+          href="https://stonks.kochie.io"
         >
           <div
             style={
@@ -406,11 +497,13 @@ exports[`portfolio renders correctly 1`] = `
           >
             <noscript>
               <img
-                alt="Juice"
-                className="portfolio-image"
+                alt="Stonks"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
                 decoding="async"
-                src="/images/juice.webp"
-                srcSet="/_next/image?url=%2Fimages%2Fjuice.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fjuice.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fjuice.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fjuice.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fjuice.webp&w=1200&q=75 1200w"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -424,7 +517,7 @@ exports[`portfolio renders correctly 1`] = `
                     "maxWidth": "100%",
                     "minHeight": "100%",
                     "minWidth": "100%",
-                    "objectFit": undefined,
+                    "objectFit": "cover",
                     "objectPosition": undefined,
                     "padding": 0,
                     "position": "absolute",
@@ -436,8 +529,9 @@ exports[`portfolio renders correctly 1`] = `
               />
             </noscript>
             <img
-              alt="Juice"
-              className="portfolio-image"
+              alt="Stonks"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -453,7 +547,7 @@ exports[`portfolio renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -465,22 +559,40 @@ exports[`portfolio renders correctly 1`] = `
             />
           </div>
         </a>
-      </figure>
-      <h3>
-        Juice
-      </h3>
-      <p>
-        A Json-Web-Token analyser.
-      </p>
+      </div>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://stonks.kochie.io"
+          >
+            Stonks
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          A trading platform for crypto-currencies.
+        </p>
+      </div>
     </div>
     <div
-      className="portfolio-item"
+      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <figure
-        className="portfolio-image-wrapper"
+      <div
+        className="relative rounded-t-xl overflow-hidden"
+        style={
+          Object {
+            "padding": "30% 0",
+          }
+        }
       >
         <a
-          href="https://github.com/kochie/mcgurrin"
+          href="https://github.com/BenchTop/benchtop-js"
         >
           <div
             style={
@@ -499,11 +611,13 @@ exports[`portfolio renders correctly 1`] = `
           >
             <noscript>
               <img
-                alt="McGurrin"
-                className="portfolio-image"
+                alt="benchtop-js"
+                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+                data-nimg={true}
                 decoding="async"
-                src="/images/keyboard.webp"
-                srcSet="/_next/image?url=%2Fimages%2Fkeyboard.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=768&q=75 768w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=1024&q=75 1024w, /_next/image?url=%2Fimages%2Fkeyboard.webp&w=1200&q=75 1200w"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
                 style={
                   Object {
                     "border": "none",
@@ -517,7 +631,7 @@ exports[`portfolio renders correctly 1`] = `
                     "maxWidth": "100%",
                     "minHeight": "100%",
                     "minWidth": "100%",
-                    "objectFit": undefined,
+                    "objectFit": "cover",
                     "objectPosition": undefined,
                     "padding": 0,
                     "position": "absolute",
@@ -529,8 +643,9 @@ exports[`portfolio renders correctly 1`] = `
               />
             </noscript>
             <img
-              alt="McGurrin"
-              className="portfolio-image"
+              alt="benchtop-js"
+              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100 filter grayscale-35 group-hover:grayscale-0"
+              data-nimg={true}
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
@@ -546,7 +661,7 @@ exports[`portfolio renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -558,13 +673,26 @@ exports[`portfolio renders correctly 1`] = `
             />
           </div>
         </a>
-      </figure>
-      <h3>
-        McGurrin
-      </h3>
-      <p>
-        A tool to help with learning to touch type.
-      </p>
+      </div>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://github.com/BenchTop/benchtop-js"
+          >
+            benchtop-js
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          A benchmarking tool for JavaScript projects.
+        </p>
+      </div>
     </div>
   </div>
 </div>

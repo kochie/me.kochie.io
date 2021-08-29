@@ -34,11 +34,11 @@
 .portfolio-image-wrapper {
   background-color: rgba(0, 0, 0, 0.8);
 
-  text-align: center;
-  border-radius: 0.4em;
+  /* text-align: center; */
+  /* border-radius: 0.4em; */
   position: relative;
-  overflow: hidden;
-  margin: 0;
+  /* overflow: hidden; */
+  /* margin: 0; */
   padding: 25% 0%;
 }
 
