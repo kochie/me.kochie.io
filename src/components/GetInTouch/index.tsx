@@ -35,6 +35,7 @@ const GetInTouch = () => {
               download="resume_robert_koch.pdf"
               className="hover:text-yellow-600"
               aria-label="resume"
+              title="My Resume"
             >
               <FontAwesomeIcon
                 icon={['fad', 'file-user']}
@@ -48,6 +49,7 @@ const GetInTouch = () => {
               href="https://cottonbureau.com/people/robert-koch"
               className="hover:text-cottonBureau"
               aria-label="cotton bureau"
+              title="Cotton Bureau"
             >
               <FontAwesomeIcon
                 icon={['fab', 'cotton-bureau']}
@@ -61,6 +63,7 @@ const GetInTouch = () => {
               href="https://buymeacoffee.com/kochie"
               className="hover:text-amber-900"
               aria-label="buy me a coffee"
+              title="Buy Me A Coffee"
             >
               <FontAwesomeIcon icon={['fad', 'coffee']} size="2x" fixedWidth />
             </a>
@@ -68,10 +71,21 @@ const GetInTouch = () => {
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
             <a
               href="https://blog.kochie.io/feed/rss.xml"
-              className=" hover:text-orange-600"
+              className="hover:text-orange-600"
               aria-label="rss"
+              title="Article RSS Feed"
             >
               <FontAwesomeIcon icon={['fad', 'rss']} size="2x" fixedWidth />
+            </a>
+          </div>
+          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
+            <a
+              href="https://blog.kochie.io"
+              className="hover:text-green-600"
+              aria-label="blog"
+              title="My Blog"
+            >
+              <FontAwesomeIcon icon={['fad', 'blog']} size="2x" fixedWidth />
             </a>
           </div>
         </div>

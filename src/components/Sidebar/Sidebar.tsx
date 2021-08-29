@@ -95,7 +95,9 @@ const Sidebar = (): ReactElement => {
         ref={canvas}
       />
       <div className="overflow-hidden h-screen w-screen absolute xl:hidden">
-        <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm scale-110 transform-gpu top-0" />
+        <div className="transform-gpu scale-110">
+          <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
+        </div>
       </div>
     </div>
   )
