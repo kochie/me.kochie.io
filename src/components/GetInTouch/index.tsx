@@ -34,6 +34,7 @@ const GetInTouch = () => {
               href="/Robert_Koch.pdf"
               download="resume_robert_koch.pdf"
               className="hover:text-yellow-600"
+              aria-label="resume"
             >
               <FontAwesomeIcon
                 icon={['fad', 'file-user']}
@@ -46,6 +47,7 @@ const GetInTouch = () => {
             <a
               href="https://cottonbureau.com/people/robert-koch"
               className="hover:text-cottonBureau"
+              aria-label="cotton bureau"
             >
               <FontAwesomeIcon
                 icon={['fab', 'cotton-bureau']}
@@ -58,6 +60,7 @@ const GetInTouch = () => {
             <a
               href="https://buymeacoffee.com/kochie"
               className="hover:text-amber-900"
+              aria-label="buy me a coffee"
             >
               <FontAwesomeIcon icon={['fad', 'coffee']} size="2x" fixedWidth />
             </a>
@@ -66,6 +69,7 @@ const GetInTouch = () => {
             <a
               href="https://blog.kochie.io/feed/rss.xml"
               className=" hover:text-orange-600"
+              aria-label="rss"
             >
               <FontAwesomeIcon icon={['fad', 'rss']} size="2x" fixedWidth />
             </a>

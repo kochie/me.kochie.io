@@ -21,8 +21,11 @@ export default function Middle(): ReactElement {
               {children}
             </p>
           ),
-          a: ({ children }) => (
-            <a className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer">
+          a: ({ children, href }) => (
+            <a
+              href={href}
+              className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+            >
               {children}
             </a>
           ),
