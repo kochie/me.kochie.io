@@ -57,7 +57,7 @@ exports[`main renders correctly 1`] = `
         className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
         href="https://unihack.net"
       >
-        Unihack
+        UNIHACK
       </a>
        organisation in Melbourne, where we ran hackathons for students around Australia. 
     </p>
