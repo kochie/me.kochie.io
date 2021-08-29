@@ -18,6 +18,7 @@ process.env.SENTRY_DSN = SENTRY_DSN
 const basePath = ''
 
 const config = {
+  experimental: { esmExternals: true },
   productionBrowserSourceMaps: true,
   env: {
     // Make the COMMIT_SHA available to the client so that Sentry events can be
