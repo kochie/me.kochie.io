@@ -214,7 +214,7 @@ exports[`footer renders correctly 1`] = `
         className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
       >
         <a
-          className=" hover:text-orange-600"
+          className="hover:text-orange-600"
           href="https://blog.kochie.io/feed/rss.xml"
         >
           <svg
@@ -241,6 +241,44 @@ exports[`footer renders correctly 1`] = `
               <path
                 className="fa-primary"
                 d="M0 416a64 64 0 1 1 64 64 64 64 0 0 1-64-64z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div
+        className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+      >
+        <a
+          className="hover:text-green-600"
+          href="https://blog.kochie.io"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-blog fa-w-16 fa-fw fa-2x "
+            data-icon="blog"
+            data-prefix="fad"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              className="fa-group"
+              style={Object {}}
+            >
+              <path
+                className="fa-secondary"
+                d="M511.9 303C503.4 139.82 372.2 8.62 209 0a16.1 16.1 0 0 0-17 16v31.6a15.84 15.84 0 0 0 15 15.9c129.4 7 233.4 112 240.9 241.5a16 16 0 0 0 15.9 15h32.1a16.1 16.1 0 0 0 16-17zM209.3 96a16.13 16.13 0 0 0-17.3 16.1v32.1a15.94 15.94 0 0 0 14.8 15.9c76.8 6.3 138 68.2 144.9 145.2a16.07 16.07 0 0 0 15.9 14.7h32.2a16.19 16.19 0 0 0 16.1-17.3C407.5 192.62 319.4 104.52 209.3 96z"
+                fill="currentColor"
+                style={Object {}}
+              />
+              <path
+                className="fa-primary"
+                d="M172.2 226.82c75.5 15 129.9 89.3 112.5 172.2-11.4 54.3-55.3 98.3-109.7 109.7C82.1 528.22 0 457.52 0 368V120a23.94 23.94 0 0 1 24-24h48a23.94 23.94 0 0 1 24 24v248a48 48 0 1 0 64.7-45c-9.6-3.6-16.7-11.8-16.7-22v-50.4c0-14.9 13.6-26.7 28.2-23.8z"
                 fill="currentColor"
                 style={Object {}}
               />
