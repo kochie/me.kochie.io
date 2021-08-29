@@ -1,68 +1,38 @@
 import React, { ReactElement } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  findIconDefinition,
-  IconLookup,
-} from '@fortawesome/fontawesome-svg-core'
-
-import Button from '@/components/Button/Button'
-import Divider from '@/components/Divider/Divider'
 import RecentArticles from '@/components/RecentArticles/RecentArticles'
 import Portfolio from '@/components/Portfolio/Portfolio'
+import { MDXProvider } from '@mdx-js/react'
 
 import Hello from './intro.mdx'
-import style from './middle.module.css'
+import GetInTouch from '@/components/GetInTouch'
 
 export default function Middle(): ReactElement {
-  const fileUser: IconLookup = { prefix: 'fad', iconName: 'file-user' }
-
   return (
-    <div className="py-24 px-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700 prose dark:prose-light max-w-none">
-      <div className="">
+    <div className="p-2 pt-6 lg:p-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700">
+      <MDXProvider
+        components={{
+          h1: ({ children }) => (
+            <h1 className="text-gray-900 text-4xl font-extrabold mb-3.5 dark:text-white">
+              {children}
+            </h1>
+          ),
+          p: ({ children }) => (
+            <p className="text-gray-700 my-3 leading-relaxed dark:text-gray-400">
+              {children}
+            </p>
+          ),
+          a: ({ children }) => (
+            <a className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer">
+              {children}
+            </a>
+          ),
+        }}
+      >
         <Hello />
-      </div>
-      <Button>
-        <a
-          href={'/Robert_Koch.pdf'}
-          download="Robert_Koch.pdf"
-          style={{
-            textDecoration: 'none',
-            margin: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >
-          <FontAwesomeIcon
-            size="1x"
-            style={{
-              ...{
-                '--fa-primary-color': 'white',
-                '--fa-secondary-color': '#ffdd00',
-                '--fa-secondary-opacity': '1',
-              },
-              strokeWidth: '20px',
-              stroke: 'black',
-            }}
-            icon={findIconDefinition(fileUser)}
-          />
-          <span
-            style={{
-              color: 'white',
-              margin: '0 10px',
-              letterSpacing: '-0.6px',
-              fontSize: '25px',
-            }}
-          >
-            Download Resume
-          </span>
-        </a>
-      </Button>
-      <div className="">
-        <Portfolio />
-      </div>
-      <div className="">
-        <RecentArticles />
-      </div>
+      </MDXProvider>
+      <GetInTouch />
+      <Portfolio />
+      <RecentArticles />
     </div>
   )
 }

@@ -37,17 +37,19 @@ export default function RecentArticles(): ReactElement {
   )
   if (error) return <div>{error}</div>
   if (!data) return <div></div>
-  // console.log(data)
+
   return (
     <div>
-      <h2 className="text-xl mb-6">Recent Articles</h2>
-      <div className="flex flex-col gap-10">
+      <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6">
+        Recent Articles
+      </h2>
+      <div className="flex flex-col gap-4 lg:gap-10 mb-5">
         {data.items.slice(0, 3).map((article) => (
           <div
-            className="group flex rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+            className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
             key={article.id}
           >
-            <div className="overflow-hidden rounded-l-xl flex-none relative h-40 w-80">
+            <div className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80">
               <a href={article.url}>
                 <Image
                   className="group-hover:scale-110 transition transform-gpu duration-100"
@@ -62,10 +64,12 @@ export default function RecentArticles(): ReactElement {
               </a>
             </div>
             <div className="ml-5">
-              <h3 className="hover:underline">
+              <h3 className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3">
                 <Link href={article.url}>{article.title}</Link>
               </h3>
-              <p>{article.summary}</p>
+              <p className="dark:text-gray-300 text-gray-700 mr-3 mb-4">
+                {article.summary}
+              </p>
             </div>
           </div>
         ))}

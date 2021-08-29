@@ -52,6 +52,12 @@ const ThemeButton = (): ReactElement => {
     </div>
   )
 
+  const nextTheme = (theme: THEME) => {
+    if (theme === THEME.dark) return THEME.light
+    if (theme === THEME.light) return THEME.system
+    if (theme === THEME.system) return THEME.dark
+  }
+
   return (
     <div className="fixed top-0 right-0 z-50">
       <div
@@ -60,6 +66,7 @@ const ThemeButton = (): ReactElement => {
         <div className="relative w-16 h-16 rounded-full bg-gray-900 dark:bg-white shadow-2xl cursor-pointer">
           <div
             className={`w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full animate duration-300`}
+            onClick={() => setTheme(nextTheme(theme))}
           >
             {theme === THEME.light ? bulbOnDiv : null}
             {theme === THEME.dark ? bulbOffDiv : null}
