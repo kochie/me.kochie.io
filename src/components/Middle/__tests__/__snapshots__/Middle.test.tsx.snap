@@ -4,139 +4,109 @@ exports[`middle renders correctly 1`] = `
 <div
   className="p-2 pt-6 lg:p-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700"
 >
-  <h1
-    className="text-gray-900 text-4xl font-extrabold mb-3.5 dark:text-white"
-  >
-    I’m Rob, an engineer from Melbourne, Australia.
-  </h1>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
-    <a
-      className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
-      href="http://wired.org.au"
-    >
-      wired
-    </a>
-    , where I held the title of President in 2017.
-  </p>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    I currently work as a Cloud Architect for 
-    <a
-      className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
-      href="https://aws.amazon.com"
-    >
-      Amazon Web Services
-    </a>
-    , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
-  </p>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    Before that I worked as a Software Engineer at 
-    <a
-      className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
-      href="https://localz.com"
-    >
-      Localz
-    </a>
-     who are providing last mile solutions for people around the world.
-  </p>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    I also helped run the 
-    <a
-      className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
-      href="https://unihack.net"
-    >
-      UNIHACK
-    </a>
-     organisation in Melbourne, where we ran hackathons for students around Australia. 
-  </p>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
-  </p>
-  <p
-    className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-  >
-    Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
-  </p>
   <div
-    className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
+    className="max-w-7xl"
   >
+    <h1
+      className="text-gray-900 text-4xl font-extrabold mb-3.5 dark:text-white"
+    >
+      I’m Rob, an engineer from Melbourne, Australia.
+    </h1>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
+      <a
+        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+        href="http://wired.org.au"
+      >
+        wired
+      </a>
+      , where I held the title of President in 2017.
+    </p>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      I currently work as a Cloud Architect for 
+      <a
+        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+        href="https://aws.amazon.com"
+      >
+        Amazon Web Services
+      </a>
+      , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
+    </p>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      Before that I worked as a Software Engineer at 
+      <a
+        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+        href="https://localz.com"
+      >
+        Localz
+      </a>
+       who are providing last mile solutions for people around the world.
+    </p>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      I also helped run the 
+      <a
+        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
+        href="https://unihack.net"
+      >
+        UNIHACK
+      </a>
+       organisation in Melbourne, where we ran hackathons for students around Australia. 
+    </p>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
+    </p>
+    <p
+      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
+    >
+      Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
+    </p>
     <div
-      className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0"
+      className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
     >
       <div
-        style={
-          Object {
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "left": 0,
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
+        className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0"
       >
-        <img
-          alt="XPS laptop on bench"
-          className="group-hover:scale-110 transition transform-gpu duration-100"
-          data-nimg="fill"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        <div
           style={
             Object {
-              "backgroundImage": "url(\\"0123456789\\")",
-              "backgroundPosition": "0% 0%",
-              "backgroundSize": "cover",
-              "border": "none",
               "bottom": 0,
               "boxSizing": "border-box",
               "display": "block",
-              "filter": "blur(20px)",
-              "height": 0,
               "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": "cover",
-              "objectPosition": undefined,
-              "padding": 0,
+              "margin": 0,
+              "overflow": "hidden",
               "position": "absolute",
               "right": 0,
               "top": 0,
-              "width": 0,
             }
           }
-        />
-        <noscript>
+        >
           <img
             alt="XPS laptop on bench"
             className="group-hover:scale-110 transition transform-gpu duration-100"
             data-nimg="fill"
             decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-            srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
               Object {
+                "backgroundImage": "url(\\"0123456789\\")",
+                "backgroundPosition": "0% 0%",
+                "backgroundSize": "cover",
                 "border": "none",
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "filter": "blur(20px)",
                 "height": 0,
                 "left": 0,
                 "margin": "auto",
@@ -154,311 +124,311 @@ exports[`middle renders correctly 1`] = `
               }
             }
           />
-        </noscript>
-      </div>
-    </div>
-    <div
-      className="ml-6"
-    >
-      <h2
-        className="text-gray-900 dark:text-white font-bold text-2xl mt-6 mb-4"
-      >
-        Get In Touch
-      </h2>
-      <p
-        className="text-gray-700 my-6 leading-relaxed dark:text-gray-300"
-      >
-        Please shoot me an email at
-         
-        <a
-          className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
-          href="mailto:robert@kochie.io"
-        >
-          robert@kochie.io
-        </a>
-      </p>
-      <div
-        className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start"
-      >
-        <div
-          className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
-        >
-          <a
-            aria-label="resume"
-            className="hover:text-yellow-600"
-            download="resume_robert_koch.pdf"
-            href="/Robert_Koch.pdf"
-            title="My Resume"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-user fa-w-12 fa-fw fa-2x "
-              data-icon="file-user"
-              data-prefix="fad"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                className="fa-group"
-                style={Object {}}
-              >
-                <path
-                  className="fa-secondary"
-                  d="M384 128H272a16 16 0 0 1-16-16V0H24A23.94 23.94 0 0 0 0 23.88V488a23.94 23.94 0 0 0 23.88 24H360a23.94 23.94 0 0 0 24-23.88V128zm-192 64a64 64 0 1 1-64 64 64 64 0 0 1 64-64zm112 236.8c0 10.61-10 19.2-22.4 19.2H102.4C90 448 80 439.4 80 428.8v-19.2c0-31.81 30.09-57.6 67.1-57.6h5a103.22 103.22 0 0 0 79.7 0h5c37.11 0 67.2 25.79 67.2 57.6z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-                <path
-                  className="fa-primary"
-                  d="M377 105L279.1 7a24 24 0 0 0-17-7H256v112a16 16 0 0 0 16 16h112v-6.1a23.9 23.9 0 0 0-7-16.9zM192 320a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm44.8 32h-5a103.22 103.22 0 0 1-79.7 0h-5c-37 0-67.1 25.79-67.1 57.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.37 0 22.4-8.59 22.4-19.2v-19.2c0-31.81-30.09-57.6-67.2-57.6z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div
-          className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
-        >
-          <a
-            aria-label="cotton bureau"
-            className="hover:text-cottonBureau"
-            href="https://cottonbureau.com/people/robert-koch"
-            title="Cotton Bureau"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-cotton-bureau fa-w-16 fa-fw fa-2x "
-              data-icon="cotton-bureau"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M474.31 330.41c-23.66 91.85-94.23 144.59-201.9 148.35V429.6c0-48 26.41-74.39 74.39-74.39 62 0 99.2-37.2 99.2-99.21 0-61.37-36.53-98.28-97.38-99.06-33-69.32-146.5-64.65-177.24 0C110.52 157.72 74 194.63 74 256c0 62.13 37.27 99.41 99.4 99.41 48 0 74.55 26.23 74.55 74.39V479c-134.43-5-211.1-85.07-211.1-223 0-141.82 81.35-223.2 223.2-223.2 114.77 0 189.84 53.2 214.69 148.81H500C473.88 71.51 388.22 8 259.82 8 105 8 12 101.19 12 255.82 12 411.14 105.19 504.34 259.82 504c128.27 0 213.87-63.81 239.67-173.59zM357 182.33c41.37 3.45 64.2 29 64.2 73.67 0 48-26.43 74.41-74.4 74.41-28.61 0-49.33-9.59-61.59-27.33 83.06-16.55 75.59-99.67 71.79-120.75zm-81.68 97.36c-2.46-10.34-16.33-87 56.23-97 2.27 10.09 16.52 87.11-56.26 97zM260 132c28.61 0 49 9.67 61.44 27.61-28.36 5.48-49.36 20.59-61.59 43.45-12.23-22.86-33.23-38-61.6-43.45 12.41-17.69 33.27-27.35 61.57-27.35zm-71.52 50.72c73.17 10.57 58.91 86.81 56.49 97-72.41-9.84-59-86.95-56.25-97zM173.2 330.41c-48 0-74.4-26.4-74.4-74.41 0-44.36 22.86-70 64.22-73.67-6.75 37.2-1.38 106.53 71.65 120.75-12.14 17.63-32.84 27.3-61.14 27.3zm53.21 12.39A80.8 80.8 0 0 0 260 309.25c7.77 14.49 19.33 25.54 33.82 33.55a80.28 80.28 0 0 0-33.58 33.83c-8-14.5-19.07-26.23-33.56-33.83z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
-        >
-          <a
-            aria-label="buy me a coffee"
-            className="hover:text-amber-900"
-            href="https://buymeacoffee.com/kochie"
-            title="Buy Me A Coffee"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-coffee fa-w-20 fa-fw fa-2x "
-              data-icon="coffee"
-              data-prefix="fad"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 640 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                className="fa-group"
-                style={Object {}}
-              >
-                <path
-                  className="fa-secondary"
-                  d="M559.76 480H48.36c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-                <path
-                  className="fa-primary"
-                  d="M512.06 32h-392a23.94 23.94 0 0 0-24 24v232a96 96 0 0 0 96 96h192a96 96 0 0 0 96-96h32a128 128 0 0 0 0-256zm0 192h-32V96h32a64 64 0 0 1 0 128z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div
-          className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
-        >
-          <a
-            aria-label="rss"
-            className="hover:text-orange-600"
-            href="https://blog.kochie.io/feed/rss.xml"
-            title="Article RSS Feed"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-rss fa-w-14 fa-fw fa-2x "
-              data-icon="rss"
-              data-prefix="fad"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                className="fa-group"
-                style={Object {}}
-              >
-                <path
-                  className="fa-secondary"
-                  d="M303.74 463.21c-8.35-154.6-132.18-278.59-286.95-286.95A16 16 0 0 0 0 192.25v48.07a16 16 0 0 0 14.89 16c111.83 7.28 201.47 96.7 208.77 208.77a16 16 0 0 0 16 14.89h48.07a16 16 0 0 0 16-16.79zM16.5 32A16 16 0 0 0 0 48v48.08a16 16 0 0 0 15.45 16c191.18 7.84 344.63 161.32 352.47 352.47a16 16 0 0 0 16 15.45H432a16 16 0 0 0 16-16.5C439.6 229.68 251.46 40.45 16.5 32z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-                <path
-                  className="fa-primary"
-                  d="M0 416a64 64 0 1 1 64 64 64 64 0 0 1-64-64z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div
-          className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
-        >
-          <a
-            aria-label="blog"
-            className="hover:text-green-600"
-            href="https://blog.kochie.io"
-            title="My Blog"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-blog fa-w-16 fa-fw fa-2x "
-              data-icon="blog"
-              data-prefix="fad"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                className="fa-group"
-                style={Object {}}
-              >
-                <path
-                  className="fa-secondary"
-                  d="M511.9 303C503.4 139.82 372.2 8.62 209 0a16.1 16.1 0 0 0-17 16v31.6a15.84 15.84 0 0 0 15 15.9c129.4 7 233.4 112 240.9 241.5a16 16 0 0 0 15.9 15h32.1a16.1 16.1 0 0 0 16-17zM209.3 96a16.13 16.13 0 0 0-17.3 16.1v32.1a15.94 15.94 0 0 0 14.8 15.9c76.8 6.3 138 68.2 144.9 145.2a16.07 16.07 0 0 0 15.9 14.7h32.2a16.19 16.19 0 0 0 16.1-17.3C407.5 192.62 319.4 104.52 209.3 96z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-                <path
-                  className="fa-primary"
-                  d="M172.2 226.82c75.5 15 129.9 89.3 112.5 172.2-11.4 54.3-55.3 98.3-109.7 109.7C82.1 528.22 0 457.52 0 368V120a23.94 23.94 0 0 1 24-24h48a23.94 23.94 0 0 1 24 24v248a48 48 0 1 0 64.7-45c-9.6-3.6-16.7-11.8-16.7-22v-50.4c0-14.9 13.6-26.7 28.2-23.8z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h2
-      className="text-gray-900 dark:text-white font-bold text-2xl mt-8 mb-6"
-    >
-      Recent Work
-    </h2>
-    <div
-      className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max"
-    >
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://ct.vercel.app"
-          >
-            <div
+          <noscript>
+            <img
+              alt="XPS laptop on bench"
+              className="group-hover:scale-110 transition transform-gpu duration-100"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
               style={
                 Object {
+                  "border": "none",
                   "bottom": 0,
                   "boxSizing": "border-box",
                   "display": "block",
+                  "height": 0,
                   "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": "cover",
+                  "objectPosition": undefined,
+                  "padding": 0,
                   "position": "absolute",
                   "right": 0,
                   "top": 0,
+                  "width": 0,
                 }
               }
+            />
+          </noscript>
+        </div>
+      </div>
+      <div
+        className="ml-6"
+      >
+        <h2
+          className="text-gray-900 dark:text-white font-bold text-2xl mt-6 mb-4"
+        >
+          Get In Touch
+        </h2>
+        <p
+          className="text-gray-700 my-6 leading-relaxed dark:text-gray-300"
+        >
+          Please shoot me an email at
+           
+          <a
+            className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
+            href="mailto:robert@kochie.io"
+          >
+            robert@kochie.io
+          </a>
+        </p>
+        <div
+          className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start"
+        >
+          <div
+            className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+          >
+            <a
+              aria-label="resume"
+              className="hover:text-yellow-600"
+              download="resume_robert_koch.pdf"
+              href="/Robert_Koch.pdf"
+              title="My Resume"
             >
-              <img
-                alt="Contact Tracing"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-file-user fa-w-12 fa-fw fa-2x "
+                data-icon="file-user"
+                data-prefix="fad"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  className="fa-group"
+                  style={Object {}}
+                >
+                  <path
+                    className="fa-secondary"
+                    d="M384 128H272a16 16 0 0 1-16-16V0H24A23.94 23.94 0 0 0 0 23.88V488a23.94 23.94 0 0 0 23.88 24H360a23.94 23.94 0 0 0 24-23.88V128zm-192 64a64 64 0 1 1-64 64 64 64 0 0 1 64-64zm112 236.8c0 10.61-10 19.2-22.4 19.2H102.4C90 448 80 439.4 80 428.8v-19.2c0-31.81 30.09-57.6 67.1-57.6h5a103.22 103.22 0 0 0 79.7 0h5c37.11 0 67.2 25.79 67.2 57.6z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                  <path
+                    className="fa-primary"
+                    d="M377 105L279.1 7a24 24 0 0 0-17-7H256v112a16 16 0 0 0 16 16h112v-6.1a23.9 23.9 0 0 0-7-16.9zM192 320a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm44.8 32h-5a103.22 103.22 0 0 1-79.7 0h-5c-37 0-67.1 25.79-67.1 57.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.37 0 22.4-8.59 22.4-19.2v-19.2c0-31.81-30.09-57.6-67.2-57.6z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div
+            className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+          >
+            <a
+              aria-label="cotton bureau"
+              className="hover:text-cottonBureau"
+              href="https://cottonbureau.com/people/robert-koch"
+              title="Cotton Bureau"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-cotton-bureau fa-w-16 fa-fw fa-2x "
+                data-icon="cotton-bureau"
+                data-prefix="fab"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M474.31 330.41c-23.66 91.85-94.23 144.59-201.9 148.35V429.6c0-48 26.41-74.39 74.39-74.39 62 0 99.2-37.2 99.2-99.21 0-61.37-36.53-98.28-97.38-99.06-33-69.32-146.5-64.65-177.24 0C110.52 157.72 74 194.63 74 256c0 62.13 37.27 99.41 99.4 99.41 48 0 74.55 26.23 74.55 74.39V479c-134.43-5-211.1-85.07-211.1-223 0-141.82 81.35-223.2 223.2-223.2 114.77 0 189.84 53.2 214.69 148.81H500C473.88 71.51 388.22 8 259.82 8 105 8 12 101.19 12 255.82 12 411.14 105.19 504.34 259.82 504c128.27 0 213.87-63.81 239.67-173.59zM357 182.33c41.37 3.45 64.2 29 64.2 73.67 0 48-26.43 74.41-74.4 74.41-28.61 0-49.33-9.59-61.59-27.33 83.06-16.55 75.59-99.67 71.79-120.75zm-81.68 97.36c-2.46-10.34-16.33-87 56.23-97 2.27 10.09 16.52 87.11-56.26 97zM260 132c28.61 0 49 9.67 61.44 27.61-28.36 5.48-49.36 20.59-61.59 43.45-12.23-22.86-33.23-38-61.6-43.45 12.41-17.69 33.27-27.35 61.57-27.35zm-71.52 50.72c73.17 10.57 58.91 86.81 56.49 97-72.41-9.84-59-86.95-56.25-97zM173.2 330.41c-48 0-74.4-26.4-74.4-74.41 0-44.36 22.86-70 64.22-73.67-6.75 37.2-1.38 106.53 71.65 120.75-12.14 17.63-32.84 27.3-61.14 27.3zm53.21 12.39A80.8 80.8 0 0 0 260 309.25c7.77 14.49 19.33 25.54 33.82 33.55a80.28 80.28 0 0 0-33.58 33.83c-8-14.5-19.07-26.23-33.56-33.83z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+          >
+            <a
+              aria-label="buy me a coffee"
+              className="hover:text-amber-900"
+              href="https://buymeacoffee.com/kochie"
+              title="Buy Me A Coffee"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-coffee fa-w-20 fa-fw fa-2x "
+                data-icon="coffee"
+                data-prefix="fad"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 640 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  className="fa-group"
+                  style={Object {}}
+                >
+                  <path
+                    className="fa-secondary"
+                    d="M559.76 480H48.36c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                  <path
+                    className="fa-primary"
+                    d="M512.06 32h-392a23.94 23.94 0 0 0-24 24v232a96 96 0 0 0 96 96h192a96 96 0 0 0 96-96h32a128 128 0 0 0 0-256zm0 192h-32V96h32a64 64 0 0 1 0 128z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div
+            className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+          >
+            <a
+              aria-label="rss"
+              className="hover:text-orange-600"
+              href="https://blog.kochie.io/feed/rss.xml"
+              title="Article RSS Feed"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-rss fa-w-14 fa-fw fa-2x "
+                data-icon="rss"
+                data-prefix="fad"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  className="fa-group"
+                  style={Object {}}
+                >
+                  <path
+                    className="fa-secondary"
+                    d="M303.74 463.21c-8.35-154.6-132.18-278.59-286.95-286.95A16 16 0 0 0 0 192.25v48.07a16 16 0 0 0 14.89 16c111.83 7.28 201.47 96.7 208.77 208.77a16 16 0 0 0 16 14.89h48.07a16 16 0 0 0 16-16.79zM16.5 32A16 16 0 0 0 0 48v48.08a16 16 0 0 0 15.45 16c191.18 7.84 344.63 161.32 352.47 352.47a16 16 0 0 0 16 15.45H432a16 16 0 0 0 16-16.5C439.6 229.68 251.46 40.45 16.5 32z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                  <path
+                    className="fa-primary"
+                    d="M0 416a64 64 0 1 1 64 64 64 64 0 0 1-64-64z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div
+            className="transform-gpu hover:scale-125 duration-100 cursor-pointer"
+          >
+            <a
+              aria-label="blog"
+              className="hover:text-green-600"
+              href="https://blog.kochie.io"
+              title="My Blog"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-blog fa-w-16 fa-fw fa-2x "
+                data-icon="blog"
+                data-prefix="fad"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  className="fa-group"
+                  style={Object {}}
+                >
+                  <path
+                    className="fa-secondary"
+                    d="M511.9 303C503.4 139.82 372.2 8.62 209 0a16.1 16.1 0 0 0-17 16v31.6a15.84 15.84 0 0 0 15 15.9c129.4 7 233.4 112 240.9 241.5a16 16 0 0 0 15.9 15h32.1a16.1 16.1 0 0 0 16-17zM209.3 96a16.13 16.13 0 0 0-17.3 16.1v32.1a15.94 15.94 0 0 0 14.8 15.9c76.8 6.3 138 68.2 144.9 145.2a16.07 16.07 0 0 0 15.9 14.7h32.2a16.19 16.19 0 0 0 16.1-17.3C407.5 192.62 319.4 104.52 209.3 96z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                  <path
+                    className="fa-primary"
+                    d="M172.2 226.82c75.5 15 129.9 89.3 112.5 172.2-11.4 54.3-55.3 98.3-109.7 109.7C82.1 528.22 0 457.52 0 368V120a23.94 23.94 0 0 1 24-24h48a23.94 23.94 0 0 1 24 24v248a48 48 0 1 0 64.7-45c-9.6-3.6-16.7-11.8-16.7-22v-50.4c0-14.9 13.6-26.7 28.2-23.8z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2
+        className="text-gray-900 dark:text-white font-bold text-2xl mt-8 mb-6"
+      >
+        Recent Work
+      </h2>
+      <div
+        className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max"
+      >
+        <div
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+        >
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
+          >
+            <a
+              href="https://ct.vercel.app"
+            >
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Contact Tracing"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -476,108 +446,108 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
+                <noscript>
+                  <img
+                    alt="Contact Tracing"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </a>
+          </div>
+          <div
+            className="px-5 "
+          >
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://ct.vercel.app"
+              >
+                Contact Tracing
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              A technology demonstration website to showcase a proof of concept contact tracing application using the AWS Cloud Development Kit.
+            </p>
+          </div>
         </div>
         <div
-          className="px-5 "
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
           >
             <a
-              className="hover:underline"
-              href="https://ct.vercel.app"
+              href="https://kochie.space"
             >
-              Contact Tracing
-            </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
-          >
-            A technology demonstration website to showcase a proof of concept contact tracing application using the AWS Cloud Development Kit.
-          </p>
-        </div>
-      </div>
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://kochie.space"
-          >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <img
-                alt="Space"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Space"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -595,108 +565,108 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
+                <noscript>
+                  <img
+                    alt="Space"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </a>
+          </div>
+          <div
+            className="px-5 "
+          >
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://kochie.space"
+              >
+                Space
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              A small webapp that follows the mouse.
+            </p>
+          </div>
         </div>
         <div
-          className="px-5 "
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
           >
             <a
-              className="hover:underline"
-              href="https://kochie.space"
+              href="https://3body.now.sh"
             >
-              Space
-            </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
-          >
-            A small webapp that follows the mouse.
-          </p>
-        </div>
-      </div>
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://3body.now.sh"
-          >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <img
-                alt="Particlez"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Particlez"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -714,108 +684,108 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
+                <noscript>
+                  <img
+                    alt="Particlez"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </a>
+          </div>
+          <div
+            className="px-5 "
+          >
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://3body.now.sh"
+              >
+                Particlez
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              A real time n-body particle simulator for the web.
+            </p>
+          </div>
         </div>
         <div
-          className="px-5 "
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
           >
             <a
-              className="hover:underline"
-              href="https://3body.now.sh"
+              href="https://bitbucket.org/kochie/fyp"
             >
-              Particlez
-            </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
-          >
-            A real time n-body particle simulator for the web.
-          </p>
-        </div>
-      </div>
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://bitbucket.org/kochie/fyp"
-          >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <img
-                alt="Optimising Neural Networks for Embedded Systems"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Optimising Neural Networks for Embedded Systems"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -833,108 +803,108 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
+                <noscript>
+                  <img
+                    alt="Optimising Neural Networks for Embedded Systems"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </a>
+          </div>
+          <div
+            className="px-5 "
+          >
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://bitbucket.org/kochie/fyp"
+              >
+                Optimising Neural Networks for Embedded Systems
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
+            </p>
+          </div>
         </div>
         <div
-          className="px-5 "
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
           >
             <a
-              className="hover:underline"
-              href="https://bitbucket.org/kochie/fyp"
+              href="https://stonks.kochie.io"
             >
-              Optimising Neural Networks for Embedded Systems
-            </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
-          >
-            My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.
-          </p>
-        </div>
-      </div>
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://stonks.kochie.io"
-          >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <img
-                alt="Stonks"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Stonks"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -952,108 +922,108 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
+                <noscript>
+                  <img
+                    alt="Stonks"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </a>
+          </div>
+          <div
+            className="px-5 "
+          >
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://stonks.kochie.io"
+              >
+                Stonks
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              A trading platform for crypto-currencies.
+            </p>
+          </div>
         </div>
         <div
-          className="px-5 "
+          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+          <div
+            className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+            style={
+              Object {
+                "padding": "30% 0",
+              }
+            }
           >
             <a
-              className="hover:underline"
-              href="https://stonks.kochie.io"
+              href="https://github.com/BenchTop/benchtop-js"
             >
-              Stonks
-            </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
-          >
-            A trading platform for crypto-currencies.
-          </p>
-        </div>
-      </div>
-      <div
-        className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
-      >
-        <div
-          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-          style={
-            Object {
-              "padding": "30% 0",
-            }
-          }
-        >
-          <a
-            href="https://github.com/BenchTop/benchtop-js"
-          >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-            >
-              <img
-                alt="benchtop-js"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"0123456789\\")",
-                    "backgroundPosition": "0% 0%",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="benchtop-js"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"0123456789\\")",
+                      "backgroundPosition": "0% 0%",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -1071,114 +1041,114 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
-        </div>
-        <div
-          className="px-5 "
-        >
-          <h3
-            className="text-lg font-medium my-3 text-gray-900 dark:text-white"
-          >
-            <a
-              className="hover:underline"
-              href="https://github.com/BenchTop/benchtop-js"
-            >
-              benchtop-js
+                <noscript>
+                  <img
+                    alt="benchtop-js"
+                    className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
             </a>
-          </h3>
-          <p
-            className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+          </div>
+          <div
+            className="px-5 "
           >
-            A benchmarking tool for JavaScript projects.
-          </p>
+            <h3
+              className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+            >
+              <a
+                className="hover:underline"
+                href="https://github.com/BenchTop/benchtop-js"
+              >
+                benchtop-js
+              </a>
+            </h3>
+            <p
+              className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+            >
+              A benchmarking tool for JavaScript projects.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <h2
-      className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6"
-    >
-      Recent Articles
-    </h2>
-    <div
-      className="flex flex-col gap-4 lg:gap-10 mb-5"
-    >
+    <div>
+      <h2
+        className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6"
+      >
+        Recent Articles
+      </h2>
       <div
-        className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+        className="flex flex-col gap-4 lg:gap-10 mb-5"
       >
         <div
-          className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
+          className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
         >
-          <a
-            href="https://blog.kochie.io/articles/02-contact-tracing"
+          <div
+            className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
           >
-            <div
-              style={
-                Object {
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "left": 0,
-                  "margin": 0,
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
+            <a
+              href="https://blog.kochie.io/articles/02-contact-tracing"
             >
-              <img
-                alt="Building a Contact Tracing Platform"
-                className="group-hover:scale-110 transition transform-gpu duration-100"
-                data-nimg="fill"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              <div
                 style={
                   Object {
-                    "backgroundImage": "url(\\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=\\")",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "cover",
-                    "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "filter": "blur(20px)",
-                    "height": 0,
                     "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": "center",
-                    "padding": 0,
+                    "margin": 0,
+                    "overflow": "hidden",
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
-                    "width": 0,
                   }
                 }
-              />
-              <noscript>
+              >
                 <img
                   alt="Building a Contact Tracing Platform"
                   className="group-hover:scale-110 transition transform-gpu duration-100"
                   data-nimg="fill"
                   decoding="async"
-                  loading="lazy"
-                  sizes="100vw"
-                  src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75"
-                  srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
                     Object {
+                      "backgroundImage": "url(\\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=\\")",
+                      "backgroundPosition": "center",
+                      "backgroundSize": "cover",
                       "border": "none",
                       "bottom": 0,
                       "boxSizing": "border-box",
                       "display": "block",
+                      "filter": "blur(20px)",
                       "height": 0,
                       "left": 0,
                       "margin": "auto",
@@ -1196,29 +1166,63 @@ exports[`middle renders correctly 1`] = `
                     }
                   }
                 />
-              </noscript>
-            </div>
-          </a>
-        </div>
-        <div
-          className="ml-5"
-        >
-          <h3
-            className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3"
-          >
-            <a
-              href="https://blog.kochie.io/articles/02-contact-tracing"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Building a Contact Tracing Platform
+                <noscript>
+                  <img
+                    alt="Building a Contact Tracing Platform"
+                    className="group-hover:scale-110 transition transform-gpu duration-100"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": "center",
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
             </a>
-          </h3>
-          <p
-            className="dark:text-gray-300 text-gray-700 mr-3 mb-4"
+          </div>
+          <div
+            className="ml-5"
           >
-            Learn how to automate and build an application to trace exposures using Amazon's Cloud Development Kit (CDK)
-          </p>
+            <h3
+              className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3"
+            >
+              <a
+                href="https://blog.kochie.io/articles/02-contact-tracing"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                Building a Contact Tracing Platform
+              </a>
+            </h3>
+            <p
+              className="dark:text-gray-300 text-gray-700 mr-3 mb-4"
+            >
+              Learn how to automate and build an application to trace exposures using Amazon's Cloud Development Kit (CDK)
+            </p>
+          </div>
         </div>
       </div>
     </div>
