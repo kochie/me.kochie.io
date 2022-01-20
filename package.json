@@ -68,7 +68,7 @@
     "next": "^11.1.2",
     "next-compose-plugins": "^2.2.1",
     "next-offline": "^5.0.5",
-    "next-seo": "^4.26.0",
+    "next-seo": "^4.29.0",
     "postcss": "^8.3.6",
     "postcss-css-variables": "^0.18.0",
     "postcss-custom-media": "^8.0.0",
