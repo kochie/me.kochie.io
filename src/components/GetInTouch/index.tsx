@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const GetInTouch = () => {
   return (
-    <div className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row">
+    <div className="group rounded-xl overflow-hidden dark:bg-gray-700 lg:h-64 shadow-lg bg-gray-300 my-6 flex flex-col lg:flex-row">
       <div className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0">
         <Image
           src={XPS}

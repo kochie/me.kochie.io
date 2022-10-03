@@ -32,7 +32,7 @@ const config = {
     NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
   },
   images: {
-    domains: ['blog.kochie.io'],
+    domains: ['blog.kochie.io', 'holopin.io'],
   },
   workboxOpts: {
     swDest: process.env.NEXT_EXPORT

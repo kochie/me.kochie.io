@@ -64,7 +64,7 @@ export default function Portfolio(): ReactElement {
       <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max">
         {projects.map((project) => (
           <div
-            className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+            className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
             key={project.id}
           >
             <div
