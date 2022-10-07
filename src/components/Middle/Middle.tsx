@@ -3,7 +3,7 @@ import RecentArticles from '@/components/RecentArticles/RecentArticles'
 import Portfolio from '@/components/Portfolio/Portfolio'
 import { MDXProvider } from '@mdx-js/react'
 
-// import Hello from './intro.mdx'
+import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
 
@@ -39,7 +39,7 @@ export default function Middle(): ReactElement {
             ),
           }}
         >
-          {/* <Hello /> */}
+          <Hello />
         </MDXProvider>
         <GetInTouch />
         <Awards />

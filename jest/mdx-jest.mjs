@@ -1,44 +1,66 @@
-import { compile, compileSync } from '@mdx-js/mdx'
+// import { compile, compileSync } from '@mdx-js/mdx'
 import babel from '@babel/core'
 
+import path from 'path'
+import parser from '@babel/parser'
+import estreeToBabel from 'estree-to-babel'
+import { compileSync } from '@mdx-js/mdx'
+
+export function babelPluginSyntaxMdx() {
+  // Tell Babel to use a different parser.
+  return { parserOverride: babelParserWithMdx }
+}
+
+// A Babel parser that parses MDX files with `@mdx-js/mdx` and passes any
+// other things through to the normal Babel parser.
+function babelParserWithMdx(value, options) {
+  if (
+    options.sourceFileName &&
+    /\.mdx?$/.test(path.extname(options.sourceFileName))
+  ) {
+    // Babel does not support async parsers, unfortunately.
+    return compileSync(
+      { value, path: options.sourceFileName },
+      // Tell `@mdx-js/mdx` to return a Babel tree instead of serialized JS.
+      {
+        recmaPlugins: [recmaBabel] /* jsxImportSource: …, otherOptions… */,
+        // outputFormat: 'function-body',
+      }
+    ).result
+  }
+
+  return parser.parse(value, options)
+}
+
+// A “recma” plugin is a unified plugin that runs on the estree (used by
+// `@mdx-js/mdx` and much of the JS ecosystem but not Babel).
+// This plugin defines `'estree-to-babel'` as the compiler, which means that
+// the resulting Babel tree is given back by `compileSync`.
+function recmaBabel() {
+  Object.assign(this, { Compiler: estreeToBabel })
+}
+
 export default {
-  process(sourceText) {
-    const rawJSX = compileSync(sourceText)
+  process(sourceText, sourcePath, options) {
+    const babelRes = babel.transform(sourceText, {
+      filename: sourcePath,
 
-    // Inject React and MDXTag imports
-    const injectedJSX = `/* @jsx mdx */
-        import React from 'react'
-        import { mdx } from '@mdx-js/react'
-        ${rawJSX}
-        `
-
-    // Transform ES6 with babel
-    const babelRes = babel.transform(injectedJSX, {
-      presets: ['next/babel'],
+      // presets: ['next/babel'],
+      presets: [['@babel/preset-env', { modules: 'cjs' }]],
+      plugins: ['add-module-exports', babelPluginSyntaxMdx],
     })
 
-    // console.log(babelRes)
-    return { code: babelRes.code }
+    return babelRes
   },
 
-  async processAsync(sourceText, sourcePath, options) {
-    // Convert .MDX file into JSX
-    // console.log('src', src)
-    const rawJSX = await compile(sourceText)
+  async processAsync(sourceText, sourcePath) {
+    const babelRes = babel.transformAsync(sourceText, {
+      filename: sourcePath,
 
-    // Inject React and MDXTag imports
-    const injectedJSX = `/* @jsx mdx */
-        import React from 'react'
-        import { mdx } from '@mdx-js/react'
-        ${rawJSX}
-        `
-
-    // Transform ES6 with babel
-    const babelRes = babel.transform(injectedJSX, {
-      presets: ['next/babel'],
+      presets: [['@babel/preset-env', { modules: 'cjs' }]],
+      plugins: ['add-module-exports', babelPluginSyntaxMdx],
     })
 
-    // console.log(babelRes)
-    return { code: babelRes.code }
+    return babelRes
   },
 }

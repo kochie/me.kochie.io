@@ -11,6 +11,74 @@ exports[`main  main renders correctly 1`] = `
     <div
       className="max-w-7xl"
     >
+      <h1>
+        I’m Rob, an engineer from Melbourne, Australia.
+      </h1>
+      
+
+      <p>
+        I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
+        <a
+          href="http://wired.org.au"
+        >
+          wired
+        </a>
+        , where I held the title of President in 2017.
+      </p>
+      
+
+      <p>
+        I currently work as a Cloud Architect for 
+        <a
+          href="https://aws.amazon.com"
+        >
+          Amazon Web Services
+        </a>
+        , where I build solutions for customers in the public sector, our clients include universities, government departments, and non-for-profits.
+      </p>
+      
+
+      <p>
+        Before that I worked as a Software Engineer at 
+        <a
+          href="https://localz.com"
+        >
+          Localz
+        </a>
+         who are providing last mile solutions for people around the world.
+      </p>
+      
+
+      <p>
+        Right now I'm a committee member of the 
+        <a
+          href="https://yea.engineersaustralia.org.au/"
+        >
+          Young Engineers Australia
+        </a>
+         in the Victorian Division. We run events to connect and engage young engineers who are beginning their careers in Australia.
+      </p>
+      
+
+      <p>
+        I also helped run the 
+        <a
+          href="https://unihack.net"
+        >
+          UNIHACK
+        </a>
+         organisation in Melbourne, where we ran hackathons for students around Australia.
+      </p>
+      
+
+      <p>
+        I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
+      </p>
+      
+
+      <p>
+        Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
+      </p>
       <div
         className="group rounded-xl overflow-hidden dark:bg-gray-700 lg:h-64 shadow-lg bg-gray-300 my-6 flex flex-col lg:flex-row"
       >

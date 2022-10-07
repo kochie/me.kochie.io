@@ -26,7 +26,14 @@ const customJestConfig = {
     // '@mdx-js/react': '<rootDir>/jest/esm.mapper.js',
   },
   transform: {
-    '^.+\\.mdx?$': '<rootDir>/jest/mdx-jest.mjs',
+    '^.+\\.mdx?$': [
+      '<rootDir>/jest/mdx-jest.mjs',
+      {
+        supportsDynamicImport: true,
+        supportsExportNamespaceFrom: true,
+        supportsStaticESM: true,
+      },
+    ],
     // '^.+\\.(js|jsx|ts|tsx|mjs)$': null,
     '\\.tsx?$': ['ts-jest', { useESM: true }],
   },
