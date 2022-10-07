@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactTestRenderer, act, create } from 'react-test-renderer'
+import { jest } from '@jest/globals'
 
-import { ThemeButton, ThemeProvider } from '@/components/Theme'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faLightbulbOn,
@@ -28,27 +28,28 @@ beforeAll(() => {
 })
 
 describe('THEME COMPONENT', () => {
-  test('should render', () => {
+  test('should render', async () => {
+    const ThemeButton = await import('../ThemeButton')
     let tree: ReactTestRenderer
 
     act(() => {
-      tree = create(<ThemeButton />)
+      tree = create(<ThemeButton.default />)
     })
 
-    // @ts-expect-error tree will be assigned
     expect(tree.toJSON()).toMatchSnapshot()
   })
 })
 
 describe('THEMEPROVIDER COMPONENT', () => {
-  test('renders correctly', () => {
+  test('renders correctly', async () => {
+    const ThemeProvider = await import('../context')
+
     let tree: ReactTestRenderer
 
     act(() => {
-      tree = create(<ThemeProvider />)
+      tree = create(<ThemeProvider.ThemeProvider />)
     })
 
-    // @ts-expect-error tree will be assigned
     expect(tree.toJSON()).toMatchSnapshot()
   })
 })

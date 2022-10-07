@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect } from 'react'
 import { AppProps } from 'next/app'
-import { init } from '../utils/sentry'
+// import { init } from '../utils/sentry'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas, faComment } from '@fortawesome/free-solid-svg-icons'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
@@ -17,7 +17,7 @@ config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatica
 
 library.add(fab, fas, fad, faComment)
 
-init()
+// init()
 
 function App({ Component, pageProps }: AppProps): ReactElement {
   const router = useRouter()

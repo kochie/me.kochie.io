@@ -1,93 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`middle renders correctly 1`] = `
+exports[`Middle Component middle renders correctly 1`] = `
 <div
   className="p-2 pt-6 lg:p-24 inline-grid bg-gray-200 dark:bg-gray-800 transform-gpu transition duration-700"
 >
   <div
     className="max-w-7xl"
   >
-    <h1
-      className="text-gray-900 text-4xl font-extrabold mb-3.5 dark:text-white"
-    >
+    <h1>
       I’m Rob, an engineer from Melbourne, Australia.
     </h1>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
       I'm a graduate of Monash University where I studied Electrical Engineering, Computer Science, and Mathematics. While studying I was involved with the IT society 
       <a
-        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
         href="http://wired.org.au"
       >
         wired
       </a>
       , where I held the title of President in 2017.
     </p>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
       I currently work as a Cloud Architect for 
       <a
-        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
         href="https://aws.amazon.com"
       >
         Amazon Web Services
       </a>
-      , where I build solutions for customers in the public sector, think universities, government departments, and non-for-profits. 
+      , where I build solutions for customers in the public sector, our clients include universities, government departments, and non-for-profits.
     </p>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
       Before that I worked as a Software Engineer at 
       <a
-        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
         href="https://localz.com"
       >
         Localz
       </a>
        who are providing last mile solutions for people around the world.
     </p>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
+      Right now I'm a committee member of the 
+      <a
+        href="https://yea.engineersaustralia.org.au/"
+      >
+        Young Engineers Australia
+      </a>
+       in the Victorian Division. We run events to connect and engage young engineers who are beginning their careers in Australia.
+    </p>
+    
+
+    <p>
       I also helped run the 
       <a
-        className="underline dark:text-orange-300 dark:hover:text-orange-600 text-indigo-600 hover:text-indigo-900 cursor-pointer"
         href="https://unihack.net"
       >
         UNIHACK
       </a>
-       organisation in Melbourne, where we ran hackathons for students around Australia. 
+       organisation in Melbourne, where we ran hackathons for students around Australia.
     </p>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
       I'm an avid runner and enjoy bouldering all around Melbourne and beyond.
     </p>
-    <p
-      className="text-gray-700 my-3 leading-relaxed dark:text-gray-400"
-    >
+    
+
+    <p>
       Apart from that, I love gaming, karate, bike riding, and electronics and try to do at least one of these things every day. I’m always looking for something new and interesting to do, so feel free to browse my portfolio or view my resume if you want to see some of the cool things I’ve done.
     </p>
     <div
-      className="group rounded-xl overflow-hidden dark:bg-cool-gray-700 lg:h-64 shadow-lg bg-cool-gray-300 my-6 flex flex-col lg:flex-row"
+      className="group rounded-xl overflow-hidden dark:bg-gray-700 lg:h-64 shadow-lg bg-gray-300 my-6 flex flex-col lg:flex-row"
     >
       <div
         className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0"
       >
-        <div
+        <span
           style={
-            Object {
+            {
+              "background": "none",
+              "border": 0,
               "bottom": 0,
               "boxSizing": "border-box",
               "display": "block",
+              "height": "initial",
               "left": 0,
               "margin": 0,
+              "opacity": 1,
               "overflow": "hidden",
+              "padding": 0,
               "position": "absolute",
               "right": 0,
               "top": 0,
+              "width": "initial",
             }
           }
         >
@@ -96,10 +107,12 @@ exports[`middle renders correctly 1`] = `
             className="group-hover:scale-110 transition transform-gpu duration-100"
             data-nimg="fill"
             decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
-              Object {
-                "backgroundImage": "url(\\"0123456789\\")",
+              {
+                "backgroundImage": "url("data:image/png;base64,imagedata")",
                 "backgroundPosition": "0% 0%",
                 "backgroundSize": "cover",
                 "border": "none",
@@ -132,10 +145,10 @@ exports[`middle renders correctly 1`] = `
               decoding="async"
               loading="lazy"
               sizes="100vw"
-              src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-              srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+              src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+              srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
               style={
-                Object {
+                {
                   "border": "none",
                   "bottom": 0,
                   "boxSizing": "border-box",
@@ -158,7 +171,7 @@ exports[`middle renders correctly 1`] = `
               }
             />
           </noscript>
-        </div>
+        </span>
       </div>
       <div
         className="ml-6"
@@ -195,30 +208,30 @@ exports[`middle renders correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-file-user fa-w-12 fa-fw fa-2x "
+                className="svg-inline--fa fa-file-user fa-fw fa-2x "
                 data-icon="file-user"
                 data-prefix="fad"
                 focusable="false"
                 role="img"
-                style={Object {}}
+                style={{}}
                 viewBox="0 0 384 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g
-                  className="fa-group"
-                  style={Object {}}
+                  className="fa-duotone-group"
+                  style={{}}
                 >
                   <path
                     className="fa-secondary"
-                    d="M384 128H272a16 16 0 0 1-16-16V0H24A23.94 23.94 0 0 0 0 23.88V488a23.94 23.94 0 0 0 23.88 24H360a23.94 23.94 0 0 0 24-23.88V128zm-192 64a64 64 0 1 1-64 64 64 64 0 0 1 64-64zm112 236.8c0 10.61-10 19.2-22.4 19.2H102.4C90 448 80 439.4 80 428.8v-19.2c0-31.81 30.09-57.6 67.1-57.6h5a103.22 103.22 0 0 0 79.7 0h5c37.11 0 67.2 25.79 67.2 57.6z"
+                    d="M256 128V0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V128H256zM192 192c35.35 0 64 28.66 64 64s-28.65 64-64 64c-35.34 0-64-28.66-64-64S156.7 192 192 192zM288 448H96c-8.836 0-16-7.164-16-16C80 387.8 115.8 352 160 352h64c44.18 0 80 35.81 80 80C304 440.8 296.8 448 288 448z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                   <path
                     className="fa-primary"
-                    d="M377 105L279.1 7a24 24 0 0 0-17-7H256v112a16 16 0 0 0 16 16h112v-6.1a23.9 23.9 0 0 0-7-16.9zM192 320a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm44.8 32h-5a103.22 103.22 0 0 1-79.7 0h-5c-37 0-67.1 25.79-67.1 57.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.37 0 22.4-8.59 22.4-19.2v-19.2c0-31.81-30.09-57.6-67.2-57.6z"
+                    d="M256 0v128h128L256 0zM192 320c35.35 0 64-28.66 64-64s-28.65-64-64-64C156.7 192 128 220.7 128 256S156.7 320 192 320zM224 352H160c-44.18 0-80 35.81-80 80C80 440.8 87.16 448 96 448h192c8.836 0 16-7.164 16-16C304 387.8 268.2 352 224 352z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                 </g>
               </svg>
@@ -235,19 +248,19 @@ exports[`middle renders correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-cotton-bureau fa-w-16 fa-fw fa-2x "
+                className="svg-inline--fa fa-cotton-bureau fa-fw fa-2x "
                 data-icon="cotton-bureau"
                 data-prefix="fab"
                 focusable="false"
                 role="img"
-                style={Object {}}
+                style={{}}
                 viewBox="0 0 512 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M474.31 330.41c-23.66 91.85-94.23 144.59-201.9 148.35V429.6c0-48 26.41-74.39 74.39-74.39 62 0 99.2-37.2 99.2-99.21 0-61.37-36.53-98.28-97.38-99.06-33-69.32-146.5-64.65-177.24 0C110.52 157.72 74 194.63 74 256c0 62.13 37.27 99.41 99.4 99.41 48 0 74.55 26.23 74.55 74.39V479c-134.43-5-211.1-85.07-211.1-223 0-141.82 81.35-223.2 223.2-223.2 114.77 0 189.84 53.2 214.69 148.81H500C473.88 71.51 388.22 8 259.82 8 105 8 12 101.19 12 255.82 12 411.14 105.19 504.34 259.82 504c128.27 0 213.87-63.81 239.67-173.59zM357 182.33c41.37 3.45 64.2 29 64.2 73.67 0 48-26.43 74.41-74.4 74.41-28.61 0-49.33-9.59-61.59-27.33 83.06-16.55 75.59-99.67 71.79-120.75zm-81.68 97.36c-2.46-10.34-16.33-87 56.23-97 2.27 10.09 16.52 87.11-56.26 97zM260 132c28.61 0 49 9.67 61.44 27.61-28.36 5.48-49.36 20.59-61.59 43.45-12.23-22.86-33.23-38-61.6-43.45 12.41-17.69 33.27-27.35 61.57-27.35zm-71.52 50.72c73.17 10.57 58.91 86.81 56.49 97-72.41-9.84-59-86.95-56.25-97zM173.2 330.41c-48 0-74.4-26.4-74.4-74.41 0-44.36 22.86-70 64.22-73.67-6.75 37.2-1.38 106.53 71.65 120.75-12.14 17.63-32.84 27.3-61.14 27.3zm53.21 12.39A80.8 80.8 0 0 0 260 309.25c7.77 14.49 19.33 25.54 33.82 33.55a80.28 80.28 0 0 0-33.58 33.83c-8-14.5-19.07-26.23-33.56-33.83z"
                   fill="currentColor"
-                  style={Object {}}
+                  style={{}}
                 />
               </svg>
             </a>
@@ -263,30 +276,30 @@ exports[`middle renders correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-coffee fa-w-20 fa-fw fa-2x "
-                data-icon="coffee"
+                className="svg-inline--fa fa-mug-saucer fa-fw fa-2x "
+                data-icon="mug-saucer"
                 data-prefix="fad"
                 focusable="false"
                 role="img"
-                style={Object {}}
+                style={{}}
                 viewBox="0 0 640 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g
-                  className="fa-group"
-                  style={Object {}}
+                  className="fa-duotone-group"
+                  style={{}}
                 >
                   <path
                     className="fa-secondary"
-                    d="M559.76 480H48.36c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                    d="M560 416h-544C7.164 416 0 423.2 0 432C0 458.5 21.49 480 48 480h480c26.51 0 48-21.49 48-48C576 423.2 568.8 416 560 416z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                   <path
                     className="fa-primary"
-                    d="M512.06 32h-392a23.94 23.94 0 0 0-24 24v232a96 96 0 0 0 96 96h192a96 96 0 0 0 96-96h32a128 128 0 0 0 0-256zm0 192h-32V96h32a64 64 0 0 1 0 128z"
+                    d="M512 32H120c-13.25 0-24 10.75-24 24L96.01 288c0 53 43 96 96 96h192C437 384 480 341 480 288h32c70.63 0 128-57.38 128-128S582.6 32 512 32zM512 224h-32V96h32c35.25 0 64 28.75 64 64S547.3 224 512 224z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                 </g>
               </svg>
@@ -303,30 +316,30 @@ exports[`middle renders correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-rss fa-w-14 fa-fw fa-2x "
+                className="svg-inline--fa fa-rss fa-fw fa-2x "
                 data-icon="rss"
                 data-prefix="fad"
                 focusable="false"
                 role="img"
-                style={Object {}}
+                style={{}}
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g
-                  className="fa-group"
-                  style={Object {}}
+                  className="fa-duotone-group"
+                  style={{}}
                 >
                   <path
                     className="fa-secondary"
-                    d="M303.74 463.21c-8.35-154.6-132.18-278.59-286.95-286.95A16 16 0 0 0 0 192.25v48.07a16 16 0 0 0 14.89 16c111.83 7.28 201.47 96.7 208.77 208.77a16 16 0 0 0 16 14.89h48.07a16 16 0 0 0 16-16.79zM16.5 32A16 16 0 0 0 0 48v48.08a16 16 0 0 0 15.45 16c191.18 7.84 344.63 161.32 352.47 352.47a16 16 0 0 0 16 15.45H432a16 16 0 0 0 16-16.5C439.6 229.68 251.46 40.45 16.5 32z"
+                    d="M32 32C14.33 32 0 46.31 0 64s14.33 32 32 32c194.1 0 352 157.9 352 352c0 17.69 14.33 32 32 32s32-14.31 32-32C448 218.6 261.4 32 32 32zM25.57 176.1c-13.16-.7187-24.66 9.156-25.51 22.37C-.8071 211.7 9.223 223.1 22.44 223.9c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8437 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                   <path
                     className="fa-primary"
-                    d="M0 416a64 64 0 1 1 64 64 64 64 0 0 1-64-64z"
+                    d="M63.1 351.9C28.63 351.9 0 380.6 0 416s28.63 64 63.1 64s64.08-28.62 64.08-64S99.37 351.9 63.1 351.9z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                 </g>
               </svg>
@@ -343,36 +356,174 @@ exports[`middle renders correctly 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="svg-inline--fa fa-blog fa-w-16 fa-fw fa-2x "
+                className="svg-inline--fa fa-blog fa-fw fa-2x "
                 data-icon="blog"
                 data-prefix="fad"
                 focusable="false"
                 role="img"
-                style={Object {}}
+                style={{}}
                 viewBox="0 0 512 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g
-                  className="fa-group"
-                  style={Object {}}
+                  className="fa-duotone-group"
+                  style={{}}
                 >
                   <path
                     className="fa-secondary"
-                    d="M511.9 303C503.4 139.82 372.2 8.62 209 0a16.1 16.1 0 0 0-17 16v31.6a15.84 15.84 0 0 0 15 15.9c129.4 7 233.4 112 240.9 241.5a16 16 0 0 0 15.9 15h32.1a16.1 16.1 0 0 0 16-17zM209.3 96a16.13 16.13 0 0 0-17.3 16.1v32.1a15.94 15.94 0 0 0 14.8 15.9c76.8 6.3 138 68.2 144.9 145.2a16.07 16.07 0 0 0 15.9 14.7h32.2a16.19 16.19 0 0 0 16.1-17.3C407.5 192.62 319.4 104.52 209.3 96z"
+                    d="M224 0C206.3 0 192 14.31 192 32s14.33 32 32 32c123.5 0 224 100.5 224 224c0 17.69 14.33 32 32 32s32-14.31 32-32C512 129.2 382.8 0 224 0zM217.6 96.1c-12.95-.625-24.66 9.156-25.52 22.37C191.2 131.7 201.2 143.1 214.4 143.1c79.53 5.188 148.4 74.09 153.6 153.6c.8281 12.69 11.39 22.43 23.94 22.43c.5156 0 1.047-.0313 1.578-.0625c13.22-.8438 23.25-12.28 22.39-25.5C409.3 191.8 320.3 102.8 217.6 96.1z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                   <path
                     className="fa-primary"
-                    d="M172.2 226.82c75.5 15 129.9 89.3 112.5 172.2-11.4 54.3-55.3 98.3-109.7 109.7C82.1 528.22 0 457.52 0 368V120a23.94 23.94 0 0 1 24-24h48a23.94 23.94 0 0 1 24 24v248a48 48 0 1 0 64.7-45c-9.6-3.6-16.7-11.8-16.7-22v-50.4c0-14.9 13.6-26.7 28.2-23.8z"
+                    d="M172.3 226.8C157.7 223.9 144 235.8 144 250.6v50.37c0 10.25 7.127 18.37 16.75 21.1c18.13 6.75 31.26 24.37 31.26 44.1c0 26.5-21.5 47.1-48.01 47.1s-48.01-21.5-48.01-47.1V120c0-13.25-10.75-23.1-24.01-23.1l-48.01 .0076C10.75 96.02 0 106.8 0 120v247.1c0 89.49 82.14 160.2 175 140.7c54.39-11.5 98.27-55.5 109.8-109.7C302.2 316.1 247.8 241.8 172.3 226.8z"
                     fill="currentColor"
-                    style={Object {}}
+                    style={{}}
                   />
                 </g>
               </svg>
             </a>
           </div>
         </div>
+      </div>
+    </div>
+    <div>
+      <h2
+        className="text-gray-900 dark:text-white font-bold text-2xl mt-6 mb-4"
+      >
+        Awards
+      </h2>
+      <div
+        className="w-full"
+      >
+        <a
+          href="https://holopin.io/@kochie"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onTouchStart={[Function]}
+        >
+          <div>
+            <span
+              style={
+                {
+                  "background": "none",
+                  "border": 0,
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "relative",
+                  "width": "initial",
+                }
+              }
+            >
+              <span
+                style={
+                  {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%272428%27%20height=%27764%27/%3e"
+                  style={
+                    {
+                      "background": "none",
+                      "border": 0,
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                />
+              </span>
+              <img
+                alt="@kochie's Holopin board"
+                className="rounded-xl cursor-pointer"
+                data-nimg="intrinsic"
+                decoding="async"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="@kochie's Holopin board"
+                  className="rounded-xl cursor-pointer"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=https%3A%2F%2Fholopin.io%2Fapi%2Fuser%2Fboard%3Fuser%3Dkochie&w=1200&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fholopin.io%2Fapi%2Fuser%2Fboard%3Fuser%3Dkochie&w=1200&q=75 1x"
+                  style={
+                    {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </span>
+          </div>
+        </a>
       </div>
     </div>
     <div>
@@ -385,12 +536,12 @@ exports[`middle renders correctly 1`] = `
         className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max"
       >
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -398,18 +549,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://ct.vercel.app"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -418,10 +575,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -454,10 +613,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -480,7 +639,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -504,12 +663,12 @@ exports[`middle renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -517,18 +676,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://kochie.space"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -537,10 +702,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -573,10 +740,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -599,7 +766,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -623,12 +790,12 @@ exports[`middle renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -636,18 +803,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://3body.now.sh"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -656,10 +829,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -692,10 +867,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -718,7 +893,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -742,12 +917,12 @@ exports[`middle renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -755,18 +930,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://bitbucket.org/kochie/fyp"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -775,10 +956,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -811,10 +994,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -837,7 +1020,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -861,12 +1044,12 @@ exports[`middle renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -874,18 +1057,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://stonks.kochie.io"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -894,10 +1083,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -930,10 +1121,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -956,7 +1147,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -980,12 +1171,12 @@ exports[`middle renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+          className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
         >
           <div
             className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
             style={
-              Object {
+              {
                 "padding": "30% 0",
               }
             }
@@ -993,18 +1184,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://github.com/BenchTop/benchtop-js"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -1013,10 +1210,12 @@ exports[`middle renders correctly 1`] = `
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"0123456789\\")",
+                    {
+                      "backgroundImage": "url("data:image/png;base64,imagedata")",
                       "backgroundPosition": "0% 0%",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -1049,10 +1248,10 @@ exports[`middle renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -1075,7 +1274,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -1110,7 +1309,7 @@ exports[`middle renders correctly 1`] = `
         className="flex flex-col gap-4 lg:gap-10 mb-5"
       >
         <div
-          className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+          className="group flex flex-col lg:flex-row rounded-xl bg-gray-300 dark:bg-gray-700 shadow-2xl"
         >
           <div
             className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
@@ -1118,18 +1317,24 @@ exports[`middle renders correctly 1`] = `
             <a
               href="https://blog.kochie.io/articles/02-contact-tracing"
             >
-              <div
+              <span
                 style={
-                  Object {
+                  {
+                    "background": "none",
+                    "border": 0,
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
                     "left": 0,
                     "margin": 0,
+                    "opacity": 1,
                     "overflow": "hidden",
+                    "padding": 0,
                     "position": "absolute",
                     "right": 0,
                     "top": 0,
+                    "width": "initial",
                   }
                 }
               >
@@ -1138,10 +1343,12 @@ exports[`middle renders correctly 1`] = `
                   className="group-hover:scale-110 transition transform-gpu duration-100"
                   data-nimg="fill"
                   decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   style={
-                    Object {
-                      "backgroundImage": "url(\\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=\\")",
+                    {
+                      "backgroundImage": "url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=")",
                       "backgroundPosition": "center",
                       "backgroundSize": "cover",
                       "border": "none",
@@ -1177,7 +1384,7 @@ exports[`middle renders correctly 1`] = `
                     src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75"
                     srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w"
                     style={
-                      Object {
+                      {
                         "border": "none",
                         "bottom": 0,
                         "boxSizing": "border-box",
@@ -1200,7 +1407,7 @@ exports[`middle renders correctly 1`] = `
                     }
                   />
                 </noscript>
-              </div>
+              </span>
             </a>
           </div>
           <div
@@ -1213,6 +1420,7 @@ exports[`middle renders correctly 1`] = `
                 href="https://blog.kochie.io/articles/02-contact-tracing"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
+                onTouchStart={[Function]}
               >
                 Building a Contact Tracing Platform
               </a>

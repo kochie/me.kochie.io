@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recent articles renders correctly 1`] = `
+exports[`Recent Articles recent articles renders correctly 1`] = `
 <div>
   <h2
     className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6"
@@ -11,7 +11,7 @@ exports[`recent articles renders correctly 1`] = `
     className="flex flex-col gap-4 lg:gap-10 mb-5"
   >
     <div
-      className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+      className="group flex flex-col lg:flex-row rounded-xl bg-gray-300 dark:bg-gray-700 shadow-2xl"
     >
       <div
         className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
@@ -19,18 +19,24 @@ exports[`recent articles renders correctly 1`] = `
         <a
           href="https://blog.kochie.io/articles/02-contact-tracing"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -39,10 +45,12 @@ exports[`recent articles renders correctly 1`] = `
               className="group-hover:scale-110 transition transform-gpu duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=\\")",
+                {
+                  "backgroundImage": "url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k=")",
                   "backgroundPosition": "center",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -78,7 +86,7 @@ exports[`recent articles renders correctly 1`] = `
                 src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75"
                 srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -101,7 +109,7 @@ exports[`recent articles renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -114,6 +122,7 @@ exports[`recent articles renders correctly 1`] = `
             href="https://blog.kochie.io/articles/02-contact-tracing"
             onClick={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
           >
             Building a Contact Tracing Platform
           </a>

@@ -11,12 +11,12 @@ exports[`portfolio renders correctly 1`] = `
     className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max"
   >
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -24,18 +24,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://ct.vercel.app"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -44,10 +50,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -80,10 +88,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -106,7 +114,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -130,12 +138,12 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -143,18 +151,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://kochie.space"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -163,10 +177,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -199,10 +215,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -225,7 +241,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -249,12 +265,12 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -262,18 +278,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://3body.now.sh"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -282,10 +304,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -318,10 +342,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -344,7 +368,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -368,12 +392,12 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -381,18 +405,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://bitbucket.org/kochie/fyp"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -401,10 +431,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -437,10 +469,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -463,7 +495,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -487,12 +519,12 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -500,18 +532,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://stonks.kochie.io"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -520,10 +558,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -556,10 +596,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -582,7 +622,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div
@@ -606,12 +646,12 @@ exports[`portfolio renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="group rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
       <div
         className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
         style={
-          Object {
+          {
             "padding": "30% 0",
           }
         }
@@ -619,18 +659,24 @@ exports[`portfolio renders correctly 1`] = `
         <a
           href="https://github.com/BenchTop/benchtop-js"
         >
-          <div
+          <span
             style={
-              Object {
+              {
+                "background": "none",
+                "border": 0,
                 "bottom": 0,
                 "boxSizing": "border-box",
                 "display": "block",
+                "height": "initial",
                 "left": 0,
                 "margin": 0,
+                "opacity": 1,
                 "overflow": "hidden",
+                "padding": 0,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
+                "width": "initial",
               }
             }
           >
@@ -639,10 +685,12 @@ exports[`portfolio renders correctly 1`] = `
               className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
               data-nimg="fill"
               decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               style={
-                Object {
-                  "backgroundImage": "url(\\"0123456789\\")",
+                {
+                  "backgroundImage": "url("data:image/png;base64,imagedata")",
                   "backgroundPosition": "0% 0%",
                   "backgroundSize": "cover",
                   "border": "none",
@@ -675,10 +723,10 @@ exports[`portfolio renders correctly 1`] = `
                 decoding="async"
                 loading="lazy"
                 sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75"
-                srcSet="/_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fme.kochie.io%2Fimages%2Fmock-image.png&w=1200&q=75 1200w"
+                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
                 style={
-                  Object {
+                  {
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
@@ -701,7 +749,7 @@ exports[`portfolio renders correctly 1`] = `
                 }
               />
             </noscript>
-          </div>
+          </span>
         </a>
       </div>
       <div

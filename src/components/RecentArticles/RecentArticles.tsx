@@ -35,7 +35,10 @@ export default function RecentArticles(): ReactElement {
     'https://blog.kochie.io/feed/json',
     fetcher
   )
-  if (error) return <div>{error}</div>
+  if (error) {
+    console.error(error)
+    return <div>{JSON.stringify(error)}</div>
+  }
   if (!data) return <div></div>
 
   return (
@@ -46,7 +49,7 @@ export default function RecentArticles(): ReactElement {
       <div className="flex flex-col gap-4 lg:gap-10 mb-5">
         {data.items.slice(0, 3).map((article) => (
           <div
-            className="group flex flex-col lg:flex-row rounded-xl bg-cool-gray-300 dark:bg-cool-gray-700 shadow-2xl"
+            className="group flex flex-col lg:flex-row rounded-xl bg-gray-300 dark:bg-gray-700 shadow-2xl"
             key={article.id}
           >
             <div className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0">

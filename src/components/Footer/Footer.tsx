@@ -22,7 +22,7 @@ export default function Footer(): ReactElement {
 
   return (
     <>
-      <nav className="bg-cool-gray-400 dark:bg-cool-gray-900 text-cool-gray-900 dark:text-cool-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
+      <nav className="bg-gray-400 dark:bg-gray-900 text-gray-900 dark:text-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
         <div className={style.name}>
           Robert Koch
           <FontAwesomeIcon
@@ -33,7 +33,7 @@ export default function Footer(): ReactElement {
             size="1x"
             className="mx-1"
           />
-          {new Date().getFullYear()}
+          {2020}
         </div>
         <div id="guitar" className={style.guitar}>
           <FontAwesomeIcon

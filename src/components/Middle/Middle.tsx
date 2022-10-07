@@ -5,6 +5,7 @@ import { MDXProvider } from '@mdx-js/react'
 
 import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
+import Awards from '@/components/Awards'
 
 export default function Middle(): ReactElement {
   return (
@@ -30,11 +31,18 @@ export default function Middle(): ReactElement {
                 {children}
               </a>
             ),
+            img: ({ src }) => (
+              <img src={src} className="my-10 rounded-xl" />
+              // <div className="h-96">
+              //   <Image src={src} layout="fill" />
+              // </div>
+            ),
           }}
         >
           <Hello />
         </MDXProvider>
         <GetInTouch />
+        <Awards />
         <Portfolio />
         <RecentArticles />
       </div>

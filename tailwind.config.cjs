@@ -1,8 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
@@ -30,8 +29,6 @@ module.exports = {
         cottonBureau: '#f26355',
         orange: colors.orange,
         wheat: 'wheat',
-        'warm-gray': colors.warmGray,
-        'cool-gray': colors.coolGray,
         amber: colors.amber,
       },
       backgroundImage: {
