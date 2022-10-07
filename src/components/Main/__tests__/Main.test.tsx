@@ -1,14 +1,8 @@
-import renderer from 'react-test-renderer'
-import React from 'react'
+import * as React from 'react'
+import * as renderer from 'react-test-renderer'
 import { jest } from '@jest/globals'
 
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core'
-library.add(fab)
-
-// jest.mock('react-ga')
-
-describe('app', () => {
+describe('main ', () => {
   beforeAll(async () => {
     const MOCK_DATA = {
       items: [
@@ -42,9 +36,10 @@ describe('app', () => {
     await import('swr')
   })
 
-  it('app renders correctly', async () => {
-    const App = await import('../App')
-    const tree = renderer.create(<App.default />).toJSON()
+  it('main renders correctly', async () => {
+    const Main = await import('../Main')
+
+    const tree = renderer.create(<Main.default />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

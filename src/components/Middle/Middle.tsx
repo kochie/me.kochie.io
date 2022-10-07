@@ -3,9 +3,9 @@ import RecentArticles from '@/components/RecentArticles/RecentArticles'
 import Portfolio from '@/components/Portfolio/Portfolio'
 import { MDXProvider } from '@mdx-js/react'
 
-import Hello from './intro.mdx'
+// import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
-import Image from 'next/image'
+import Awards from '@/components/Awards'
 
 export default function Middle(): ReactElement {
   return (
@@ -32,16 +32,17 @@ export default function Middle(): ReactElement {
               </a>
             ),
             img: ({ src }) => (
-              <img src={src} className="rounded-xl" />
+              <img src={src} className="my-10 rounded-xl" />
               // <div className="h-96">
               //   <Image src={src} layout="fill" />
               // </div>
             ),
           }}
         >
-          <Hello />
+          {/* <Hello /> */}
         </MDXProvider>
         <GetInTouch />
+        <Awards />
         <Portfolio />
         <RecentArticles />
       </div>

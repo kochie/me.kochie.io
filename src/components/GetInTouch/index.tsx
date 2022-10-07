@@ -3,6 +3,13 @@ import Image from 'next/image'
 
 import XPS from '@/images/xps-6uneKLGrJPs-unsplash.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faBlog,
+  faCoffee,
+  faFileUser,
+  faRss,
+} from '@fortawesome/pro-duotone-svg-icons'
+import { faCottonBureau } from '@fortawesome/free-brands-svg-icons'
 
 const GetInTouch = () => {
   return (
@@ -39,11 +46,7 @@ const GetInTouch = () => {
               aria-label="resume"
               title="My Resume"
             >
-              <FontAwesomeIcon
-                icon={['fad', 'file-user']}
-                size="2x"
-                fixedWidth
-              />
+              <FontAwesomeIcon icon={faFileUser} size="2x" fixedWidth />
             </a>
           </div>
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
@@ -53,11 +56,7 @@ const GetInTouch = () => {
               aria-label="cotton bureau"
               title="Cotton Bureau"
             >
-              <FontAwesomeIcon
-                icon={['fab', 'cotton-bureau']}
-                size="2x"
-                fixedWidth
-              />
+              <FontAwesomeIcon icon={faCottonBureau} size="2x" fixedWidth />
             </a>
           </div>
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
@@ -67,7 +66,7 @@ const GetInTouch = () => {
               aria-label="buy me a coffee"
               title="Buy Me A Coffee"
             >
-              <FontAwesomeIcon icon={['fad', 'coffee']} size="2x" fixedWidth />
+              <FontAwesomeIcon icon={faCoffee} size="2x" fixedWidth />
             </a>
           </div>
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
@@ -77,7 +76,7 @@ const GetInTouch = () => {
               aria-label="rss"
               title="Article RSS Feed"
             >
-              <FontAwesomeIcon icon={['fad', 'rss']} size="2x" fixedWidth />
+              <FontAwesomeIcon icon={faRss} size="2x" fixedWidth />
             </a>
           </div>
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
@@ -87,7 +86,7 @@ const GetInTouch = () => {
               aria-label="blog"
               title="My Blog"
             >
-              <FontAwesomeIcon icon={['fad', 'blog']} size="2x" fixedWidth />
+              <FontAwesomeIcon icon={faBlog} size="2x" fixedWidth />
             </a>
           </div>
         </div>

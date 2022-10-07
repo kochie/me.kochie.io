@@ -33,7 +33,7 @@ export default function Footer(): ReactElement {
             size="1x"
             className="mx-1"
           />
-          {new Date().getFullYear()}
+          {2020}
         </div>
         <div id="guitar" className={style.guitar}>
           <FontAwesomeIcon

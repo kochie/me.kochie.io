@@ -35,7 +35,10 @@ export default function RecentArticles(): ReactElement {
     'https://blog.kochie.io/feed/json',
     fetcher
   )
-  if (error) return <div>{error}</div>
+  if (error) {
+    console.error(error)
+    return <div>{JSON.stringify(error)}</div>
+  }
   if (!data) return <div></div>
 
   return (
