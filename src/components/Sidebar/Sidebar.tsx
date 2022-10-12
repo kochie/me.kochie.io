@@ -83,7 +83,7 @@ const Sidebar = (): ReactElement => {
     'I build things, write the code for them, and run from the resulting explosion.'
 
   return (
-    <div
+    <nav
       className="relative top-0 w-full min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-black xl:w-1/3"
       role="complementary"
     >
@@ -103,7 +103,7 @@ const Sidebar = (): ReactElement => {
           <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
