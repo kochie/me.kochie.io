@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write \"src/**/*.{tsx,ts,js,jsx,css}\"",
-    "test-coverage": "jest --coverage",
+    "test-coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
