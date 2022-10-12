@@ -17,10 +17,10 @@ const Sidebar = (): ReactElement => {
     // console.log(document.getElementById('main').scrollTop)
 
     if (!image.current) return
-    if (canvas.current === null) return
-    if (!document.getElementById('main')) return
+    if (!canvas.current) return
 
     const main = document.getElementById('main')
+    if (!main) return
 
     const ctx = canvas.current.getContext('2d')
     if (ctx === null) return
@@ -89,7 +89,12 @@ const Sidebar = (): ReactElement => {
     >
       <div className="flex flex-col z-10 text-center items-center h-full mt-20">
         <div className="rounded-full w-40 h-40 overflow-hidden">
-          <NextImage layout="responsive" src={avatar} alt="me" />
+          <NextImage
+            layout="responsive"
+            src={avatar}
+            alt="me"
+            placeholder="blur"
+          />
         </div>
         <div className={style.quote}>{quote}</div>
         <Connections />

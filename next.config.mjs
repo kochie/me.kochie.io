@@ -1,5 +1,7 @@
 // import withPlugins from 'next-compose-plugins'
 import MDX from '@next/mdx'
+import PWA from 'next-pwa'
+
 const {
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
   SENTRY_ORG,
@@ -26,36 +28,11 @@ const Config = async (phase, { defaultConfig }) => {
       buildTime: new Date().toDateString(),
       NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
     },
-    experimental: { esmExternals: true },
+    experimental: { esmExternals: true, modern: true },
     images: {
       domains: ['blog.kochie.io', 'holopin.io'],
     },
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    // workboxOpts: {
-    //   swDest: process.env.NEXT_EXPORT
-    //     ? 'service-worker.js'
-    //     : 'static/service-worker.js',
-    //   runtimeCaching: [
-    //     {
-    //       urlPattern: /^https?.*/,
-    //       handler: 'NetworkFirst',
-    //       options: {
-    //         cacheName: 'offlineCache',
-    //         expiration: {
-    //           maxEntries: 200,
-    //         },
-    //       },
-    //     },
-    //   ],
-    // },
-    async rewrites() {
-      return [
-        {
-          source: '/service-worker.js',
-          destination: '/_next/static/service-worker.js',
-        },
-      ]
-    },
   }
 
   const withMDX = MDX({
@@ -69,10 +46,12 @@ const Config = async (phase, { defaultConfig }) => {
     },
   })
 
-  // const plugins = [withMDX]
+  const withPWA = PWA({
+    dest: 'public',
+    maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+  })
 
-  // console.log(withPlugins(plugins, config)())
-  return withMDX(config)
+  return withPWA(withMDX(config))
 }
 
 export default Config
