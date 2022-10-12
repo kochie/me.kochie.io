@@ -11,6 +11,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'tailwindcss/tailwind.css'
 import '../assets/styles/global.css'
 import { ThemeButton, ThemeProvider } from '@/components/Theme'
+import Head from '@/components/Head'
 import { useRouter } from 'next/dist/client/router'
 
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
@@ -43,7 +44,7 @@ function App({ Component, pageProps }: AppProps): ReactElement {
     return () => {
       router.events.off('routeChangeComplete', onRouteChangeComplete)
     }
-  }, [])
+  }, [router.events])
 
   return (
     <>

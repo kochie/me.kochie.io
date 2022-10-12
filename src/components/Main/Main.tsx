@@ -5,12 +5,12 @@ import Middle from '@/components/Middle/Middle'
 
 export default function Main(): ReactElement {
   return (
-    <div
+    <main
       id="main"
       className="flex flex-col flex-1 overflow-y-auto lg:overflow-y-scroll lg:h-screen"
     >
       <Middle />
       <Footer />
-    </div>
+    </main>
   )
 }
