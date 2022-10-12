@@ -29,8 +29,6 @@ export default function Heading(): ReactElement {
       <link rel="manifest" href="/manifest.json" />
       <link rel="mask-icon" href="/images/favicon_curved.svg" color="#1f2937" />
 
-      <link rel="apple-touch-icon" href="/assets/apple-icon-180.png" />
-
       <link
         rel="apple-touch-startup-image"
         href="/assets/apple-splash-2048-2732.jpg"

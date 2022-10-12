@@ -89,7 +89,12 @@ const Sidebar = (): ReactElement => {
     >
       <div className="flex flex-col z-10 text-center items-center h-full mt-20">
         <div className="rounded-full w-40 h-40 overflow-hidden">
-          <NextImage layout="responsive" src={avatar} alt="me" />
+          <NextImage
+            layout="responsive"
+            src={avatar}
+            alt="me"
+            placeholder="blur"
+          />
         </div>
         <div className={style.quote}>{quote}</div>
         <Connections />
