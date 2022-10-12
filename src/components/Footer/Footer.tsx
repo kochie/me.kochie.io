@@ -22,7 +22,7 @@ export default function Footer(): ReactElement {
 
   return (
     <>
-      <nav className="bg-gray-400 dark:bg-gray-900 text-gray-900 dark:text-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
+      <footer className="bg-gray-400 dark:bg-gray-900 text-gray-900 dark:text-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
         <div className={style.name}>
           Robert Koch
           <FontAwesomeIcon
@@ -50,7 +50,7 @@ export default function Footer(): ReactElement {
             Updated on <time dateTime={updateTime}>{updateTime}</time>
           </span>
         </div>
-      </nav>
+      </footer>
     </>
   )
 }

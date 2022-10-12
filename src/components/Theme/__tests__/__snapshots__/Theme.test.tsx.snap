@@ -11,12 +11,18 @@ exports[`THEME COMPONENT should render 1`] = `
       className="relative w-16 h-16 rounded-full bg-gray-900 dark:bg-white shadow-2xl cursor-pointer"
     >
       <div
+        aria-label="Change Theme"
         className="w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full animate duration-300"
         onClick={[Function]}
+        role="button"
+        tabIndex={0}
       >
         <div
+          aria-label="Dark Theme"
           className="w-full h-full fa-stack"
           onClick={[Function]}
+          role="button"
+          tabIndex={0}
           title="Dark Theme"
         >
           <svg
