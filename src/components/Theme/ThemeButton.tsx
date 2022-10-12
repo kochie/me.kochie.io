@@ -29,6 +29,9 @@ const ThemeButton = (): ReactElement => {
       onClick={(): void => setTheme(THEME.dark)}
       className="w-full h-full fa-stack"
       title={'Dark Theme'}
+      role="button"
+      aria-label="Dark Theme"
+      tabIndex={0}
     >
       <FontAwesomeIcon icon={bulbOff} size={'2x'} className="fa-stack-1x" />
     </div>
@@ -38,6 +41,9 @@ const ThemeButton = (): ReactElement => {
       onClick={(): void => setTheme(THEME.light)}
       className="w-full h-full fa-stack"
       title={'Light Theme'}
+      role="button"
+      aria-label="Light Theme"
+      tabIndex={0}
     >
       <FontAwesomeIcon icon={bulbOn} size={'2x'} className="fa-stack-1x" />
     </div>
@@ -47,6 +53,9 @@ const ThemeButton = (): ReactElement => {
       onClick={(): void => setTheme(THEME.system)}
       className="w-full h-full fa-stack"
       title={'System Theme'}
+      role="button"
+      aria-label="System Theme"
+      tabIndex={0}
     >
       <FontAwesomeIcon icon={cogs} size={'2x'} className="fa-stack-1x" />
     </div>
