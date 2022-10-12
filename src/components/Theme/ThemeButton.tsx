@@ -76,6 +76,9 @@ const ThemeButton = (): ReactElement => {
           <div
             className={`w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full animate duration-300`}
             onClick={() => setTheme(nextTheme(theme))}
+            role="button"
+            aria-label="Change Theme"
+            tabIndex={0}
           >
             {theme === THEME.light ? bulbOnDiv : null}
             {theme === THEME.dark ? bulbOffDiv : null}
