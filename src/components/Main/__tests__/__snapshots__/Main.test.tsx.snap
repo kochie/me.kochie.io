@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`main  main renders correctly 1`] = `
-<div
+<main
   className="flex flex-col flex-1 overflow-y-auto lg:overflow-y-scroll lg:h-screen"
   id="main"
 >
@@ -1440,7 +1440,7 @@ exports[`main  main renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <nav
+  <footer
     className="bg-gray-400 dark:bg-gray-900 text-gray-900 dark:text-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center"
   >
     <div>
@@ -1516,6 +1516,6 @@ exports[`main  main renders correctly 1`] = `
         <time />
       </span>
     </div>
-  </nav>
-</div>
+  </footer>
+</main>
 `;
