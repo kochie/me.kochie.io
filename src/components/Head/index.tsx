@@ -18,13 +18,13 @@ export default function Heading(): ReactElement {
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/icons/favicon-32x32.png"
+        href="/images/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/icons/favicon-16x16.png"
+        href="/images/favicon-16x16.png"
       />
       <link rel="manifest" href="/manifest.json" />
       <link rel="mask-icon" href="/images/favicon_curved.svg" color="#1f2937" />
