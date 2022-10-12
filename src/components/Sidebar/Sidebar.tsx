@@ -17,10 +17,10 @@ const Sidebar = (): ReactElement => {
     // console.log(document.getElementById('main').scrollTop)
 
     if (!image.current) return
-    if (canvas.current === null) return
-    if (!document.getElementById('main')) return
+    if (!canvas.current) return
 
     const main = document.getElementById('main')
+    if (!main) return
 
     const ctx = canvas.current.getContext('2d')
     if (ctx === null) return
