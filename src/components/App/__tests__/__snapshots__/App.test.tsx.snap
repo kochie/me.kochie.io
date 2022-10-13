@@ -859,6 +859,697 @@ exports[`app app renders correctly 1`] = `
                 </span>
               </div>
             </a>
+            <div
+              className="h-[380px] group"
+            >
+              <div
+                className="relative overflow-hidden w-full h-full rounded-xl"
+              >
+                <span
+                  style={
+                    {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "inline-block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "relative",
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      {
+                        "background": "none",
+                        "border": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+                      style={
+                        {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
+                  <img
+                    alt="background image"
+                    className="absolute group-hover:scale-105 transform duration-200"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style={
+                      {
+                        "backgroundImage": "url("data:image/png;base64,imagedata")",
+                        "backgroundPosition": "0% 0%",
+                        "backgroundSize": "cover",
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "filter": "blur(20px)",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                  <noscript>
+                    <img
+                      alt="background image"
+                      className="absolute group-hover:scale-105 transform duration-200"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimg.jpg&w=320&q=75"
+                      srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 1x"
+                      style={
+                        {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+                <div
+                  className="absolute w-0 h-0 top-1/2 left-1/2"
+                >
+                  <div
+                    className="relative"
+                  >
+                    <div
+                      className="absolute w-0 h-0"
+                    >
+                      <div
+                        className="origin-center cursor-pointer grayscale-50 hover:grayscale-0 duration-100 transform"
+                        style={
+                          {
+                            "height": 220,
+                            "transform": "translate(-478.125px, -125px) scale(1) rotate(0deg)",
+                            "width": 220,
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            {
+                              "background": "none",
+                              "border": 0,
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "height": "initial",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "opacity": 1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "relative",
+                              "width": "initial",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              {
+                                "background": "none",
+                                "border": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": "initial",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "opacity": 1,
+                                "padding": 0,
+                                "width": "initial",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%27220%27/%3e"
+                              style={
+                                {
+                                  "background": "none",
+                                  "border": 0,
+                                  "display": "block",
+                                  "height": "initial",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "opacity": 1,
+                                  "padding": 0,
+                                  "width": "initial",
+                                }
+                              }
+                            />
+                          </span>
+                          <img
+                            alt="Hello World Pegasaurus"
+                            className="hover:scale-105 duration-200 transform"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            id="cl7sr0vn20274fzro6y4efmcj"
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "width": 0,
+                              }
+                            }
+                          />
+                          <noscript>
+                            <img
+                              alt="Hello World Pegasaurus"
+                              className="hover:scale-105 duration-200 transform"
+                              data-nimg="intrinsic"
+                              decoding="async"
+                              id="cl7sr0vn20274fzro6y4efmcj"
+                              loading="lazy"
+                              src="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDdzcjB0bjEwMjU4Znpyb2N5aXIzYzVlIiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75"
+                              srcSet="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDdzcjB0bjEwMjU4Znpyb2N5aXIzYzVlIiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=320&q=75 1x, /_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDdzcjB0bjEwMjU4Znpyb2N5aXIzYzVlIiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75 2x"
+                              style={
+                                {
+                                  "border": "none",
+                                  "bottom": 0,
+                                  "boxSizing": "border-box",
+                                  "display": "block",
+                                  "height": 0,
+                                  "left": 0,
+                                  "margin": "auto",
+                                  "maxHeight": "100%",
+                                  "maxWidth": "100%",
+                                  "minHeight": "100%",
+                                  "minWidth": "100%",
+                                  "objectFit": undefined,
+                                  "objectPosition": undefined,
+                                  "padding": 0,
+                                  "position": "absolute",
+                                  "right": 0,
+                                  "top": 0,
+                                  "width": 0,
+                                }
+                              }
+                            />
+                          </noscript>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="absolute w-0 h-0 top-1/2 left-1/2"
+                >
+                  <div
+                    className="relative"
+                  >
+                    <div
+                      className="absolute w-0 h-0"
+                    >
+                      <div
+                        className="origin-center cursor-pointer grayscale-50 hover:grayscale-0 duration-100 transform"
+                        style={
+                          {
+                            "height": 220,
+                            "transform": "translate(-165px, -187.00006103515625px) scale(1) rotate(0deg)",
+                            "width": 220,
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            {
+                              "background": "none",
+                              "border": 0,
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "height": "initial",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "opacity": 1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "relative",
+                              "width": "initial",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              {
+                                "background": "none",
+                                "border": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": "initial",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "opacity": 1,
+                                "padding": 0,
+                                "width": "initial",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%27220%27/%3e"
+                              style={
+                                {
+                                  "background": "none",
+                                  "border": 0,
+                                  "display": "block",
+                                  "height": "initial",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "opacity": 1,
+                                  "padding": 0,
+                                  "width": "initial",
+                                }
+                              }
+                            />
+                          </span>
+                          <img
+                            alt="Hacktoberfest 2022: Registered"
+                            className="hover:scale-105 duration-200 transform"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            id="cl8d61lai012009mht3cqjm4k"
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "width": 0,
+                              }
+                            }
+                          />
+                          <noscript>
+                            <img
+                              alt="Hacktoberfest 2022: Registered"
+                              className="hover:scale-105 duration-200 transform"
+                              data-nimg="intrinsic"
+                              decoding="async"
+                              id="cl8d61lai012009mht3cqjm4k"
+                              loading="lazy"
+                              src="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDhlcTN6OWMwMzU3MDlsM2Z4OTluOHg2IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75"
+                              srcSet="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDhlcTN6OWMwMzU3MDlsM2Z4OTluOHg2IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=320&q=75 1x, /_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDhlcTN6OWMwMzU3MDlsM2Z4OTluOHg2IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75 2x"
+                              style={
+                                {
+                                  "border": "none",
+                                  "bottom": 0,
+                                  "boxSizing": "border-box",
+                                  "display": "block",
+                                  "height": 0,
+                                  "left": 0,
+                                  "margin": "auto",
+                                  "maxHeight": "100%",
+                                  "maxWidth": "100%",
+                                  "minHeight": "100%",
+                                  "minWidth": "100%",
+                                  "objectFit": undefined,
+                                  "objectPosition": undefined,
+                                  "padding": 0,
+                                  "position": "absolute",
+                                  "right": 0,
+                                  "top": 0,
+                                  "width": 0,
+                                }
+                              }
+                            />
+                          </noscript>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="absolute w-0 h-0 top-1/2 left-1/2"
+                >
+                  <div
+                    className="relative"
+                  >
+                    <div
+                      className="absolute w-0 h-0"
+                    >
+                      <div
+                        className="origin-center cursor-pointer grayscale-50 hover:grayscale-0 duration-100 transform"
+                        style={
+                          {
+                            "height": 220,
+                            "transform": "translate(-312.42857142857144px, -80.00016784667967px) scale(1.0945847820303856) rotate(0deg)",
+                            "width": 220,
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            {
+                              "background": "none",
+                              "border": 0,
+                              "boxSizing": "border-box",
+                              "display": "inline-block",
+                              "height": "initial",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "opacity": 1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "relative",
+                              "width": "initial",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              {
+                                "background": "none",
+                                "border": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": "initial",
+                                "margin": 0,
+                                "maxWidth": "100%",
+                                "opacity": 1,
+                                "padding": 0,
+                                "width": "initial",
+                              }
+                            }
+                          >
+                            <img
+                              alt=""
+                              aria-hidden={true}
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%27220%27/%3e"
+                              style={
+                                {
+                                  "background": "none",
+                                  "border": 0,
+                                  "display": "block",
+                                  "height": "initial",
+                                  "margin": 0,
+                                  "maxWidth": "100%",
+                                  "opacity": 1,
+                                  "padding": 0,
+                                  "width": "initial",
+                                }
+                              }
+                            />
+                          </span>
+                          <img
+                            alt="Early Bird Pegasaurus"
+                            className="hover:scale-105 duration-200 transform"
+                            data-nimg="intrinsic"
+                            decoding="async"
+                            id="cl7td8iq6014809k0mf12i1e6"
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            style={
+                              {
+                                "border": "none",
+                                "bottom": 0,
+                                "boxSizing": "border-box",
+                                "display": "block",
+                                "height": 0,
+                                "left": 0,
+                                "margin": "auto",
+                                "maxHeight": "100%",
+                                "maxWidth": "100%",
+                                "minHeight": "100%",
+                                "minWidth": "100%",
+                                "objectFit": undefined,
+                                "objectPosition": undefined,
+                                "padding": 0,
+                                "position": "absolute",
+                                "right": 0,
+                                "top": 0,
+                                "width": 0,
+                              }
+                            }
+                          />
+                          <noscript>
+                            <img
+                              alt="Early Bird Pegasaurus"
+                              className="hover:scale-105 duration-200 transform"
+                              data-nimg="intrinsic"
+                              decoding="async"
+                              id="cl7td8iq6014809k0mf12i1e6"
+                              loading="lazy"
+                              src="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDd0ZDhncDUwMTMyMDlrMHd1OHFlNHg5IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75"
+                              srcSet="/_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDd0ZDhncDUwMTMyMDlrMHd1OHFlNHg5IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=320&q=75 1x, /_next/image?url=https%3A%2F%2Fassets.holopin.io%2FeyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDd0ZDhncDUwMTMyMDlrMHd1OHFlNHg5IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0%3D&w=768&q=75 2x"
+                              style={
+                                {
+                                  "border": "none",
+                                  "bottom": 0,
+                                  "boxSizing": "border-box",
+                                  "display": "block",
+                                  "height": 0,
+                                  "left": 0,
+                                  "margin": "auto",
+                                  "maxHeight": "100%",
+                                  "maxWidth": "100%",
+                                  "minHeight": "100%",
+                                  "minWidth": "100%",
+                                  "objectFit": undefined,
+                                  "objectPosition": undefined,
+                                  "padding": 0,
+                                  "position": "absolute",
+                                  "right": 0,
+                                  "top": 0,
+                                  "width": 0,
+                                }
+                              }
+                            />
+                          </noscript>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://holopin.io/@kochie"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onTouchStart={[Function]}
+                >
+                  <div
+                    className="absolute bottom-0 right-0 flex items-center m-3 bg-black hover:bg-gray-600 duration-100 transform rounded p-1.5"
+                  >
+                    <span
+                      style={
+                        {
+                          "background": "none",
+                          "border": 0,
+                          "boxSizing": "border-box",
+                          "display": "inline-block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "overflow": "hidden",
+                          "padding": 0,
+                          "position": "relative",
+                          "width": "initial",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          {
+                            "background": "none",
+                            "border": 0,
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "height": "initial",
+                            "margin": 0,
+                            "maxWidth": "100%",
+                            "opacity": 1,
+                            "padding": 0,
+                            "width": "initial",
+                          }
+                        }
+                      >
+                        <img
+                          alt=""
+                          aria-hidden={true}
+                          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2720%27/%3e"
+                          style={
+                            {
+                              "background": "none",
+                              "border": 0,
+                              "display": "block",
+                              "height": "initial",
+                              "margin": 0,
+                              "maxWidth": "100%",
+                              "opacity": 1,
+                              "padding": 0,
+                              "width": "initial",
+                            }
+                          }
+                        />
+                      </span>
+                      <img
+                        alt="logo"
+                        data-nimg="intrinsic"
+                        decoding="async"
+                        onError={[Function]}
+                        onLoad={[Function]}
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style={
+                          {
+                            "border": "none",
+                            "bottom": 0,
+                            "boxSizing": "border-box",
+                            "display": "block",
+                            "height": 0,
+                            "left": 0,
+                            "margin": "auto",
+                            "maxHeight": "100%",
+                            "maxWidth": "100%",
+                            "minHeight": "100%",
+                            "minWidth": "100%",
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "padding": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": 0,
+                          }
+                        }
+                      />
+                      <noscript>
+                        <img
+                          alt="logo"
+                          data-nimg="intrinsic"
+                          decoding="async"
+                          loading="lazy"
+                          src="/_next/image?url=%2Fimg.jpg&w=320&q=75"
+                          srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 1x"
+                          style={
+                            {
+                              "border": "none",
+                              "bottom": 0,
+                              "boxSizing": "border-box",
+                              "display": "block",
+                              "height": 0,
+                              "left": 0,
+                              "margin": "auto",
+                              "maxHeight": "100%",
+                              "maxWidth": "100%",
+                              "minHeight": "100%",
+                              "minWidth": "100%",
+                              "objectFit": undefined,
+                              "objectPosition": undefined,
+                              "padding": 0,
+                              "position": "absolute",
+                              "right": 0,
+                              "top": 0,
+                              "width": 0,
+                            }
+                          }
+                        />
+                      </noscript>
+                    </span>
+                    <span
+                      className="pl-1 text-[8px] text-neutral-400 md:text-base"
+                    >
+                      holopin.io/@kochie
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div>

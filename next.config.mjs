@@ -30,7 +30,7 @@ const Config = async (phase, { defaultConfig }) => {
     },
     experimental: { esmExternals: true, modern: true },
     images: {
-      domains: ['blog.kochie.io', 'holopin.io'],
+      domains: ['blog.kochie.io', 'holopin.io', 'assets.holopin.io'],
     },
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   }
