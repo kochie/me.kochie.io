@@ -18,6 +18,7 @@ const Modal = ({}) => {
   const modalRef = useRef<HTMLDivElement>(null)
 
   const openModal = (event: MouseEvent) => {
+    const pageScale = 1
     // console.log(modalRef.current, event)
     if (modalRef.current) {
       // const rect = modalRef.current.getBoundingClientRect()
