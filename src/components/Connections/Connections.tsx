@@ -8,7 +8,7 @@ import {
   faInstagram,
   faLinkedin,
   faMastodon,
-  faMediumM,
+  faMedium,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -45,7 +45,7 @@ const connections: Connection[] = [
     color: 'hover:text-github',
   },
   {
-    icon: faMediumM,
+    icon: faMedium,
     href: 'https://medium.com/@kochie',
     name: 'kochie',
     color: 'hover:text-medium',
