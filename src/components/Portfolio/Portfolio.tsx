@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 import Space from '@/images/space.png'
 import Particlez from '@/images/particlez.png'

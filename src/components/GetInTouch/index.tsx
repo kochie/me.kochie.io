@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 import XPS from '@/images/xps-6uneKLGrJPs-unsplash.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
