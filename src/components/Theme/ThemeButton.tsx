@@ -1,27 +1,14 @@
 import React, { ReactElement } from 'react'
 
-// import styles from './theme.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { findIconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { THEME, useTheme } from './context'
+import {
+  faLightbulbSlash,
+  faLightbulbOn,
+  faCogs,
+} from '@fortawesome/pro-duotone-svg-icons'
 
 const ThemeButton = (): ReactElement => {
-  const bulbOff = findIconDefinition({
-    prefix: 'fad',
-    iconName: 'lightbulb-slash',
-  })
-
-  const bulbOn = findIconDefinition({
-    prefix: 'fad',
-    iconName: 'lightbulb-on',
-  })
-
-  const cogs = findIconDefinition({
-    prefix: 'fad',
-    iconName: 'cogs',
-  })
-  // const currentIcon = useRef<HTMLDivElement>(null)
-
   const [theme, setTheme] = useTheme()
 
   const bulbOffDiv = (
@@ -33,7 +20,11 @@ const ThemeButton = (): ReactElement => {
       aria-label="Dark Theme"
       tabIndex={0}
     >
-      <FontAwesomeIcon icon={bulbOff} size={'2x'} className="fa-stack-1x" />
+      <FontAwesomeIcon
+        icon={faLightbulbSlash}
+        size={'2x'}
+        className="fa-stack-1x"
+      />
     </div>
   )
   const bulbOnDiv = (
@@ -45,7 +36,11 @@ const ThemeButton = (): ReactElement => {
       aria-label="Light Theme"
       tabIndex={0}
     >
-      <FontAwesomeIcon icon={bulbOn} size={'2x'} className="fa-stack-1x" />
+      <FontAwesomeIcon
+        icon={faLightbulbOn}
+        size={'2x'}
+        className="fa-stack-1x"
+      />
     </div>
   )
   const systemDiv = (
@@ -57,7 +52,7 @@ const ThemeButton = (): ReactElement => {
       aria-label="System Theme"
       tabIndex={0}
     >
-      <FontAwesomeIcon icon={cogs} size={'2x'} className="fa-stack-1x" />
+      <FontAwesomeIcon icon={faCogs} size={'2x'} className="fa-stack-1x" />
     </div>
   )
 
@@ -92,7 +87,11 @@ const ThemeButton = (): ReactElement => {
             className="w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full duration-300 animate"
             title={'Dark Theme'}
           >
-            <FontAwesomeIcon icon={bulbOff} size="lg" className="fa-stack-1x" />
+            <FontAwesomeIcon
+              icon={faLightbulbSlash}
+              size="lg"
+              className="fa-stack-1x"
+            />
           </div>
         </div>
 
@@ -102,7 +101,11 @@ const ThemeButton = (): ReactElement => {
             className="w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full duration-300 animate"
             title={'Light Theme'}
           >
-            <FontAwesomeIcon icon={bulbOn} size="lg" className="fa-stack-1x" />
+            <FontAwesomeIcon
+              icon={faLightbulbOn}
+              size="lg"
+              className="fa-stack-1x"
+            />
           </div>
         </div>
 
@@ -112,7 +115,7 @@ const ThemeButton = (): ReactElement => {
             className="w-full h-full fa-stack bg-gray-900 dark:bg-white rounded-full duration-300 animate"
             title={'System Theme'}
           >
-            <FontAwesomeIcon icon={cogs} size="lg" className="fa-stack-1x" />
+            <FontAwesomeIcon icon={faCogs} size="lg" className="fa-stack-1x" />
           </div>
         </div>
       </div>

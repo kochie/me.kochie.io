@@ -1,14 +1,19 @@
 import React, { ReactElement } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import {
-  findIconDefinition,
-  IconLookup,
-  IconName,
-} from '@fortawesome/fontawesome-svg-core'
+  faGithub,
+  faGitlab,
+  faInstagram,
+  faLinkedin,
+  faMastodon,
+  faMediumM,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
 
 interface Connection {
-  icon: IconName
+  icon: IconDefinition
   href: string
   name: string
   color: string
@@ -16,43 +21,43 @@ interface Connection {
 
 const connections: Connection[] = [
   {
-    icon: 'linkedin',
+    icon: faLinkedin,
     href: 'https://linkedin.com/in/rkkochie',
     name: 'rkkochie',
     color: 'hover:text-linkedin',
   },
   {
-    icon: 'twitter',
+    icon: faTwitter,
     href: 'https://twitter.com/kochie',
     name: 'kochie',
     color: 'hover:text-twitter',
   },
   {
-    icon: 'instagram',
+    icon: faInstagram,
     href: 'https://instagram.com/rkkochie',
     name: 'rkkochie',
     color: 'hover:text-instagram',
   },
   {
-    icon: 'github',
+    icon: faGithub,
     href: 'https://github.com/kochie',
     name: 'kochie',
     color: 'hover:text-github',
   },
   {
-    icon: 'medium-m',
+    icon: faMediumM,
     href: 'https://medium.com/@kochie',
     name: 'kochie',
     color: 'hover:text-medium',
   },
   {
-    icon: 'gitlab',
+    icon: faGitlab,
     href: 'https://gitlab.com/kochie',
     name: 'kochie',
     color: 'hover:text-gitlab',
   },
   {
-    icon: 'mastodon',
+    icon: faMastodon,
     href: 'https://melb.social/@kochie',
     name: 'kochie',
     color: 'hover:text-mastodon',
@@ -63,20 +68,16 @@ export default function Connections(): ReactElement {
   return (
     <div className="text-wheat pt-12 flex xl:flex-col flex-row items-center gap-3">
       {connections.map((connection) => {
-        const lookup: IconLookup = {
-          prefix: 'fab',
-          iconName: connection.icon,
-        }
-        const iconDefinition = findIconDefinition(lookup)
+        const iconDefinition = connection.icon
         return (
           <div
             className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
-            key={connection.icon}
+            key={connection.name}
           >
             <a
               href={connection.href}
               className={connection.color}
-              aria-label={connection.icon}
+              aria-label={connection.name}
             >
               <FontAwesomeIcon
                 icon={iconDefinition}
