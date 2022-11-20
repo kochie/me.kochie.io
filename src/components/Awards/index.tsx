@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import Link from 'next/link'
 import React, { forwardRef } from 'react'
 
@@ -28,9 +28,9 @@ const Awards = () => (
     </h2>
     <div className="w-full">
       <Link href="https://holopin.io/@kochie">
-        <a>
-          <ImageRef />
-        </a>
+
+        <ImageRef />
+
       </Link>
     </div>
   </div>
