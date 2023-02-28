@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react'
 import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Middle(): ReactElement {
   return (
@@ -33,10 +33,14 @@ export default function Middle(): ReactElement {
               </a>
             ),
             img: ({ src, alt }) => (
-              <Image src={src} alt={alt} className="my-10 rounded-xl" />
-              // <div className="h-96">
-              //   <Image src={src} layout="fill" />
-              // </div>
+              <Image
+                src={src}
+                alt={alt}
+                className="my-10 rounded-xl"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             ),
           }}
         >
@@ -48,5 +52,5 @@ export default function Middle(): ReactElement {
         <RecentArticles />
       </div>
     </div>
-  )
+  );
 }

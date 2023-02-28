@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link'
 import React, { forwardRef } from 'react'
 
@@ -15,7 +15,10 @@ const Img = (props, ref) => (
       height={764}
       placeholder="blur"
       blurDataURL={`data:image/png;base64,${placeholder}`}
-    />
+      style={{
+        maxWidth: "100%",
+        height: "auto"
+      }} />
   </div>
 )
 

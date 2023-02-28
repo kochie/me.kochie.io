@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Space from '@/images/space.png'
 import Particlez from '@/images/particlez.png'
@@ -73,13 +73,15 @@ export default function Portfolio(): ReactElement {
             >
               <a href={project.link}>
                 <Image
-                  layout="fill"
                   src={project.image}
                   alt={project.title}
-                  objectFit="cover"
                   placeholder="blur"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                />
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover"
+                  }} />
                 {/* <span className="portfolio-text">View</span> */}
               </a>
             </div>
@@ -97,5 +99,5 @@ export default function Portfolio(): ReactElement {
         ))}
       </div>
     </div>
-  )
+  );
 }
