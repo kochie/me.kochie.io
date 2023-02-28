@@ -28,7 +28,6 @@ const Config = async (phase, { defaultConfig }) => {
       buildTime: new Date().toDateString(),
       NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
     },
-    experimental: { esmExternals: true, modern: true },
     images: {
       domains: ['blog.kochie.io', 'holopin.io'],
     },
@@ -42,7 +41,7 @@ const Config = async (phase, { defaultConfig }) => {
       rehypePlugins: [],
       // If you use `MDXProvider`, uncomment the following line.
       providerImportSource: '@mdx-js/react',
-      development: true,
+      // development: true,
     },
   })
 
