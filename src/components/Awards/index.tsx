@@ -28,9 +28,9 @@ const Awards = () => (
     </h2>
     <div className="w-full">
       <Link href="https://holopin.io/@kochie">
-        <a>
-          <ImageRef />
-        </a>
+
+        <ImageRef />
+
       </Link>
     </div>
   </div>
