@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react'
 import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 export default function Middle(): ReactElement {
   return (

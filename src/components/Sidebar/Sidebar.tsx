@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, ReactElement, useCallback } from 'react'
-import NextImage from 'next/image'
+import NextImage from "next/legacy/image";
 
 import Connections from '@/components/Connections/Connections'
 

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import useSWR from 'swr'
 import Link from 'next/link'
 
