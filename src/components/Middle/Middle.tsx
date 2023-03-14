@@ -33,10 +33,15 @@ export default function Middle(): ReactElement {
               </a>
             ),
             img: ({ src, alt }) => (
-              <Image src={src} alt={alt} className="my-10 rounded-xl" />
-              // <div className="h-96">
-              //   <Image src={src} layout="fill" />
-              // </div>
+              <Image
+                src={src}
+                alt={alt}
+                className="my-10 rounded-xl"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+              />
             ),
           }}
         >

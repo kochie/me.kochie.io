@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, ReactElement, useCallback } from 'react'
-import NextImage from 'next/image'
+import NextImage from "next/image";
 
 import Connections from '@/components/Connections/Connections'
 
@@ -90,11 +90,14 @@ const Sidebar = (): ReactElement => {
       <div className="flex flex-col z-10 text-center items-center h-full mt-20">
         <div className="rounded-full w-40 h-40 overflow-hidden">
           <NextImage
-            layout="responsive"
             src={avatar}
             alt="me"
             placeholder="blur"
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className={style.quote}>{quote}</div>
         <Connections />
@@ -109,7 +112,7 @@ const Sidebar = (): ReactElement => {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Sidebar

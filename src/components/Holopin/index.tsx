@@ -65,9 +65,15 @@ const Modal = ({}) => {
   )
 }
 
+const fetcher = (url) => fetch(url).then((r) => r.json())
+
 const Holopin = ({ username }: HolopinProps) => {
   const [pageScale, setPageScale] = useState(1)
   const ref = useRef<HTMLDivElement>(null)
+  const { data, error, isLoading } = useSWR(
+    `https://www.holopin.io/api/auth/user/page?username=${username}`,
+    fetcher
+  )
 
   useEffect(() => {
     const scale = () => {

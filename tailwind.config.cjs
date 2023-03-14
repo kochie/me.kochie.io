@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -17,8 +15,6 @@ module.exports = {
         25: '25%',
       },
       colors: {
-        sky: colors.sky,
-        cyan: colors.cyan,
         gitlab: '#db3b21',
         medium: '#000000',
         github: '#333333',
@@ -27,24 +23,12 @@ module.exports = {
         linkedin: '#0077b5',
         mastodon: '#008ada',
         cottonBureau: '#f26355',
-        orange: colors.orange,
         wheat: 'wheat',
-        amber: colors.amber,
       },
       backgroundImage: {
         'city-image': "url('/images/background-1.webp')",
         'airplane-image': "url('/images/background.webp')",
       },
-    },
-  },
-  variants: {
-    extend: {
-      scale: ['active', 'group-hover'],
-      filter: ['group-hover'],
-      grayscale: ['group-hover'],
-      animation: ['hover', 'focus', 'group-hover'],
-      transitionDelay: ['group-hover'],
-      typography: ['dark'],
     },
   },
   plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],

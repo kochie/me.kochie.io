@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import Link from 'next/link'
 import React, { forwardRef } from 'react'
 import Holopin from '../Holopin'
@@ -16,7 +16,10 @@ const Img = (props, ref) => (
       height={764}
       placeholder="blur"
       blurDataURL={`data:image/png;base64,${placeholder}`}
-    />
+      style={{
+        maxWidth: "100%",
+        height: "auto"
+      }} />
   </div>
 )
 
@@ -29,9 +32,9 @@ const Awards = () => (
     </h2>
     <div className="w-full">
       <Link href="https://holopin.io/@kochie">
-        <a>
-          <ImageRef />
-        </a>
+
+        <ImageRef />
+
       </Link>
       <Holopin username="kochie" />
     </div>
