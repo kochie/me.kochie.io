@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/image";
+import Image from 'next/image'
 
 import XPS from '@/images/xps-6uneKLGrJPs-unsplash.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,10 +21,11 @@ const GetInTouch = () => {
           placeholder="blur"
           className="group-hover:scale-110 transition transform-gpu duration-100"
           fill
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           style={{
-            objectFit: "cover"
-          }} />
+            objectFit: 'cover',
+          }}
+        />
       </div>
       <div className="ml-6">
         <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-6 mb-4">
@@ -94,7 +95,7 @@ const GetInTouch = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default GetInTouch

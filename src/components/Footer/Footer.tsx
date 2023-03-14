@@ -2,20 +2,10 @@ import React, { ReactElement } from 'react'
 
 import style from './footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopyright, faGuitar } from '@fortawesome/pro-duotone-svg-icons'
+import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
+import { Guitar } from './Guitar'
 
 export default function Footer(): ReactElement {
-  const playSound = (): void => {
-    const g = document.getElementById('guitar')
-    g.classList.add(style.jello)
-    g.addEventListener('animationend', () => {
-      g.classList.remove(style.jello)
-    })
-
-    const sound = new Audio('/audio/AcousticPopMelody.mp3')
-    sound.play()
-  }
-
   const updateTime = process.env.buildTime
 
   return (
@@ -27,7 +17,7 @@ export default function Footer(): ReactElement {
           {2020}
         </div>
         <div id="guitar" className={style.guitar}>
-          <FontAwesomeIcon onClick={playSound} icon={faGuitar} size="2x" />
+          <Guitar />
         </div>
         <div className={style.update}>
           <span>

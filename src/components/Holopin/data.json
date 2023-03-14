@@ -1,0 +1,53 @@
+{
+  "page": {
+    "positions": [
+      {
+        "id": "cl7sr0vn20274fzro6y4efmcj",
+        "top": -125,
+        "left": -478.125,
+        "scale": 1,
+        "width": 220,
+        "height": 220,
+        "rotation": 0
+      },
+      {
+        "id": "cl8d61lai012009mht3cqjm4k",
+        "top": -187.00006103515625,
+        "left": -165,
+        "scale": 1,
+        "width": 220,
+        "height": 220,
+        "rotation": 0
+      },
+      {
+        "id": "cl7td8iq6014809k0mf12i1e6",
+        "top": -80.00016784667967,
+        "left": -312.42857142857144,
+        "scale": 1.0945847820303856,
+        "width": 220,
+        "height": 220,
+        "rotation": 0
+      }
+    ]
+  },
+  "stickers": [
+    {
+      "id": "cl7sr0vn20274fzro6y4efmcj",
+      "name": "Hello World Pegasaurus",
+      "description": "Limited edition Pegasaurus. Pegasaurus is the mascot of Holopin, and it's a combination of, you guessed it, a pegasus and a dinosaur!\n\nYou will have received this badge if you were among the first users to sign up to Holopin.\n\nThe Hello World Pegasaurus is 1 of 5 badges in the Early Bird collection.",
+      "image": "https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDdzcjB0bjEwMjU4Znpyb2N5aXIzYzVlIiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
+    },
+    {
+      "id": "cl7td8iq6014809k0mf12i1e6",
+      "name": "Early Bird Pegasaurus",
+      "description": "Super special Early Bird Pegasaurus badge. You will have received this badge if you were among the first users to sign up to Holopin!\n\nPegasaurus is the mascot of Holopin, and it's a combination of, you guessed it, a pegasus and a dinosaur.\n\nThis badge is part of a collection of 5 badges.",
+      "image": "https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDd0ZDhncDUwMTMyMDlrMHd1OHFlNHg5IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
+    },
+    {
+      "id": "cl8d61lai012009mht3cqjm4k",
+      "name": "Hacktoberfest 2022: Registered",
+      "description": "Participants that registered for Hacktoberfest 2022 are rewarded with this badge.",
+      "image": "https://assets.holopin.io/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbDhlcTN6OWMwMzU3MDlsM2Z4OTluOHg2IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0="
+    }
+  ]
+}

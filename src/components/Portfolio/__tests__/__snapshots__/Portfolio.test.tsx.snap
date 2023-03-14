@@ -13,110 +13,121 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://touch-typer.kochie.io"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://ct.vercel.app"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="Touch Typer"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
+          />
+        </div>
+      </a>
+      <div
+        className="px-5 "
+      >
+        <h3
+          className="text-lg font-medium my-3 text-gray-900 dark:text-white"
+        >
+          <a
+            className="hover:underline"
+            href="https://touch-typer.kochie.io"
           >
-            <img
-              alt="Contact Tracing"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="Contact Tracing"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
+            Touch Typer
+          </a>
+        </h3>
+        <p
+          className="text-sm mb-3 text-gray-700 dark:text-gray-300"
+        >
+          Touch Typer is your tutor that helps you improve your typing skills. Open source and free to use it's available on Linux, Windows and macOS.
+        </p>
       </div>
+    </div>
+    <div
+      className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+    >
+      <a
+        href="https://ct.vercel.app"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
+        >
+          <img
+            alt="Contact Tracing"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+            style={
+              {
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
+                "bottom": 0,
+                "color": "transparent",
+                "height": "100%",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >
@@ -140,110 +151,52 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://kochie.space"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://kochie.space"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="Space"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
-          >
-            <img
-              alt="Space"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="Space"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
-      </div>
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >
@@ -267,110 +220,52 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://3body.now.sh"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://3body.now.sh"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="Particlez"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
-          >
-            <img
-              alt="Particlez"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="Particlez"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
-      </div>
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >
@@ -394,110 +289,52 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://bitbucket.org/kochie/fyp"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://bitbucket.org/kochie/fyp"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="Optimising Neural Networks for Embedded Systems"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
-          >
-            <img
-              alt="Optimising Neural Networks for Embedded Systems"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="Optimising Neural Networks for Embedded Systems"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
-      </div>
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >
@@ -521,110 +358,52 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://stonks.kochie.io"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://stonks.kochie.io"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="Stonks"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
-          >
-            <img
-              alt="Stonks"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="Stonks"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
-      </div>
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >
@@ -648,110 +427,52 @@ exports[`portfolio renders correctly 1`] = `
     <div
       className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
     >
-      <div
-        className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-        style={
-          {
-            "padding": "30% 0",
-          }
-        }
+      <a
+        href="https://github.com/BenchTop/benchtop-js"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
-        <a
-          href="https://github.com/BenchTop/benchtop-js"
+        <div
+          className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+          style={
+            {
+              "padding": "30% 0",
+            }
+          }
         >
-          <span
+          <img
+            alt="benchtop-js"
+            className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
             style={
               {
-                "background": "none",
-                "border": 0,
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
+                "color": "transparent",
+                "height": "100%",
                 "left": 0,
-                "margin": 0,
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
+                "objectFit": "cover",
+                "objectPosition": undefined,
                 "position": "absolute",
                 "right": 0,
                 "top": 0,
-                "width": "initial",
+                "width": "100%",
               }
             }
-          >
-            <img
-              alt="benchtop-js"
-              className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-              data-nimg="fill"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                {
-                  "backgroundImage": "url("data:image/png;base64,imagedata")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": "cover",
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="benchtop-js"
-                className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-                style={
-                  {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": "cover",
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </a>
-      </div>
+          />
+        </div>
+      </a>
       <div
         className="px-5 "
       >

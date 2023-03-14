@@ -1,5 +1,6 @@
+'use client'
 import React, { useRef, useEffect, ReactElement, useCallback } from 'react'
-import NextImage from "next/image";
+import NextImage from 'next/image'
 
 import Connections from '@/components/Connections/Connections'
 
@@ -95,9 +96,10 @@ const Sidebar = (): ReactElement => {
             placeholder="blur"
             sizes="100vw"
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </div>
         <div className={style.quote}>{quote}</div>
         <Connections />
@@ -112,7 +114,7 @@ const Sidebar = (): ReactElement => {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 export default Sidebar

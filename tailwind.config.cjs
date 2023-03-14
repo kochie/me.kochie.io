@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', './mdx-components.tsx'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {

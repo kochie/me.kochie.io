@@ -11,107 +11,30 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
     <div
       className="rounded-full w-40 h-40 overflow-hidden"
     >
-      <span
+      <img
+        alt="me"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
         style={
           {
-            "background": "none",
-            "border": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "relative",
-            "width": "initial",
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+            "height": "auto",
+            "width": "100%",
           }
         }
-      >
-        <span
-          style={
-            {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": "initial",
-              "margin": 0,
-              "opacity": 1,
-              "padding": 0,
-              "paddingTop": "100%",
-              "width": "initial",
-            }
-          }
-        />
-        <img
-          alt="me"
-          data-nimg="responsive"
-          decoding="async"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            {
-              "backgroundImage": "url("data:image/png;base64,imagedata")",
-              "backgroundPosition": "0% 0%",
-              "backgroundSize": "cover",
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "filter": "blur(20px)",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
-          <img
-            alt="me"
-            data-nimg="responsive"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-            style={
-              {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-      </span>
+        width={40}
+      />
     </div>
     <div>
       I build things, write the code for them, and run from the resulting explosion.
@@ -123,7 +46,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="linkedin"
+          aria-label="rkkochie"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
         >
@@ -150,7 +73,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="twitter"
+          aria-label="kochie"
           className="hover:text-twitter"
           href="https://twitter.com/kochie"
         >
@@ -177,7 +100,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="instagram"
+          aria-label="rkkochie"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
         >
@@ -204,7 +127,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="github"
+          aria-label="kochie"
           className="hover:text-github"
           href="https://github.com/kochie"
         >
@@ -231,7 +154,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="medium-m"
+          aria-label="kochie"
           className="hover:text-medium"
           href="https://medium.com/@kochie"
         >
@@ -258,7 +181,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="gitlab"
+          aria-label="kochie"
           className="hover:text-gitlab"
           href="https://gitlab.com/kochie"
         >
@@ -285,7 +208,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="mastodon"
+          aria-label="kochie"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
         >
@@ -338,107 +261,30 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
     <div
       className="rounded-full w-40 h-40 overflow-hidden"
     >
-      <span
+      <img
+        alt="me"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
         style={
           {
-            "background": "none",
-            "border": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "relative",
-            "width": "initial",
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+            "height": "auto",
+            "width": "100%",
           }
         }
-      >
-        <span
-          style={
-            {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": "initial",
-              "margin": 0,
-              "opacity": 1,
-              "padding": 0,
-              "paddingTop": "100%",
-              "width": "initial",
-            }
-          }
-        />
-        <img
-          alt="me"
-          data-nimg="responsive"
-          decoding="async"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            {
-              "backgroundImage": "url("data:image/png;base64,imagedata")",
-              "backgroundPosition": "0% 0%",
-              "backgroundSize": "cover",
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "filter": "blur(20px)",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
-          <img
-            alt="me"
-            data-nimg="responsive"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-            style={
-              {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-      </span>
+        width={40}
+      />
     </div>
     <div>
       I build things, write the code for them, and run from the resulting explosion.
@@ -450,7 +296,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="linkedin"
+          aria-label="rkkochie"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
         >
@@ -477,7 +323,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="twitter"
+          aria-label="kochie"
           className="hover:text-twitter"
           href="https://twitter.com/kochie"
         >
@@ -504,7 +350,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="instagram"
+          aria-label="rkkochie"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
         >
@@ -531,7 +377,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="github"
+          aria-label="kochie"
           className="hover:text-github"
           href="https://github.com/kochie"
         >
@@ -558,7 +404,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="medium-m"
+          aria-label="kochie"
           className="hover:text-medium"
           href="https://medium.com/@kochie"
         >
@@ -585,7 +431,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="gitlab"
+          aria-label="kochie"
           className="hover:text-gitlab"
           href="https://gitlab.com/kochie"
         >
@@ -612,7 +458,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="mastodon"
+          aria-label="kochie"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
         >
@@ -665,107 +511,30 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
     <div
       className="rounded-full w-40 h-40 overflow-hidden"
     >
-      <span
+      <img
+        alt="me"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
         style={
           {
-            "background": "none",
-            "border": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "relative",
-            "width": "initial",
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+            "height": "auto",
+            "width": "100%",
           }
         }
-      >
-        <span
-          style={
-            {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": "initial",
-              "margin": 0,
-              "opacity": 1,
-              "padding": 0,
-              "paddingTop": "100%",
-              "width": "initial",
-            }
-          }
-        />
-        <img
-          alt="me"
-          data-nimg="responsive"
-          decoding="async"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            {
-              "backgroundImage": "url("data:image/png;base64,imagedata")",
-              "backgroundPosition": "0% 0%",
-              "backgroundSize": "cover",
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "filter": "blur(20px)",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
-          <img
-            alt="me"
-            data-nimg="responsive"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-            style={
-              {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-      </span>
+        width={40}
+      />
     </div>
     <div>
       I build things, write the code for them, and run from the resulting explosion.
@@ -777,7 +546,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="linkedin"
+          aria-label="rkkochie"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
         >
@@ -804,7 +573,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="twitter"
+          aria-label="kochie"
           className="hover:text-twitter"
           href="https://twitter.com/kochie"
         >
@@ -831,7 +600,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="instagram"
+          aria-label="rkkochie"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
         >
@@ -858,7 +627,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="github"
+          aria-label="kochie"
           className="hover:text-github"
           href="https://github.com/kochie"
         >
@@ -885,7 +654,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="medium-m"
+          aria-label="kochie"
           className="hover:text-medium"
           href="https://medium.com/@kochie"
         >
@@ -912,7 +681,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="gitlab"
+          aria-label="kochie"
           className="hover:text-gitlab"
           href="https://gitlab.com/kochie"
         >
@@ -939,7 +708,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="mastodon"
+          aria-label="kochie"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
         >
@@ -992,107 +761,30 @@ exports[`Sidebar Component unmounts 1`] = `
     <div
       className="rounded-full w-40 h-40 overflow-hidden"
     >
-      <span
+      <img
+        alt="me"
+        data-nimg="1"
+        decoding="async"
+        height={40}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
+        srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
         style={
           {
-            "background": "none",
-            "border": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": "initial",
-            "margin": 0,
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "relative",
-            "width": "initial",
+            "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+            "backgroundPosition": "50% 50%",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "color": "transparent",
+            "height": "auto",
+            "width": "100%",
           }
         }
-      >
-        <span
-          style={
-            {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": "initial",
-              "margin": 0,
-              "opacity": 1,
-              "padding": 0,
-              "paddingTop": "100%",
-              "width": "initial",
-            }
-          }
-        />
-        <img
-          alt="me"
-          data-nimg="responsive"
-          decoding="async"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            {
-              "backgroundImage": "url("data:image/png;base64,imagedata")",
-              "backgroundPosition": "0% 0%",
-              "backgroundSize": "cover",
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "filter": "blur(20px)",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "width": 0,
-            }
-          }
-        />
-        <noscript>
-          <img
-            alt="me"
-            data-nimg="responsive"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-            srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
-            style={
-              {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-        </noscript>
-      </span>
+        width={40}
+      />
     </div>
     <div>
       I build things, write the code for them, and run from the resulting explosion.
@@ -1104,7 +796,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="linkedin"
+          aria-label="rkkochie"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
         >
@@ -1131,7 +823,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="twitter"
+          aria-label="kochie"
           className="hover:text-twitter"
           href="https://twitter.com/kochie"
         >
@@ -1158,7 +850,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="instagram"
+          aria-label="rkkochie"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
         >
@@ -1185,7 +877,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="github"
+          aria-label="kochie"
           className="hover:text-github"
           href="https://github.com/kochie"
         >
@@ -1212,7 +904,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="medium-m"
+          aria-label="kochie"
           className="hover:text-medium"
           href="https://medium.com/@kochie"
         >
@@ -1239,7 +931,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="gitlab"
+          aria-label="kochie"
           className="hover:text-gitlab"
           href="https://gitlab.com/kochie"
         >
@@ -1266,7 +958,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="mastodon"
+          aria-label="kochie"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
         >

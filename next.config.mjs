@@ -29,9 +29,13 @@ const Config = async (phase, { defaultConfig }) => {
       NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
     },
     images: {
-      domains: ['blog.kochie.io', 'holopin.io'],
+      domains: ['blog.kochie.io', 'holopin.io', 'assets.holopin.io'],
     },
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+    experimental: {
+      appDir: true,
+      mdxRs: true,
+    },
   }
 
   const withMDX = MDX({
@@ -40,7 +44,7 @@ const Config = async (phase, { defaultConfig }) => {
       remarkPlugins: [],
       rehypePlugins: [],
       // If you use `MDXProvider`, uncomment the following line.
-      providerImportSource: '@mdx-js/react',
+      // providerImportSource: '@mdx-js/react',
       // development: true,
     },
   })
@@ -50,7 +54,10 @@ const Config = async (phase, { defaultConfig }) => {
     maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
   })
 
-  return withPWA(withMDX(config))
+  if (process.NODE_ENV === 'production') {
+    return withPWA(withMDX(config))
+  }
+  return withMDX(config)
 }
 
 export default Config

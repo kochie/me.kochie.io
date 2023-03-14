@@ -28,6 +28,7 @@
   "homepage": "https://github.com/kochie/me.kochie.io#readme",
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@babel/parser": "^7.21.2",
     "@babel/preset-react": "^7.18.6",
     "@fortawesome/fontawesome-pro": "^6.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
