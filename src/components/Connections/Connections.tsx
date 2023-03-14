@@ -72,7 +72,7 @@ export default function Connections(): ReactElement {
         return (
           <div
             className="w-9 transform-gpu transition duration-200 ease-in-out hover:scale-110"
-            key={connection.name}
+            key={connection.href}
           >
             <a
               href={connection.href}

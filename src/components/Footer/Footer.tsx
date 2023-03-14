@@ -2,7 +2,8 @@ import React, { ReactElement } from 'react'
 
 import style from './footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopyright, faGuitar } from '@fortawesome/pro-duotone-svg-icons'
+import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
+import { Guitar } from './Guitar'
 
 export default function Footer(): ReactElement {
   const playSound = (): void => {
@@ -27,7 +28,7 @@ export default function Footer(): ReactElement {
           {2020}
         </div>
         <div id="guitar" className={style.guitar}>
-          <FontAwesomeIcon onClick={playSound} icon={faGuitar} size="2x" />
+          <Guitar />
         </div>
         <div className={style.update}>
           <span>

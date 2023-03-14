@@ -8,6 +8,7 @@ import Stocks from '@/images/clay-banks-3IFYE6UHFBo-unsplash.jpg'
 import CT from '@/images/markus-winkler-zYBR4TN46EE-unsplash.jpg'
 import BenchTop from '@/images/brett-garwood-asZVvgMGshc-unsplash.jpg'
 import TouchTyper from '@/images/demo.jpg'
+import Link from 'next/link'
 
 const projects = [
   {
@@ -76,25 +77,25 @@ export default function Portfolio(): ReactElement {
             className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
             key={project.id}
           >
-            <div
-              className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-              style={{ padding: '30% 0' }}
-            >
-              <a href={project.link}>
+            <Link href={project.link}>
+              <div
+                className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
+                style={{ padding: '30% 0' }}
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
                   placeholder="blur"
                   className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{
                     objectFit: 'cover',
                   }}
                 />
                 {/* <span className="portfolio-text">View</span> */}
-              </a>
-            </div>
+              </div>
+            </Link>
             <div className="px-5 ">
               <h3 className="text-lg font-medium my-3 text-gray-900 dark:text-white">
                 <a className="hover:underline" href={project.link}>

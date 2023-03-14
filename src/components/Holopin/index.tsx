@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { MouseEvent, useEffect, useRef, useState } from 'react'
@@ -71,7 +72,7 @@ const Holopin = ({ username }: HolopinProps) => {
   const [pageScale, setPageScale] = useState(1)
   const ref = useRef<HTMLDivElement>(null)
   const { data, error, isLoading } = useSWR(
-    `https://www.holopin.io/api/auth/user/page?username=${username}`,
+    `/api/holopin?username=${username}`,
     fetcher
   )
 
@@ -92,6 +93,8 @@ const Holopin = ({ username }: HolopinProps) => {
   //   console.log(pageScale)
   // }, [pageScale])
 
+  // console.log(data, error, isLoading)
+
   return (
     <div className="h-[380px] group" ref={ref}>
       <div className="relative overflow-hidden w-full h-full rounded-xl">
@@ -101,50 +104,49 @@ const Holopin = ({ username }: HolopinProps) => {
           className="absolute  group-hover:scale-105 transform duration-200"
           placeholder="blur"
         />
-        {data.page.positions.map(
-          ({ id, width, height, rotation, scale, top, left }) => {
-            const sticker = data.stickers.find((sticker) => sticker.id === id)
-            return (
-              <div className="absolute w-0 h-0 top-1/2 left-1/2" key={id}>
-                <div className="relative">
-                  <div className="absolute w-0 h-0">
-                    <div
-                      className="origin-center cursor-pointer grayscale-50 hover:grayscale-0 duration-100 transform"
-                      style={{
-                        width,
-                        height,
-                        transform: `translate(${left / pageScale}px, ${
-                          top / pageScale
-                        }px) scale(${
-                          scale / pageScale
-                        }) rotate(${rotation}deg)`,
-                      }}
-                    >
-                      <Image
-                        className="hover:scale-105 duration-200 transform"
-                        id={id}
-                        // onClick={openModal}
-                        src={sticker.image}
-                        alt={sticker.name}
-                        width={width}
-                        height={height}
-                      />
+        {(data || !isLoading) &&
+          data?.page?.positions.map(
+            ({ id, width, height, rotation, scale, top, left }) => {
+              const sticker = data.stickers.find((sticker) => sticker.id === id)
+              return (
+                <div className="absolute w-0 h-0 top-1/2 left-1/2" key={id}>
+                  <div className="relative">
+                    <div className="absolute w-0 h-0">
+                      <div
+                        className="origin-center cursor-pointer grayscale-50 hover:grayscale-0 duration-100 transform"
+                        style={{
+                          width,
+                          height,
+                          transform: `translate(${left / pageScale}px, ${
+                            top / pageScale
+                          }px) scale(${
+                            scale / pageScale
+                          }) rotate(${rotation}deg)`,
+                        }}
+                      >
+                        <Image
+                          className="hover:scale-105 duration-200 transform"
+                          id={id}
+                          // onClick={openModal}
+                          src={sticker.image}
+                          alt={sticker.name}
+                          width={width}
+                          height={height}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
-          }
-        )}
+              )
+            }
+          )}
         <Link href={`https://holopin.io/@${username}`}>
-          <a>
-            <div className="absolute bottom-0 right-0 flex items-center m-3 bg-black hover:bg-gray-600 duration-100 transform rounded p-1.5">
-              <Image src={logo} alt="logo" width={20} height={20} />
-              <span className="pl-1 text-[8px] text-neutral-400 md:text-base">
-                {`holopin.io/@${username}`}
-              </span>
-            </div>
-          </a>
+          <div className="absolute bottom-0 right-0 flex items-center m-3 bg-black hover:bg-gray-600 duration-100 transform rounded p-1.5">
+            <Image src={logo} alt="logo" width={20} height={20} />
+            <span className="pl-1 text-[8px] text-neutral-400 md:text-base">
+              {`holopin.io/@${username}`}
+            </span>
+          </div>
         </Link>
       </div>
     </div>
