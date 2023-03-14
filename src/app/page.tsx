@@ -1,4 +1,5 @@
 import App from '@/components/App/App'
+import Fathom from '@/components/Fathom'
 import { ThemeButton, ThemeProvider } from '@/components/Theme'
 import type { Metadata } from 'next'
 import { AppleStartupImages } from './metadata'
@@ -68,6 +69,7 @@ export default function Page() {
   return (
     <Providers>
       <ThemeButton />
+      <Fathom />
       <App />
     </Providers>
   )
