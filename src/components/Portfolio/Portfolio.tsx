@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import Image from "next/image";
+import Image from 'next/image'
 
 import Space from '@/images/space.png'
 import Particlez from '@/images/particlez.png'
@@ -7,29 +7,38 @@ import Tensorflow from '@/images/tensorflow.jpeg'
 import Stocks from '@/images/clay-banks-3IFYE6UHFBo-unsplash.jpg'
 import CT from '@/images/markus-winkler-zYBR4TN46EE-unsplash.jpg'
 import BenchTop from '@/images/brett-garwood-asZVvgMGshc-unsplash.jpg'
+import TouchTyper from '@/images/demo.jpg'
 
 const projects = [
+  {
+    image: TouchTyper,
+    title: 'Touch Typer',
+    description:
+      "Touch Typer is your tutor that helps you improve your typing skills. Open source and free to use it's available on Linux, Windows and macOS.",
+    link: 'https://touch-typer.kochie.io',
+    id: '1',
+  },
   {
     image: CT,
     title: 'Contact Tracing',
     description:
       'A technology demonstration website to showcase a proof of concept contact tracing application using the AWS Cloud Development Kit.',
     link: 'https://ct.vercel.app',
-    id: '1',
+    id: '2',
   },
   {
     image: Space,
     title: 'Space',
     description: 'A small webapp that follows the mouse.',
     link: 'https://kochie.space',
-    id: '2',
+    id: '3',
   },
   {
     image: Particlez,
     title: 'Particlez',
     description: 'A real time n-body particle simulator for the web.',
     link: 'https://3body.now.sh',
-    id: '3',
+    id: '4',
   },
   {
     image: Tensorflow,
@@ -37,21 +46,21 @@ const projects = [
     description:
       'My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.',
     link: 'https://bitbucket.org/kochie/fyp',
-    id: '4',
+    id: '5',
   },
   {
     image: Stocks,
     title: 'Stonks',
     description: 'A trading platform for crypto-currencies.',
     link: 'https://stonks.kochie.io',
-    id: '5',
+    id: '6',
   },
   {
     image: BenchTop,
     title: 'benchtop-js',
     description: 'A benchmarking tool for JavaScript projects.',
     link: 'https://github.com/BenchTop/benchtop-js',
-    id: '6',
+    id: '7',
   },
 ]
 
@@ -80,8 +89,9 @@ export default function Portfolio(): ReactElement {
                   fill
                   sizes="100vw"
                   style={{
-                    objectFit: "cover"
-                  }} />
+                    objectFit: 'cover',
+                  }}
+                />
                 {/* <span className="portfolio-text">View</span> */}
               </a>
             </div>
@@ -99,5 +109,5 @@ export default function Portfolio(): ReactElement {
         ))}
       </div>
     </div>
-  );
+  )
 }
