@@ -6,17 +6,6 @@ import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
 import { Guitar } from './Guitar'
 
 export default function Footer(): ReactElement {
-  const playSound = (): void => {
-    const g = document.getElementById('guitar')
-    g.classList.add(style.jello)
-    g.addEventListener('animationend', () => {
-      g.classList.remove(style.jello)
-    })
-
-    const sound = new Audio('/audio/AcousticPopMelody.mp3')
-    sound.play()
-  }
-
   const updateTime = process.env.buildTime
 
   return (

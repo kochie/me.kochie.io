@@ -13,13 +13,12 @@ export default function Fathom() {
 
   // console.log(pathname, searchParams.toString())
 
-  load('FLIWZIHK', {
-    includedDomains: ['me.kochie.io'],
-    url: 'https://kite.kochie.io/script.js',
-    spa: 'auto',
-  })
-
   useEffect(() => {
+    load('FLIWZIHK', {
+      includedDomains: ['me.kochie.io'],
+      url: 'https://kite.kochie.io/script.js',
+      spa: 'auto',
+    })
     // Initialize Fathom when the app loads
     // Example: yourdomain.com
     //  - Do not include https://
