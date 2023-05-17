@@ -10,6 +10,7 @@ import {
   faRss,
 } from '@fortawesome/pro-duotone-svg-icons'
 import { faCottonBureau } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
 
 const GetInTouch = () => {
   return (
@@ -38,7 +39,15 @@ const GetInTouch = () => {
             href="mailto:robert@kochie.io"
           >
             robert@kochie.io
-          </a>
+          </a>{' '}
+          or{' '}
+          <Link
+            className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
+            href="https://cal.com/kochie"
+          >
+            book a meeting with me
+          </Link>
+          .
         </p>
         <div className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start">
           <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">

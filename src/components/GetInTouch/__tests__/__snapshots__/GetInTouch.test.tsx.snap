@@ -57,6 +57,19 @@ exports[`footer renders correctly 1`] = `
       >
         robert@kochie.io
       </a>
+       
+      or
+       
+      <a
+        className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
+        href="https://cal.com/kochie"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        book a meeting with me
+      </a>
+      .
     </p>
     <div
       className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start"
