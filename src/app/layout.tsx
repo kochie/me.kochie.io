@@ -3,11 +3,11 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '../assets/styles/global.css'
 import 'tailwindcss/tailwind.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Source_Sans_Pro } from 'next/font/google'
+import { Source_Sans_3 } from 'next/font/google'
 
 config.autoAddCss = false
 
-const sourceSansPro = Source_Sans_Pro({
+const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '700'],
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sourceSansPro.className}>
+      <body className={sourceSans3.className}>
         {children}
         <Script
           data-name="BMC-Widget"
