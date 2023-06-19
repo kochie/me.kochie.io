@@ -16,7 +16,7 @@ export default function Fathom() {
   useEffect(() => {
     load('FLIWZIHK', {
       includedDomains: ['me.kochie.io'],
-      url: 'https://kite.kochie.io/script.js',
+      // url: 'https://kite.kochie.io/script.js',
       spa: 'auto',
     })
     // Initialize Fathom when the app loads
