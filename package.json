@@ -69,7 +69,7 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "estree-to-babel": "^5.1.0",
+    "estree-to-babel": "^8.1.1",
     "fathom-client": "^3.6.0",
     "feed": "^4.2.2",
     "husky": "^8.0.3",
