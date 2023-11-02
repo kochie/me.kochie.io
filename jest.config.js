@@ -15,6 +15,9 @@ const customJestConfig = {
   // if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
+  // testEnvironmentOptions: {
+
+  // },
 
   setupFiles: [
     '<rootDir>/jest/jest.setup.js',
@@ -24,6 +27,7 @@ const customJestConfig = {
   moduleNameMapper: {
     '^@/components/(.*)': '<rootDir>/src/components/$1',
     // '@mdx-js/react': '<rootDir>/jest/esm.mapper.js',
+    // '^.+\\.mdx?$': "<rootDir>/jest/mdx-mock.cjs",
   },
   transform: {
     '^.+\\.mdx?$': [
@@ -40,9 +44,9 @@ const customJestConfig = {
   extensionsToTreatAsEsm: ['.tsx'],
 }
 
-// console.log(
-//   inspect(await createJestConfig(customJestConfig)(), { depth: null })
-// )
+console.log(
+  inspect(await createJestConfig(customJestConfig)(), { depth: null })
+)
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
 export default createJestConfig(customJestConfig)

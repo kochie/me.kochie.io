@@ -26,7 +26,7 @@ function babelParserWithMdx(value, options) {
         recmaPlugins: [recmaBabel] /* jsxImportSource: …, otherOptions… */,
         // outputFormat: 'function-body',
       }
-    ).result
+    ).value
   }
 
   return parser.parse(value, options)
