@@ -1,6 +1,9 @@
 // import { expect } from '@jest/globals'
 // import '@testing-library/jest-dom/extend-expect'
 // import '@testing-library/jest-dom'
+import {jest} from '@jest/globals';
+import Image from 'next/image';
+// import '@testing-library/jest-dom'
 
 process.env = {
   ...process.env,
@@ -14,3 +17,7 @@ process.env = {
 }
 
 // export {}
+
+
+
+jest.unstable_mockModule('next/image', () => (Image));
