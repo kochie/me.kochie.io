@@ -31,7 +31,7 @@ const customJestConfig = {
   },
   transform: {
     '^.+\\.mdx?$': [
-      '<rootDir>/jest/mdx-jest.mjs',
+      '<rootDir>/jest/mdx-transformer.mjs',
       {
         supportsDynamicImport: true,
         supportsExportNamespaceFrom: true,
@@ -39,14 +39,14 @@ const customJestConfig = {
       },
     ],
     // '^.+\\.(js|jsx|ts|tsx|mjs)$': null,
-    '\\.tsx?$': ['ts-jest', { useESM: true }],
+    // '\\.tsx?$': ['ts-jest', { useESM: true }],
   },
   extensionsToTreatAsEsm: ['.tsx'],
 }
 
-console.log(
-  inspect(await createJestConfig(customJestConfig)(), { depth: null })
-)
+// console.log(
+//   inspect(await createJestConfig(customJestConfig)(), { depth: null })
+// )
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
 export default createJestConfig(customJestConfig)

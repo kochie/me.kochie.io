@@ -28,6 +28,7 @@
   "homepage": "https://github.com/kochie/me.kochie.io#readme",
   "devDependencies": {
     "@babel/core": "^7.23.2",
+    "@babel/helper-plugin-utils": "^7.22.5",
     "@babel/parser": "^7.23.0",
     "@babel/preset-react": "^7.22.15",
     "@fortawesome/fontawesome-pro": "^6.4.2",
@@ -49,6 +50,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
+    "@types/babel__core": "^7.20.3",
     "@types/jest": "^29.5.7",
     "@types/mdx-js__react": "^1.5.7",
     "@types/react": "^18.2.34",
