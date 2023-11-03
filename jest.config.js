@@ -15,6 +15,9 @@ const customJestConfig = {
   // if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
+  // testEnvironmentOptions: {
+
+  // },
 
   setupFiles: [
     '<rootDir>/jest/jest.setup.js',
@@ -24,10 +27,11 @@ const customJestConfig = {
   moduleNameMapper: {
     '^@/components/(.*)': '<rootDir>/src/components/$1',
     // '@mdx-js/react': '<rootDir>/jest/esm.mapper.js',
+    // '^.+\\.mdx?$': "<rootDir>/jest/mdx-mock.cjs",
   },
   transform: {
     '^.+\\.mdx?$': [
-      '<rootDir>/jest/mdx-jest.mjs',
+      '<rootDir>/jest/mdx-transformer.mjs',
       {
         supportsDynamicImport: true,
         supportsExportNamespaceFrom: true,
@@ -35,7 +39,7 @@ const customJestConfig = {
       },
     ],
     // '^.+\\.(js|jsx|ts|tsx|mjs)$': null,
-    '\\.tsx?$': ['ts-jest', { useESM: true }],
+    // '\\.tsx?$': ['ts-jest', { useESM: true }],
   },
   extensionsToTreatAsEsm: ['.tsx'],
 }

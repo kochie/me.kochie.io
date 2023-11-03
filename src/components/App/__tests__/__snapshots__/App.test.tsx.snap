@@ -23,11 +23,11 @@ exports[`app app renders correctly 1`] = `
           onError={[Function]}
           onLoad={[Function]}
           sizes="100vw"
-          src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-          srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+          src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
           style={
             {
-              "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+              "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
               "backgroundPosition": "50% 50%",
               "backgroundRepeat": "no-repeat",
               "backgroundSize": "cover",
@@ -344,11 +344,11 @@ exports[`app app renders correctly 1`] = `
               onError={[Function]}
               onLoad={[Function]}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-              srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
               style={
                 {
-                  "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                  "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                   "backgroundPosition": "50% 50%",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "cover",
@@ -618,11 +618,11 @@ exports[`app app renders correctly 1`] = `
                   loading="lazy"
                   onError={[Function]}
                   onLoad={[Function]}
-                  src="/_next/image?url=%2Fimg.jpg&w=320&q=75"
-                  srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 1x"
+                  src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
                   style={
                     {
-                      "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                      "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                       "backgroundPosition": "50% 50%",
                       "backgroundRepeat": "no-repeat",
                       "backgroundSize": "cover",
@@ -648,8 +648,8 @@ exports[`app app renders correctly 1`] = `
                       loading="lazy"
                       onError={[Function]}
                       onLoad={[Function]}
-                      src="/_next/image?url=%2Fimg.jpg&w=320&q=75"
-                      srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 1x"
+                      src="/_next/image?url=%2Fimg.jpg&w=48&q=75"
+                      srcSet="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=48&q=75 2x"
                       style={
                         {
                           "color": "transparent",
@@ -703,11 +703,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -772,11 +772,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -841,11 +841,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -910,11 +910,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -979,11 +979,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -1048,11 +1048,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -1117,11 +1117,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=%2Fimg.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=%2Fimg.jpg&w=320&q=75 320w, /_next/image?url=%2Fimg.jpg&w=420&q=75 420w, /_next/image?url=%2Fimg.jpg&w=768&q=75 768w, /_next/image?url=%2Fimg.jpg&w=1024&q=75 1024w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/png;base64,imagedata'/%3E%3C/svg%3E")",
                         "backgroundPosition": "50% 50%",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",
@@ -1193,11 +1193,11 @@ exports[`app app renders correctly 1`] = `
                     onError={[Function]}
                     onLoad={[Function]}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75"
-                    srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=320&q=75 320w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=420&q=75 420w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1024&q=75 1024w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w"
+                    src="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=3840&q=75"
+                    srcSet="/_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fblog.kochie.io%2Farticles-1%2F02-contact-tracing%2Fomar-flores-MOO6k3RaiwE-unsplash.jpg&w=3840&q=75 3840w"
                     style={
                       {
-                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg'%3E%3Cimage style='filter:blur(20px)' preserveAspectRatio='xMidYMid slice' x='0' y='0' height='100%25' width='100%25' href='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k='/%3E%3C/svg%3E")",
+                        "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='xMidYMid slice' style='filter: url(%23b);' href='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAKABIDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAQMDAwMDBQAAAAAAAAAAAQIDBBEFABIhBgcjMRQiEzJCUXGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABwRAAEEAwEAAAAAAAAAAAAAAAEAQQIhE9HwA//aAAwDAQACEQMRAD8AaLZceON9VUT4txmRum1FMszi6ta3wNtKSRXcmtCk/UP3lnJ5d0yb6d8kXeEwWJchC2rEw++4j1CiSEgJAAVt7qHb20ziPgFwlVvSfUvaWk1QPkNEdsePxk2Dc5l4F4M+W/OKEVSZLhc00QkClSabE/3FHnKJMqdloEihbOtEcfiuOLWu4nWo1PeT5wxFXHa1q7aPJ+0YZPjHE7RkPAaX/9k='/%3E%3C/svg%3E")",
                         "backgroundPosition": "center",
                         "backgroundRepeat": "no-repeat",
                         "backgroundSize": "cover",

@@ -1,15 +1,30 @@
 // import { compile, compileSync } from '@mdx-js/mdx'
 import babel from '@babel/core'
+import { declare } from "@babel/helper-plugin-utils";
 
 import path from 'path'
 import parser from '@babel/parser'
 import estreeToBabel from 'estree-to-babel'
 import { compileSync } from '@mdx-js/mdx'
 
-export function babelPluginSyntaxMdx() {
-  // Tell Babel to use a different parser.
-  return { parserOverride: babelParserWithMdx }
-}
+// export function babelPluginSyntaxMdx() {
+//   // Tell Babel to use a different parser.
+//   return { parserOverride: babelParserWithMdx }
+// }
+
+const babelPluginSyntaxMdx = declare(api => {
+  api.assertVersion(
+    process.env.BABEL_8_BREAKING && process.env.IS_PUBLISH
+      ? PACKAGE_JSON.version
+      : 7,
+  );
+
+  return {
+    name: "syntax-mdx",
+    parserOverride: babelParserWithMdx 
+  }
+})
+
 
 // A Babel parser that parses MDX files with `@mdx-js/mdx` and passes any
 // other things through to the normal Babel parser.
@@ -26,10 +41,10 @@ function babelParserWithMdx(value, options) {
         recmaPlugins: [recmaBabel] /* jsxImportSource: …, otherOptions… */,
         // outputFormat: 'function-body',
       }
-    ).result
+    ).value
   }
 
-  return parser.parse(value, options)
+  // return parser.parse(value, options)
 }
 
 // A “recma” plugin is a unified plugin that runs on the estree (used by
@@ -42,7 +57,7 @@ function recmaBabel() {
 
 export default {
   process(sourceText, sourcePath, options) {
-    const babelRes = babel.transform(sourceText, {
+    const babelRes = babel.transformSync(sourceText, {
       filename: sourcePath,
 
       // presets: ['next/babel'],
@@ -57,7 +72,7 @@ export default {
     const babelRes = babel.transformAsync(sourceText, {
       filename: sourcePath,
 
-      presets: [['@babel/preset-env', { modules: 'cjs' }]],
+      presets: [['@babel/preset-env', { modules: 'commonjs' }]],
       plugins: ['add-module-exports', babelPluginSyntaxMdx],
     })
 
