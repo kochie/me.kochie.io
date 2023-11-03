@@ -26,15 +26,15 @@ const Config = async (phase, { defaultConfig }) => {
       // marked for the release they belong to. It may be undefined if running
       // outside of Vercel
       buildTime: new Date().toDateString(),
-      NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA,
+      NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA ?? "",
     },
     images: {
       domains: ['blog.kochie.io', 'holopin.io', 'assets.holopin.io'],
     },
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     experimental: {
-      appDir: true,
-      mdxRs: true,
+       mdxRs: true,
+       webpackBuildWorker: true
     },
   }
 
