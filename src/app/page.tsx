@@ -10,6 +10,7 @@ const description =
 
 export const viewport: Viewport = {
   themeColor: '#1f2937',
+  
 }
 
 export const metadata: Metadata = {

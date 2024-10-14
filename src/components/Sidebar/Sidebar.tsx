@@ -6,7 +6,7 @@ import Connections from '@/components/Connections/Connections'
 
 import style from './sidebar.module.css'
 
-import avatar from '@/images/AfterRunning_Square.png'
+import avatar from '@/images/City2Surf_Crop.png'
 const background = '/images/background-2.webp'
 
 const Sidebar = (): ReactElement => {
@@ -92,6 +92,7 @@ const Sidebar = (): ReactElement => {
         <div className="rounded-full w-40 h-40 overflow-hidden">
           <NextImage
             src={avatar}
+            className='hover:scale-125 transform-gpu transition duration-500'
             alt="me"
             placeholder="blur"
             sizes="100vw"

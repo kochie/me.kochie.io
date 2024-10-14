@@ -8,9 +8,17 @@ import Stocks from '@/images/clay-banks-3IFYE6UHFBo-unsplash.jpg'
 import CT from '@/images/markus-winkler-zYBR4TN46EE-unsplash.jpg'
 import BenchTop from '@/images/brett-garwood-asZVvgMGshc-unsplash.jpg'
 import TouchTyper from '@/images/demo.jpg'
+import MetaFixer from '@/images/metafixer.png'
 import Link from 'next/link'
 
 const projects = [
+  {
+    image: MetaFixer,
+    title: "MetaFixer",
+    description: "MetaFixer is a powerful tool designed to add missing metadata to photos exported from Facebook, ensuring they appear in the correct date and location when imported into photo apps.",
+    link: "https://metafixer.kochie.io",
+    id: "8",
+  },
   {
     image: TouchTyper,
     title: 'Touch Typer',
