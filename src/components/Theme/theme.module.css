@@ -152,8 +152,3 @@
   animation: spin-in 1s ease-in-out;
 }
 
-@media (--mobile-size) {
-  .button {
-    display: none;
-  }
-}

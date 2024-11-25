@@ -10,6 +10,7 @@ import {
   faMastodon,
   faMedium,
   faTwitter,
+  faBluesky
 } from '@fortawesome/free-brands-svg-icons'
 
 interface Connection {
@@ -20,6 +21,12 @@ interface Connection {
 }
 
 const connections: Connection[] = [
+  {
+    icon: faBluesky,
+    href: 'https://bsky.app/profile/kochie.bsky.social',
+    name: 'kochie',
+    color: 'hover:text-bluesky',
+  },
   {
     icon: faLinkedin,
     href: 'https://linkedin.com/in/rkkochie',

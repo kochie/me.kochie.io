@@ -1,7 +1,6 @@
 import Script from 'next/script'
 import { config } from '@fortawesome/fontawesome-svg-core'
-import '../assets/styles/global.css'
-import 'tailwindcss/tailwind.css'
+import "./index.css"
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Source_Sans_3 } from 'next/font/google'
 

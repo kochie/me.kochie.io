@@ -5,6 +5,7 @@ import Portfolio from '@/components/Portfolio/Portfolio'
 import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
+import Talks from '@/components/Talks'
 
 export default function Middle(): ReactElement {
   return (
@@ -14,6 +15,7 @@ export default function Middle(): ReactElement {
         <GetInTouch />
         <Awards />
         <Portfolio />
+        <Talks />
         <RecentArticles />
       </div>
     </div>

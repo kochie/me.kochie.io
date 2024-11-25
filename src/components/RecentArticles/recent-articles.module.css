@@ -26,8 +26,4 @@
   transform: scale(1.1);
 }
 
-@media (--mobile-size) {
-  .card {
-    grid-template-columns: 1fr;
-  }
-}
+
