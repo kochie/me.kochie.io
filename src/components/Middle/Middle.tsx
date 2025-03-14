@@ -6,6 +6,7 @@ import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
 import Talks from '@/components/Talks'
+import ConvertKitForm from '../ConvertKitForm'
 
 export default function Middle(): ReactElement {
   return (
@@ -13,6 +14,7 @@ export default function Middle(): ReactElement {
       <div className="max-w-7xl">
         <Hello />
         <GetInTouch />
+        <ConvertKitForm formId='4897384'/>
         <Awards />
         <Portfolio />
         <Talks />

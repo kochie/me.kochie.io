@@ -54,7 +54,7 @@ const Config = async (phase, { defaultConfig }) => {
     maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
   })
 
-  if (process.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production') {
     return withPWA(withMDX(config))
   }
   return withMDX(config)
