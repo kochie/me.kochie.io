@@ -46,7 +46,7 @@ const projects = [
     image: Particlez,
     title: 'Particlez',
     description: 'A real time n-body particle simulator for the web.',
-    link: 'https://3body.now.sh',
+    link: 'https://3body.vercel.app',
     id: '4',
   },
   {

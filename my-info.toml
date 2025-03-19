@@ -50,7 +50,7 @@ link = 'https://kochie.space'
 image = '/images/particlez.png'
 title = 'Particlez'
 description = 'A real time n-body particle simulator for the web.'
-link = 'https://3body.now.sh'
+link = 'https://3body.vercel.app'
 
 [[projects]]
 image = '/images/guardian.png'
