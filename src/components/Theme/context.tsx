@@ -29,13 +29,10 @@ const ThemeContext = createContext<ThemeStateContext>({
 const ThemeProvider = ({
   children,
 }: PropsWithChildren<Record<never, never>>): ReactElement => {
-  const [theme, _setTheme] = useState<THEME>(() => {
-    if (typeof window !== 'undefined') {
-      const stored = window.localStorage.getItem('theme')
-      if (stored) return stored as THEME
-    }
-    return THEME.system
-  })
+  // Initial state must match SSR output. localStorage is read in the effect
+  // below after hydration completes — this is one of the documented cases
+  // where setState-in-effect is correct (syncing browser-only state on mount).
+  const [theme, _setTheme] = useState<THEME>(THEME.system)
   const ref = useRef(theme)
 
   const setTheme = (theme: THEME): void => {
@@ -82,6 +79,16 @@ const ThemeProvider = ({
         .removeEventListener('change', switchToDark)
     }
   }, [switchToDark, switchToLight])
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem('theme')
+    if (stored && stored !== theme) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing client-only localStorage on mount
+      _setTheme(stored as THEME)
+      ref.current = stored as THEME
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: only run on mount
+  }, [])
 
   useEffect(() => {
     switch (theme) {
