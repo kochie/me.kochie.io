@@ -101,7 +101,6 @@ export default function Portfolio(): ReactElement {
                     objectFit: 'cover',
                   }}
                 />
-                {/* <span className="portfolio-text">View</span> */}
               </div>
             </Link>
             <div className="px-5 ">

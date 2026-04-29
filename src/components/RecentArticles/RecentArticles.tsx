@@ -29,8 +29,9 @@ interface JSONFeed {
   }[]
 }
 
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
+
 export default function RecentArticles(): ReactElement {
-  const fetcher = (url) => fetch(url).then((res) => res.json())
 
   const { data, error } = useSWR<JSONFeed>(
     'https://blog.kochie.io/feed/json',
@@ -82,9 +83,7 @@ export default function RecentArticles(): ReactElement {
               </Link>
               <div className="ml-5">
                 <h3 className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3">
-                  <Link href={article.url} legacyBehavior>
-                    {article.title}
-                  </Link>
+                  <Link href={article.url}>{article.title}</Link>
                 </h3>
                 <p className="dark:text-gray-300 text-gray-700 mr-3 mb-4">
                   {article.summary}

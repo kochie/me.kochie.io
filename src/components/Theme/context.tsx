@@ -29,7 +29,13 @@ const ThemeContext = createContext<ThemeStateContext>({
 const ThemeProvider = ({
   children,
 }: PropsWithChildren<Record<never, never>>): ReactElement => {
-  const [theme, _setTheme] = useState<THEME>(THEME.system)
+  const [theme, _setTheme] = useState<THEME>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = window.localStorage.getItem('theme')
+      if (stored) return stored as THEME
+    }
+    return THEME.system
+  })
   const ref = useRef(theme)
 
   const setTheme = (theme: THEME): void => {
@@ -76,11 +82,6 @@ const ThemeProvider = ({
         .removeEventListener('change', switchToDark)
     }
   }, [switchToDark, switchToLight])
-
-  useEffect(() => {
-    const theme = window.localStorage.getItem('theme')
-    if (theme) setTheme(theme as THEME)
-  }, [])
 
   useEffect(() => {
     switch (theme) {

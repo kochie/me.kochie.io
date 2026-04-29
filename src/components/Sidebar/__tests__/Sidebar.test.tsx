@@ -15,21 +15,23 @@ describe('Sidebar Component', () => {
   beforeEach(() => {
     jest
       .spyOn(window, 'requestAnimationFrame')
-      .mockImplementation((cb) => cb(1))
+      .mockImplementation((cb: FrameRequestCallback) => {
+        cb(1)
+        return 0
+      })
   })
 
   afterEach(() => {
-    window.requestAnimationFrame.mockRestore()
+    jest.restoreAllMocks()
   })
 
   it('sidebar renders correctly', () => {
-    let tree: ReactTestRenderer
+    let tree!: ReactTestRenderer
 
     act(() => {
       tree = create(<Sidebar />, {
         createNodeMock: (element) => {
           if (element.type === 'canvas') {
-            // mock a focus function
             return {
               focus: () => {},
             }
@@ -43,14 +45,14 @@ describe('Sidebar Component', () => {
   })
 
   it('image onload starts parallax', () => {
-    let tree: ReactTestRenderer
-    let imageOnload = null
+    let tree!: ReactTestRenderer
+    let imageOnload: (() => void) | null = null
 
     Object.defineProperty(Image.prototype, 'onload', {
-      get: function () {
+      get(this: HTMLImageElement & { _onload?: () => void }) {
         return this._onload
       },
-      set: function (fn) {
+      set(this: HTMLImageElement & { _onload?: () => void }, fn: () => void) {
         imageOnload = fn
         this._onload = fn
       },
@@ -63,14 +65,14 @@ describe('Sidebar Component', () => {
     expect(tree.toJSON()).toMatchSnapshot()
 
     act(() => {
-      imageOnload()
+      imageOnload?.()
     })
 
     expect(tree.toJSON()).toMatchSnapshot()
   })
 
   it('unmounts', () => {
-    let tree: ReactTestRenderer
+    let tree!: ReactTestRenderer
 
     act(() => {
       tree = create(<Sidebar />)

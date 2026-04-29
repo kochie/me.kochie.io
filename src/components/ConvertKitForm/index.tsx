@@ -1,19 +1,19 @@
 'use client'
 
-import { useActionState, useState } from 'react'
+import { useActionState } from 'react'
 import { Logo } from './convertkit-logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faSync } from '@fortawesome/pro-duotone-svg-icons'
 import { animated, useTransition } from '@react-spring/web'
-import { subscribeToForm } from './submit-form'
+import { subscribeToForm, type SubscribeState } from './submit-form'
 
 const ConvertKitForm = ({ formId }: { formId: string }) => {
   const subscribeToFormWithId = subscribeToForm.bind(null, formId)
 
-  const [state, formAction, pending] = useActionState<{
-    status: string
-    errors?: string
-  }>(subscribeToFormWithId, { status: 'INITIAL' })
+  const [state, formAction, pending] = useActionState<SubscribeState, FormData>(
+    subscribeToFormWithId,
+    { status: 'INITIAL' }
+  )
 
   // Updated transition with bounce effect
   const errorTransitions = useTransition(state.errors, {
@@ -62,7 +62,6 @@ const ConvertKitForm = ({ formId }: { formId: string }) => {
                 aria-label="Your email address"
                 placeholder="tony@stark.industries"
                 required
-                // onChange={}
               />
             </div>
 
@@ -83,7 +82,6 @@ const ConvertKitForm = ({ formId }: { formId: string }) => {
             </div>
 
             {errorTransitions((style, item) => (
-              // @ts-expect-error - ts error for style
               <animated.div className="col-span-8" style={style}>
                 <div>
                   <span className="text-sm mb-1">

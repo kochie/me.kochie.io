@@ -1,12 +1,6 @@
-import { act, create, ReactTestRenderer } from 'react-test-renderer'
+import { create, ReactTestRenderer } from 'react-test-renderer'
 import * as React from 'react'
 import { jest } from '@jest/globals'
-// import RecentArticles from '../RecentArticles'
-// import { SWRConfig } from 'swr'
-
-// global.fetch = jest.fn(() => Promise.resolve({
-//     json: () => Promise.resolve(MOCK_DATA)
-// }));
 
 describe('Recent Articles', () => {
   const MOCK_DATA = {
@@ -44,9 +38,7 @@ describe('Recent Articles', () => {
 
   it('recent articles renders correctly', async () => {
     const RecentArticles = await import('../RecentArticles')
-    let tree: ReactTestRenderer
-
-    tree = create(<RecentArticles.default />)
+    const tree: ReactTestRenderer = create(<RecentArticles.default />)
 
     expect(tree.toJSON()).toMatchSnapshot()
   })

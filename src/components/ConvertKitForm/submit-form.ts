@@ -1,29 +1,25 @@
 'use server'
 
+import { z } from 'zod'
+
 const API_KEY = process.env.CONVERTKIT_API_KEY
 const BASE_URL = 'https://api.convertkit.com/v3'
 
-import { z } from 'zod'
-
 const schema = z.object({
-  email: z
-    .string({
-      invalid_type_error: 'Invalid Email',
-    })
-    .email(),
-  first_name: z
-    .string({
-      invalid_type_error: 'Invalid Name',
-    })
-    .optional(),
+  email: z.string({ error: 'Invalid Email' }).email(),
+  first_name: z.string({ error: 'Invalid Name' }).optional(),
 })
+
+export interface SubscribeState {
+  status: 'INITIAL' | 'SUCCESS' | 'ERROR'
+  errors?: string
+}
 
 export async function subscribeToForm(
   formId: string,
-  _prevState: { status: string; errors: string },
+  _prevState: SubscribeState,
   formData: FormData
-) {
-  console.log(formId, _prevState, formData)
+): Promise<SubscribeState> {
   const url = `${BASE_URL}/forms/${formId}/subscribe`
 
   const validatedFields = schema.safeParse({
@@ -31,11 +27,12 @@ export async function subscribeToForm(
     first_name: formData.get('first_name'),
   })
 
-  // Return early if the form data is invalid
   if (!validatedFields.success) {
+    const fieldErrors = z.flattenError(validatedFields.error).fieldErrors
+    const messages = Object.values(fieldErrors).flat().filter(Boolean)
     return {
       status: 'ERROR',
-      errors: validatedFields.error.flatten().fieldErrors,
+      errors: messages.join(', ') || 'Invalid input',
     }
   }
 
@@ -54,7 +51,7 @@ export async function subscribeToForm(
   } catch (error) {
     return {
       status: 'ERROR',
-      errors: error.message,
+      errors: error instanceof Error ? error.message : 'Unknown error',
     }
   }
 

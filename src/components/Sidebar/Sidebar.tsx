@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useEffect, ReactElement, useCallback } from 'react'
+import React, { useRef, useEffect, ReactElement } from 'react'
 import NextImage from 'next/image'
 
 import Connections from '@/components/Connections/Connections'
@@ -14,71 +14,70 @@ const Sidebar = (): ReactElement => {
   const image = useRef<HTMLImageElement>(null)
   let imageY = useRef(0)
 
-  const parallax = useCallback((): void => {
-    // console.log(document.getElementById('main').scrollTop)
-
-    if (!image.current) return
-    if (!canvas.current) return
-
-    const main = document.getElementById('main')
-    if (!main) return
-
-    const ctx = canvas.current.getContext('2d')
-    if (ctx === null) return
-    const blurSize = 2 * window.devicePixelRatio
-
-    const imgHeight = image.current.naturalHeight
-    const imgWidth = image.current.naturalWidth
-
-    const innerHeight = document.documentElement.clientHeight
-    const innerWidth = canvas.current.clientWidth
-    if (innerWidth === 0) return
-
-    const docHeight = main.scrollHeight
-
-    const scale = imgHeight / (innerHeight * 1 * window.devicePixelRatio)
-    // const scale = 0.85
-
-    const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
-    const displacement = main.scrollTop - imageY.current
-    imageY.current += displacement * 0.01
-    const sy =
-      m * Math.min(Math.max(imageY.current, 0), docHeight - innerHeight)
-    ctx.restore()
-    ctx.save()
-    canvas.current.height = canvas.current.clientHeight
-    canvas.current.width = canvas.current.clientWidth
-    ctx.fillRect(0, 0, innerWidth, innerHeight)
-    ctx.filter = `blur(${blurSize}px)`
-    ctx.globalAlpha = 0.7
-    const sx = (imgWidth - innerWidth * scale) * 0.5
-    // if (sy === 0) return;
-    ctx.drawImage(
-      image.current,
-      Math.round(sx),
-      Math.round(sy),
-      Math.round(scale * innerWidth),
-      Math.round(scale * innerHeight),
-      -blurSize,
-      -blurSize,
-      Math.round(innerWidth) + blurSize * 2,
-      Math.round(innerHeight) + blurSize * 2
-    )
-    window.requestAnimationFrame(parallax)
-  }, [])
+  const rafId = useRef<number>(0)
 
   useEffect(() => {
-    let num: number
-    image.current = new Image()
-    image.current.src = background
-    image.current.onload = (): void => {
-      num = window.requestAnimationFrame(parallax)
+    const img = new Image()
+    image.current = img
+    img.src = background
+
+    const parallax = (): void => {
+      if (!image.current) return
+      if (!canvas.current) return
+
+      const main = document.getElementById('main')
+      if (!main) return
+
+      const ctx = canvas.current.getContext('2d')
+      if (ctx === null) return
+      const blurSize = 2 * window.devicePixelRatio
+
+      const imgHeight = image.current.naturalHeight
+      const imgWidth = image.current.naturalWidth
+
+      const innerHeight = document.documentElement.clientHeight
+      const innerWidth = canvas.current.clientWidth
+      if (innerWidth === 0) return
+
+      const docHeight = main.scrollHeight
+
+      const scale = imgHeight / (innerHeight * 1 * window.devicePixelRatio)
+
+      const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
+      const displacement = main.scrollTop - imageY.current
+      imageY.current += displacement * 0.01
+      const sy =
+        m * Math.min(Math.max(imageY.current, 0), docHeight - innerHeight)
+      ctx.restore()
+      ctx.save()
+      canvas.current.height = canvas.current.clientHeight
+      canvas.current.width = canvas.current.clientWidth
+      ctx.fillRect(0, 0, innerWidth, innerHeight)
+      ctx.filter = `blur(${blurSize}px)`
+      ctx.globalAlpha = 0.7
+      const sx = (imgWidth - innerWidth * scale) * 0.5
+      ctx.drawImage(
+        image.current,
+        Math.round(sx),
+        Math.round(sy),
+        Math.round(scale * innerWidth),
+        Math.round(scale * innerHeight),
+        -blurSize,
+        -blurSize,
+        Math.round(innerWidth) + blurSize * 2,
+        Math.round(innerHeight) + blurSize * 2
+      )
+      rafId.current = window.requestAnimationFrame(parallax)
+    }
+
+    img.onload = (): void => {
+      rafId.current = window.requestAnimationFrame(parallax)
     }
 
     return () => {
-      window.cancelAnimationFrame(num)
+      window.cancelAnimationFrame(rafId.current)
     }
-  }, [parallax])
+  }, [])
 
   const quote =
     'I build things, write the code for them, and run from the resulting explosion.'
