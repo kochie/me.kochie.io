@@ -12,13 +12,23 @@ const sourceSans3 = Source_Sans_3({
   weight: ['400', '700'],
 })
 
+// Runs synchronously before React hydrates so the dark class is on <html>
+// during first paint — eliminates the light→dark flash for users who
+// previously selected dark mode (or whose system prefers it).
+const themeInitScript = `(function(){try{var s=localStorage.getItem('theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='DARK'||((!s||s==='SYSTEM')&&d)){document.documentElement.classList.add('dark','dark-theme');}}catch(e){}})()`
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
+      </head>
       <body className={sourceSans3.className}>
         {children}
         <Script

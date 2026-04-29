@@ -26,14 +26,24 @@ const ThemeContext = createContext<ThemeStateContext>({
   setTheme: () => ({}),
 })
 
+const applyThemeClasses = (isDark: boolean): void => {
+  const root = document.documentElement
+  if (isDark) {
+    root.classList.add('dark', 'dark-theme')
+  } else {
+    root.classList.remove('dark', 'dark-theme')
+  }
+}
+
 const ThemeProvider = ({
   children,
 }: PropsWithChildren<Record<never, never>>): ReactElement => {
-  // Initial state must match SSR output. localStorage is read in the effect
-  // below after hydration completes — this is one of the documented cases
-  // where setState-in-effect is correct (syncing browser-only state on mount).
+  // Initial state must match SSR output. The inline script in layout.tsx has
+  // already applied the correct class to <html> before hydration; this state
+  // gets synced from localStorage in the effect below.
   const [theme, _setTheme] = useState<THEME>(THEME.system)
   const ref = useRef(theme)
+  const synced = useRef(false)
 
   const setTheme = (theme: THEME): void => {
     ref.current = theme
@@ -42,79 +52,53 @@ const ThemeProvider = ({
 
   const value = { theme, setTheme }
 
-  const switchToLight = useCallback(
-    (e: MediaQueryListEvent): void => {
-      if (e.matches && ref.current === THEME.system) {
-        document.body.classList.remove('dark-theme')
-        document.body.classList.remove('dark')
-      }
-    },
-    [ref]
-  )
+  const switchToLight = useCallback((e: MediaQueryListEvent): void => {
+    if (e.matches && ref.current === THEME.system) {
+      applyThemeClasses(false)
+    }
+  }, [])
 
-  const switchToDark = useCallback(
-    (e: MediaQueryListEvent): void => {
-      if (e.matches && ref.current === THEME.system) {
-        document.body.classList.add('dark-theme')
-        document.body.classList.add('dark')
-      }
-    },
-    [ref]
-  )
+  const switchToDark = useCallback((e: MediaQueryListEvent): void => {
+    if (e.matches && ref.current === THEME.system) {
+      applyThemeClasses(true)
+    }
+  }, [])
 
   useEffect(() => {
-    window
-      .matchMedia('(prefers-color-scheme: light)')
-      .addEventListener('change', switchToLight)
-    window
-      .matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', switchToDark)
+    const lightMQ = window.matchMedia('(prefers-color-scheme: light)')
+    const darkMQ = window.matchMedia('(prefers-color-scheme: dark)')
+    lightMQ.addEventListener('change', switchToLight)
+    darkMQ.addEventListener('change', switchToDark)
 
-    return (): void => {
-      window
-        .matchMedia('(prefers-color-scheme: light)')
-        .removeEventListener('change', switchToLight)
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', switchToDark)
+    return () => {
+      lightMQ.removeEventListener('change', switchToLight)
+      darkMQ.removeEventListener('change', switchToDark)
     }
   }, [switchToDark, switchToLight])
 
   useEffect(() => {
-    const stored = window.localStorage.getItem('theme')
-    if (stored && stored !== theme) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing client-only localStorage on mount
-      _setTheme(stored as THEME)
-      ref.current = stored as THEME
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: only run on mount
-  }, [])
-
-  useEffect(() => {
-    switch (theme) {
-      case THEME.dark: {
-        document.body.classList.add('dark-theme')
-        document.body.classList.add('dark')
-        break
+    // First run: sync state from localStorage without touching the DOM. The
+    // inline script in layout.tsx already applied the right class based on
+    // the same localStorage value, so the DOM is correct.
+    if (!synced.current) {
+      synced.current = true
+      const stored = window.localStorage.getItem('theme') as THEME | null
+      if (stored && stored !== theme) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing client-only localStorage on mount
+        _setTheme(stored)
+        ref.current = stored
       }
-      case THEME.light: {
-        document.body.classList.remove('dark-theme')
-        document.body.classList.remove('dark')
-        break
-      }
-      case THEME.system: {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.body.classList.add('dark-theme')
-          document.body.classList.add('dark')
-        }
-        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-          document.body.classList.remove('dark-theme')
-          document.body.classList.remove('dark')
-        }
-        break
-      }
+      return
     }
 
+    // Subsequent runs (user changed theme): update the DOM to match.
+    if (theme === THEME.system) {
+      applyThemeClasses(
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      )
+    } else {
+      applyThemeClasses(theme === THEME.dark)
+    }
     window.localStorage.setItem('theme', theme)
   }, [theme])
 
