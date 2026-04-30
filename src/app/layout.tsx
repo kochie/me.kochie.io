@@ -46,6 +46,15 @@ export default function RootLayout({
       className={`${fraunces.variable} ${geist.variable} ${jetBrainsMono.variable}`}
     >
       <head>
+        {/* Open the connection to origins we know we'll fetch from on
+            first interaction. preconnect for origins on the critical
+            path (newsletter + cal modal); dns-prefetch for the rest. */}
+        <link rel="preconnect" href="https://api.beehiiv.com" />
+        <link rel="preconnect" href="https://app.cal.com" />
+        <link rel="dns-prefetch" href="https://blog.kochie.io" />
+        <link rel="dns-prefetch" href="https://www.holopin.io" />
+        <link rel="dns-prefetch" href="https://assets.holopin.io" />
+        <link rel="dns-prefetch" href="https://cdnjs.buymeacoffee.com" />
         <Script id="theme-init" strategy="beforeInteractive">
           {themeInitScript}
         </Script>
