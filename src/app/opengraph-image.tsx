@@ -2,6 +2,8 @@ import { ImageResponse } from 'next/og'
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
+import { HOOK_LINES } from '@/lib/profile'
+
 export const alt =
   'Robert Koch — I build things, write the code for them, & run from the resulting explosion.'
 
@@ -68,10 +70,16 @@ export default async function OpengraphImage() {
             letterSpacing: '-0.02em',
           }}
         >
-          <span>I build things,</span>
-          <span>write the code for them,</span>
-          <span>{'& run from the'}</span>
-          <span style={{ color: WHEAT }}>resulting explosion.</span>
+          {HOOK_LINES.map((line, i) => (
+            <span
+              key={i}
+              style={
+                i === HOOK_LINES.length - 1 ? { color: WHEAT } : undefined
+              }
+            >
+              {line}
+            </span>
+          ))}
         </div>
 
         {/* Meta */}

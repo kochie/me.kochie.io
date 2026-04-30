@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react'
 
-import { PROFILE } from '@/lib/profile'
+import { HOOK_LINES, PROFILE } from '@/lib/profile'
 
 /**
  * Editorial hero. Promotes the explosion quote into a magazine-cover headline
@@ -22,19 +22,19 @@ export default function Hero(): ReactElement {
         className="mt-6 text-[clamp(2.5rem,7vw,6.5rem)] font-display text-foreground tracking-[-0.02em]"
         style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 50" }}
       >
-        I build things,
+        {HOOK_LINES[0]}
         <br />
-        write the code for them,
+        {HOOK_LINES[1]}
         <br />
         <span
           className="italic"
           style={{ fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}
         >
           &amp;
-        </span>{' '}
-        run from the
+        </span>
+        {HOOK_LINES[2].slice(1)}
         <br />
-        <span className="text-wheat">resulting explosion.</span>
+        <span className="text-wheat">{HOOK_LINES[3]}</span>
       </h1>
 
       <p className="mt-8 max-w-xl font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
