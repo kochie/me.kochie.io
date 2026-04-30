@@ -112,7 +112,9 @@ export function RandomAvatar() {
         placeholder="blur"
         fill
         sizes="160px"
-        priority
+        // No priority: the server renders index 0 but the client immediately
+        // swaps to a random pick on hydration. Preloading index 0 would warn
+        // about unused preloads and waste bandwidth.
         className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
       />
     </button>

@@ -12,17 +12,14 @@ export function ParallaxCanvas() {
   const canvas = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    // Parallax canvas is only visible at xl breakpoint — skip on smaller
-    // viewports so we don't decode a 5k image and burn CPU on phones/tablets.
-    if (!window.matchMedia('(min-width: 1280px)').matches) return
+    const mq = window.matchMedia('(min-width: 1280px)')
 
     let rafId = 0
     let imageY = 0
-    const img = new Image()
-    img.src = BACKGROUND_SRC
+    let img: HTMLImageElement | null = null
 
     const parallax = () => {
-      if (!canvas.current) return
+      if (!canvas.current || !img) return
 
       const main = document.getElementById('main')
       if (!main) return
@@ -96,12 +93,46 @@ export function ParallaxCanvas() {
       rafId = window.requestAnimationFrame(parallax)
     }
 
-    img.onload = () => {
-      rafId = window.requestAnimationFrame(parallax)
+    const stop = () => {
+      if (rafId !== 0) {
+        window.cancelAnimationFrame(rafId)
+        rafId = 0
+      }
     }
 
+    const start = () => {
+      if (rafId !== 0) return
+      if (!img) {
+        img = new Image()
+        img.src = BACKGROUND_SRC
+        // Cached images may already be complete by the time this effect
+        // runs — onload would never fire. Kick the loop off directly when
+        // the image is already decoded.
+        if (img.complete && img.naturalWidth > 0) {
+          rafId = window.requestAnimationFrame(parallax)
+        } else {
+          img.onload = () => {
+            rafId = window.requestAnimationFrame(parallax)
+          }
+        }
+      } else {
+        rafId = window.requestAnimationFrame(parallax)
+      }
+    }
+
+    // Only run the loop when the canvas is actually visible (xl breakpoint).
+    // React to viewport changes — shrinking from desktop to tablet pauses
+    // the loop, growing back resumes it.
+    const onChange = () => {
+      if (mq.matches) start()
+      else stop()
+    }
+    onChange()
+    mq.addEventListener('change', onChange)
+
     return () => {
-      window.cancelAnimationFrame(rafId)
+      mq.removeEventListener('change', onChange)
+      stop()
     }
   }, [])
 

@@ -162,6 +162,7 @@ export default function MobileTopBar() {
         <div
           id="mobile-section-menu"
           ref={sheetRef}
+          inert={!open}
           className="overflow-hidden transition-[max-height,opacity] duration-300"
           style={{
             maxHeight: open ? '32rem' : '0rem',
