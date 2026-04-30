@@ -47,27 +47,11 @@ export const metadata: Metadata = {
     url: 'https://me.kochie.io',
     title: 'About Robert Koch',
     description,
-    images: [
-      {
-        url: 'https://me.kochie.io/images/AirplaneMaker.jpg',
-        width: 1920,
-        height: 1080,
-        alt: 'Airplane Maker',
-      },
-    ],
     type: 'website',
     siteName: 'Robert Koch',
   },
   twitter: {
     site: '@kochie',
-    images: [
-      {
-        url: 'https://me.kochie.io/images/AirplaneMaker.jpg',
-        width: 1920,
-        height: 1080,
-        alt: 'Airplane Maker',
-      },
-    ],
     creator: '@kochie',
     card: 'summary_large_image',
     description,
