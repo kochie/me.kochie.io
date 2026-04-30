@@ -35,10 +35,9 @@ const GetInTouch = () => (
         </CalButton>
         .
       </p>
-      <ul className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm font-mono uppercase tracking-[0.18em] text-muted-foreground">
-        {links.map((link, i) => (
-          <li key={link.label} className="flex items-center gap-5">
-            {i > 0 && <span aria-hidden="true">·</span>}
+      <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-sm font-mono uppercase tracking-[0.18em] text-muted-foreground">
+        {links.map((link) => (
+          <li key={link.label}>
             <a
               href={link.href}
               {...(link.download ? { download: '' } : {})}

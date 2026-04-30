@@ -17,22 +17,18 @@ export default function Footer(): ReactElement {
   const year = new Date().getFullYear()
 
   return (
-    <>
-      <footer className="bg-background text-foreground border-t border-border grid grid-cols-3 font-mono text-xs lg:text-sm uppercase tracking-[0.18em] px-4 lg:px-24 py-10 items-center">
-        <div className={style.name}>
-          Robert Koch
-          <FontAwesomeIcon icon={faCopyright} size="1x" className="mx-1" />
-          {year}
-        </div>
-        <div id="guitar" className={style.guitar}>
-          <Guitar />
-        </div>
-        <div className={style.update}>
-          <span>
-            Updated on <time dateTime={buildIso}>{updateLabel}</time>
-          </span>
-        </div>
-      </footer>
-    </>
+    <footer className="bg-background text-foreground border-t border-border font-mono text-[11px] uppercase tracking-[0.2em] px-5 lg:px-24 py-10 flex flex-col items-center gap-5 lg:grid lg:grid-cols-3 lg:gap-0">
+      <div className="flex items-center justify-self-start whitespace-nowrap">
+        Robert Koch
+        <FontAwesomeIcon icon={faCopyright} size="1x" className="mx-1.5" />
+        {year}
+      </div>
+      <div id="guitar" className={`${style.guitar} text-center`}>
+        <Guitar />
+      </div>
+      <div className="justify-self-end whitespace-nowrap">
+        Updated <time dateTime={buildIso}>{updateLabel}</time>
+      </div>
+    </footer>
   )
 }

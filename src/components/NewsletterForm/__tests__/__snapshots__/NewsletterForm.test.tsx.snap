@@ -26,15 +26,15 @@ exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
         class="mt-3 h-px bg-border"
       />
       <div
-        class="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2"
+        class="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3"
       >
         <h2
-          class="text-3xl lg:text-5xl text-foreground tracking-tight"
+          class="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none"
         >
           Sporadic notes, sent occasionally.
         </h2>
         <p
-          class="font-display italic text-base text-muted-foreground max-w-md lg:text-right"
+          class="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right"
         >
           Opt-in only — unsubscribe at any time. Powered by Beehiiv.
         </p>

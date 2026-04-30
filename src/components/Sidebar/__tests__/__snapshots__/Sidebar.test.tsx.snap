@@ -49,7 +49,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl"
+      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
     >
       <img
         alt="Robert Koch"
@@ -457,7 +457,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl"
+      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
     >
       <img
         alt="Robert Koch"
@@ -867,7 +867,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl"
+      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
     >
       <img
         alt="Robert Koch"
@@ -1275,7 +1275,7 @@ exports[`Sidebar Component unmounts 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl"
+      className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
     >
       <img
         alt="Robert Koch"

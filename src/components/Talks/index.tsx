@@ -60,9 +60,9 @@ export default function TalksSection() {
             <li
               key={slug}
               id={slug}
-              className="grid grid-cols-[3rem_1fr] lg:grid-cols-[5rem_1fr] gap-x-6 lg:gap-x-12 gap-y-2 py-10 border-t border-border last:border-b scroll-mt-7"
+              className="flex flex-col gap-3 lg:grid lg:grid-cols-[5rem_1fr] lg:gap-x-12 lg:gap-y-2 py-10 border-t border-border last:border-b scroll-mt-7"
             >
-              <div className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground pt-1">
+              <div className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground lg:pt-1">
                 {formatYear(talk.date)}
               </div>
               <div className="space-y-3">

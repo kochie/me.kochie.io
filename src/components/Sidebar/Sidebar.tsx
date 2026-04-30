@@ -58,7 +58,7 @@ export default function Sidebar(): ReactElement {
         <Hairline />
 
         {/* Avatar */}
-        <div className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl">
+        <div className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl">
           <NextImage
             src={avatar}
             className="hover:scale-110 transform-gpu transition duration-700"

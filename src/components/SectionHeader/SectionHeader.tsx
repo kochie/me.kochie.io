@@ -32,12 +32,12 @@ export function SectionHeader({
         <span>{department}</span>
       </div>
       <div className="mt-3 h-px bg-border" />
-      <div className="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2">
-        <h2 className="text-3xl lg:text-5xl text-foreground tracking-tight">
+      <div className="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3">
+        <h2 className="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none">
           {title}
         </h2>
         {note && (
-          <p className="font-display italic text-base text-muted-foreground max-w-md lg:text-right">
+          <p className="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right">
             {note}
           </p>
         )}

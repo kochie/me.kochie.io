@@ -15,20 +15,26 @@ export default function Hero(): ReactElement {
       </div>
 
       <h1
-        className="mt-6 text-[clamp(2.75rem,7vw,6.5rem)] font-display text-foreground tracking-[-0.02em]"
+        className="mt-6 text-[clamp(2.5rem,7vw,6.5rem)] font-display text-foreground tracking-[-0.02em]"
         style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 50" }}
       >
         I build things,
         <br />
         write the code for them,
         <br />
-        <span className="italic">&amp;</span> run from the
+        <span
+          className="italic"
+          style={{ fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}
+        >
+          &amp;
+        </span>{' '}
+        run from the
         <br />
         <span className="text-wheat">resulting explosion.</span>
       </h1>
 
       <p className="mt-8 max-w-xl font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-        Engineer · Speaker · Occasional guitarist
+        Engineer · Speaker · Guitarist
       </p>
     </section>
   )
