@@ -62,8 +62,22 @@ export function HolopinBoard({
       />
 
       {/* Sticker layer — coordinate space is centred on the container. Each
-          sticker's translate/scale is divided by pageScale to convert from
-          Holopin editor px to display px. */}
+          sticker's natural top-left lands exactly at (left/pageScale, top/
+          pageScale) regardless of scale.
+
+          Transform composition (right-to-left, so the listed order is the
+          execution order):
+          1. translate(-50%,-50%) shifts the natural bbox so its centre is at
+             local origin (0,0).
+          2. rotate(r) pivots around that centre.
+          3. translate(50%,50%) restores the natural bbox so its top-left is
+             at local origin.
+          4. scale(s) with transform-origin top-left scales without moving
+             the top-left.
+          5. translate(tx, ty) places the top-left at the API position.
+
+          Note: API positions reference the *natural* bounding box top-left
+          (in canvas coords), not the scaled one. */}
       <div className="absolute inset-0">
         {data.page.positions.map(
           ({ id, width, height, rotation, scale, top, left }) => {
@@ -73,18 +87,18 @@ export function HolopinBoard({
               <div
                 key={id}
                 className="absolute left-1/2 top-1/2 h-0 w-0"
-                aria-hidden={false}
               >
                 <div
-                  className="origin-center transform-gpu cursor-pointer grayscale-50 transition duration-200 hover:grayscale-0 hover:scale-110"
+                  className="transform-gpu cursor-pointer grayscale-50 transition duration-200 hover:grayscale-0 hover:scale-110"
                   style={{
                     width,
                     height,
+                    transformOrigin: 'top left',
                     transform: `translate(${left / pageScale}px, ${
                       top / pageScale
                     }px) scale(${
                       scale / pageScale
-                    }) rotate(${rotation}deg)`,
+                    }) translate(50%, 50%) rotate(${rotation}deg) translate(-50%, -50%)`,
                   }}
                 >
                   <Image
