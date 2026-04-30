@@ -1,5 +1,7 @@
 import type { ReactElement } from 'react'
 
+import { PROFILE } from '@/lib/profile'
+
 /**
  * Editorial hero. Promotes the explosion quote into a magazine-cover headline
  * using Fraunces' optical-size axis at large sizes. The avatar/quote that
@@ -11,7 +13,9 @@ export default function Hero(): ReactElement {
     <section className="pt-2 pb-10 lg:pt-4 lg:pb-16">
       <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground">
         <span aria-hidden="true" className="h-px w-8 bg-border" />
-        <span>Robert Koch · Melbourne</span>
+        <span>
+          {PROFILE.name} · {PROFILE.location.split(',')[0]}
+        </span>
       </div>
 
       <h1
@@ -34,7 +38,7 @@ export default function Hero(): ReactElement {
       </h1>
 
       <p className="mt-8 max-w-xl font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-        Engineer · Speaker · Guitarist
+        {PROFILE.tagline}
       </p>
     </section>
   )

@@ -15,7 +15,9 @@ import {
 interface Connection {
   icon: IconDefinition
   href: string
-  name: string
+  /** Screen-reader label, e.g. "Robert Koch on LinkedIn". */
+  label: string
+  /** Tailwind hover-color utility (matches a `--color-{x}` token). */
   color: string
 }
 
@@ -23,43 +25,43 @@ const connections: Connection[] = [
   {
     icon: faBluesky,
     href: 'https://bsky.app/profile/kochie.bsky.social',
-    name: 'kochie',
+    label: 'Robert Koch on Bluesky',
     color: 'hover:text-bluesky',
   },
   {
     icon: faLinkedin,
     href: 'https://linkedin.com/in/rkkochie',
-    name: 'rkkochie',
+    label: 'Robert Koch on LinkedIn',
     color: 'hover:text-linkedin',
   },
   {
     icon: faXTwitter,
     href: 'https://x.com/kochie',
-    name: 'kochie',
+    label: 'Robert Koch on X',
     color: 'hover:text-x',
   },
   {
     icon: faThreads,
     href: 'https://www.threads.net/@rkkochie',
-    name: 'rkkochie',
+    label: 'Robert Koch on Threads',
     color: 'hover:text-threads',
   },
   {
     icon: faInstagram,
     href: 'https://instagram.com/rkkochie',
-    name: 'rkkochie',
+    label: 'Robert Koch on Instagram',
     color: 'hover:text-instagram',
   },
   {
     icon: faGithub,
     href: 'https://github.com/kochie',
-    name: 'kochie',
+    label: 'Robert Koch on GitHub',
     color: 'hover:text-github',
   },
   {
     icon: faMastodon,
     href: 'https://melb.social/@kochie',
-    name: 'kochie',
+    label: 'Robert Koch on Mastodon',
     color: 'hover:text-mastodon',
   },
 ]
@@ -77,7 +79,7 @@ export default function Connections(): ReactElement {
             <a
               href={connection.href}
               className={connection.color}
-              aria-label={connection.name}
+              aria-label={connection.label}
               target="_blank"
               rel="noopener noreferrer"
             >

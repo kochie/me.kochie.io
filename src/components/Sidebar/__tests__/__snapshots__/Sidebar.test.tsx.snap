@@ -60,6 +60,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
+        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         ref={[Function]}
@@ -86,20 +87,11 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         }
       />
     </button>
-    <div
-      className="text-center max-w-[18rem]"
+    <p
+      className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center"
     >
-      <p
-        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
-      >
-        “Built to last, mostly.”
-      </p>
-      <p
-        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
-      >
-        Engineer · Speaker · Guitarist
-      </p>
-    </div>
+      Engineer · Speaker · Guitarist
+    </p>
     <div
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
@@ -234,7 +226,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Bluesky"
           className="hover:text-bluesky"
           href="https://bsky.app/profile/kochie.bsky.social"
           rel="noopener noreferrer"
@@ -260,7 +252,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on LinkedIn"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
           rel="noopener noreferrer"
@@ -286,7 +278,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on X"
           className="hover:text-x"
           href="https://x.com/kochie"
           rel="noopener noreferrer"
@@ -312,7 +304,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Threads"
           className="hover:text-threads"
           href="https://www.threads.net/@rkkochie"
           rel="noopener noreferrer"
@@ -338,7 +330,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Instagram"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
           rel="noopener noreferrer"
@@ -364,7 +356,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on GitHub"
           className="hover:text-github"
           href="https://github.com/kochie"
           rel="noopener noreferrer"
@@ -390,7 +382,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Mastodon"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
           rel="noopener noreferrer"
@@ -477,6 +469,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
+        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         ref={[Function]}
@@ -503,20 +496,11 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         }
       />
     </button>
-    <div
-      className="text-center max-w-[18rem]"
+    <p
+      className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center"
     >
-      <p
-        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
-      >
-        “Built to last, mostly.”
-      </p>
-      <p
-        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
-      >
-        Engineer · Speaker · Guitarist
-      </p>
-    </div>
+      Engineer · Speaker · Guitarist
+    </p>
     <div
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
@@ -651,7 +635,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Bluesky"
           className="hover:text-bluesky"
           href="https://bsky.app/profile/kochie.bsky.social"
           rel="noopener noreferrer"
@@ -677,7 +661,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on LinkedIn"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
           rel="noopener noreferrer"
@@ -703,7 +687,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on X"
           className="hover:text-x"
           href="https://x.com/kochie"
           rel="noopener noreferrer"
@@ -729,7 +713,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Threads"
           className="hover:text-threads"
           href="https://www.threads.net/@rkkochie"
           rel="noopener noreferrer"
@@ -755,7 +739,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Instagram"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
           rel="noopener noreferrer"
@@ -781,7 +765,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on GitHub"
           className="hover:text-github"
           href="https://github.com/kochie"
           rel="noopener noreferrer"
@@ -807,7 +791,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Mastodon"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
           rel="noopener noreferrer"
@@ -896,6 +880,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
+        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         ref={[Function]}
@@ -922,20 +907,11 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         }
       />
     </button>
-    <div
-      className="text-center max-w-[18rem]"
+    <p
+      className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center"
     >
-      <p
-        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
-      >
-        “Built to last, mostly.”
-      </p>
-      <p
-        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
-      >
-        Engineer · Speaker · Guitarist
-      </p>
-    </div>
+      Engineer · Speaker · Guitarist
+    </p>
     <div
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
@@ -1070,7 +1046,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Bluesky"
           className="hover:text-bluesky"
           href="https://bsky.app/profile/kochie.bsky.social"
           rel="noopener noreferrer"
@@ -1096,7 +1072,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on LinkedIn"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
           rel="noopener noreferrer"
@@ -1122,7 +1098,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on X"
           className="hover:text-x"
           href="https://x.com/kochie"
           rel="noopener noreferrer"
@@ -1148,7 +1124,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Threads"
           className="hover:text-threads"
           href="https://www.threads.net/@rkkochie"
           rel="noopener noreferrer"
@@ -1174,7 +1150,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Instagram"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
           rel="noopener noreferrer"
@@ -1200,7 +1176,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on GitHub"
           className="hover:text-github"
           href="https://github.com/kochie"
           rel="noopener noreferrer"
@@ -1226,7 +1202,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Mastodon"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
           rel="noopener noreferrer"
@@ -1313,6 +1289,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
+        loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
         ref={[Function]}
@@ -1339,20 +1316,11 @@ exports[`Sidebar Component unmounts 1`] = `
         }
       />
     </button>
-    <div
-      className="text-center max-w-[18rem]"
+    <p
+      className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center"
     >
-      <p
-        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
-      >
-        “Built to last, mostly.”
-      </p>
-      <p
-        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
-      >
-        Engineer · Speaker · Guitarist
-      </p>
-    </div>
+      Engineer · Speaker · Guitarist
+    </p>
     <div
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
@@ -1487,7 +1455,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Bluesky"
           className="hover:text-bluesky"
           href="https://bsky.app/profile/kochie.bsky.social"
           rel="noopener noreferrer"
@@ -1513,7 +1481,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on LinkedIn"
           className="hover:text-linkedin"
           href="https://linkedin.com/in/rkkochie"
           rel="noopener noreferrer"
@@ -1539,7 +1507,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on X"
           className="hover:text-x"
           href="https://x.com/kochie"
           rel="noopener noreferrer"
@@ -1565,7 +1533,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Threads"
           className="hover:text-threads"
           href="https://www.threads.net/@rkkochie"
           rel="noopener noreferrer"
@@ -1591,7 +1559,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="rkkochie"
+          aria-label="Robert Koch on Instagram"
           className="hover:text-instagram"
           href="https://instagram.com/rkkochie"
           rel="noopener noreferrer"
@@ -1617,7 +1585,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on GitHub"
           className="hover:text-github"
           href="https://github.com/kochie"
           rel="noopener noreferrer"
@@ -1643,7 +1611,7 @@ exports[`Sidebar Component unmounts 1`] = `
         className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
-          aria-label="kochie"
+          aria-label="Robert Koch on Mastodon"
           className="hover:text-mastodon"
           href="https://melb.social/@kochie"
           rel="noopener noreferrer"

@@ -16,3 +16,4 @@ public/workbox-*.js.map
 .serena/
 tsconfig.tsbuildinfo
 .playwright-cli/
+.superpowers/

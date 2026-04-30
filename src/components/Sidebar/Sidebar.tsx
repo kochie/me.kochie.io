@@ -1,25 +1,11 @@
 import type { ReactElement } from 'react'
 
 import Connections from '@/components/Connections/Connections'
+import { PROFILE } from '@/lib/profile'
 
 import { ParallaxCanvas } from './ParallaxCanvas'
 import { RandomAvatar } from './RandomAvatar'
-
-interface IndexEntry {
-  number: string
-  label: string
-  href: string
-}
-
-const INDEX: IndexEntry[] = [
-  { number: '01', label: 'Introduction', href: '#sec-introduction' },
-  { number: '02', label: 'Correspondence', href: '#sec-correspondence' },
-  { number: '03', label: 'Dispatch', href: '#sec-dispatch' },
-  { number: '04', label: 'Recognitions', href: '#sec-recognitions' },
-  { number: '05', label: 'Selected Work', href: '#sec-work' },
-  { number: '06', label: 'Talks', href: '#sec-talks' },
-  { number: '07', label: 'Writing', href: '#sec-writing' },
-]
+import { SECTIONS } from './sections'
 
 const Hairline = () => (
   <div className="h-px w-12 bg-cream/15" aria-hidden="true" />
@@ -47,10 +33,10 @@ export default function Sidebar(): ReactElement {
         {/* Masthead */}
         <header className="text-center">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90">
-            Robert Koch
+            {PROFILE.name}
           </p>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60">
-            Melbourne, Australia
+            {PROFILE.location}
           </p>
         </header>
 
@@ -59,15 +45,10 @@ export default function Sidebar(): ReactElement {
         {/* Avatar — random pick on load, click to shuffle. */}
         <RandomAvatar />
 
-        {/* Quote + tagline */}
-        <div className="text-center max-w-[18rem]">
-          <p className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug">
-            &ldquo;Built to last, mostly.&rdquo;
-          </p>
-          <p className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70">
-            Engineer · Speaker · Guitarist
-          </p>
-        </div>
+        {/* Tagline */}
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center">
+          {PROFILE.tagline}
+        </p>
 
         <Hairline />
 
@@ -77,14 +58,14 @@ export default function Sidebar(): ReactElement {
             Inside this issue
           </p>
           <ol className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80">
-            {INDEX.map((entry) => (
+            {SECTIONS.map((entry) => (
               <li
-                key={entry.number}
+                key={entry.id}
                 className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
               >
                 <span className="text-cream/45 text-right">{entry.number}</span>
                 <a
-                  href={entry.href}
+                  href={`#${entry.id}`}
                   className="hover:text-wheat transition-colors"
                 >
                   {entry.label}

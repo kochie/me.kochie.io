@@ -3,18 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 import ThemeButton from '@/components/Theme/ThemeButton'
-
-const SECTIONS = [
-  { id: 'sec-introduction', label: 'Introduction', number: '01' },
-  { id: 'sec-correspondence', label: 'Correspondence', number: '02' },
-  { id: 'sec-dispatch', label: 'Dispatch', number: '03' },
-  { id: 'sec-recognitions', label: 'Recognitions', number: '04' },
-  { id: 'sec-work', label: 'Selected Work', number: '05' },
-  { id: 'sec-talks', label: 'Talks', number: '06' },
-  { id: 'sec-writing', label: 'Writing', number: '07' },
-] as const
-
-type Section = (typeof SECTIONS)[number]
+import { SECTIONS, type SectionEntry } from '@/components/Sidebar/sections'
 
 /**
  * Mobile-only sticky top bar. Slides in once the cover (sidebar) leaves the
@@ -26,7 +15,7 @@ type Section = (typeof SECTIONS)[number]
 export default function MobileTopBar() {
   const [shown, setShown] = useState(false)
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState<Section | null>(null)
+  const [active, setActive] = useState<SectionEntry | null>(null)
   const sheetRef = useRef<HTMLDivElement>(null)
 
   // Show/hide: track the sidebar's intersection with the viewport. The bar
@@ -51,7 +40,7 @@ export default function MobileTopBar() {
     const elements = SECTIONS.map((s) => ({
       ...s,
       el: document.getElementById(s.id),
-    })).filter((s): s is Section & { el: HTMLElement } => s.el !== null)
+    })).filter((s): s is SectionEntry & { el: HTMLElement } => s.el !== null)
 
     if (elements.length === 0) return
 
