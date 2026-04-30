@@ -1,10 +1,9 @@
-import NextImage from 'next/image'
 import type { ReactElement } from 'react'
 
 import Connections from '@/components/Connections/Connections'
 
-import avatar from '@/images/City2Surf_Crop.png'
 import { ParallaxCanvas } from './ParallaxCanvas'
+import { RandomAvatar } from './RandomAvatar'
 
 interface IndexEntry {
   number: string
@@ -57,17 +56,9 @@ export default function Sidebar(): ReactElement {
 
         <Hairline />
 
-        {/* Avatar */}
-        <div className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl">
-          <NextImage
-            src={avatar}
-            className="hover:scale-110 transform-gpu transition duration-700"
-            alt="Robert Koch"
-            placeholder="blur"
-            sizes="160px"
-            priority
-            style={{ width: '100%', height: 'auto' }}
-          />
+        {/* Avatar — random pick from the avatars folder on each load. */}
+        <div className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl">
+          <RandomAvatar />
         </div>
 
         {/* Quote + tagline */}
