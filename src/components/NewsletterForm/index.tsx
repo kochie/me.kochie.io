@@ -1,38 +1,22 @@
 'use client'
 
 import { useActionState } from 'react'
-import { Logo } from './convertkit-logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faSync } from '@fortawesome/pro-duotone-svg-icons'
-import { animated, useTransition } from '@react-spring/web'
-import { subscribeToForm, type SubscribeState } from './submit-form'
+import {
+  subscribeToNewsletter,
+  type SubscribeState,
+} from './submit-form'
 
-const ConvertKitForm = ({ formId }: { formId: string }) => {
-  const subscribeToFormWithId = subscribeToForm.bind(null, formId)
-
+const NewsletterForm = () => {
   const [state, formAction, pending] = useActionState<SubscribeState, FormData>(
-    subscribeToFormWithId,
+    subscribeToNewsletter,
     { status: 'INITIAL' }
   )
 
-  // Updated transition with bounce effect
-  const errorTransitions = useTransition(state.errors, {
-    from: { opacity: 0, y: -20 },
-    enter: {
-      opacity: 1,
-      y: 0,
-      config: {
-        mass: 1,
-        tension: 280,
-        friction: 14,
-      },
-    },
-    leave: { opacity: 0, y: 10 },
-  })
-
   return (
     <div
-      id="convertkit-embed"
+      id="newsletter-embed"
       className="relative max-w-5xl mx-autotransition-all transform duration-500 group rounded-xl dark:bg-gray-700 bg-gray-300 shadow-lg"
     >
       <div className="p-4 md:p-8 lg:p-10 flex flex-col lg:flex-row">
@@ -81,40 +65,36 @@ const ConvertKitForm = ({ formId }: { formId: string }) => {
               />
             </div>
 
-            {errorTransitions((style, item) => (
-              <animated.div className="col-span-8" style={style}>
-                <div>
-                  <span className="text-sm mb-1">
-                    Whoops... There&apos;s been some issues submitting this form
-                    -{' '}
-                  </span>
-                  <span className="list-none text-sm dark:text-red-400 text-red-600 font-bold">
-                    {item}
-                  </span>
-                </div>
-              </animated.div>
-            ))}
+            {state.errors && (
+              <div
+                key={state.errors}
+                className="col-span-8 motion-safe:animate-[fade-in-down_240ms_ease-out]"
+                role="alert"
+              >
+                <span className="text-sm mb-1">
+                  Whoops... There&apos;s been some issues submitting this form -{' '}
+                </span>
+                <span className="list-none text-sm dark:text-red-400 text-red-600 font-bold">
+                  {state.errors}
+                </span>
+              </div>
+            )}
 
             <div className="col-span-8 md:col-span-2 text-sm">
               <button
                 type="submit"
                 disabled={pending}
-                className={`w-full p-4 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:cursor-not-allowed text-white font-bold rounded transform duration-200 cursor-pointer`}
+                className="w-full p-4 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:cursor-not-allowed text-white font-bold rounded transform duration-200 cursor-pointer"
               >
                 {pending ? (
                   <div className="flex justify-center items-center">
-                    <FontAwesomeIcon
-                      icon={faSync}
-                      className=""
-                      spin
-                      size="lg"
-                    />
+                    <FontAwesomeIcon icon={faSync} spin size="lg" />
                   </div>
                 ) : state.status === 'INITIAL' ? (
                   'Subscribe'
                 ) : state.status === 'SUCCESS' ? (
                   <div className="duration-100 transform flex justify-center gap-2 items-center">
-                    <FontAwesomeIcon icon={faCheck} className="" size="lg" />
+                    <FontAwesomeIcon icon={faCheck} size="lg" />
                     <span>Subscribed</span>
                   </div>
                 ) : state.status === 'ERROR' ? (
@@ -122,16 +102,10 @@ const ConvertKitForm = ({ formId }: { formId: string }) => {
                 ) : null}
               </button>
             </div>
-            <div className="col-span-4 md:place-self-center self-center">
+            <div className="col-span-8 md:col-span-6 self-center">
               <p className="md:mt-2 ml-1 md:text-center text-sm">
                 Privacy respected. Unsubscribe at anytime.
               </p>
-            </div>
-            <div
-              className="col-span-2 md:col-span-2 place-self-end self-center"
-              title="Powered by ConvertKit"
-            >
-              {Logo}
             </div>
           </div>
         </form>
@@ -140,4 +114,4 @@ const ConvertKitForm = ({ formId }: { formId: string }) => {
   )
 }
 
-export default ConvertKitForm
+export default NewsletterForm

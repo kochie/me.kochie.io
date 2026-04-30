@@ -56,7 +56,14 @@ export default function TalksSection() {
               <CardHeader>
                 <CardTitle>{talk.title}</CardTitle>
                 <CardDescription>
-                  {talk.event} - {new Date(talk.date).toLocaleDateString()}
+                  {talk.event} -{' '}
+                  <time dateTime={talk.date}>
+                    {new Date(talk.date).toLocaleDateString('en-AU', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric',
+                    })}
+                  </time>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow space-y-2">

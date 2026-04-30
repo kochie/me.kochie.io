@@ -1,6 +1,6 @@
 import App from '@/components/App/App'
 import Fathom from '@/components/Fathom'
-import { ThemeButton, ThemeProvider } from '@/components/Theme'
+import { ThemeButton } from '@/components/Theme'
 import type { Metadata, Viewport } from 'next'
 import { AppleStartupImages } from './metadata'
 import Providers from './providers'
@@ -9,8 +9,10 @@ const description =
   "Hi, I'm Robert. This is my site, click through to see some of the content I've worked on. I'm an electrical and software engineer, based in Melbourne, Australia."
 
 export const viewport: Viewport = {
-  themeColor: '#1f2937',
-  
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#1f2937' },
+  ],
 }
 
 export const metadata: Metadata = {

@@ -1,12 +1,14 @@
-import React, { ReactElement } from 'react'
-import RecentArticles from '@/components/RecentArticles/RecentArticles'
+import React, { ReactElement, Suspense } from 'react'
+import RecentArticles, {
+  RecentArticlesSkeleton,
+} from '@/components/RecentArticles/RecentArticles'
 import Portfolio from '@/components/Portfolio/Portfolio'
 
 import Hello from './intro.mdx'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
 import Talks from '@/components/Talks'
-import ConvertKitForm from '../ConvertKitForm'
+import NewsletterForm from '../NewsletterForm'
 
 export default function Middle(): ReactElement {
   return (
@@ -14,11 +16,13 @@ export default function Middle(): ReactElement {
       <div className="max-w-7xl">
         <Hello />
         <GetInTouch />
-        <ConvertKitForm formId='4897384'/>
+        <NewsletterForm />
         <Awards />
         <Portfolio />
         <Talks />
-        <RecentArticles />
+        <Suspense fallback={<RecentArticlesSkeleton />}>
+          <RecentArticles />
+        </Suspense>
       </div>
     </div>
   )

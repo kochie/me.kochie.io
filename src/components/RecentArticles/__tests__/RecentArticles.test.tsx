@@ -22,23 +22,25 @@ describe('Recent Articles', () => {
     ],
   }
 
-  beforeAll(async () => {
-    jest.unstable_mockModule('swr', () => {
-      // console.log('mock')
-      return {
-        default: jest.fn(() => ({
-          data: MOCK_DATA,
-          error: null,
-        })),
-      }
-    })
+  beforeAll(() => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(MOCK_DATA),
+      })
+    ) as unknown as typeof fetch
+  })
 
-    await import('swr')
+  afterAll(() => {
+    // @ts-expect-error - cleanup mocked global
+    delete global.fetch
   })
 
   it('recent articles renders correctly', async () => {
     const RecentArticles = await import('../RecentArticles')
-    const tree: ReactTestRenderer = create(<RecentArticles.default />)
+    const element = await RecentArticles.default()
+    if (!element) throw new Error('expected element to render')
+    const tree: ReactTestRenderer = create(element)
 
     expect(tree.toJSON()).toMatchSnapshot()
   })

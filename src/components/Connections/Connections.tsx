@@ -3,14 +3,13 @@ import React, { ReactElement } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import {
+  faBluesky,
   faGithub,
-  faGitlab,
   faInstagram,
   faLinkedin,
   faMastodon,
-  faMedium,
-  faTwitter,
-  faBluesky
+  faThreads,
+  faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 interface Connection {
@@ -34,10 +33,16 @@ const connections: Connection[] = [
     color: 'hover:text-linkedin',
   },
   {
-    icon: faTwitter,
-    href: 'https://twitter.com/kochie',
+    icon: faXTwitter,
+    href: 'https://x.com/kochie',
     name: 'kochie',
-    color: 'hover:text-twitter',
+    color: 'hover:text-x',
+  },
+  {
+    icon: faThreads,
+    href: 'https://www.threads.net/@rkkochie',
+    name: 'rkkochie',
+    color: 'hover:text-threads',
   },
   {
     icon: faInstagram,
@@ -50,18 +55,6 @@ const connections: Connection[] = [
     href: 'https://github.com/kochie',
     name: 'kochie',
     color: 'hover:text-github',
-  },
-  {
-    icon: faMedium,
-    href: 'https://medium.com/@kochie',
-    name: 'kochie',
-    color: 'hover:text-medium',
-  },
-  {
-    icon: faGitlab,
-    href: 'https://gitlab.com/kochie',
-    name: 'kochie',
-    color: 'hover:text-gitlab',
   },
   {
     icon: faMastodon,

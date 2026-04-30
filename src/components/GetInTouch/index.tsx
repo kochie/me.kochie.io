@@ -10,7 +10,7 @@ import {
   faRss,
 } from '@fortawesome/pro-duotone-svg-icons'
 import { faCottonBureau } from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link'
+import { CalButton } from '@/components/CalButton/CalButton'
 
 const GetInTouch = () => {
   return (
@@ -41,12 +41,9 @@ const GetInTouch = () => {
             robert@kochie.io
           </a>{' '}
           or{' '}
-          <Link
-            className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
-            href="https://cal.com/kochie"
-          >
+          <CalButton className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300 cursor-pointer bg-transparent border-0 p-0 text-inherit">
             book a meeting with me
-          </Link>
+          </CalButton>
           .
         </p>
         <div className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start">

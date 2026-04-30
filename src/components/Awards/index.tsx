@@ -1,5 +1,5 @@
-import React from 'react'
-import Holopin from '../Holopin'
+import { Suspense } from 'react'
+import Holopin, { HolopinSkeleton } from '../Holopin'
 
 const Awards = () => (
   <div>
@@ -7,7 +7,9 @@ const Awards = () => (
       Awards
     </h2>
     <div className="w-full">
-      <Holopin username="kochie" />
+      <Suspense fallback={<HolopinSkeleton />}>
+        <Holopin username="kochie" />
+      </Suspense>
     </div>
   </div>
 )
