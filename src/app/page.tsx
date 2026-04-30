@@ -9,9 +9,11 @@ const description =
   "Hi, I'm Robert. This is my site, click through to see some of the content I've worked on. I'm an electrical and software engineer, based in Melbourne, Australia."
 
 export const viewport: Viewport = {
+  // Match the broadsheet palette so the mobile address bar/PWA chrome
+  // tints to the same background the body uses.
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#1f2937' },
+    { media: '(prefers-color-scheme: light)', color: '#faf6ec' },
+    { media: '(prefers-color-scheme: dark)', color: '#161410' },
   ],
 }
 

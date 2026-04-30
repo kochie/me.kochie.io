@@ -105,13 +105,17 @@ export default function MobileTopBar() {
       >
       <div className="bg-background/85 backdrop-blur-md border-b border-border">
         <div className="flex items-center px-5 py-3 gap-3 min-h-[3.25rem]">
-          <a
-            href="#"
-            onClick={() => setOpen(false)}
-            className="font-mono text-[11px] uppercase tracking-[0.22em] text-foreground hover:text-wheat transition-colors"
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false)
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
+            className="font-mono text-[11px] uppercase tracking-[0.22em] text-foreground hover:text-wheat transition-colors cursor-pointer bg-transparent border-0 p-0"
+            aria-label="Scroll to top"
           >
             Robert Koch
-          </a>
+          </button>
           <div className="flex-1 text-right font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground truncate">
             {active && (
               <span>

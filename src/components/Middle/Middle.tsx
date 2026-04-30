@@ -38,7 +38,7 @@ export default function Middle(): ReactElement {
           <NewsletterForm />
         </section>
 
-        <section className="my-16 lg:my-24">
+        <section id="sec-recognitions" className="my-16 lg:my-24 scroll-mt-12">
           <Awards />
         </section>
 

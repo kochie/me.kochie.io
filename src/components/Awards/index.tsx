@@ -18,7 +18,7 @@ async function AwardsContent() {
   const data = await fetchHolopin(HOLOPIN_USERNAME)
   if (!data) return null
   return (
-    <div id="sec-recognitions" className="scroll-mt-12">
+    <div>
       <Header />
       <div className="w-full">
         <HolopinBoard username={HOLOPIN_USERNAME} data={data} />
@@ -30,7 +30,7 @@ async function AwardsContent() {
 const Awards = () => (
   <Suspense
     fallback={
-      <div id="sec-recognitions" className="scroll-mt-12">
+      <div>
         <Header />
         <div className="w-full">
           <HolopinSkeleton />

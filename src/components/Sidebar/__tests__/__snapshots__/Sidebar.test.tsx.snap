@@ -48,12 +48,16 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
     />
-    <div
-      className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
+    <button
+      aria-label="Show another photo"
+      className="group relative block w-32 h-32 xl:w-36 xl:h-36 rounded-full overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl cursor-pointer transition-transform duration-200 active:scale-95 focus-visible:outline-none focus-visible:ring-wheat focus-visible:ring-offset-wheat/20"
+      onClick={[Function]}
+      title="Click for another photo"
+      type="button"
     >
       <img
         alt="Robert Koch"
-        className="object-cover transform-gpu transition duration-700 hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
+        className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
         onError={[Function]}
@@ -81,7 +85,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           }
         }
       />
-    </div>
+    </button>
     <div
       className="text-center max-w-[18rem]"
     >
@@ -461,12 +465,16 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
     />
-    <div
-      className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
+    <button
+      aria-label="Show another photo"
+      className="group relative block w-32 h-32 xl:w-36 xl:h-36 rounded-full overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl cursor-pointer transition-transform duration-200 active:scale-95 focus-visible:outline-none focus-visible:ring-wheat focus-visible:ring-offset-wheat/20"
+      onClick={[Function]}
+      title="Click for another photo"
+      type="button"
     >
       <img
         alt="Robert Koch"
-        className="object-cover transform-gpu transition duration-700 hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
+        className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
         onError={[Function]}
@@ -494,7 +502,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           }
         }
       />
-    </div>
+    </button>
     <div
       className="text-center max-w-[18rem]"
     >
@@ -876,12 +884,16 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
     />
-    <div
-      className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
+    <button
+      aria-label="Show another photo"
+      className="group relative block w-32 h-32 xl:w-36 xl:h-36 rounded-full overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl cursor-pointer transition-transform duration-200 active:scale-95 focus-visible:outline-none focus-visible:ring-wheat focus-visible:ring-offset-wheat/20"
+      onClick={[Function]}
+      title="Click for another photo"
+      type="button"
     >
       <img
         alt="Robert Koch"
-        className="object-cover transform-gpu transition duration-700 hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
+        className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
         onError={[Function]}
@@ -909,7 +921,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           }
         }
       />
-    </div>
+    </button>
     <div
       className="text-center max-w-[18rem]"
     >
@@ -1289,12 +1301,16 @@ exports[`Sidebar Component unmounts 1`] = `
       aria-hidden="true"
       className="h-px w-12 bg-cream/15"
     />
-    <div
-      className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl"
+    <button
+      aria-label="Show another photo"
+      className="group relative block w-32 h-32 xl:w-36 xl:h-36 rounded-full overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl cursor-pointer transition-transform duration-200 active:scale-95 focus-visible:outline-none focus-visible:ring-wheat focus-visible:ring-offset-wheat/20"
+      onClick={[Function]}
+      title="Click for another photo"
+      type="button"
     >
       <img
         alt="Robert Koch"
-        className="object-cover transform-gpu transition duration-700 hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
+        className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
         data-nimg="fill"
         decoding="async"
         onError={[Function]}
@@ -1322,7 +1338,7 @@ exports[`Sidebar Component unmounts 1`] = `
           }
         }
       />
-    </div>
+    </button>
     <div
       className="text-center max-w-[18rem]"
     >
