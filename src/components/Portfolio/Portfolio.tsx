@@ -9,21 +9,22 @@ import CT from '@/images/markus-winkler-zYBR4TN46EE-unsplash.jpg'
 import BenchTop from '@/images/brett-garwood-asZVvgMGshc-unsplash.jpg'
 import TouchTyper from '@/images/demo.jpg'
 import MetaFixer from '@/images/metafixer.png'
-import Link from 'next/link'
+import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
 const projects = [
   {
     image: MetaFixer,
-    title: "MetaFixer",
-    description: "MetaFixer is a powerful tool designed to add missing metadata to photos exported from Facebook, ensuring they appear in the correct date and location when imported into photo apps.",
-    link: "https://metafixer.kochie.io",
-    id: "8",
+    title: 'MetaFixer',
+    description:
+      'Adds missing metadata to photos exported from Facebook so they import into photo apps with the correct date and location.',
+    link: 'https://metafixer.kochie.io',
+    id: '8',
   },
   {
     image: TouchTyper,
     title: 'Touch Typer',
     description:
-      "Touch Typer is your tutor that helps you improve your typing skills. Open source and free to use it's available on Linux, Windows and macOS.",
+      "Open-source typing tutor for Linux, Windows, and macOS — improves your typing skills without nagging you.",
     link: 'https://touch-typer.kochie.io',
     id: '1',
   },
@@ -31,7 +32,7 @@ const projects = [
     image: CT,
     title: 'Contact Tracing',
     description:
-      'A technology demonstration website to showcase a proof of concept contact tracing application using the AWS Cloud Development Kit.',
+      'Technology demonstration of a contact-tracing application built on the AWS Cloud Development Kit.',
     link: 'https://ct.vercel.app',
     id: '2',
   },
@@ -45,7 +46,7 @@ const projects = [
   {
     image: Particlez,
     title: 'Particlez',
-    description: 'A real time n-body particle simulator for the web.',
+    description: 'A real-time n-body particle simulator for the web.',
     link: 'https://3body.vercel.app',
     id: '4',
   },
@@ -53,7 +54,7 @@ const projects = [
     image: Tensorflow,
     title: 'Optimising Neural Networks for Embedded Systems',
     description:
-      'My final year project - focusing on modifying the activation layers of convolutional neural networks to work better on embedded devices.',
+      'Final-year project — modifying the activation layers of CNNs to run better on embedded devices.',
     link: 'https://bitbucket.org/kochie/fyp',
     id: '5',
   },
@@ -75,47 +76,50 @@ const projects = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <div>
-      <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-8 mb-6">
-        Recent Work
-      </h2>
-      <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-4 lg:gap-10 auto-cols-max">
-        {projects.map((project) => (
-          <div
-            className="group rounded-xl bg-gray-300 dark:bg-gray-700 hover:shadow-2xl shadow-xl transition duration-300"
+    <section className="my-16 lg:my-24">
+      <SectionHeader
+        number="05"
+        department="Selected Work"
+        title="Some recent things I've built."
+        note="A handful of projects, some shipped, some still warm."
+      />
+      <ol className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-8 lg:gap-10">
+        {projects.map((project, i) => (
+          <li
             key={project.id}
+            className="group flex flex-col gap-3 transition-transform duration-300 hover:-translate-y-0.5"
           >
-            <Link href={project.link}>
-              <div
-                className="relative rounded-t-xl overflow-hidden filter grayscale-35 group-hover:grayscale-0"
-                style={{ padding: '30% 0' }}
-              >
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="relative overflow-hidden rounded-md border border-border bg-muted aspect-[4/3] filter grayscale-25 group-hover:grayscale-0 transition-[filter] duration-500">
                 <Image
                   src={project.image}
                   alt={project.title}
                   placeholder="blur"
-                  className="absolute top-0 left-0 w-full h-full group-hover:scale-110 transform-gpu transition duration-100"
+                  className="absolute inset-0 w-full h-full group-hover:scale-[1.03] transform-gpu transition duration-700"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{
-                    objectFit: 'cover',
-                  }}
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
-            </Link>
-            <div className="px-5 ">
-              <h3 className="text-lg font-medium my-3 text-gray-900 dark:text-white">
-                <a className="hover:underline" href={project.link}>
-                  {project.title}
-                </a>
+              <div className="mt-4 flex items-baseline justify-between gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground">
+                <span>{`No. ${String(i + 1).padStart(2, '0')}`}</span>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <h3 className="mt-2 text-2xl text-foreground group-hover:text-wheat transition-colors">
+                {project.title}
               </h3>
-              <p className="text-sm mb-3 text-gray-700 dark:text-gray-300">
+              <p className="mt-2 text-sm leading-relaxed text-foreground/75">
                 {project.description}
               </p>
-            </div>
-          </div>
+            </a>
+          </li>
         ))}
-      </div>
-    </div>
+      </ol>
+    </section>
   )
 }

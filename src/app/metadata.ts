@@ -1,305 +1,56 @@
 import type { AppleImage } from 'next/dist/lib/metadata/types/extra-types'
 
-export const AppleStartupImages: AppleImage[] = [
-  {
-    url: '/assets/apple-splash-2048-2732.jpg',
-    media:
-      '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2732-2048.jpg',
-    media:
-      '(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1668-2388.jpg',
-    media:
-      '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2388-1668.jpg',
-    media:
-      '(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1536-2048.jpg',
-    media:
-      '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2048-1536.jpg',
-    media:
-      '(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1668-2224.jpg',
-    media:
-      '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2224-1668.jpg',
-    media:
-      '(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1620-2160.jpg',
-    media:
-      '(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2160-1620.jpg',
-    media:
-      '(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1290-2796.jpg',
-    media:
-      '(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2796-1290.jpg',
-    media:
-      '(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1179-2556.jpg',
-    media:
-      '(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2556-1179.jpg',
-    media:
-      '(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1284-2778.jpg',
-    media:
-      '(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2778-1284.jpg',
-    media:
-      '(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1170-2532.jpg',
-    media:
-      '(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2532-1170.jpg',
-    media:
-      '(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1125-2436.jpg',
-    media:
-      '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2436-1125.jpg',
-    media:
-      '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1242-2688.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2688-1242.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-828-1792.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-1792-828.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-1242-2208.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-2208-1242.jpg',
-    media:
-      '(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-750-1334.jpg',
-    media:
-      '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-1334-750.jpg',
-    media:
-      '(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-640-1136.jpg',
-    media:
-      '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-1136-640.jpg',
-    media:
-      '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
+interface Device {
+  width: number
+  height: number
+  ratio: 2 | 3
+}
 
-  {
-    url: '/assets/apple-splash-dark-2048-2732.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2732-2048.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1668-2388.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2388-1668.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1536-2048.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2048-1536.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1668-2224.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2224-1668.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1620-2160.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2160-1620.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1290-2796.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2796-1290.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1179-2556.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2556-1179.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1284-2778.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2778-1284.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1170-2532.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2532-1170.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1125-2436.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2436-1125.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1242-2688.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2688-1242.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-828-1792.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1792-828.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1242-2208.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-2208-1242.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-750-1334.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1334-750.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
-  {
-    url: '/assets/apple-splash-dark-640-1136.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
-  },
-  {
-    url: '/assets/apple-splash-dark-1136-640.jpg',
-    media:
-      '(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)',
-  },
+// Each device produces 4 entries: portrait/landscape × light/dark.
+const DEVICES: Device[] = [
+  { width: 1024, height: 1366, ratio: 2 },
+  { width: 834, height: 1194, ratio: 2 },
+  { width: 768, height: 1024, ratio: 2 },
+  { width: 834, height: 1112, ratio: 2 },
+  { width: 810, height: 1080, ratio: 2 },
+  { width: 430, height: 932, ratio: 3 },
+  { width: 393, height: 852, ratio: 3 },
+  { width: 428, height: 926, ratio: 3 },
+  { width: 390, height: 844, ratio: 3 },
+  { width: 375, height: 812, ratio: 3 },
+  { width: 414, height: 896, ratio: 3 },
+  { width: 414, height: 896, ratio: 2 },
+  { width: 414, height: 736, ratio: 3 },
+  { width: 375, height: 667, ratio: 2 },
+  { width: 320, height: 568, ratio: 2 },
 ]
+
+const splash = (
+  device: Device,
+  orientation: 'portrait' | 'landscape',
+  scheme: 'light' | 'dark'
+): AppleImage => {
+  const w = orientation === 'portrait' ? device.width : device.height
+  const h = orientation === 'portrait' ? device.height : device.width
+  const px = (n: number) => n * device.ratio
+  const prefix = scheme === 'dark' ? 'dark-' : ''
+  const schemeQuery =
+    scheme === 'dark' ? '(prefers-color-scheme: dark) and ' : ''
+
+  return {
+    url: `/assets/apple-splash-${prefix}${px(w)}-${px(h)}.jpg`,
+    media: `${schemeQuery}(device-width: ${device.width}px) and (device-height: ${device.height}px) and (-webkit-device-pixel-ratio: ${device.ratio}) and (orientation: ${orientation})`,
+  }
+}
+
+const buildSplashImages = (): AppleImage[] => {
+  const orientations: ('portrait' | 'landscape')[] = ['portrait', 'landscape']
+  const schemes: ('light' | 'dark')[] = ['light', 'dark']
+  return schemes.flatMap((scheme) =>
+    DEVICES.flatMap((device) =>
+      orientations.map((orientation) => splash(device, orientation, scheme))
+    )
+  )
+}
+
+export const AppleStartupImages: AppleImage[] = buildSplashImages()

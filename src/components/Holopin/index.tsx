@@ -5,14 +5,18 @@ export interface HolopinProps {
   username: string
 }
 
-async function fetchHolopin(username: string): Promise<HolopinResponse | null> {
+export async function fetchHolopin(
+  username: string
+): Promise<HolopinResponse | null> {
   try {
     const res = await fetch(
       `https://www.holopin.io/api/auth/user/page?username=${encodeURIComponent(username)}`,
       { next: { revalidate: 3600 } }
     )
     if (!res.ok) return null
-    return (await res.json()) as HolopinResponse
+    const data = (await res.json()) as HolopinResponse
+    if (!data?.page?.positions) return null
+    return data
   } catch {
     return null
   }
@@ -20,7 +24,7 @@ async function fetchHolopin(username: string): Promise<HolopinResponse | null> {
 
 export default async function Holopin({ username }: HolopinProps) {
   const data = await fetchHolopin(username)
-  if (!data?.page?.positions) return null
+  if (!data) return null
 
   return <HolopinBoard username={username} data={data} />
 }

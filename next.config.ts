@@ -1,16 +1,30 @@
+import { execFileSync } from 'node:child_process'
 import MDX from '@next/mdx'
 import { withSentryConfig } from '@sentry/nextjs'
 import type { NextConfig } from 'next'
 
 const { VERCEL_GIT_COMMIT_SHA } = process.env
 
+// Prefer the actual commit timestamp over wall-clock build time so the footer
+// reflects when the content last changed, not when CI happened to run.
+const resolveBuildTime = (): string => {
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cI'], {
+      stdio: ['ignore', 'pipe', 'ignore'],
+    })
+      .toString()
+      .trim()
+  } catch {
+    return new Date().toISOString()
+  }
+}
+
 const config: NextConfig = {
-  productionBrowserSourceMaps: true,
+  productionBrowserSourceMaps: false,
   env: {
-    // Make the COMMIT_SHA available to the client so that Sentry events can be
-    // marked for the release they belong to. It may be undefined if running
-    // outside of Vercel.
-    buildTime: new Date().toDateString(),
+    // Surface to client for Sentry release tagging + footer rendering. Values
+    // are inlined at build time, so they cost nothing at runtime.
+    buildTime: resolveBuildTime(),
     NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA ?? '',
   },
   images: {

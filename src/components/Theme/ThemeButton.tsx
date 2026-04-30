@@ -1,26 +1,12 @@
 'use client'
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLightbulbSlash,
-  faLightbulbOn,
-  faCogs,
-} from '@fortawesome/pro-duotone-svg-icons'
-
 import { THEME, useTheme } from './context'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
-
-const themeIcon = {
-  [THEME.dark]: faLightbulbSlash,
-  [THEME.light]: faLightbulbOn,
-  [THEME.system]: faCogs,
-}
 
 const themeLabel = {
-  [THEME.dark]: 'Dark Theme',
-  [THEME.light]: 'Light Theme',
-  [THEME.system]: 'System Theme',
+  [THEME.dark]: 'Dark',
+  [THEME.light]: 'Light',
+  [THEME.system]: 'System',
 }
 
 const nextTheme = (theme: THEME): THEME => {
@@ -29,79 +15,82 @@ const nextTheme = (theme: THEME): THEME => {
   return THEME.dark
 }
 
+// Single SVG with three groups, only one visible per state. Each group fades
+// + rotates when active, giving the button a "morphing" feel without
+// requiring a path-morphing library.
 const ThemeButton = () => {
   const [theme, setTheme] = useTheme()
 
   return (
-    <div className="fixed top-0 right-0 z-50">
-      <div className="pr-5 pt-5 pl-10 pb-10 animate duration-300 group flex-col flex gap-4 items-center text-white dark:text-black">
-        <button
-          type="button"
-          className="w-full h-full animate duration-300 cursor-pointer bg-transparent border-0 p-0"
-          onClick={() => setTheme(nextTheme(theme))}
-          aria-label={`Switch theme — currently ${themeLabel[theme]}`}
-          title={themeLabel[theme]}
+    <div className="fixed top-5 right-5 z-50">
+      <button
+        type="button"
+        onClick={() => setTheme(nextTheme(theme))}
+        aria-label={`Theme: ${themeLabel[theme]}. Click to cycle.`}
+        title={`Theme: ${themeLabel[theme]}`}
+        className="group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 backdrop-blur text-foreground hover:text-wheat hover:border-wheat transition-colors cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-5 w-5"
+          aria-hidden="true"
         >
-          <span className="fa-stack fa-2x">
-            <FontAwesomeIcon
-              icon={faCircle}
-              className="fa-stack-2x dark:text-white text-black"
-            />
-            <FontAwesomeIcon
-              icon={themeIcon[theme]}
-              className="fa-stack-1x"
-            />
-          </span>
-        </button>
-
-        <button
-          type="button"
-          onClick={() => setTheme(THEME.dark)}
-          aria-label="Dark Theme"
-          title="Dark Theme"
-          className="cursor-pointer transition transform-gpu duration-300 animate scale-0 group-hover:scale-100 ease-in-out delay-200 group-hover:delay-0 bg-transparent border-0 p-0"
-        >
-          <span className="fa-stack duration-300 animate fa-lg">
-            <FontAwesomeIcon
-              icon={faCircle}
-              className="fa-stack-2x dark:text-white text-black"
-            />
-            <FontAwesomeIcon icon={faLightbulbSlash} className="fa-stack-1x" />
-          </span>
-        </button>
-
-        <button
-          type="button"
-          onClick={() => setTheme(THEME.light)}
-          aria-label="Light Theme"
-          title="Light Theme"
-          className="cursor-pointer transition transform-gpu duration-300 animate scale-0 group-hover:scale-100 ease-in-out delay-100 bg-transparent border-0 p-0"
-        >
-          <span className="fa-stack duration-300 animate fa-lg">
-            <FontAwesomeIcon
-              icon={faCircle}
-              className="fa-stack-2x dark:text-white text-black"
-            />
-            <FontAwesomeIcon icon={faLightbulbOn} className="fa-stack-1x" />
-          </span>
-        </button>
-
-        <button
-          type="button"
-          onClick={() => setTheme(THEME.system)}
-          aria-label="System Theme"
-          title="System Theme"
-          className="cursor-pointer transition transform-gpu duration-300 animate scale-0 group-hover:scale-100 ease-in-out delay-0 group-hover:delay-200 bg-transparent border-0 p-0"
-        >
-          <span className="fa-stack duration-300 animate fa-lg">
-            <FontAwesomeIcon
-              icon={faCircle}
-              className="fa-stack-2x dark:text-white text-black"
-            />
-            <FontAwesomeIcon icon={faCogs} className="fa-stack-1x" />
-          </span>
-        </button>
-      </div>
+          {/* Sun — visible in light theme */}
+          <g
+            className="transition-all duration-300 origin-center"
+            style={{
+              opacity: theme === THEME.light ? 1 : 0,
+              transform:
+                theme === THEME.light
+                  ? 'rotate(0deg) scale(1)'
+                  : 'rotate(-90deg) scale(0.6)',
+            }}
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </g>
+          {/* Moon — visible in dark theme */}
+          <g
+            className="transition-all duration-300 origin-center"
+            style={{
+              opacity: theme === THEME.dark ? 1 : 0,
+              transform:
+                theme === THEME.dark
+                  ? 'rotate(0deg) scale(1)'
+                  : 'rotate(90deg) scale(0.6)',
+            }}
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </g>
+          {/* Auto / system — half sun half moon */}
+          <g
+            className="transition-all duration-300 origin-center"
+            style={{
+              opacity: theme === THEME.system ? 1 : 0,
+              transform:
+                theme === THEME.system
+                  ? 'rotate(0deg) scale(1)'
+                  : 'rotate(-90deg) scale(0.6)',
+            }}
+          >
+            <circle cx="12" cy="12" r="8" />
+            <path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" />
+          </g>
+        </svg>
+      </button>
     </div>
   )
 }

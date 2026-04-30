@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
 interface JSONFeed {
   version: string
@@ -74,50 +75,80 @@ export default async function RecentArticles() {
     )
     .slice(0, 3)
 
+  const formatDate = (iso: string) =>
+    new Date(iso).toLocaleDateString('en-AU', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    })
+
   return (
     <div>
-      <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6">
-        Recent Articles
-      </h2>
-      <div className="flex flex-col gap-4 lg:gap-10 mb-5">
+      <SectionHeader
+        number="07"
+        department="Writing"
+        title="Recent articles."
+        note={
+          <>
+            Posted to{' '}
+            <a
+              href="https://blog.kochie.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-4 decoration-1 hover:text-wheat hover:decoration-wheat decoration-border underline"
+            >
+              blog.kochie.io
+            </a>
+            .
+          </>
+        }
+      />
+      <ol className="flex flex-col">
         {articles.map((article) => (
-          <div
-            className="group flex flex-col lg:flex-row rounded-xl bg-gray-300 dark:bg-gray-700 shadow-2xl"
+          <li
             key={article.id}
+            className="grid grid-cols-1 lg:grid-cols-[12rem_1fr] gap-x-8 gap-y-4 py-8 border-t border-border last:border-b group"
           >
             <a
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none relative h-40 w-full lg:w-80 filter grayscale-35 group-hover:grayscale-0"
+              className="block lg:order-2 relative aspect-[4/3] overflow-hidden rounded-md border border-border filter grayscale-25 group-hover:grayscale-0 transition-[filter] duration-500"
             >
               <Image
-                className="group-hover:scale-110 transition transform-gpu duration-100"
+                className="group-hover:scale-[1.03] transform-gpu transition duration-500"
                 alt={article.title}
                 src={article.image}
                 placeholder="blur"
                 blurDataURL={BLUR_DATA_URL}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'center',
-                }}
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
               />
             </a>
-            <div className="ml-5">
-              <h3 className="hover:underline font-medium text-xl text-gray-900 dark:text-white my-3">
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
+            <div className="lg:order-1 flex flex-col gap-3">
+              <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                <time dateTime={article.date_modified}>
+                  {formatDate(article.date_modified)}
+                </time>
+              </p>
+              <h3 className="text-2xl lg:text-3xl text-foreground tracking-tight">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group-hover:text-wheat transition-colors"
+                >
                   {article.title}
                 </a>
               </h3>
-              <p className="dark:text-gray-300 text-gray-700 mr-3 mb-4">
+              <p className="text-foreground/75 leading-relaxed max-w-2xl">
                 {getSummary(article)}
               </p>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </div>
   )
 }
@@ -125,24 +156,27 @@ export default async function RecentArticles() {
 export function RecentArticlesSkeleton() {
   return (
     <div>
-      <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-10 mb-6">
-        Recent Articles
-      </h2>
-      <div className="flex flex-col gap-4 lg:gap-10 mb-5">
+      <SectionHeader
+        number="07"
+        department="Writing"
+        title="Recent articles."
+      />
+      <ol className="flex flex-col">
         {[0, 1, 2].map((i) => (
-          <div
+          <li
             key={i}
-            className="flex flex-col lg:flex-row rounded-xl bg-gray-300 dark:bg-gray-700 shadow-2xl animate-pulse"
+            className="grid grid-cols-1 lg:grid-cols-[12rem_1fr] gap-x-8 gap-y-4 py-8 border-t border-border last:border-b animate-pulse"
           >
-            <div className="rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none flex-none h-40 w-full lg:w-80 bg-gray-400/40 dark:bg-gray-600/40" />
-            <div className="ml-5 flex-1 py-3">
-              <div className="h-6 w-3/4 mb-3 rounded bg-gray-400/40 dark:bg-gray-600/40" />
-              <div className="h-4 w-full mb-2 rounded bg-gray-400/40 dark:bg-gray-600/40" />
-              <div className="h-4 w-5/6 mb-4 rounded bg-gray-400/40 dark:bg-gray-600/40" />
+            <div className="lg:order-2 aspect-[4/3] rounded-md bg-muted" />
+            <div className="lg:order-1 flex flex-col gap-3">
+              <div className="h-3 w-24 rounded bg-muted" />
+              <div className="h-7 w-3/4 rounded bg-muted" />
+              <div className="h-4 w-full rounded bg-muted" />
+              <div className="h-4 w-5/6 rounded bg-muted" />
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </div>
   )
 }

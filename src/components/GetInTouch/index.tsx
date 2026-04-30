@@ -1,107 +1,59 @@
-import React from 'react'
-import Image from 'next/image'
-
-import XPS from '@/images/xps-6uneKLGrJPs-unsplash.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBlog,
-  faCoffee,
-  faFileUser,
-  faRss,
-} from '@fortawesome/pro-duotone-svg-icons'
-import { faCottonBureau } from '@fortawesome/free-brands-svg-icons'
 import { CalButton } from '@/components/CalButton/CalButton'
+import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
-const GetInTouch = () => {
-  return (
-    <div className="group rounded-xl overflow-hidden dark:bg-gray-700 lg:h-64 shadow-lg bg-gray-300 my-6 flex flex-col lg:flex-row">
-      <div className="relative h-48 lg:h-full w-full lg:w-48 filter grayscale-35 group-hover:grayscale-0">
-        <Image
-          src={XPS}
-          alt="XPS laptop on bench"
-          placeholder="blur"
-          className="group-hover:scale-110 transition transform-gpu duration-100"
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          style={{
-            objectFit: 'cover',
-          }}
-        />
-      </div>
-      <div className="ml-6">
-        <h2 className="text-gray-900 dark:text-white font-bold text-2xl mt-6 mb-4">
-          Get In Touch
-        </h2>
-        <p className="text-gray-700 my-6 leading-relaxed dark:text-gray-300">
-          Please shoot me an email at{' '}
-          <a
-            className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300"
-            href="mailto:robert@kochie.io"
-          >
-            robert@kochie.io
-          </a>{' '}
-          or{' '}
-          <CalButton className="underline hover:text-gray-900 font-semibold dark:hover:text-gray-300 cursor-pointer bg-transparent border-0 p-0 text-inherit">
-            book a meeting with me
-          </CalButton>
-          .
-        </p>
-        <div className="flex gap-7 dark:text-white mb-4 justify-center lg:justify-start">
-          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
+const links = [
+  { label: 'Email', href: 'mailto:robert@kochie.io' },
+  { label: 'Resume', href: '/Robert_Koch.pdf', download: true },
+  { label: 'Coffee', href: 'https://buymeacoffee.com/kochie' },
+  { label: 'Cotton Bureau', href: 'https://cottonbureau.com/people/robert-koch' },
+  { label: 'Blog', href: 'https://blog.kochie.io' },
+  { label: 'RSS', href: 'https://blog.kochie.io/feed/rss.xml' },
+]
+
+const linkClass =
+  'underline-offset-4 decoration-1 hover:decoration-wheat hover:text-wheat decoration-border underline transition-colors'
+
+const GetInTouch = () => (
+  <div>
+    <SectionHeader
+      number="02"
+      department="Correspondence"
+      title="Get in touch."
+      note="Best by email — calendar second, ravens third."
+    />
+    <div className="flex flex-col gap-4 max-w-3xl">
+      <p className="text-base lg:text-lg text-foreground/85 leading-relaxed">
+        Drop a line at{' '}
+        <a className={linkClass} href="mailto:robert@kochie.io">
+          robert@kochie.io
+        </a>
+        {' '}or{' '}
+        <CalButton
+          className={`${linkClass} bg-transparent border-0 p-0 text-inherit cursor-pointer`}
+        >
+          book a meeting
+        </CalButton>
+        .
+      </p>
+      <ul className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm font-mono uppercase tracking-[0.18em] text-muted-foreground">
+        {links.map((link, i) => (
+          <li key={link.label} className="flex items-center gap-5">
+            {i > 0 && <span aria-hidden="true">·</span>}
             <a
-              href="/Robert_Koch.pdf"
-              download="resume_robert_koch.pdf"
-              className="hover:text-yellow-600"
-              aria-label="resume"
-              title="My Resume"
+              href={link.href}
+              {...(link.download ? { download: '' } : {})}
+              {...(link.href.startsWith('http')
+                ? { target: '_blank', rel: 'noopener noreferrer' }
+                : {})}
+              className="hover:text-foreground transition-colors"
             >
-              <FontAwesomeIcon icon={faFileUser} size="2x" fixedWidth />
+              {link.label}
             </a>
-          </div>
-          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
-            <a
-              href="https://cottonbureau.com/people/robert-koch"
-              className="hover:text-cottonBureau"
-              aria-label="cotton bureau"
-              title="Cotton Bureau"
-            >
-              <FontAwesomeIcon icon={faCottonBureau} size="2x" fixedWidth />
-            </a>
-          </div>
-          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
-            <a
-              href="https://buymeacoffee.com/kochie"
-              className="hover:text-amber-900"
-              aria-label="buy me a coffee"
-              title="Buy Me A Coffee"
-            >
-              <FontAwesomeIcon icon={faCoffee} size="2x" fixedWidth />
-            </a>
-          </div>
-          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
-            <a
-              href="https://blog.kochie.io/feed/rss.xml"
-              className="hover:text-orange-600"
-              aria-label="rss"
-              title="Article RSS Feed"
-            >
-              <FontAwesomeIcon icon={faRss} size="2x" fixedWidth />
-            </a>
-          </div>
-          <div className="transform-gpu hover:scale-125 duration-100 cursor-pointer">
-            <a
-              href="https://blog.kochie.io"
-              className="hover:text-green-600"
-              aria-label="blog"
-              title="My Blog"
-            >
-              <FontAwesomeIcon icon={faBlog} size="2x" fixedWidth />
-            </a>
-          </div>
-        </div>
-      </div>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  </div>
+)
 
 export default GetInTouch

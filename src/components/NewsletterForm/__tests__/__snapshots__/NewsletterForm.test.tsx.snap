@@ -2,97 +2,98 @@
 
 exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
 <DocumentFragment>
-  <div
-    class="relative max-w-5xl mx-autotransition-all transform duration-500 group rounded-xl dark:bg-gray-700 bg-gray-300 shadow-lg"
-    id="newsletter-embed"
-  >
-    <div
-      class="p-4 md:p-8 lg:p-10 flex flex-col lg:flex-row"
+  <div>
+    <header
+      class="mb-8 lg:mb-12"
     >
-      <form
-        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
-        class="w-full"
+      <div
+        class="flex items-baseline gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
       >
-        <div
-          class="mb-5 items-center"
+        <span>
+          No. 03
+        </span>
+        <span
+          aria-hidden="true"
+          class="text-wheat"
         >
-          <h1
-            class="text-gray-900 dark:text-white font-bold text-2xl"
-          >
-            Like what you see?
-          </h1>
-          <h2
-            class="text-gray-700 my-1 leading-relaxed dark:text-gray-300"
-          >
-            Find out when I sporadically scream into the void...
-          </h2>
-        </div>
-        <div
-          class="grid grid-cols-8 gap-x-3 gap-y-6 w-full"
+          ·
+        </span>
+        <span>
+          Dispatch
+        </span>
+      </div>
+      <div
+        class="mt-3 h-px bg-border"
+      />
+      <div
+        class="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2"
+      >
+        <h2
+          class="text-3xl lg:text-5xl text-foreground tracking-tight"
         >
-          <div
-            class="col-span-8 sm:col-span-4"
+          Sporadic notes, sent occasionally.
+        </h2>
+        <p
+          class="font-display italic text-base text-muted-foreground max-w-md lg:text-right"
+        >
+          The Cookie newsletter — opt-in only, unsubscribe at any time.
+        </p>
+      </div>
+    </header>
+    <form
+      action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+      class="flex flex-col gap-3 max-w-2xl"
+      id="newsletter-embed"
+    >
+      <label
+        class="text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+        for="member_email"
+      >
+        Your email address
+      </label>
+      <div
+        class="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors"
+      >
+        <input
+          aria-label="Your email address"
+          class="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
+          id="member_email"
+          name="email"
+          placeholder="tony@stark.industries"
+          required=""
+          type="email"
+        />
+        <button
+          aria-label="Subscribe"
+          class="px-3 py-3 cursor-pointer disabled:cursor-not-allowed text-foreground hover:text-wheat transition-colors"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-arrow-right"
+            data-icon="arrow-right"
+            data-prefix="fad"
+            role="img"
+            viewBox="0 0 512 512"
           >
-            <label
-              class="block text-sm font-medium text-gray-700 dark:text-gray-100"
-              for="member_email"
+            <g
+              class="fa-duotone-group"
             >
-              Email Address
-            </label>
-            <input
-              aria-label="Your email address"
-              class="text-black px-3 py-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:text-white dark:bg-stone-900"
-              id="member_email"
-              name="email"
-              placeholder="tony@stark.industries"
-              required=""
-              type="email"
-            />
-          </div>
-          <div
-            class="col-span-8 sm:col-span-4"
-          >
-            <label
-              class="block text-sm font-medium text-gray-700 dark:text-gray-100"
-              for="member_first_name"
-            >
-              Name 
-              <span
-                class="italic text-gray-400"
-              >
-                (Optional)
-              </span>
-            </label>
-            <input
-              class="text-black px-3 py-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm sm:text-sm dark:text-white dark:bg-stone-900"
-              id="member_first_name"
-              name="first_name"
-              placeholder="Tony"
-              type="text"
-            />
-          </div>
-          <div
-            class="col-span-8 md:col-span-2 text-sm"
-          >
-            <button
-              class="w-full p-4 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:cursor-not-allowed text-white font-bold rounded transform duration-200 cursor-pointer"
-              type="submit"
-            >
-              Subscribe
-            </button>
-          </div>
-          <div
-            class="col-span-8 md:col-span-6 self-center"
-          >
-            <p
-              class="md:mt-2 ml-1 md:text-center text-sm"
-            >
-              Privacy respected. Unsubscribe at anytime.
-            </p>
-          </div>
-        </div>
-      </form>
-    </div>
+              <path
+                class="fa-secondary"
+                d="M0 256c0 17.7 14.3 32 32 32l370.7 0 32-32-32-32-370.7 0c-17.7 0-32 14.3-32 32z"
+                fill="currentColor"
+              />
+              <path
+                class="fa-primary"
+                d="M502.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 256 297.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </form>
   </div>
 </DocumentFragment>
 `;

@@ -6,22 +6,30 @@ import { faCopyright } from '@fortawesome/pro-duotone-svg-icons'
 import { Guitar } from './Guitar'
 
 export default function Footer(): ReactElement {
-  const updateTime = process.env.buildTime
+  const buildIso = process.env.buildTime ?? new Date().toISOString()
+  const buildDate = new Date(buildIso)
+  const updateLabel = buildDate.toLocaleDateString('en-AU', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
+  // Server component: evaluated at build time, rebaked on each deploy.
+  const year = new Date().getFullYear()
 
   return (
     <>
-      <footer className="bg-gray-400 dark:bg-gray-900 text-gray-900 dark:text-gray-100 grid grid-cols-3 text-sm lg:text-base px-4 lg:px-24 py-12 items-center">
+      <footer className="bg-background text-foreground border-t border-border grid grid-cols-3 font-mono text-xs lg:text-sm uppercase tracking-[0.18em] px-4 lg:px-24 py-10 items-center">
         <div className={style.name}>
           Robert Koch
           <FontAwesomeIcon icon={faCopyright} size="1x" className="mx-1" />
-          {2020}
+          {year}
         </div>
         <div id="guitar" className={style.guitar}>
           <Guitar />
         </div>
         <div className={style.update}>
           <span>
-            Updated on <time dateTime={updateTime}>{updateTime}</time>
+            Updated on <time dateTime={buildIso}>{updateLabel}</time>
           </span>
         </div>
       </footer>
