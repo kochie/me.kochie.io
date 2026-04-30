@@ -6,19 +6,59 @@ import Connections from '@/components/Connections/Connections'
 import avatar from '@/images/City2Surf_Crop.png'
 import { ParallaxCanvas } from './ParallaxCanvas'
 
-const TAGLINE = 'Engineer · Speaker · Occasional guitarist'
+interface IndexEntry {
+  number: string
+  label: string
+  href: string
+}
+
+const INDEX: IndexEntry[] = [
+  { number: '01', label: 'Introduction', href: '#sec-introduction' },
+  { number: '02', label: 'Correspondence', href: '#sec-correspondence' },
+  { number: '03', label: 'Dispatch', href: '#sec-dispatch' },
+  { number: '04', label: 'Recognitions', href: '#sec-recognitions' },
+  { number: '05', label: 'Selected Work', href: '#sec-work' },
+  { number: '06', label: 'Talks', href: '#sec-talks' },
+  { number: '07', label: 'Writing', href: '#sec-writing' },
+]
+
+const Hairline = () => (
+  <div className="h-px w-12 bg-cream/15" aria-hidden="true" />
+)
 
 export default function Sidebar(): ReactElement {
   return (
     <nav
-      className="relative top-0 w-full min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-coal xl:w-1/3"
-      role="complementary"
+      className="relative top-0 w-full min-h-screen flex flex-col xl:h-screen xl:overflow-hidden xl:bg-coal xl:w-1/3"
+      aria-label="Site index and identity"
     >
-      <div className="flex flex-col z-10 text-center items-center h-full pt-24 pb-16 xl:pt-0 xl:pb-0 xl:my-auto">
-        <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/70 mb-6">
-          Robert Koch
-        </p>
-        <div className="rounded-full w-36 h-36 lg:w-40 lg:h-40 overflow-hidden ring-1 ring-white/15 shadow-2xl">
+      {/* Background image — smaller breakpoints only */}
+      <div className="overflow-hidden h-screen w-full absolute xl:hidden">
+        <div className="transform-gpu scale-110">
+          <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
+        </div>
+        <div className="absolute inset-0 bg-coal/65" />
+      </div>
+
+      {/* Parallax canvas — xl only */}
+      <ParallaxCanvas />
+
+      {/* Content stack */}
+      <div className="relative z-10 flex flex-col items-center w-full px-6 py-14 xl:py-12 gap-7 xl:my-auto">
+        {/* Masthead */}
+        <header className="text-center">
+          <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80">
+            Robert Koch
+          </p>
+          <p className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45">
+            Melbourne, Australia
+          </p>
+        </header>
+
+        <Hairline />
+
+        {/* Avatar */}
+        <div className="rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-1 ring-cream/20 shadow-2xl">
           <NextImage
             src={avatar}
             className="hover:scale-110 transform-gpu transition duration-700"
@@ -29,22 +69,46 @@ export default function Sidebar(): ReactElement {
             style={{ width: '100%', height: 'auto' }}
           />
         </div>
-        <p className="mt-6 px-6 max-w-[18rem] font-display italic text-cream/85 text-base lg:text-lg leading-snug">
-          &ldquo;Built to last, mostly.&rdquo;
-        </p>
-        <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-cream/55 max-w-[18rem]">
-          {TAGLINE}
-        </p>
-        <div className="mt-10">
-          <Connections />
+
+        {/* Quote + tagline */}
+        <div className="text-center max-w-[18rem]">
+          <p className="font-display italic text-cream/90 text-base xl:text-lg leading-snug">
+            &ldquo;Built to last, mostly.&rdquo;
+          </p>
+          <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55">
+            Engineer · Speaker · Guitarist
+          </p>
         </div>
-      </div>
-      <ParallaxCanvas />
-      <div className="overflow-hidden h-screen w-full absolute xl:hidden">
-        <div className="transform-gpu scale-110">
-          <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
-        </div>
-        <div className="absolute inset-0 bg-coal/60" />
+
+        <Hairline />
+
+        {/* Inside this issue — table of contents */}
+        <nav aria-label="Page sections" className="w-full max-w-[16rem]">
+          <p className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4">
+            Inside this issue
+          </p>
+          <ol className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65">
+            {INDEX.map((entry) => (
+              <li
+                key={entry.number}
+                className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+              >
+                <span className="text-cream/35 text-right">{entry.number}</span>
+                <a
+                  href={entry.href}
+                  className="hover:text-wheat transition-colors"
+                >
+                  {entry.label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <Hairline />
+
+        {/* Social */}
+        <Connections />
       </div>
     </nav>
   )

@@ -36,7 +36,7 @@ exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
         <p
           class="font-display italic text-base text-muted-foreground max-w-md lg:text-right"
         >
-          The Cookie newsletter — opt-in only, unsubscribe at any time.
+          Opt-in only — unsubscribe at any time. Powered by Beehiiv.
         </p>
       </div>
     </header>

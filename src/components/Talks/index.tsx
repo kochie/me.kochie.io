@@ -45,7 +45,7 @@ const linkClass =
 
 export default function TalksSection() {
   return (
-    <section className="my-16 lg:my-24">
+    <div>
       <SectionHeader
         number="06"
         department="Talks"
@@ -117,6 +117,6 @@ export default function TalksSection() {
           )
         })}
       </ol>
-    </section>
+    </div>
   )
 }

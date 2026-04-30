@@ -14,11 +14,11 @@ import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
 export default function Middle(): ReactElement {
   return (
-    <div className="px-5 pt-6 pb-16 lg:px-24 lg:pt-16 lg:pb-24 bg-background text-foreground transform-gpu transition duration-700">
-      <div className="max-w-5xl mx-auto">
+    <div className="px-5 pt-6 pb-16 lg:pl-16 xl:pl-20 lg:pr-12 xl:pr-32 lg:pt-16 lg:pb-24 bg-background text-foreground transform-gpu transition duration-700">
+      <div className="max-w-4xl">
         <Hero />
 
-        <section className="my-16 lg:my-24">
+        <section id="sec-introduction" className="my-16 lg:my-24 scroll-mt-12">
           <SectionHeader
             number="01"
             department="Introduction"
@@ -30,23 +30,27 @@ export default function Middle(): ReactElement {
           </div>
         </section>
 
-        <section className="my-16 lg:my-24">
+        <section id="sec-correspondence" className="my-16 lg:my-24 scroll-mt-12">
           <GetInTouch />
         </section>
 
-        <section className="my-16 lg:my-24">
+        <section id="sec-dispatch" className="my-16 lg:my-24 scroll-mt-12">
           <NewsletterForm />
         </section>
 
-        <Awards />
-
-        <Portfolio />
-
         <section className="my-16 lg:my-24">
+          <Awards />
+        </section>
+
+        <section id="sec-work" className="my-16 lg:my-24 scroll-mt-12">
+          <Portfolio />
+        </section>
+
+        <section id="sec-talks" className="my-16 lg:my-24 scroll-mt-12">
           <Talks />
         </section>
 
-        <section className="my-16 lg:my-24">
+        <section id="sec-writing" className="my-16 lg:my-24 scroll-mt-12">
           <Suspense fallback={<RecentArticlesSkeleton />}>
             <RecentArticles />
           </Suspense>

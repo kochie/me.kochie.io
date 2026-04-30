@@ -76,7 +76,7 @@ const projects = [
 
 export default function Portfolio(): ReactElement {
   return (
-    <section className="my-16 lg:my-24">
+    <div>
       <SectionHeader
         number="05"
         department="Selected Work"
@@ -120,6 +120,6 @@ export default function Portfolio(): ReactElement {
           </li>
         ))}
       </ol>
-    </section>
+    </div>
   )
 }
