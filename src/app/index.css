@@ -131,6 +131,18 @@
     background-clip: padding-box;
   }
 
+  /* Set on :root too — the page-level scrollbar gutter and Safari's
+     overscroll-bounce both render against the <html> background. Leaving
+     html unstyled would expose the browser's default white in those areas
+     even when the body itself is dark. */
+  :root {
+    background-color: var(--app-bg);
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
+
   body {
     margin: 0;
     background-color: var(--app-bg);
