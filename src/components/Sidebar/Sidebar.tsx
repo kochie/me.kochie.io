@@ -56,10 +56,8 @@ export default function Sidebar(): ReactElement {
 
         <Hairline />
 
-        {/* Avatar — random pick from the avatars folder on each load. */}
-        <div className="relative rounded-full w-32 h-32 xl:w-36 xl:h-36 overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl">
-          <RandomAvatar />
-        </div>
+        {/* Avatar — random pick on load, click to shuffle. */}
+        <RandomAvatar />
 
         {/* Quote + tagline */}
         <div className="text-center max-w-[18rem]">

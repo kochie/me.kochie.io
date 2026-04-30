@@ -20,24 +20,44 @@ import a12 from '@/images/avatars/F2C9466D-9B91-4A03-B793-781DD0EE5358_4_5005_c.
 
 const AVATARS = [a01, a02, a03, a04, a05, a06, a07, a08, a09, a10, a11, a12]
 
-// useSyncExternalStore is the canonical way to render "X on the server,
-// Y on the client" without a hydration warning. The random index is picked
-// once per page load and cached at module level, so the snapshot getter
-// stays referentially stable (and React doesn't re-call render endlessly).
-const subscribe = () => () => {}
+// Module-level external store. The cached index drives both initial load
+// and the click-to-shuffle behaviour. useSyncExternalStore handles the
+// SSR/CSR snapshot mismatch and the post-click re-render notification.
+const listeners = new Set<() => void>()
 let cachedIndex: number | null = null
+
+const subscribe = (listener: () => void) => {
+  listeners.add(listener)
+  return () => {
+    listeners.delete(listener)
+  }
+}
+
 const getClientSnapshot = () => {
   if (cachedIndex === null) {
     cachedIndex = Math.floor(Math.random() * AVATARS.length)
   }
   return cachedIndex
 }
+
 const getServerSnapshot = () => 0
 
+// Modulo trick: pick an offset in [1, AVATARS.length - 1] so the next
+// index is guaranteed different from the current one — no while-loop, no
+// chance of "random" picking the same photo twice in a row.
+const shuffle = () => {
+  if (AVATARS.length <= 1) return
+  const current = cachedIndex ?? 0
+  const offset = 1 + Math.floor(Math.random() * (AVATARS.length - 1))
+  cachedIndex = (current + offset) % AVATARS.length
+  listeners.forEach((l) => l())
+}
+
 /**
- * Renders a random avatar from the pool on each page load. Server renders
- * index 0 (deterministic); after hydration the cached random pick takes
- * over and the image swaps in with a soft fade.
+ * Random avatar that re-rolls on click. Server renders index 0 so SSR and
+ * hydration match; the client picks a fresh random on first read and on
+ * every subsequent click. The {@code key} on the Image forces a remount,
+ * replaying the fade-in animation as visual feedback.
  */
 export function RandomAvatar() {
   const index = useSyncExternalStore(
@@ -47,15 +67,23 @@ export function RandomAvatar() {
   )
 
   return (
-    <Image
-      key={index}
-      src={AVATARS[index]}
-      alt="Robert Koch"
-      placeholder="blur"
-      fill
-      sizes="160px"
-      priority
-      className="object-cover transform-gpu transition duration-700 hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
-    />
+    <button
+      type="button"
+      onClick={shuffle}
+      aria-label="Show another photo"
+      title="Click for another photo"
+      className="group relative block w-32 h-32 xl:w-36 xl:h-36 rounded-full overflow-hidden ring-2 ring-cream/30 ring-offset-2 ring-offset-coal/40 shadow-2xl cursor-pointer transition-transform duration-200 active:scale-95 focus-visible:outline-none focus-visible:ring-wheat focus-visible:ring-offset-wheat/20"
+    >
+      <Image
+        key={index}
+        src={AVATARS[index]}
+        alt="Robert Koch"
+        placeholder="blur"
+        fill
+        sizes="160px"
+        priority
+        className="object-cover transform-gpu transition duration-700 group-hover:scale-110 motion-safe:animate-[fade-in-down_400ms_ease-out]"
+      />
+    </button>
   )
 }
