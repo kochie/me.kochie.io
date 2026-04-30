@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useSyncExternalStore } from 'react'
+import { useEffect, useSyncExternalStore } from 'react'
 
 // Static imports give next/image the dimensions + blurDataURL it needs
 // for proper optimisation and placeholder rendering at any aspect ratio.
@@ -42,6 +42,28 @@ const getClientSnapshot = () => {
 
 const getServerSnapshot = () => 0
 
+// Auto-rotation: 60s after the most recent shuffle (manual or automatic),
+// pick a new photo. setTimeout with self-restart gives "60s since last
+// activity" semantics — clicking at second 45 doesn't truncate the next
+// auto-rotation to 15s; the new photo gets a full minute before it changes.
+const AUTO_INTERVAL_MS = 60_000
+let timerId: ReturnType<typeof setTimeout> | null = null
+
+const stopTimer = () => {
+  if (timerId !== null) {
+    clearTimeout(timerId)
+    timerId = null
+  }
+}
+
+const startTimer = () => {
+  stopTimer()
+  timerId = setTimeout(() => {
+    timerId = null
+    shuffle()
+  }, AUTO_INTERVAL_MS)
+}
+
 // Modulo trick: pick an offset in [1, AVATARS.length - 1] so the next
 // index is guaranteed different from the current one — no while-loop, no
 // chance of "random" picking the same photo twice in a row.
@@ -51,6 +73,7 @@ const shuffle = () => {
   const offset = 1 + Math.floor(Math.random() * (AVATARS.length - 1))
   cachedIndex = (current + offset) % AVATARS.length
   listeners.forEach((l) => l())
+  startTimer()
 }
 
 /**
@@ -65,6 +88,14 @@ export function RandomAvatar() {
     getClientSnapshot,
     getServerSnapshot
   )
+
+  // Kick off the auto-rotation timer once the component is alive in the
+  // browser. shuffle() restarts the timer itself, so this effect just
+  // primes it on mount and clears it on unmount.
+  useEffect(() => {
+    startTimer()
+    return stopTimer
+  }, [])
 
   return (
     <button
