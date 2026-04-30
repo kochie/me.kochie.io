@@ -88,7 +88,11 @@ export default function TalksSection() {
       />
       <ol className="flex flex-col">
         {talks.map((talk) => {
-          const slug = talk.title.replace(/\s/g, '-').toLowerCase()
+          const slug = talk.title
+            .toLowerCase()
+            .replace(/[‘’']/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')
           return (
             <li
               key={slug}

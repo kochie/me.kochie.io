@@ -34,7 +34,7 @@ export async function subscribeToNewsletter(
 
   const validatedFields = schema.safeParse({
     email: formData.get('email'),
-    first_name: formData.get('first_name'),
+    first_name: formData.get('first_name') ?? undefined,
   })
 
   if (!validatedFields.success) {

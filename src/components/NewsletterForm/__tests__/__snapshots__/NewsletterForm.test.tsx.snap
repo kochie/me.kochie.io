@@ -47,6 +47,30 @@ exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
     >
       <label
         class="text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+        for="member_first_name"
+      >
+        Your name 
+        <span
+          class="text-muted-foreground/60"
+        >
+          (optional)
+        </span>
+      </label>
+      <div
+        class="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors"
+      >
+        <input
+          aria-label="Your name"
+          autocomplete="given-name"
+          class="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
+          id="member_first_name"
+          name="first_name"
+          placeholder="Tony"
+          type="text"
+        />
+      </div>
+      <label
+        class="mt-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
         for="member_email"
       >
         Your email address
@@ -56,6 +80,7 @@ exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
       >
         <input
           aria-label="Your email address"
+          autocomplete="email"
           class="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
           id="member_email"
           name="email"

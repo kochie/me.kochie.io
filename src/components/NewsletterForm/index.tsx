@@ -30,8 +30,28 @@ const NewsletterForm = () => {
         id="newsletter-embed"
       >
         <label
-          htmlFor="member_email"
+          htmlFor="member_first_name"
           className="text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+        >
+          Your name{' '}
+          <span className="text-muted-foreground/60">(optional)</span>
+        </label>
+        <div className="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors">
+          <input
+            type="text"
+            name="first_name"
+            id="member_first_name"
+            aria-label="Your name"
+            placeholder="Neil Armstrong"
+            autoComplete="given-name"
+            disabled={pending || state.status === 'SUCCESS'}
+            className="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
+          />
+        </div>
+
+        <label
+          htmlFor="member_email"
+          className="mt-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
         >
           Your email address
         </label>
@@ -41,7 +61,8 @@ const NewsletterForm = () => {
             name="email"
             id="member_email"
             aria-label="Your email address"
-            placeholder="tony@stark.industries"
+            placeholder="neil@armstrong.moon"
+            autoComplete="email"
             required
             disabled={pending || state.status === 'SUCCESS'}
             className="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
