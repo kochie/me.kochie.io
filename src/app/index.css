@@ -246,24 +246,3 @@
   }
 }
 
-.dark-theme {
-  --background-color: #313131;
-  --text-color: whitesmoke;
-  --link-color: #dda58e;
-  --heading-color: #cacaca;
-  --icon-color: whitesmoke;
-
-  --bulb-primary: #313131;
-  --bulb-secondary: #313131;
-}
-
-body {
-  --background-color: whitesmoke;
-  --text-color: #313131;
-  --link-color: #225a71;
-  --heading-color: #353535;
-  --icon-color: #313131;
-
-  --bulb-primary: whitesmoke;
-  --bulb-secondary: whitesmoke;
-}
