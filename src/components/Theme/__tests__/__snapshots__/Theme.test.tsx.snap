@@ -1,101 +1,97 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`THEME COMPONENT should render 1`] = `
-<div
-  className="fixed top-5 right-5 z-50"
+<button
+  aria-label="Theme: Dark. Click to cycle."
+  className="group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 backdrop-blur text-foreground hover:text-wheat hover:border-wheat transition-colors cursor-pointer"
+  onClick={[Function]}
+  title="Theme: Dark"
+  type="button"
 >
-  <button
-    aria-label="Theme: Dark. Click to cycle."
-    className="group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 backdrop-blur text-foreground hover:text-wheat hover:border-wheat transition-colors cursor-pointer"
-    onClick={[Function]}
-    title="Theme: Dark"
-    type="button"
+  <svg
+    aria-hidden="true"
+    className="h-5 w-5"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="1.5"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <svg
-      aria-hidden="true"
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1.5"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <g
+      className="transition-all duration-300 origin-center"
+      style={
+        {
+          "opacity": 0,
+          "transform": "rotate(-90deg) scale(0.6)",
+        }
+      }
     >
-      <g
-        className="transition-all duration-300 origin-center"
-        style={
-          {
-            "opacity": 0,
-            "transform": "rotate(-90deg) scale(0.6)",
-          }
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+      />
+      <path
+        d="M12 2v2"
+      />
+      <path
+        d="M12 20v2"
+      />
+      <path
+        d="m4.93 4.93 1.41 1.41"
+      />
+      <path
+        d="m17.66 17.66 1.41 1.41"
+      />
+      <path
+        d="M2 12h2"
+      />
+      <path
+        d="M20 12h2"
+      />
+      <path
+        d="m6.34 17.66-1.41 1.41"
+      />
+      <path
+        d="m19.07 4.93-1.41 1.41"
+      />
+    </g>
+    <g
+      className="transition-all duration-300 origin-center"
+      style={
+        {
+          "opacity": 1,
+          "transform": "rotate(0deg) scale(1)",
         }
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="4"
-        />
-        <path
-          d="M12 2v2"
-        />
-        <path
-          d="M12 20v2"
-        />
-        <path
-          d="m4.93 4.93 1.41 1.41"
-        />
-        <path
-          d="m17.66 17.66 1.41 1.41"
-        />
-        <path
-          d="M2 12h2"
-        />
-        <path
-          d="M20 12h2"
-        />
-        <path
-          d="m6.34 17.66-1.41 1.41"
-        />
-        <path
-          d="m19.07 4.93-1.41 1.41"
-        />
-      </g>
-      <g
-        className="transition-all duration-300 origin-center"
-        style={
-          {
-            "opacity": 1,
-            "transform": "rotate(0deg) scale(1)",
-          }
+      }
+    >
+      <path
+        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+      />
+    </g>
+    <g
+      className="transition-all duration-300 origin-center"
+      style={
+        {
+          "opacity": 0,
+          "transform": "rotate(-90deg) scale(0.6)",
         }
-      >
-        <path
-          d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-        />
-      </g>
-      <g
-        className="transition-all duration-300 origin-center"
-        style={
-          {
-            "opacity": 0,
-            "transform": "rotate(-90deg) scale(0.6)",
-          }
-        }
-      >
-        <circle
-          cx="12"
-          cy="12"
-          r="8"
-        />
-        <path
-          d="M12 4a8 8 0 0 0 0 16Z"
-          fill="currentColor"
-        />
-      </g>
-    </svg>
-  </button>
-</div>
+      }
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="8"
+      />
+      <path
+        d="M12 4a8 8 0 0 0 0 16Z"
+        fill="currentColor"
+      />
+    </g>
+  </svg>
+</button>
 `;
 
 exports[`THEMEPROVIDER COMPONENT renders correctly 1`] = `null`;

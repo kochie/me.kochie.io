@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 
+import { cn } from '@/lib/utils'
 import { THEME, useTheme } from './context'
 
 const themeLabel = {
@@ -18,18 +19,24 @@ const nextTheme = (theme: THEME): THEME => {
 // Single SVG with three groups, only one visible per state. Each group fades
 // + rotates when active, giving the button a "morphing" feel without
 // requiring a path-morphing library.
-const ThemeButton = () => {
+//
+// className lets the caller position/size the button. Default visuals (round,
+// bordered, backdrop-blurred) are appropriate for a floating placement; pass
+// `border-0 bg-transparent` for inline use inside another container.
+const ThemeButton = ({ className }: { className?: string }) => {
   const [theme, setTheme] = useTheme()
 
   return (
-    <div className="fixed top-5 right-5 z-50">
-      <button
-        type="button"
-        onClick={() => setTheme(nextTheme(theme))}
-        aria-label={`Theme: ${themeLabel[theme]}. Click to cycle.`}
-        title={`Theme: ${themeLabel[theme]}`}
-        className="group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 backdrop-blur text-foreground hover:text-wheat hover:border-wheat transition-colors cursor-pointer"
-      >
+    <button
+      type="button"
+      onClick={() => setTheme(nextTheme(theme))}
+      aria-label={`Theme: ${themeLabel[theme]}. Click to cycle.`}
+      title={`Theme: ${themeLabel[theme]}`}
+      className={cn(
+        'group flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/80 backdrop-blur text-foreground hover:text-wheat hover:border-wheat transition-colors cursor-pointer',
+        className
+      )}
+    >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -89,9 +96,8 @@ const ThemeButton = () => {
             <circle cx="12" cy="12" r="8" />
             <path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" />
           </g>
-        </svg>
-      </button>
-    </div>
+      </svg>
+    </button>
   )
 }
 

@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <Providers>
-      <ThemeButton />
+      <ThemeButton className="hidden xl:flex fixed top-5 right-5 z-50" />
       <Fathom />
       <App />
     </Providers>
