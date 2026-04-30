@@ -37,7 +37,7 @@ export default function Sidebar(): ReactElement {
         <div className="transform-gpu scale-110">
           <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
         </div>
-        <div className="absolute inset-0 bg-coal/65" />
+        <div className="absolute inset-0 bg-coal/80" />
       </div>
 
       {/* Parallax canvas — xl only */}
@@ -47,10 +47,10 @@ export default function Sidebar(): ReactElement {
       <div className="relative z-10 flex flex-col items-center w-full px-6 py-14 xl:py-12 gap-7 xl:my-auto">
         {/* Masthead */}
         <header className="text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90">
             Robert Koch
           </p>
-          <p className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45">
+          <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60">
             Melbourne, Australia
           </p>
         </header>
@@ -72,10 +72,10 @@ export default function Sidebar(): ReactElement {
 
         {/* Quote + tagline */}
         <div className="text-center max-w-[18rem]">
-          <p className="font-display italic text-cream/90 text-base xl:text-lg leading-snug">
+          <p className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug">
             &ldquo;Built to last, mostly.&rdquo;
           </p>
-          <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55">
+          <p className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70">
             Engineer · Speaker · Guitarist
           </p>
         </div>
@@ -83,17 +83,17 @@ export default function Sidebar(): ReactElement {
         <Hairline />
 
         {/* Inside this issue — table of contents */}
-        <nav aria-label="Page sections" className="w-full max-w-[16rem]">
-          <p className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4">
+        <nav aria-label="Page sections" className="w-full max-w-[18rem]">
+          <p className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4">
             Inside this issue
           </p>
-          <ol className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65">
+          <ol className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80">
             {INDEX.map((entry) => (
               <li
                 key={entry.number}
                 className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
               >
-                <span className="text-cream/35 text-right">{entry.number}</span>
+                <span className="text-cream/45 text-right">{entry.number}</span>
                 <a
                   href={entry.href}
                   className="hover:text-wheat transition-colors"

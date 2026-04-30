@@ -66,12 +66,12 @@ const connections: Connection[] = [
 
 export default function Connections(): ReactElement {
   return (
-    <div className="text-cream/65 flex xl:flex-row flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3">
+    <div className="text-cream/75 flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3">
       {connections.map((connection) => {
         const iconDefinition = connection.icon
         return (
           <div
-            className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+            className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
             key={connection.href}
           >
             <a
@@ -83,7 +83,7 @@ export default function Connections(): ReactElement {
             >
               <FontAwesomeIcon
                 icon={iconDefinition}
-                size="lg"
+                size="xl"
                 className="align-middle"
               />
             </a>

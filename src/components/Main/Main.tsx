@@ -7,7 +7,7 @@ export default function Main(): ReactElement {
   return (
     <main
       id="main"
-      className="flex flex-col flex-1 overflow-y-auto lg:overflow-y-scroll lg:h-screen"
+      className="flex flex-col flex-1 overflow-y-auto lg:overflow-y-scroll lg:h-screen motion-safe:scroll-smooth"
     >
       <Middle />
       <Footer />

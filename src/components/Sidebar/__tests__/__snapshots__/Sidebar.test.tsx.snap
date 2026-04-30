@@ -16,7 +16,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       />
     </div>
     <div
-      className="absolute inset-0 bg-coal/65"
+      className="absolute inset-0 bg-coal/80"
     />
   </div>
   <canvas
@@ -34,12 +34,12 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       className="text-center"
     >
       <p
-        className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80"
+        className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90"
       >
         Robert Koch
       </p>
       <p
-        className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45"
+        className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60"
       >
         Melbourne, Australia
       </p>
@@ -81,12 +81,12 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       className="text-center max-w-[18rem]"
     >
       <p
-        className="font-display italic text-cream/90 text-base xl:text-lg leading-snug"
+        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
       >
         “Built to last, mostly.”
       </p>
       <p
-        className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55"
+        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
       >
         Engineer · Speaker · Guitarist
       </p>
@@ -97,21 +97,21 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
     />
     <nav
       aria-label="Page sections"
-      className="w-full max-w-[16rem]"
+      className="w-full max-w-[18rem]"
     >
       <p
-        className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4"
+        className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4"
       >
         Inside this issue
       </p>
       <ol
-        className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65"
+        className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80"
       >
         <li
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             01
           </span>
@@ -126,7 +126,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             02
           </span>
@@ -141,7 +141,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             03
           </span>
@@ -156,7 +156,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             04
           </span>
@@ -171,7 +171,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             05
           </span>
@@ -186,7 +186,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             06
           </span>
@@ -201,7 +201,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             07
           </span>
@@ -219,10 +219,10 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="text-cream/65 flex xl:flex-row flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
+      className="text-cream/75 flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
     >
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -233,7 +233,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bluesky align-middle fa-lg"
+            className="svg-inline--fa fa-bluesky align-middle fa-xl"
             data-icon="bluesky"
             data-prefix="fab"
             ref={null}
@@ -248,7 +248,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -259,7 +259,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin align-middle fa-lg"
+            className="svg-inline--fa fa-linkedin align-middle fa-xl"
             data-icon="linkedin"
             data-prefix="fab"
             ref={null}
@@ -274,7 +274,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -285,7 +285,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-x-twitter align-middle fa-lg"
+            className="svg-inline--fa fa-x-twitter align-middle fa-xl"
             data-icon="x-twitter"
             data-prefix="fab"
             ref={null}
@@ -300,7 +300,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -311,7 +311,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-threads align-middle fa-lg"
+            className="svg-inline--fa fa-threads align-middle fa-xl"
             data-icon="threads"
             data-prefix="fab"
             ref={null}
@@ -326,7 +326,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -337,7 +337,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-instagram align-middle fa-lg"
+            className="svg-inline--fa fa-instagram align-middle fa-xl"
             data-icon="instagram"
             data-prefix="fab"
             ref={null}
@@ -352,7 +352,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -363,7 +363,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github align-middle fa-lg"
+            className="svg-inline--fa fa-github align-middle fa-xl"
             data-icon="github"
             data-prefix="fab"
             ref={null}
@@ -378,7 +378,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -389,7 +389,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mastodon align-middle fa-lg"
+            className="svg-inline--fa fa-mastodon align-middle fa-xl"
             data-icon="mastodon"
             data-prefix="fab"
             ref={null}
@@ -424,7 +424,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       />
     </div>
     <div
-      className="absolute inset-0 bg-coal/65"
+      className="absolute inset-0 bg-coal/80"
     />
   </div>
   <canvas
@@ -442,12 +442,12 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       className="text-center"
     >
       <p
-        className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80"
+        className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90"
       >
         Robert Koch
       </p>
       <p
-        className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45"
+        className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60"
       >
         Melbourne, Australia
       </p>
@@ -489,12 +489,12 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       className="text-center max-w-[18rem]"
     >
       <p
-        className="font-display italic text-cream/90 text-base xl:text-lg leading-snug"
+        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
       >
         “Built to last, mostly.”
       </p>
       <p
-        className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55"
+        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
       >
         Engineer · Speaker · Guitarist
       </p>
@@ -505,21 +505,21 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
     />
     <nav
       aria-label="Page sections"
-      className="w-full max-w-[16rem]"
+      className="w-full max-w-[18rem]"
     >
       <p
-        className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4"
+        className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4"
       >
         Inside this issue
       </p>
       <ol
-        className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65"
+        className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80"
       >
         <li
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             01
           </span>
@@ -534,7 +534,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             02
           </span>
@@ -549,7 +549,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             03
           </span>
@@ -564,7 +564,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             04
           </span>
@@ -579,7 +579,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             05
           </span>
@@ -594,7 +594,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             06
           </span>
@@ -609,7 +609,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             07
           </span>
@@ -627,10 +627,10 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="text-cream/65 flex xl:flex-row flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
+      className="text-cream/75 flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
     >
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -641,7 +641,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bluesky align-middle fa-lg"
+            className="svg-inline--fa fa-bluesky align-middle fa-xl"
             data-icon="bluesky"
             data-prefix="fab"
             ref={null}
@@ -656,7 +656,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -667,7 +667,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin align-middle fa-lg"
+            className="svg-inline--fa fa-linkedin align-middle fa-xl"
             data-icon="linkedin"
             data-prefix="fab"
             ref={null}
@@ -682,7 +682,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -693,7 +693,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-x-twitter align-middle fa-lg"
+            className="svg-inline--fa fa-x-twitter align-middle fa-xl"
             data-icon="x-twitter"
             data-prefix="fab"
             ref={null}
@@ -708,7 +708,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -719,7 +719,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-threads align-middle fa-lg"
+            className="svg-inline--fa fa-threads align-middle fa-xl"
             data-icon="threads"
             data-prefix="fab"
             ref={null}
@@ -734,7 +734,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -745,7 +745,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-instagram align-middle fa-lg"
+            className="svg-inline--fa fa-instagram align-middle fa-xl"
             data-icon="instagram"
             data-prefix="fab"
             ref={null}
@@ -760,7 +760,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -771,7 +771,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github align-middle fa-lg"
+            className="svg-inline--fa fa-github align-middle fa-xl"
             data-icon="github"
             data-prefix="fab"
             ref={null}
@@ -786,7 +786,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -797,7 +797,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mastodon align-middle fa-lg"
+            className="svg-inline--fa fa-mastodon align-middle fa-xl"
             data-icon="mastodon"
             data-prefix="fab"
             ref={null}
@@ -832,7 +832,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       />
     </div>
     <div
-      className="absolute inset-0 bg-coal/65"
+      className="absolute inset-0 bg-coal/80"
     />
   </div>
   <canvas
@@ -852,12 +852,12 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       className="text-center"
     >
       <p
-        className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80"
+        className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90"
       >
         Robert Koch
       </p>
       <p
-        className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45"
+        className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60"
       >
         Melbourne, Australia
       </p>
@@ -899,12 +899,12 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       className="text-center max-w-[18rem]"
     >
       <p
-        className="font-display italic text-cream/90 text-base xl:text-lg leading-snug"
+        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
       >
         “Built to last, mostly.”
       </p>
       <p
-        className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55"
+        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
       >
         Engineer · Speaker · Guitarist
       </p>
@@ -915,21 +915,21 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
     />
     <nav
       aria-label="Page sections"
-      className="w-full max-w-[16rem]"
+      className="w-full max-w-[18rem]"
     >
       <p
-        className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4"
+        className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4"
       >
         Inside this issue
       </p>
       <ol
-        className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65"
+        className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80"
       >
         <li
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             01
           </span>
@@ -944,7 +944,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             02
           </span>
@@ -959,7 +959,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             03
           </span>
@@ -974,7 +974,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             04
           </span>
@@ -989,7 +989,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             05
           </span>
@@ -1004,7 +1004,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             06
           </span>
@@ -1019,7 +1019,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             07
           </span>
@@ -1037,10 +1037,10 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="text-cream/65 flex xl:flex-row flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
+      className="text-cream/75 flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
     >
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1051,7 +1051,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bluesky align-middle fa-lg"
+            className="svg-inline--fa fa-bluesky align-middle fa-xl"
             data-icon="bluesky"
             data-prefix="fab"
             ref={null}
@@ -1066,7 +1066,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1077,7 +1077,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin align-middle fa-lg"
+            className="svg-inline--fa fa-linkedin align-middle fa-xl"
             data-icon="linkedin"
             data-prefix="fab"
             ref={null}
@@ -1092,7 +1092,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1103,7 +1103,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-x-twitter align-middle fa-lg"
+            className="svg-inline--fa fa-x-twitter align-middle fa-xl"
             data-icon="x-twitter"
             data-prefix="fab"
             ref={null}
@@ -1118,7 +1118,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1129,7 +1129,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-threads align-middle fa-lg"
+            className="svg-inline--fa fa-threads align-middle fa-xl"
             data-icon="threads"
             data-prefix="fab"
             ref={null}
@@ -1144,7 +1144,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1155,7 +1155,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-instagram align-middle fa-lg"
+            className="svg-inline--fa fa-instagram align-middle fa-xl"
             data-icon="instagram"
             data-prefix="fab"
             ref={null}
@@ -1170,7 +1170,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1181,7 +1181,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github align-middle fa-lg"
+            className="svg-inline--fa fa-github align-middle fa-xl"
             data-icon="github"
             data-prefix="fab"
             ref={null}
@@ -1196,7 +1196,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1207,7 +1207,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mastodon align-middle fa-lg"
+            className="svg-inline--fa fa-mastodon align-middle fa-xl"
             data-icon="mastodon"
             data-prefix="fab"
             ref={null}
@@ -1242,7 +1242,7 @@ exports[`Sidebar Component unmounts 1`] = `
       />
     </div>
     <div
-      className="absolute inset-0 bg-coal/65"
+      className="absolute inset-0 bg-coal/80"
     />
   </div>
   <canvas
@@ -1260,12 +1260,12 @@ exports[`Sidebar Component unmounts 1`] = `
       className="text-center"
     >
       <p
-        className="font-mono text-[10px] uppercase tracking-[0.32em] text-cream/80"
+        className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90"
       >
         Robert Koch
       </p>
       <p
-        className="mt-1.5 font-mono text-[9px] uppercase tracking-[0.22em] text-cream/45"
+        className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60"
       >
         Melbourne, Australia
       </p>
@@ -1307,12 +1307,12 @@ exports[`Sidebar Component unmounts 1`] = `
       className="text-center max-w-[18rem]"
     >
       <p
-        className="font-display italic text-cream/90 text-base xl:text-lg leading-snug"
+        className="font-display italic text-cream/95 text-lg xl:text-xl leading-snug"
       >
         “Built to last, mostly.”
       </p>
       <p
-        className="mt-3 font-mono text-[9px] uppercase tracking-[0.18em] text-cream/55"
+        className="mt-3.5 font-mono text-[11px] uppercase tracking-[0.2em] text-cream/70"
       >
         Engineer · Speaker · Guitarist
       </p>
@@ -1323,21 +1323,21 @@ exports[`Sidebar Component unmounts 1`] = `
     />
     <nav
       aria-label="Page sections"
-      className="w-full max-w-[16rem]"
+      className="w-full max-w-[18rem]"
     >
       <p
-        className="text-center font-mono text-[9px] uppercase tracking-[0.32em] text-cream/40 mb-4"
+        className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4"
       >
         Inside this issue
       </p>
       <ol
-        className="font-mono text-[10px] uppercase tracking-[0.16em] flex flex-col gap-y-2 text-cream/65"
+        className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80"
       >
         <li
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             01
           </span>
@@ -1352,7 +1352,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             02
           </span>
@@ -1367,7 +1367,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             03
           </span>
@@ -1382,7 +1382,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             04
           </span>
@@ -1397,7 +1397,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             05
           </span>
@@ -1412,7 +1412,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             06
           </span>
@@ -1427,7 +1427,7 @@ exports[`Sidebar Component unmounts 1`] = `
           className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
         >
           <span
-            className="text-cream/35 text-right"
+            className="text-cream/45 text-right"
           >
             07
           </span>
@@ -1445,10 +1445,10 @@ exports[`Sidebar Component unmounts 1`] = `
       className="h-px w-12 bg-cream/15"
     />
     <div
-      className="text-cream/65 flex xl:flex-row flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
+      className="text-cream/75 flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-3"
     >
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1459,7 +1459,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bluesky align-middle fa-lg"
+            className="svg-inline--fa fa-bluesky align-middle fa-xl"
             data-icon="bluesky"
             data-prefix="fab"
             ref={null}
@@ -1474,7 +1474,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1485,7 +1485,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin align-middle fa-lg"
+            className="svg-inline--fa fa-linkedin align-middle fa-xl"
             data-icon="linkedin"
             data-prefix="fab"
             ref={null}
@@ -1500,7 +1500,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1511,7 +1511,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-x-twitter align-middle fa-lg"
+            className="svg-inline--fa fa-x-twitter align-middle fa-xl"
             data-icon="x-twitter"
             data-prefix="fab"
             ref={null}
@@ -1526,7 +1526,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1537,7 +1537,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-threads align-middle fa-lg"
+            className="svg-inline--fa fa-threads align-middle fa-xl"
             data-icon="threads"
             data-prefix="fab"
             ref={null}
@@ -1552,7 +1552,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="rkkochie"
@@ -1563,7 +1563,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-instagram align-middle fa-lg"
+            className="svg-inline--fa fa-instagram align-middle fa-xl"
             data-icon="instagram"
             data-prefix="fab"
             ref={null}
@@ -1578,7 +1578,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1589,7 +1589,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github align-middle fa-lg"
+            className="svg-inline--fa fa-github align-middle fa-xl"
             data-icon="github"
             data-prefix="fab"
             ref={null}
@@ -1604,7 +1604,7 @@ exports[`Sidebar Component unmounts 1`] = `
         </a>
       </div>
       <div
-        className="w-7 transform-gpu transition duration-200 ease-in-out hover:scale-110"
+        className="w-8 transform-gpu transition duration-200 ease-in-out hover:scale-110"
       >
         <a
           aria-label="kochie"
@@ -1615,7 +1615,7 @@ exports[`Sidebar Component unmounts 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mastodon align-middle fa-lg"
+            className="svg-inline--fa fa-mastodon align-middle fa-xl"
             data-icon="mastodon"
             data-prefix="fab"
             ref={null}

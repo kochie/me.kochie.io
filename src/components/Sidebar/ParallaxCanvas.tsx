@@ -78,7 +78,8 @@ export function ParallaxCanvas() {
       canvas.current.height = canvasH
       ctx.fillRect(0, 0, canvasW, canvasH)
       ctx.filter = `blur(${blurSize}px)`
-      ctx.globalAlpha = 0.7
+      // Lower alpha = more coal showing through, easier to read text overlay.
+      ctx.globalAlpha = 0.55
 
       ctx.drawImage(
         img,
