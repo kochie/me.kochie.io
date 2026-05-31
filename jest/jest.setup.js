@@ -21,3 +21,19 @@ process.env = {
 
 
 jest.unstable_mockModule('next/image', () => (Image));
+
+// jsdom doesn't implement matchMedia — provide a stub that reports no match
+// so client effects gated on a media query (e.g. ParallaxCanvas) take the
+// "skip" branch in tests.
+if (typeof window !== 'undefined' && typeof window.matchMedia !== 'function') {
+  window.matchMedia = (query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => false,
+  })
+}

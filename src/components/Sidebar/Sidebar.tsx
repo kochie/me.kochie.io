@@ -1,121 +1,85 @@
-'use client'
-import React, { useRef, useEffect, ReactElement, useCallback } from 'react'
-import NextImage from 'next/image'
+import type { ReactElement } from 'react'
 
 import Connections from '@/components/Connections/Connections'
+import { PROFILE } from '@/lib/profile'
 
-import style from './sidebar.module.css'
+import { ParallaxCanvas } from './ParallaxCanvas'
+import { RandomAvatar } from './RandomAvatar'
+import { SECTIONS } from './sections'
 
-import avatar from '@/images/City2Surf_Crop.png'
-const background = '/images/background-2.webp'
+const Hairline = () => (
+  <div className="h-px w-12 bg-cream/15" aria-hidden="true" />
+)
 
-const Sidebar = (): ReactElement => {
-  const canvas = useRef<HTMLCanvasElement>(null)
-  const image = useRef<HTMLImageElement>(null)
-  let imageY = useRef(0)
-
-  const parallax = useCallback((): void => {
-    // console.log(document.getElementById('main').scrollTop)
-
-    if (!image.current) return
-    if (!canvas.current) return
-
-    const main = document.getElementById('main')
-    if (!main) return
-
-    const ctx = canvas.current.getContext('2d')
-    if (ctx === null) return
-    const blurSize = 2 * window.devicePixelRatio
-
-    const imgHeight = image.current.naturalHeight
-    const imgWidth = image.current.naturalWidth
-
-    const innerHeight = document.documentElement.clientHeight
-    const innerWidth = canvas.current.clientWidth
-    if (innerWidth === 0) return
-
-    const docHeight = main.scrollHeight
-
-    const scale = imgHeight / (innerHeight * 1 * window.devicePixelRatio)
-    // const scale = 0.85
-
-    const m = (imgHeight - innerHeight * scale) / (docHeight - innerHeight)
-    const displacement = main.scrollTop - imageY.current
-    imageY.current += displacement * 0.01
-    const sy =
-      m * Math.min(Math.max(imageY.current, 0), docHeight - innerHeight)
-    ctx.restore()
-    ctx.save()
-    canvas.current.height = canvas.current.clientHeight
-    canvas.current.width = canvas.current.clientWidth
-    ctx.fillRect(0, 0, innerWidth, innerHeight)
-    ctx.filter = `blur(${blurSize}px)`
-    ctx.globalAlpha = 0.7
-    const sx = (imgWidth - innerWidth * scale) * 0.5
-    // if (sy === 0) return;
-    ctx.drawImage(
-      image.current,
-      Math.round(sx),
-      Math.round(sy),
-      Math.round(scale * innerWidth),
-      Math.round(scale * innerHeight),
-      -blurSize,
-      -blurSize,
-      Math.round(innerWidth) + blurSize * 2,
-      Math.round(innerHeight) + blurSize * 2
-    )
-    window.requestAnimationFrame(parallax)
-  }, [])
-
-  useEffect(() => {
-    let num: number
-    image.current = new Image()
-    image.current.src = background
-    image.current.onload = (): void => {
-      num = window.requestAnimationFrame(parallax)
-    }
-
-    return () => {
-      window.cancelAnimationFrame(num)
-    }
-  }, [parallax])
-
-  const quote =
-    'I build things, write the code for them, and run from the resulting explosion.'
-
+export default function Sidebar(): ReactElement {
   return (
     <nav
-      className="relative top-0 w-full min-h-screen flex flex-col justify-center xl:h-screen xl:overflow-hidden xl:bg-black xl:w-1/3"
-      role="complementary"
+      className="relative top-0 w-full min-h-screen flex flex-col xl:h-screen xl:overflow-hidden xl:bg-coal xl:w-1/3"
+      aria-label="Site index and identity"
     >
-      <div className="flex flex-col z-10 text-center items-center h-full mt-20">
-        <div className="rounded-full w-40 h-40 overflow-hidden">
-          <NextImage
-            src={avatar}
-            className='hover:scale-125 transform-gpu transition duration-500'
-            alt="me"
-            placeholder="blur"
-            sizes="100vw"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-        <div className={style.quote}>{quote}</div>
-        <Connections />
-      </div>
-      <canvas
-        className="absolute top-0 h-screen w-full invisible xl:visible"
-        ref={canvas}
-      />
+      {/* Background image — smaller breakpoints only */}
       <div className="overflow-hidden h-screen w-full absolute xl:hidden">
         <div className="transform-gpu scale-110">
           <div className="bg-city-image md:bg-airplane-image h-screen w-screen bg-cover bg-center filter blur-sm top-0" />
         </div>
+        <div className="absolute inset-0 bg-coal/80" />
+      </div>
+
+      {/* Parallax canvas — xl only */}
+      <ParallaxCanvas />
+
+      {/* Content stack */}
+      <div className="relative z-10 flex flex-col items-center w-full px-6 py-14 xl:py-12 gap-7 xl:my-auto">
+        {/* Masthead */}
+        <header className="text-center">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-cream/90">
+            {PROFILE.name}
+          </p>
+          <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-cream/60">
+            {PROFILE.location}
+          </p>
+        </header>
+
+        <Hairline />
+
+        {/* Avatar — random pick on load, click to shuffle. */}
+        <RandomAvatar />
+
+        {/* Tagline */}
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream/75 max-w-[18rem] text-center">
+          {PROFILE.tagline}
+        </p>
+
+        <Hairline />
+
+        {/* Inside this issue — table of contents */}
+        <nav aria-label="Page sections" className="w-full max-w-[18rem]">
+          <p className="text-center font-mono text-[11px] uppercase tracking-[0.32em] text-cream/55 mb-4">
+            Inside this issue
+          </p>
+          <ol className="font-mono text-[12px] uppercase tracking-[0.16em] flex flex-col gap-y-2.5 text-cream/80">
+            {SECTIONS.map((entry) => (
+              <li
+                key={entry.id}
+                className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+              >
+                <span className="text-cream/45 text-right">{entry.number}</span>
+                <a
+                  href={`#${entry.id}`}
+                  className="hover:text-wheat transition-colors"
+                >
+                  {entry.label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <Hairline />
+
+        {/* Social */}
+        <Connections />
       </div>
     </nav>
   )
 }
-
-export default Sidebar

@@ -6,40 +6,38 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 library.add(fab)
 
-// jest.mock('react-ga')
+const MOCK_FEED = {
+  items: [
+    {
+      id: 'https://blog.kochie.io/articles/02-contact-tracing',
+      url: 'https://blog.kochie.io/articles/02-contact-tracing',
+      title: 'Building a Contact Tracing Platform',
+      summary:
+        "Learn how to automate and build an application to trace exposures using Amazon's Cloud Development Kit (CDK)",
+      image:
+        'https://blog.kochie.io/articles-1/02-contact-tracing/omar-flores-MOO6k3RaiwE-unsplash.jpg',
+      date_modified: '2021-08-22T23:00:00.000Z',
+      author: {
+        name: 'Robert Koch',
+        url: 'https://blog.kochie.io/authors/kochie',
+      },
+    },
+  ],
+}
 
 describe('app', () => {
-  beforeAll(async () => {
-    const MOCK_DATA = {
-      items: [
-        {
-          id: 'https://blog.kochie.io/articles/02-contact-tracing',
-          url: 'https://blog.kochie.io/articles/02-contact-tracing',
-          title: 'Building a Contact Tracing Platform',
-          summary:
-            "Learn how to automate and build an application to trace exposures using Amazon's Cloud Development Kit (CDK)",
-          image:
-            'https://blog.kochie.io/articles-1/02-contact-tracing/omar-flores-MOO6k3RaiwE-unsplash.jpg',
-          date_modified: '2021-08-22T23:00:00.000Z',
-          author: {
-            name: 'Robert Koch',
-            url: 'https://blog.kochie.io/authors/kochie',
-          },
-        },
-      ],
-    }
+  beforeAll(() => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(MOCK_FEED),
+      })
+    ) as unknown as typeof fetch
+  })
 
-    jest.unstable_mockModule('swr', () => {
-      // console.log('mock')
-      return {
-        default: jest.fn(() => ({
-          data: MOCK_DATA,
-          error: null,
-        })),
-      }
-    })
-
-    await import('swr')
+  afterAll(() => {
+    // @ts-expect-error - cleanup mocked global
+    delete global.fetch
   })
 
   it('app renders correctly', async () => {

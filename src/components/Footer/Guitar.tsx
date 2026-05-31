@@ -7,6 +7,7 @@ import style from './footer.module.css'
 export const Guitar = () => {
   const playSound = (): void => {
     const g = document.getElementById('guitar')
+    if (!g) return
     g.classList.add(style.jello)
     g.addEventListener('animationend', () => {
       g.classList.remove(style.jello)

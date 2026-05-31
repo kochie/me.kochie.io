@@ -1,63 +1,61 @@
-// import withPlugins from 'next-compose-plugins'
+import { execFileSync } from 'node:child_process'
 import MDX from '@next/mdx'
-import PWA from 'next-pwa'
+import { withSentryConfig } from '@sentry/nextjs'
+import type { NextConfig } from 'next'
 
-const {
-  NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
-  SENTRY_ORG,
-  SENTRY_PROJECT,
-  SENTRY_AUTH_TOKEN,
-  NODE_ENV,
-  VERCEL_GIT_COMMIT_SHA,
-} = process.env
+const { VERCEL_GIT_COMMIT_SHA } = process.env
 
-process.env.SENTRY_DSN = SENTRY_DSN
-
-const Config = async (phase, { defaultConfig }) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-  const config = {
-    // topLevelAwait: true,
-    productionBrowserSourceMaps: true,
-    // target: 'serverless',
-    env: {
-      // Make the COMMIT_SHA available to the client so that Sentry events can be
-      // marked for the release they belong to. It may be undefined if running
-      // outside of Vercel
-      buildTime: new Date().toDateString(),
-      NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA ?? "",
-    },
-    images: {
-      domains: ['blog.kochie.io', 'holopin.io', 'assets.holopin.io'],
-    },
-    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    experimental: {
-       mdxRs: true,
-       webpackBuildWorker: true
-    },
+// Prefer the actual commit timestamp over wall-clock build time so the footer
+// reflects when the content last changed, not when CI happened to run.
+const resolveBuildTime = (): string => {
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cI'], {
+      stdio: ['ignore', 'pipe', 'ignore'],
+    })
+      .toString()
+      .trim()
+  } catch {
+    return new Date().toISOString()
   }
-
-  const withMDX = MDX({
-    extension: /\.mdx?$/,
-    options: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-      // If you use `MDXProvider`, uncomment the following line.
-      // providerImportSource: '@mdx-js/react',
-      // development: true,
-    },
-  })
-
-  const withPWA = PWA({
-    dest: 'public',
-    maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
-  })
-
-  if (process.env.NODE_ENV === 'production') {
-    return withPWA(withMDX(config))
-  }
-  return withMDX(config)
 }
 
-export default Config
+const config: NextConfig = {
+  productionBrowserSourceMaps: false,
+  env: {
+    // Surface to client for Sentry release tagging + footer rendering. Values
+    // are inlined at build time, so they cost nothing at runtime.
+    buildTime: resolveBuildTime(),
+    NEXT_PUBLIC_COMMIT_SHA: VERCEL_GIT_COMMIT_SHA ?? '',
+  },
+  images: {
+    remotePatterns: [
+      { hostname: 'blog.kochie.io' },
+      { hostname: 'holopin.io' },
+      { hostname: 'assets.holopin.io' },
+    ],
+  },
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  experimental: {
+    mdxRs: true,
+  },
+}
+
+const withMDX = MDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+})
+
+export default withSentryConfig(withMDX(config), {
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  authToken: process.env.SENTRY_AUTH_TOKEN,
+  silent: !process.env.CI,
+  // Skip source-map upload when the auth token is missing (local builds),
+  // so they don't fail without one.
+  sourcemaps: {
+    disable: !process.env.SENTRY_AUTH_TOKEN,
+  },
+})

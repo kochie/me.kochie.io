@@ -1,6 +1,6 @@
 import App from '@/components/App/App'
 import Fathom from '@/components/Fathom'
-import { ThemeButton, ThemeProvider } from '@/components/Theme'
+import { ThemeButton } from '@/components/Theme'
 import type { Metadata, Viewport } from 'next'
 import { AppleStartupImages } from './metadata'
 import Providers from './providers'
@@ -9,8 +9,12 @@ const description =
   "Hi, I'm Robert. This is my site, click through to see some of the content I've worked on. I'm an electrical and software engineer, based in Melbourne, Australia."
 
 export const viewport: Viewport = {
-  themeColor: '#1f2937',
-  
+  // Match the broadsheet palette so the mobile address bar/PWA chrome
+  // tints to the same background the body uses.
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#faf6ec' },
+    { media: '(prefers-color-scheme: dark)', color: '#161410' },
+  ],
 }
 
 export const metadata: Metadata = {
@@ -43,27 +47,11 @@ export const metadata: Metadata = {
     url: 'https://me.kochie.io',
     title: 'About Robert Koch',
     description,
-    images: [
-      {
-        url: 'https://me.kochie.io/images/AirplaneMaker.jpg',
-        width: 1920,
-        height: 1080,
-        alt: 'Airplane Maker',
-      },
-    ],
     type: 'website',
     siteName: 'Robert Koch',
   },
   twitter: {
     site: '@kochie',
-    images: [
-      {
-        url: 'https://me.kochie.io/images/AirplaneMaker.jpg',
-        width: 1920,
-        height: 1080,
-        alt: 'Airplane Maker',
-      },
-    ],
     creator: '@kochie',
     card: 'summary_large_image',
     description,
@@ -73,7 +61,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <Providers>
-      <ThemeButton />
+      <ThemeButton className="hidden xl:flex fixed top-5 right-5 z-50" />
       <Fathom />
       <App />
     </Providers>

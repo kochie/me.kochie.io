@@ -14,12 +14,12 @@ beforeAll(() => {
 
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
-    value: jest.fn().mockImplementation((query) => ({
+    value: jest.fn().mockImplementation((query: unknown) => ({
       matches: false,
       media: query,
       onchange: null,
-      addListener: jest.fn(), // deprecated
-      removeListener: jest.fn(), // deprecated
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
       dispatchEvent: jest.fn(),
@@ -30,7 +30,7 @@ beforeAll(() => {
 describe('THEME COMPONENT', () => {
   test('should render', async () => {
     const ThemeButton = await import('../ThemeButton')
-    let tree: ReactTestRenderer
+    let tree!: ReactTestRenderer
 
     act(() => {
       tree = create(<ThemeButton.default />)
@@ -44,7 +44,7 @@ describe('THEMEPROVIDER COMPONENT', () => {
   test('renders correctly', async () => {
     const ThemeProvider = await import('../context')
 
-    let tree: ReactTestRenderer
+    let tree!: ReactTestRenderer
 
     act(() => {
       tree = create(<ThemeProvider.ThemeProvider />)

@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <header
+      class="mb-8 lg:mb-12"
+    >
+      <div
+        class="flex items-baseline gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+      >
+        <span>
+          No. 03
+        </span>
+        <span
+          aria-hidden="true"
+          class="text-wheat"
+        >
+          ·
+        </span>
+        <span>
+          Dispatch
+        </span>
+      </div>
+      <div
+        class="mt-3 h-px bg-border"
+      />
+      <div
+        class="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3"
+      >
+        <h2
+          class="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none"
+        >
+          Sporadic notes, sent occasionally.
+        </h2>
+        <p
+          class="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right"
+        >
+          Opt-in only — unsubscribe at any time. Powered by Beehiiv.
+        </p>
+      </div>
+    </header>
+    <form
+      action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+      class="flex flex-col gap-3 max-w-2xl"
+      id="newsletter-embed"
+    >
+      <label
+        class="text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+        for="member_first_name"
+      >
+        Your name 
+        <span
+          class="text-muted-foreground/60"
+        >
+          (optional)
+        </span>
+      </label>
+      <div
+        class="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors"
+      >
+        <input
+          aria-label="Your name"
+          autocomplete="given-name"
+          class="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
+          id="member_first_name"
+          name="first_name"
+          placeholder="Tony"
+          type="text"
+        />
+      </div>
+      <label
+        class="mt-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
+        for="member_email"
+      >
+        Your email address
+      </label>
+      <div
+        class="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors"
+      >
+        <input
+          aria-label="Your email address"
+          autocomplete="email"
+          class="flex-1 bg-transparent py-3 pr-3 outline-none text-base lg:text-lg placeholder:text-muted-foreground/60"
+          id="member_email"
+          name="email"
+          placeholder="tony@stark.industries"
+          required=""
+          type="email"
+        />
+        <button
+          aria-label="Subscribe"
+          class="px-3 py-3 cursor-pointer disabled:cursor-not-allowed text-foreground hover:text-wheat transition-colors"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-arrow-right"
+            data-icon="arrow-right"
+            data-prefix="fad"
+            role="img"
+            viewBox="0 0 512 512"
+          >
+            <g
+              class="fa-duotone-group"
+            >
+              <path
+                class="fa-secondary"
+                d="M0 256c0 17.7 14.3 32 32 32l370.7 0 32-32-32-32-370.7 0c-17.7 0-32 14.3-32 32z"
+                fill="currentColor"
+              />
+              <path
+                class="fa-primary"
+                d="M502.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L434.7 256 297.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+                fill="currentColor"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

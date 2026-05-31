@@ -12,3 +12,8 @@ public/workbox-*.js
 public/workbox-*.js.map
 
 *.DS_Store
+
+.serena/
+tsconfig.tsbuildinfo
+.playwright-cli/
+.superpowers/

@@ -1,0 +1,45 @@
+import type { ReactElement } from 'react'
+
+import { HOOK_LINES, PROFILE } from '@/lib/profile'
+
+/**
+ * Editorial hero. Promotes the explosion quote into a magazine-cover headline
+ * using Fraunces' optical-size axis at large sizes. The avatar/quote that
+ * lived only on the sidebar at xl is now the primary moment of the page on
+ * every breakpoint.
+ */
+export default function Hero(): ReactElement {
+  return (
+    <section className="pt-2 pb-10 lg:pt-4 lg:pb-16">
+      <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground">
+        <span aria-hidden="true" className="h-px w-8 bg-border" />
+        <span>
+          {PROFILE.name} · {PROFILE.location.split(',')[0]}
+        </span>
+      </div>
+
+      <h1
+        className="mt-6 text-[clamp(2.5rem,7vw,6.5rem)] font-display text-foreground tracking-[-0.02em]"
+        style={{ fontVariationSettings: "'opsz' 144, 'SOFT' 50" }}
+      >
+        {HOOK_LINES[0]}
+        <br />
+        {HOOK_LINES[1]}
+        <br />
+        <span
+          className="italic"
+          style={{ fontVariationSettings: "'opsz' 96, 'SOFT' 100" }}
+        >
+          &amp;
+        </span>
+        {HOOK_LINES[2].slice(1)}
+        <br />
+        <span className="text-wheat">{HOOK_LINES[3]}</span>
+      </h1>
+
+      <p className="mt-8 max-w-xl font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
+        {PROFILE.tagline}
+      </p>
+    </section>
+  )
+}
