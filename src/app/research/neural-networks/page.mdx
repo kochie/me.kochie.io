@@ -1,4 +1,4 @@
-import { ActivationShapes, Algorithm, BackpropDiagram, BatchTimeChart, Cite, Contents, Equation, FileSizeChart, Figure, LayerPipeline, NetworkDiagram, Reference, References, SigmoidDerivatives, ThesisHeader, TrainingChart } from '@/components/Thesis'
+import { ActivationShapes, Algorithm, BackpropDiagram, BatchTimeChart, Cite, Contents, CudaFlow, Equation, FileSizeChart, Figure, LayerPipeline, NetworkDiagram, Reference, References, SigmoidDerivatives, ThesisHeader, TrainingChart } from '@/components/Thesis'
 
 <ThesisHeader />
 
@@ -207,16 +207,10 @@ CUDA is a parallel computing platform based around Nvidia GPU chipsets. It provi
 <Figure
   n="4"
   caption="The operation flow of CUDA processing."
-  maxWidth={480}
-  images={[
-    {
-      src: '/images/thesis/fig-4.webp',
-      width: 800,
-      height: 827,
-      alt: 'Flowchart of processing on CUDA: (1) data is copied from main memory to GPU memory, (2) the CPU instructs the processing, (3) the GPU executes in parallel on each core, and (4) the result is copied back to main memory.',
-    },
-  ]}
-/>
+  maxWidth={640}
+>
+  <CudaFlow />
+</Figure>
 
 The flowchart in [Figure 4](#fig-4) gives a basic explanation as to the steps taken when a CUDA compiled program is run on a target machine. In the first step the program memory is loaded into the GPU's memory. Second, the CPU sends the appropriate instructions to the GPU to start computation. Third, the GPU starts executing instructions and processes data, returning it to the GPU memory. Lastly, the finalised output is returned to the system memory.
 
