@@ -1,3 +1,5 @@
+import { PosterButton } from './PosterButton'
+
 const PDF = '/Optimising_Neural_Networks_for_Embedded_Systems.pdf'
 const SOURCE = 'https://bitbucket.org/kochie/fyp'
 const VIDEO_ID = 'Vpi2-mYYwT8'
@@ -76,6 +78,7 @@ export function ThesisHeader() {
         >
           Watch on YouTube <span aria-hidden="true">↗</span>
         </a>
+        <PosterButton className={buttonClass} />
         <a href={PDF} download className={buttonClass}>
           Download PDF <span aria-hidden="true">↓</span>
         </a>
