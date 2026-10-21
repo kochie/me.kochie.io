@@ -28,7 +28,7 @@ export function PosterButton({ className }: { className: string }) {
         aria-haspopup="dialog"
         className={className}
       >
-        View poster <span aria-hidden="true">↗</span>
+        View poster
       </button>
 
       <dialog
