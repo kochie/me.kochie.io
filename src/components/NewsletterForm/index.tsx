@@ -2,11 +2,12 @@
 
 import { useActionState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faSync, faArrowRight } from '@fortawesome/pro-duotone-svg-icons'
 import {
-  subscribeToNewsletter,
-  type SubscribeState,
-} from './submit-form'
+  faCheck,
+  faSync,
+  faArrowRight,
+} from '@fortawesome/pro-duotone-svg-icons'
+import { subscribeToNewsletter, type SubscribeState } from './submit-form'
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
 const NewsletterForm = () => {
@@ -33,8 +34,7 @@ const NewsletterForm = () => {
           htmlFor="member_first_name"
           className="text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground"
         >
-          Your name{' '}
-          <span className="text-muted-foreground/60">(optional)</span>
+          Your name <span className="text-muted-foreground/60">(optional)</span>
         </label>
         <div className="flex items-stretch border-b border-foreground focus-within:border-wheat transition-colors">
           <input

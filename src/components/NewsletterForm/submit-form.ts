@@ -73,9 +73,9 @@ export async function subscribeToNewsletter(
     )
 
     if (!res.ok) {
-      const body = (await res.json().catch(() => null)) as
-        | BeehiivErrorResponse
-        | null
+      const body = (await res
+        .json()
+        .catch(() => null)) as BeehiivErrorResponse | null
       const message =
         body?.errors?.[0]?.message ?? `Subscription failed (${res.status})`
       return { status: 'ERROR', errors: message }
