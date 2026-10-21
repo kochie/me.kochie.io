@@ -8,6 +8,7 @@ import { stats } from '@/components/Thesis/ThesisHeader'
 const REPORT = '/research/neural-networks'
 const PDF = '/Optimising_Neural_Networks_for_Embedded_Systems.pdf'
 const SOURCE = 'https://bitbucket.org/kochie/fyp'
+const VIDEO = 'https://youtu.be/Vpi2-mYYwT8'
 
 const linkClass =
   'font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground hover:text-wheat transition-colors underline underline-offset-4 decoration-1 decoration-border'
@@ -69,6 +70,14 @@ export default function Research() {
             <Link href={REPORT} className={linkClass}>
               Read the report ↗
             </Link>
+            <a
+              href={VIDEO}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+            >
+              Watch ↗
+            </a>
             <a href={PDF} className={linkClass}>
               PDF
             </a>

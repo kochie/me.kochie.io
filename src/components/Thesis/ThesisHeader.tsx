@@ -1,5 +1,7 @@
 const PDF = '/Optimising_Neural_Networks_for_Embedded_Systems.pdf'
 const SOURCE = 'https://bitbucket.org/kochie/fyp'
+const VIDEO_ID = 'Vpi2-mYYwT8'
+const VIDEO_URL = `https://youtu.be/${VIDEO_ID}`
 
 const facts = [
   { label: 'Author', value: 'Robert Koch' },
@@ -66,6 +68,14 @@ export function ThesisHeader() {
       </dl>
 
       <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href={VIDEO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={buttonClass}
+        >
+          Watch on YouTube <span aria-hidden="true">↗</span>
+        </a>
         <a href={PDF} download className={buttonClass}>
           Download PDF <span aria-hidden="true">↓</span>
         </a>
@@ -77,6 +87,18 @@ export function ThesisHeader() {
         >
           Source code <span aria-hidden="true">↗</span>
         </a>
+      </div>
+
+      <div className="mt-10 aspect-video w-full overflow-hidden rounded-md border border-border bg-muted">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}`}
+          title="Optimisation of Neural Networks for Embedded Systems, project presentation"
+          loading="lazy"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="h-full w-full"
+        />
       </div>
 
       <dl className="mt-14 grid grid-cols-1 border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-border">
