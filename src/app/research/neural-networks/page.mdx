@@ -1,0 +1,603 @@
+import { ActivationShapes, Algorithm, BackpropDiagram, BatchTimeChart, Cite, Contents, Equation, FileSizeChart, Figure, LayerPipeline, NetworkDiagram, Reference, References, SigmoidDerivatives, ThesisHeader, TrainingChart } from '@/components/Thesis'
+
+<ThesisHeader />
+
+<Contents />
+
+## Executive Summary
+
+This project focused on understanding and optimising neural networks designed for image classification. The speed, accuracy, and computation power of certain networks was benchmarked against optimised counterparts. The benchmarking of networks was conducted using a combination of both the Torch (Lua) and TensorFlow (Python) frameworks.
+
+Using TensorFlow as a foundation a new library called `pyNet` was created for the specific use case of training and constructing networks with complex data structures in Python. This program was also used to create and modify existing datasets to use for training arbitrary networks regardless of their parameters. Additionally this library can be used to create new datasets from existing images and compile them into TensorFlow ready binaries.
+
+The method of optimising these networks is known as quantisation and focused around changing how the activation functions in the convolution layers of these networks evaluate values. By changing the functions to piecewise linear from non-linear functions it was possible to increase the speed at which batches were processed in the network and also increase the training time. Inversely the accuracy of the network suffered as the models used were rudimentary and suffered from several mitigating issues that were eventually fixed in later iterations.
+
+In this project several aspects of the networks were investigated leading to the conclusion that if done correctly, optimisation by quantising a neural network can improve overall performance.
+
+This project provided a way of experimenting with different aspects of the activation functions used in most major deep learning networks currently in operation. It was found, among other things, that changing the activation function to a ternary step will decrease performance if the threshold value is not configured correctly due to underfitting, and the derivative must represent the activation function more precisely to avoid drift when performing gradient descent in backpropagation.
+
+## Significant Contributions
+
+- Created a new library for the development and testing of neural networks using the TensorFlow framework, with the ability to:
+  - Train a network on any custom database.
+  - Run multiple training sessions on multiple GPUs.
+  - Create networks comprised of "quantised" components.
+  - Automatically create datasets from directory hierarchies.
+  - Train networks until a specific error rate has been achieved.
+  - Display useful information through the TensorBoard product.
+- Decreased the training time of image classification networks by implementing binary and ternary quantised states in the network.
+- Improved the accuracy of binary networks by incorporating a third activation level in the network.
+- Compared the speed, accuracy, and resource cost of several networks including AlexNet, VGG, and Inception to binary and ternary counterparts.
+- Compared the speed, accuracy, and resource cost these networks had on different datasets to determine any differences in training.
+- Compared the speed of several types of networks, both optimised and not optimised, with regard to input batch sizes.
+- Modified an existing Torch repository to include optimised models of several networks using binary and ternary activation functions.
+- Developed a comprehensive understanding of how frameworks such as Torch and TensorFlow create neural networks.
+- Developed a proficient understanding of how deep learning systems such as neural networks operate.
+- Gained a greater understanding of how to use software packages such as LaTeX, OpenCV, and the GNU-Linux ecosystem as a whole.
+
+## 1 Introduction
+
+The concept of deep learning has come a long way in such a short time. Just in this decade alone advances in deep learning have created solutions to problems in all corners of society including commercial, research, and military-industrial sectors that were once the sole domain of human ingenuity. Leading this boom in technology is the artificial neural network, a computing system originally devised in the 1940s as a way of modelling the human brain on a computer. Since then the concept has had many different names including cybernetics <Cite n={4} /> and connectionism <Cite n={13} />, but is now known today by the biological mechanism it was once modelled for.
+
+Neural networks are advantageous because they do not need to be specifically programmed to perform a task <Cite n={4} />, they simply need to be shown how to correctly complete a specific task. This type of algorithm is also known as a supervised learning algorithm — a subset of problems that can be solved using such networks. Neural networks gain their power from their complex structure and their non-linear components which allow them to solve non-trivial problems better than any other type of system, including humans for the most part.
+
+Current implementations of neural networks were designed to be run specifically on dedicated hardware with vast quantities of memory and multiple dedicated parallel computing units. While this implementation will probably not change in the near future there are several exciting new opportunities on the horizon for versions of these algorithms that can run on smaller and less power consuming systems. Self-driving cars <Cite n={1} />, helicopters on Mars <Cite n={8} />, and even advanced AI assistants on phones <Cite n={11} /> are all areas where embedded neural networks could increase the performance and profitability of such systems.
+
+This report will explain several methods that can be used today to miniaturise and optimise resource heavy networks to run on lighter machines.
+
+## 2 Theory and Background
+
+### 2.1 Floating Point Numbers
+
+A floating point number is a representation of a real number that is approximated so that it is possible to store on a computer with a finite number of bits. This trade-off of precision compared to range allows the numbers to be stored efficiently. All programming languages have some method for storing and manipulating floats, with most modern representations of single floats comprising 32 bits, with 8 bits used for the exponent. Floating point numbers are ideal for storing precise values of real numbers compared to integers because they support decimal places. Compared to integer precision arithmetic, floating point is more resource intensive on most systems because it requires more CPU operations — in fact, the number of floating point operations per second (FLOPS) is used as a measurement in supercomputing benchmarks.
+
+### 2.2 Non Linear Functions
+
+In mathematics a function is a relation between a set of inputs and a set of outputs. Each input is mapped to exactly one output, however multiple inputs can map to the same output. A non-linear function is a relationship where the inputs are not proportional to the outputs, they are of interest to many fields in science and engineering because most systems in nature are inherently non-linear.
+
+A linear function can be easily defined mathematically as a function which holds to these properties:
+
+<Equation tag="1a">
+  <math display="block">
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo>+</mo>
+    <mi>y</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>+</mo>
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>y</mi>
+    <mo stretchy="false">)</mo>
+  </math>
+</Equation>
+
+<Equation tag="1b">
+  <math display="block">
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>α</mi>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mi>α</mi>
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+  </math>
+</Equation>
+
+where α ∈ ℝ. By definition a non-linear function is one that does not follow either of the above properties. These functions can be used in a neural network as activation functions so the network can accurately model non-linear systems <Cite n={6} />.
+
+### 2.3 Mathematical Optimisation
+
+In mathematics, optimisation is the selection of a best value from a specific set, based on some sort of criteria. The input set can be the output of a function, this gives a formal method for optimising a mathematical function to get a specific output. This can also be described as below:
+
+<Equation tag="2">
+  <math display="block">
+    <mi>min</mi>
+    <mspace width="0.3em" />
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>,</mo>
+    <mspace width="1em" />
+    <mtext>subject to</mtext>
+    <mspace width="0.5em" />
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <msup>
+      <mi>x</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>+</mo>
+    <mn>1</mn>
+    <mo>,</mo>
+    <mspace width="0.5em" />
+    <mi>x</mi>
+    <mo>∈</mo>
+    <mo stretchy="false">(</mo>
+    <mo>−</mo>
+    <mi mathvariant="normal">∞</mi>
+    <mo>,</mo>
+    <mn>0</mn>
+    <mo stretchy="false">]</mo>
+  </math>
+</Equation>
+
+One of the simplest forms of an optimisation problem is that of finding the minimum or maximum outputs of a function, this can be achieved by selecting input values from within a selected range and then comparing the returned value <Cite n={3} />.
+
+### 2.4 Deep Learning
+
+Deep learning is a subset of machine learning focusing on methods based around learning specific data representations to solve problems rather than task-specific algorithms that are programmed to solve a problem. A deep learning algorithm can learn how to solve a problem without being specifically programmed how, using either a supervised, partially supervised, or unsupervised algorithm. The great advantage that deep learning algorithms have is that they can perform better than people at specific tasks, and this set of tasks is increasing.
+
+#### 2.4.1 Artificial Neural Networks
+
+An artificial neural network is a computing system inspired by the design of the human brain. In simplistic terms the system is analogous to the operation of neurons and dendrites in an animal brain. In a biological brain, brain cells are connected in a network to perform operations, each brain cell has multiple dendrites that act as connectors which link to other brain cells by their terminals. When enough chemical energy is received by a cell through its dendrites, it fires a signal through its axon which will activate any dendrites connected to its terminal.
+
+In artificial networks these complicated interactions are replaced with mathematical operations. The basic design of a network is to have input nodes connected to other nodes further in the network like a directed, weighted graph. The vertices in the graph act like brain cells while the edges act as dendrites connecting cells. The edges of the graph are weighted with a random unknown variable, by training the network the values for the weights of each edge can be evaluated to give the least amount of error. Each node in a network sums up its inputs and applies an activation function to the value. This new value becomes the output of the node and is passed on to any connected node.
+
+In more recent times, the analogy to biological brains has diminished and is no longer a predominant guide in the field of deep learning. The main reason for this paradigm shift is simply because we do not know enough about how the human brain works to make any more assumptions about solving problems with this system. For further advancements in copying the human brain it would be necessary to monitor the activity of thousands of interconnected neurons simultaneously.
+
+<Figure
+  n="1"
+  caption="A simple network diagram."
+  maxWidth={720}
+>
+  <NetworkDiagram />
+</Figure>
+
+**Layout.** The layout of networks is a continuing topic of research today, there are hundreds of different designs for specific use cases, but all these designs follow a basic outline. Networks consist of an input layer which is connected to several middle layers, which are connected to the output layer. These middle "hidden" layers, named because their hyperparameters are unknown, can have different configurations, ranging from fully-connected to convolution-sparse layers <Cite n={5} />.
+
+**Weights.** The weights in standard neural networks are floating point numbers that can be tuned to lower the output error of the network. When initialised a network's weights are assigned randomly from a distribution. One problem that arises with random assignments is that if a weight's value is zero initially it can be difficult for it to be retuned, to avoid this a bias factor is added to the distribution to mitigate the issue <Cite n={5} />.
+
+**Activation functions.** The activation function of a node defines the output given by a set of inputs. A non-linear activation function allows a network to compute non-trivial solutions to a problem using only a relatively small set of nodes. There are many different activation functions available to use, however most of these functions are similar enough that there is little need for different functions. Using our biological metaphor, the activation functions represent the rate of nerve firing in the brain <Cite n={5} />.
+
+<Figure
+  n="2"
+  caption="The shape of different types of activation functions."
+  maxWidth={720}
+>
+  <ActivationShapes />
+</Figure>
+
+Current investigations into optimising neural networks revolve around converting these non-linear functions into approximate piecewise linear functions that can mimic the output of these functions but at a faster rate with less accuracy.
+
+#### 2.4.2 Backpropagation
+
+Backpropagation is a method used in the training of neural networks to calculate and minimise the error that is propagated by the individual weights found across the network. The algorithm requires some sort of loss function to work, this is usually given by the mean squared error of a batch of outputs. The term backwards propagation comes from the fact that the loss function is calculated on the output node and the error is distributed back through the network using a technique similar to the chain rule in calculus <Cite n={9} />.
+
+<Figure
+  n="3"
+  caption="An example of back propagation."
+  maxWidth={760}
+>
+  <BackpropDiagram />
+</Figure>
+
+Backpropagation requires a known, desired output for each input value, and is therefore known as a supervised learning algorithm. [Figure 3](#fig-3) shows a graphical example of the first iteration of a backpropagation algorithm traversing a network. In this example the change added to each weight is calculated by adding the change in error related to each weight multiplied by the momentum (a known hyperparameter of the training algorithm), and the output value <Cite n={9} />.
+
+#### 2.4.3 Overfitting
+
+Overfitting is a problem encountered in machine learning and other statistical forms of mathematics where the model being analysed to fit a dataset becomes too dependent on the data to make future accurate predictions. This is because if the model fits too perfectly to the data, small errors in the distribution or other sources of noise can cause the model to become sensitive to false positives. This means the model will likely have a higher error rate on unseen data.
+
+This can become a serious problem for neural networks and is a topic of current research. There are several solutions to overfitting, these include having a large dataset, having fewer parameters in a model, and input manipulation <Cite n={9} />.
+
+#### 2.4.4 Quantising
+
+Quantisation covers a lot of different techniques to store numbers and perform calculations in a more compact and efficient way than typical 32-bit floating point numbers. For the purposes of this report quantisation refers to the simplification of activation functions to piecewise linear functions, and the conversion of floating point weights to integer weights <Cite n={[16, 15]} />.
+
+### 2.5 Programming
+
+#### 2.5.1 CUDA
+
+CUDA is a parallel computing platform based around Nvidia GPU chipsets. It provides a way for developers to create software that can efficiently use GPUs in computers for general purpose processing. The CUDA platform is a software layer that gives developers access to the GPU's internal virtual instruction set, allowing code to be executed in parallel at a much faster rate. CUDA is used for a variety of deep learning solutions as much of the maths needed for deep learning algorithms can be easily computed using the parallel processing power of a graphics card.
+
+<Figure
+  n="4"
+  caption="The operation flow of CUDA processing."
+  maxWidth={480}
+  images={[
+    {
+      src: '/images/thesis/fig-4.webp',
+      width: 800,
+      height: 827,
+      alt: 'Flowchart of processing on CUDA: (1) data is copied from main memory to GPU memory, (2) the CPU instructs the processing, (3) the GPU executes in parallel on each core, and (4) the result is copied back to main memory.',
+    },
+  ]}
+/>
+
+The flowchart in [Figure 4](#fig-4) gives a basic explanation as to the steps taken when a CUDA compiled program is run on a target machine. In the first step the program memory is loaded into the GPU's memory. Second, the CPU sends the appropriate instructions to the GPU to start computation. Third, the GPU starts executing instructions and processes data, returning it to the GPU memory. Lastly, the finalised output is returned to the system memory.
+
+#### 2.5.2 Torch - Lua
+
+Torch is a mathematical framework written in Lua for the specific use of processing scientific data. Torch can compile code to CUDA instructions and execute operations on both the GPU and CPU. Torch has a wide range of functions that can be used when developing deep learning algorithms. The main branch of Torch was written in Lua, a language specifically created to handle scientific data, however it is not a commonly taught language any more, because of this an alternative version of the framework known as PyTorch was written from the ground up in Python to evolve the framework for a new language.
+
+#### 2.5.3 TensorFlow - Python
+
+TensorFlow is a framework written in Python to handle the creation and manipulation of tensors. In mathematics a tensor is a geometric object that describes a relation between a scalar, vector, matrix, or another tensor. In fact a tensor can be thought of as an extension of a matrix in a higher dimension. The purpose of TensorFlow is to create an easy system to manipulate tensors, this is done in the framework by creating a graph which describes what operations will be performed on each tensor and how the data will flow through the graph — hence the name TensorFlow. After the graph has been defined in Python (or any supported high level language for that matter) the graph is then interpreted into a target language, either C or CUDA and run on the target's processing unit. Because of the ease of use, large developer community, and several other features including TensorBoard, many developers and academics have transitioned to using TensorFlow instead of competing frameworks <Cite n={5} />.
+
+### 2.6 Optimisation via Binary and Ternary Quantisation
+
+As mentioned above the activation functions of a network are what allow networks to solve problems in a relatively small amount of space and time, however by changing how the activation functions work it is possible to increase the speed, and decrease the training time needed to create a working neural network. In this report we will investigate how changing the activation functions to piecewise linear steps modifies the behaviour and characteristics of several different types of networks.
+
+#### 2.6.1 Current Research
+
+Optimisation via quantisation is currently an active field of research in machine learning and there are several efforts currently underway to increase the speed and accuracy of networks using similar techniques to those talked about in this report <Cite n={5} />.
+
+**Binary-Net.** In 2016 a team of researchers in North America and Israel created a network colloquially known as Binary-Net in this report that constrained the activation function outputs and weights to the values of -1 and 1. Their results showed that it is possible to obtain near state-of-the-art results using a binary network while only using a fraction of memory compared to previous networks that had the same results <Cite n={2} />.
+
+**XNOR-Net.** XNOR-Net is another network that was published in 2016 by researchers from the University of Washington. This network expands the field of quantisation by adapting models like VGG, ResNet, and similar binary models so that most of their internal operations are bitwise functions. By converting specific operations such as convolution, and dot products to approximate binary equivalents XNOR-Net again was able to achieve near-state-of-the-art results equivalent to a full precision network while at the same time reducing the footprint needed to compute results by as much as a factor of 58 <Cite n={14} />.
+
+**Ternary-Net.** By expanding on the work of XNOR-Net and Binary-Net researchers again improved the accuracy and compression of a network, this time in China. Academics at the Institute of Applied Math in Beijing were able to run tests on network designs that are similar to the ones mentioned in this report. In their research they created a series of models that used piecewise ternary step functions as the activation functions for convolution layers in their reproductions of VGG-19. Their ternary results showed improvements over their binary models, with increases in accuracy by approximately 5% <Cite n={10} />.
+
+## 3 Torch Implementation
+
+### 3.1 Outline
+
+During semester 1 the initial implementation of a solution was created using Torch. The reason for this was because the several algorithms that were to be tested and modified are written in Torch. By using Torch it was possible to save time in the beginning of the year because it meant that it was not required to know how the networks were implemented right away, the only code that needed to be modified was that of the activation functions. The advantage to using pre-built models was that there was already a module built to read in datasets and parse the results, so less time was also spent creating wrapper functions to make the models work.
+
+While installation of Torch was relatively easy as it only required a rudimentary understanding of how the Linux operating system worked, several add-ons used for debugging purposes such as FBThrift and the Facebook Lua development library (FBLuaLib) needed extensive study in order to understand how to build and compile on the version of Linux being used (Arch Linux). After several weeks of troubleshooting and studying various resources around Linux, Torch, and neural networks the basic model using binary and ternary activation functions was created.
+
+### 3.2 Development and Programming
+
+The algorithm for implementing binary activations was already provided and is quite simple, in Lua all that is needed is to call the library function `Math.sign()` with a tensor as the argument and the function works as expected. To create a ternary step function that can have a variable width it is not possible to execute one operation, instead the fastest way to implement a function like this in Lua follows the algorithm provided below in [Algorithm 1](#alg-1).
+
+<Algorithm
+  n={1}
+  title="Ternary Activation Algorithm"
+  requires="0 < threshold < 1"
+  lines={[
+    [0, 'procedure GetActivationValue'],
+    [1, 'if input > threshold then'],
+    [2, 'output ← 1'],
+    [1, 'else'],
+    [2, 'if input < −threshold then'],
+    [3, 'output ← −1'],
+    [2, 'else'],
+    [3, 'output ← 0'],
+  ]}
+  footer={[1, 'return output']}
+/>
+
+The ternary activation function works like a switch statement, if the input value is greater than a specific threshold value then the output is 1. If the input is below the negative of the threshold value then the output is -1. If it is neither the output is 0. Note for the function to work correctly the threshold value must be greater than 0, and less than 1 as this is where most non-linear activation functions converge, this can be seen more clearly in [Figure 2](#fig-2). If the threshold is set improperly then the model will become less accurate than a binary network due to over and under fitting. Optimising the points at which the activation function steps would significantly increase the reliability of the model.
+
+### 3.3 Challenges and Solutions
+
+At this point there were several challenges in testing the newly created activation functions. For starters a sizeable dataset was needed to run adequate tests on the new model. The infamous ImageNet library was the perfect choice, however at a total size of 400 GB downloading the archive proved challenging in its own right. To perform the download a script was created to run on a slave machine set up at the university, the download took 14 days. Another problem encountered was the file access speed. Storing images on a hard drive simply wasn't an acceptable method, as it took too long for the indexing service to catalogue all the required files. This problem was solved by using a solid state disk, which significantly improved the performance of the Torch network <Cite n={5} />.
+
+The implementation described here was a first step in testing and development, however, the models that were being modified had not been fully completed for certain scenarios. For example the modules included mentioned being able to use the CIFAR datasets to train the network but there was no code in the repository that supported this. This might not have been a problem in itself however since the only available dataset was so large (ImageNet has 1000 classes) it took too long to iteratively develop code and test solutions. For this reason it was decided at the end of semester 1 to transition to a richer framework, TensorFlow.
+
+## 4 TensorFlow Implementation
+
+### 4.1 Outline
+
+Moving over to TensorFlow had several advantages. Initially the learning curve for TensorFlow was very small as a lot of the work that had been done in the first semester could be transferred with minimal modifications. Additionally since TensorFlow was written in Python it was trivial to code in as I have a high level of proficiency in the language. The one issue with migrating to TensorFlow is that it is a fairly new framework, being open sourced in late 2015, and only reaching 1.0 status in early 2017. However, since the main development team is Google Brain, the community surrounding TensorFlow is rich and thriving, making it easier to troubleshoot problems and fix bugs.
+
+As mentioned before TensorFlow interprets the instructions given and then creates a graph to operate on the input tensors, this graph is then compiled into machine and CUDA code and sent to the CPU and GPU. One problem that was encountered early on in development was that there was limited support for bitwise operations in the CUDA bindings. Several adjustments to the algorithm had to be made including building a test network that ran explicitly on the CPU. During this time it was noted that specific bitwise operations were being tested in a development version of TensorFlow which included needed functions like population count. To use these new features required compiling a development version of TensorFlow.
+
+With these obstacles dealt with the only remaining task to complete was generating input data. Since both Torch and TensorFlow binarised their data in different ways a new importer was needed. Not only that, there was no universal way to test different networks with different datasets and view the results easily on TensorFlow. To easily build new networks, train with any datasets, and view the results, a new module was created that handles all the creation and training functions that were needed to conduct extensive research, the new module was added to the repository as `pyNet`.
+
+<Figure
+  n="5"
+  caption="An example of the layout of a network in TensorFlow."
+  maxWidth={820}
+>
+  <LayerPipeline />
+</Figure>
+
+### 4.2 Research and Results
+
+With this new module it is possible to compare the run-times of several different models using the TensorBoard application. Using Torch the timings and accuracies of AlexNet <Cite n={7} /> like models had already been measured. TensorFlow provided the opportunity to modify several other models that had already been converted to the framework, including VGG, Inception, and ResNet. It is now a simple matter of redefining the activation functions for specific layers to convert a network to a binary and ternary equivalent.
+
+Overall by changing the activation functions the accuracy of the network did decrease by a similar amount seen in the Torch models. However, the speed at which the batched operations were processed was noticeably faster than the non-linear equivalent models. As well, the file sizes for the models decreased, this was mainly not because of the changed activation function, but because the output of the new function was an integer instead of a floating point number, and since layers connected with these new functions would only receive integers there was no need to add weights to any of the connected layers.
+
+Additionally with this new framework it was possible to change the datatype of the weights of certain layers quite easily as well. This allowed the possibility of benchmarking the differences that can happen when the weights are binarised as well. This was done by using the population count function which can count the number of 1s in a binary tensor natively on the GPU. The resulting models that were trained using this new method had a consistently smaller file size that resulted from changing the weights from floating point type to integer type.
+
+### 4.3 Improvements and Adaptations
+
+The new models show a significant improvement in terms of speed and training times, but because of the selected threshold for the ternary functions, these models had a lower accuracy than was expected. Apart from trial and error there is no easy way to change the threshold. This can hopefully be iterated on in the future and improved.
+
+While I achieved all the objectives that were outlined in the progress report and requirements analysis there is still room for improvement in the TensorFlow implementation created. For starters, while it is possible to add any image based dataset into the trainer, there is still no way to add other types of data, this could be added in a future revision.
+
+While most of the training that was conducted for these models was run on dual Nvidia 970 chipsets, the models did work fairly well on smaller machines such as my laptop that contains a Nvidia 870m chipset on-board. Using the OpenCV library it was possible to create a script that could evaluate a live video feed with the model, without any optimisation the fastest recorded framerate was 21 fps, which is about the same as the file I/O that was recorded earlier in training. Finally in the last few weeks of the semester I was able to port a CPU version of TensorFlow onto a Raspberry Pi and run a rudimentary network on the quad core processor. The network averaged a batch speed of approximately 10 images in 20 seconds, but this demonstration shows that reducing the overall size and computation power required by these models can be advantageous for many different machines.
+
+## 5 Results and Analysis
+
+### 5.1 Network Error Rates
+
+In analysing the error rates of networks it is possible to understand how quickly a type of network can change its hyperparameters to increase its training accuracy. The lower the error the better the performance of a network. The results that will be interpreted come from an optimised implementation of AlexNet running in Torch.
+
+<Figure
+  n="6"
+  caption="Comparison of training errors for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="error" split="train" />
+</Figure>
+
+The training data seen in [Figure 6](#fig-6) shows how the error in all the networks decreases over time. This shows that the implementation of the networks is successfully working and that eventually the networks will converge individually at a minimum error by following the backpropagation optimisation algorithm.
+
+The data in [Figure 7](#fig-7) shows that the training algorithm is not overfitting the data as the error in testing is also decreasing at an equivalent rate. It can be seen in both figures that the binary and ternary functions are decreasing at the same rate. This is because both models work on the same underlying principle and that the algorithms are implemented in a similar way.
+
+<Figure
+  n="7"
+  caption="Comparison of testing errors for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="error" split="test" />
+</Figure>
+
+### 5.2 Network Training and Testing Accuracies
+
+#### 5.2.1 Top-1 Accuracies
+
+The Top-1 accuracies provide an insight as to how often the model correctly selects the right classification on the first try. The progress of binary and ternary networks can be viewed in both [Figure 8](#fig-8) and [Figure 9](#fig-9). One interesting observation that can be made in all the training figures is that ternary net is not as accurate as binary net, this is somewhat counter-intuitive because the whole idea of adding an extra step in the activation function is to add more precision, how could adding more precision be making the network less accurate?
+
+<Figure
+  n="8"
+  caption="Comparison of Top-1 training accuracies for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="top1" split="train" />
+</Figure>
+
+The answer can be found when changing the threshold value for the step size in ternary net. In initial testing the activation threshold was set to 1, this means that any number in the range of −1 &lt; x &lt; 1 was set to zero. By looking at the comparison of activation functions in [Figure 2](#fig-2) it clearly shows that in that range is where the most changing between levels happens, or putting it another way — where the gradient of the functions has the highest magnitude (this is incredibly important for backpropagation). Because the step in binary net happens when x = 0 there is such a small gap that none of the output values can be zero, as expected.
+
+<Figure
+  n="9"
+  caption="Comparison of Top-1 testing accuracies for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="top1" split="test" />
+</Figure>
+
+What's happening here is that too many values are being zeroed in the convolution layers, this means that too much data is being lost by the quantisation effects. A simple way to fix this is to traverse the range of reasonable threshold numbers for each dataset and optimise each network per dataset. Essentially choose a threshold value smaller than 1.
+
+#### 5.2.2 Top-5 Accuracies
+
+The Top-5 accuracies show how often a model correctly chooses the classification in the first 5 tries. Again in [Figure 10](#fig-10) and [Figure 11](#fig-11) the accuracy of the networks can be observed and the underfitting caused by the thresholding is also visible.
+
+<Figure
+  n="10"
+  caption="Comparison of Top-5 training accuracies for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="top5" split="train" />
+</Figure>
+
+Another property of the modified networks is the difference in the rate of change of accuracy. In Figures [6](#fig-6), [7](#fig-7), [8](#fig-8), [9](#fig-9), [10](#fig-10), and [11](#fig-11) it can be seen that binary and ternary net are slower to change and end up lagging behind the original network implementations. This was another anomaly that was not well understood when it was first recorded, with more research it is now better understood why this happened. Both types of networks calculate error by backpropagation using gradient descent. Gradient descent works by changing the weights of a layer by finding out how much error each weight adds to the total. To achieve this the algorithm needs a function that can calculate the derivative of the activation function, an example of this can be seen in [Figure 3](#fig-3). Because in binary and ternary net the activation function is piecewise there is no continuous derivative for these functions. To resolve this the derivative of the step functions was left unchanged from the non-linear counterparts. While this allowed the algorithm to work the inaccuracies between the step functions and their pseudo derivatives meant that small errors grew more rapidly in later iterations, hence why the algorithms plateau at a lower level.
+
+<Figure
+  n="11"
+  caption="Comparison of Top-5 testing accuracies for optimised and regular networks."
+  note="Data: per-epoch logs from the project repository. Click the legend to hide a network; hover or use the arrow keys to read values."
+>
+  <TrainingChart metric="top5" split="test" />
+</Figure>
+
+Another solution to this problem could be to change how the derivatives are calculated, in an extension to this I tested several different derivatives for the activation functions, most alternatives, such as changing the derivative to be piecewise did not have the anticipated results, however by condensing the derivative so that the rate of change increased closer to the steps did show some improvement.
+
+<Equation tag="3a">
+  <math display="block">
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mn>2</mn>
+        <msup>
+          <mi>e</mi>
+          <mi>x</mi>
+        </msup>
+      </mrow>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mi>x</mi>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </mfrac>
+    <mo>−</mo>
+    <mn>1</mn>
+  </math>
+</Equation>
+
+<Equation tag="3b">
+  <math display="block">
+    <msup>
+      <mi>f</mi>
+      <mo>′</mo>
+    </msup>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mn>2</mn>
+        <msup>
+          <mi>e</mi>
+          <mi>x</mi>
+        </msup>
+      </mrow>
+      <msup>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <msup>
+            <mi>e</mi>
+            <mi>x</mi>
+          </msup>
+          <mo>+</mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mn>2</mn>
+      </msup>
+    </mfrac>
+    <mo>−</mo>
+    <mn>1</mn>
+  </math>
+</Equation>
+
+<Equation tag="3c">
+  <math display="block">
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <msup>
+        <mi>e</mi>
+        <mrow>
+          <mn>4</mn>
+          <mi>x</mi>
+        </mrow>
+      </msup>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow>
+            <mn>4</mn>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </mfrac>
+    <mo>−</mo>
+    <mn>1</mn>
+  </math>
+</Equation>
+
+<Equation tag="3d">
+  <math display="block">
+    <msup>
+      <mi>f</mi>
+      <mo>′</mo>
+    </msup>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mn>8</mn>
+        <msup>
+          <mi>e</mi>
+          <mrow>
+            <mn>4</mn>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mrow>
+      <msup>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <msup>
+            <mi>e</mi>
+            <mrow>
+              <mn>4</mn>
+              <mi>x</mi>
+            </mrow>
+          </msup>
+          <mo>+</mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mn>2</mn>
+      </msup>
+    </mfrac>
+    <mo>−</mo>
+    <mn>1</mn>
+  </math>
+</Equation>
+
+The equations above as well as the plots in [Figure 12](#fig-12) show how this would be achieved when taking into account a binary activation function. For ternary the activation function would need to still either be piecewise or composed of more complicated numerical components.
+
+<Figure
+  n="12"
+  caption="A comparison of activation functions and their derivatives."
+>
+  <SigmoidDerivatives />
+</Figure>
+
+### 5.3 Batch and Filesize Comparisons
+
+Another component that was investigated in this project was how the file size and average batch time changed when the activation functions and weights were modified. In initial testing in Torch and TensorFlow the batch size was seen to reflect how fast a batch could be calculated. The larger the batch the longer it would take both frameworks to process and calculate the values. In the example in [Figure 13](#fig-13) a batch size of 20 was used due to memory constraints.
+
+<Figure
+  n="13"
+  caption="Comparison of batch times for optimised and regular networks."
+  note="Values read from the original chart (approximate); the underlying measurements were not kept."
+  maxWidth={720}
+>
+  <BatchTimeChart />
+</Figure>
+
+What was found is that with modified activation functions with input weights being of type `uint8` the speed of the batch processing dropped by varying amounts based on the different networks used. AlexNet showed the most impressive speed up as the model was able to process batches nearly 1 whole second faster.
+
+When looking at the file sizes of the networks there was considerable improvement here as well. The most significant improvement occurred with VGG as approximately 100 MB of storage space was saved, this was a saving of approximately 20%.
+
+<Figure
+  n="14"
+  caption="Comparison of file sizes for optimised and regular networks."
+  note="Values read from the original chart (approximate); the underlying measurements were not kept."
+  maxWidth={720}
+>
+  <FileSizeChart />
+</Figure>
+
+[Figure 14](#fig-14) shows the savings in file sizes. The reason for such significant savings comes from how the numbers are stored in the model. Originally all the numbers that had to be stored were 32 or 64 bit floating point numbers, when these weights were converted to 8 bits their sizes reduced by a factor of 4 and 8 respectively.
+
+### 5.4 Analysis
+
+The results of these tests show that quantising any type of network can lead to significant performance improvements — if done correctly. Initially a lot of the testing for this report was done on a trial and error basis. Building off these results it should be possible to revisit some of these configurations in the future and improve and iterate on the decisions made in this report.
+
+## 6 Conclusion
+
+In this project, the behaviour of optimised and non-optimised neural networks was evaluated. This was done by developing and testing several networks in both the Torch and TensorFlow frameworks, with their results combined and analysed to determine how changing the activation functions of convolution layers varies the speed, accuracy, and training time of these networks. The results show that by converting the activation functions from non-linear to linear piecewise functions improves the speed at which a network can be trained and evaluated because each individual batch takes less time to be computed. The analysis also showed that this improvement shrank file sizes by as much as 20% meaning that the models could be more easily transferred and shared to smaller devices. Furthermore the decrease in accuracy and increase in error is possible to minimise by changing some parameters that were used in making this report, such as how the gradient of functions is calculated, and what threshold value should be used for the ternary step activation function.
+
+The module created for this project called `pyNet` will be available on GitHub and should provide a starting point for further investigations into the area of network quantisation. The `pyNet` module can be used to train any neural network that supports the output format specified in the library, it also makes it possible to create a training set from any hierarchical file system and run these datasets on any supported network. This will allow future researchers to quickly iterate on past work and improve performance.
+
+Further areas of improvement for this project lie in how some of the calculations for optimisations are made. If more bitwise operations were supported in Torch and TensorFlow on CUDA devices then the performance of networks could again be increased. In the analysis section it is mentioned that if the quantisation of networks is done correctly then the accuracy of the system should remain state-of-the-art, however, in the testing done this was not fully achieved and the accuracy of the networks remained 5%–10% below what other researchers have reported, this could be addressed with more attention in a later endeavour.
+
+With the mobile and IoT sectors of the market continuing to expand and with companies like Intel <Cite n={12} /> and Apple focusing on releasing more powerful chipsets aimed at machine learning applications, the future of optimisation relating to neural networks will be an important topic that will require up to date tools and theories to satisfy demand.
+
+## References
+
+<References>
+  <Reference n={1} authors="Katherine Bourzac" title="Bringing big neural networks to self-driving cars, smartphones, and drones" source="IEEE Spectrum" detail="2017" href="https://spectrum.ieee.org/computing/embedded-systems/bringing-big-neural-networks-to-selfdriving-cars-smartphones-and-drones" />
+  <Reference n={2} authors="Matthieu Courbariaux and Yoshua Bengio" title="BinaryNet: Training deep neural networks with weights and activations constrained to +1 or -1" source="CoRR" detail="abs/1602.02830, 2016" />
+  <Reference n={3} authors="W. Erwin Diewert" title="Cost functions" source="The New Palgrave Dictionary of Economics" detail="ed. Steven N. Durlauf and Lawrence E. Blume. Palgrave Macmillan, Basingstoke, 2008" />
+  <Reference n={4} authors="Ian Goodfellow, Yoshua Bengio, and Aaron Courville" title="Deep Learning" book source="MIT Press" detail="2016" href="http://www.deeplearningbook.org" />
+  <Reference n={5} authors="Aurélien Géron" title="Hands-On Machine Learning with Scikit-Learn and TensorFlow" book source="O'Reilly Media Inc." detail="2017" />
+  <Reference n={6} authors="Diederich Hinrichsen" title="Mathematical systems theory I: modelling, state space analysis, stability and robustness" book source="Springer, Berlin New York" detail="2005" />
+  <Reference n={7} authors="Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton" title="ImageNet classification with deep convolutional neural networks" source="Advances in Neural Information Processing Systems 25" detail="ed. F. Pereira, C. J. C. Burges, L. Bottou, and K. Q. Weinberger, pages 1097–1105. Curran Associates, Inc., 2012" />
+  <Reference n={8} authors="Elizabeth Landau" detail="2017" href="https://www.jpl.nasa.gov/news/news.php?feature=4457" />
+  <Reference n={9} authors="Yann LeCun, L. Bottou, Genevieve Orr, and Klaus-Robert Müller" title="Efficient backprop" source="Research Gate" detail="1524, July 1998" />
+  <Reference n={10} authors="Fengfu Li and Bin Liu" title="Ternary weight networks" source="CoRR" detail="abs/1605.04711, 2016" />
+  <Reference n={11} authors="John Mannes" title="Google's TensorFlow Lite brings machine learning to Android devices" source="TechCrunch" detail="2017" href="https://techcrunch.com/2017/05/17/googles-tensorflow-lite-brings-machine-learning-to-android-devices/" />
+  <Reference n={12} authors="Dr. Michael Mayberry" title="Intel's new self-learning chip promises to accelerate artificial intelligence" source="Intel Newsroom" detail="2017" href="https://newsroom.intel.com/editorials/intels-new-self-learning-chip-promises-accelerate-artificial-intelligence/" />
+  <Reference n={13} authors="David A. Medler" title="A brief history of connectionism" source="Neural Computing Surveys" detail="1, 1998" />
+  <Reference n={14} authors="Mohammad Rastegari, Vicente Ordonez, Joseph Redmon, and Ali Farhadi" title="XNOR-Net: ImageNet classification using binary convolutional neural networks" source="CoRR" detail="abs/1603.05279, 2016" />
+  <Reference n={15} authors="A. J. F. van Rooij" title="Neural network training using genetic algorithms" book source="World Scientific" detail="1998" />
+  <Reference n={16} authors="Claudio Turchetti" title="Stochastic models of neural networks" book source="IOS Press" detail="2004" />
+</References>

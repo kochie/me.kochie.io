@@ -3,7 +3,6 @@ import Image, { StaticImageData } from 'next/image'
 
 import Space from '@/images/space.png'
 import Particlez from '@/images/particlez.png'
-import Tensorflow from '@/images/tensorflow.jpeg'
 import Stocks from '@/images/clay-banks-3IFYE6UHFBo-unsplash.jpg'
 import CT from '@/images/markus-winkler-zYBR4TN46EE-unsplash.jpg'
 import BenchTop from '@/images/brett-garwood-asZVvgMGshc-unsplash.jpg'
@@ -16,7 +15,6 @@ const projects: {
   title: string
   description: string
   link: string
-  reportLink?: string
   id: string
 }[] = [
   {
@@ -56,15 +54,6 @@ const projects: {
     description: 'A real-time n-body particle simulator for the web.',
     link: 'https://3body.vercel.app',
     id: '4',
-  },
-  {
-    image: Tensorflow,
-    title: 'Optimising Neural Networks for Embedded Systems',
-    description:
-      'Final-year project — modifying the activation layers of CNNs to run better on embedded devices.',
-    link: 'https://bitbucket.org/kochie/fyp',
-    reportLink: '/Optimising_Neural_Networks_for_Embedded_Systems.pdf',
-    id: '5',
   },
   {
     image: Stocks,
@@ -125,16 +114,6 @@ export default function Portfolio(): ReactElement {
                 {project.description}
               </p>
             </a>
-            {project.reportLink && (
-              <a
-                href={project.reportLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="self-start font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground hover:text-wheat transition-colors underline underline-offset-4 decoration-1 decoration-border"
-              >
-                Read the report (PDF) ↗
-              </a>
-            )}
           </li>
         ))}
       </ol>

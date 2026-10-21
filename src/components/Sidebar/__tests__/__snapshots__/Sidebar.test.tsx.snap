@@ -193,6 +193,21 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           </span>
           <a
             className="hover:text-wheat transition-colors"
+            href="#sec-research"
+          >
+            Research
+          </a>
+        </li>
+        <li
+          className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+        >
+          <span
+            className="text-cream/45 text-right"
+          >
+            07
+          </span>
+          <a
+            className="hover:text-wheat transition-colors"
             href="#sec-talks"
           >
             Talks
@@ -204,7 +219,7 @@ exports[`Sidebar Component image onload starts parallax 1`] = `
           <span
             className="text-cream/45 text-right"
           >
-            07
+            08
           </span>
           <a
             className="hover:text-wheat transition-colors"
@@ -602,6 +617,21 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           </span>
           <a
             className="hover:text-wheat transition-colors"
+            href="#sec-research"
+          >
+            Research
+          </a>
+        </li>
+        <li
+          className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+        >
+          <span
+            className="text-cream/45 text-right"
+          >
+            07
+          </span>
+          <a
+            className="hover:text-wheat transition-colors"
             href="#sec-talks"
           >
             Talks
@@ -613,7 +643,7 @@ exports[`Sidebar Component image onload starts parallax 2`] = `
           <span
             className="text-cream/45 text-right"
           >
-            07
+            08
           </span>
           <a
             className="hover:text-wheat transition-colors"
@@ -1013,6 +1043,21 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           </span>
           <a
             className="hover:text-wheat transition-colors"
+            href="#sec-research"
+          >
+            Research
+          </a>
+        </li>
+        <li
+          className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+        >
+          <span
+            className="text-cream/45 text-right"
+          >
+            07
+          </span>
+          <a
+            className="hover:text-wheat transition-colors"
             href="#sec-talks"
           >
             Talks
@@ -1024,7 +1069,7 @@ exports[`Sidebar Component sidebar renders correctly 1`] = `
           <span
             className="text-cream/45 text-right"
           >
-            07
+            08
           </span>
           <a
             className="hover:text-wheat transition-colors"
@@ -1422,6 +1467,21 @@ exports[`Sidebar Component unmounts 1`] = `
           </span>
           <a
             className="hover:text-wheat transition-colors"
+            href="#sec-research"
+          >
+            Research
+          </a>
+        </li>
+        <li
+          className="grid grid-cols-[1.75rem_1fr] items-baseline gap-x-3"
+        >
+          <span
+            className="text-cream/45 text-right"
+          >
+            07
+          </span>
+          <a
+            className="hover:text-wheat transition-colors"
             href="#sec-talks"
           >
             Talks
@@ -1433,7 +1493,7 @@ exports[`Sidebar Component unmounts 1`] = `
           <span
             className="text-cream/45 text-right"
           >
-            07
+            08
           </span>
           <a
             className="hover:text-wheat transition-colors"

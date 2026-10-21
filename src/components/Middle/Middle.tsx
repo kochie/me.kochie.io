@@ -9,6 +9,7 @@ import Hero from '@/components/Hero/Hero'
 import GetInTouch from '@/components/GetInTouch'
 import Awards from '@/components/Awards'
 import Talks from '@/components/Talks'
+import Research from '@/components/Research'
 import NewsletterForm from '../NewsletterForm'
 import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
@@ -44,6 +45,10 @@ export default function Middle(): ReactElement {
 
         <section id="sec-work" className="my-16 lg:my-24 scroll-mt-12">
           <Portfolio />
+        </section>
+
+        <section id="sec-research" className="my-16 lg:my-24 scroll-mt-12">
+          <Research />
         </section>
 
         <section id="sec-talks" className="my-16 lg:my-24 scroll-mt-12">

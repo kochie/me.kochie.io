@@ -62,7 +62,7 @@ export default async function RecentArticles() {
   return (
     <div>
       <SectionHeader
-        number="07"
+        number="08"
         department="Writing"
         title="Recent articles."
         note={
@@ -134,7 +134,7 @@ export function RecentArticlesSkeleton() {
   return (
     <div>
       <SectionHeader
-        number="07"
+        number="08"
         department="Writing"
         title="Recent articles."
       />

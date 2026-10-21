@@ -10,6 +10,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://me.kochie.io/research/neural-networks',
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
       url: 'https://blog.kochie.io',
       lastModified: now,
       changeFrequency: 'weekly',

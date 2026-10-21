@@ -81,7 +81,7 @@ export default function TalksSection() {
   return (
     <div>
       <SectionHeader
-        number="06"
+        number="07"
         department="Talks"
         title="On stage, occasionally."
         note="When I'm not in front of a screen I'm sometimes in front of a room."

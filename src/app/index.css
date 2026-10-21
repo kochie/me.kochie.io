@@ -246,3 +246,29 @@
   }
 }
 
+
+/* Long-form reading column for report pages (src/app/research). Kept in the
+   components layer so Tailwind utilities on child elements still win. */
+@layer components {
+.thesis-prose {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.thesis-prose a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-wheat);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-thickness 150ms ease;
+}
+
+.thesis-prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.thesis-prose math {
+  font-size: 1.1em;
+}
+}
