@@ -20,7 +20,7 @@ const NewsletterForm = () => {
       <SectionHeader
         number="03"
         department="Dispatch"
-        title="Sporadic notes, sent occasionally."
+        title="Occasional notes by email."
         note="Opt-in only — unsubscribe at any time. Powered by Beehiiv."
       />
 

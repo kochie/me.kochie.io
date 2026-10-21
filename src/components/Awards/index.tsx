@@ -10,7 +10,7 @@ const Header = () => (
     number="04"
     department="Recognitions"
     title="Stickers from the internet."
-    note="A small board of badges and recognitions, courtesy of Holopin."
+    note="Badges I've collected, via Holopin."
   />
 )
 

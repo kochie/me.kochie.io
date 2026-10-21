@@ -31,7 +31,7 @@ exports[`NEWSLETTERFORM COMPONENT renders correctly 1`] = `
         <h2
           class="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none"
         >
-          Sporadic notes, sent occasionally.
+          Occasional notes by email.
         </h2>
         <p
           class="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right"

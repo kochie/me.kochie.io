@@ -78,7 +78,7 @@ export default function Portfolio(): ReactElement {
         number="05"
         department="Selected Work"
         title="Some recent things I've built."
-        note="A handful of projects, some shipped, some still warm."
+        note="Some shipped, some still in progress."
       />
       <ol className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row gap-8 lg:gap-10">
         {projects.map((project, i) => (

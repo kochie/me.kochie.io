@@ -84,7 +84,6 @@ export default function TalksSection() {
         number="07"
         department="Talks"
         title="On stage, occasionally."
-        note="When I'm not in front of a screen I'm sometimes in front of a room."
       />
       <ol className="flex flex-col">
         {talks.map((talk) => {

@@ -18,7 +18,7 @@ export default function Research() {
       <SectionHeader
         number="06"
         department="Research"
-        title="Teaching networks to travel light."
+        title="Neural networks for small devices."
         note="Final-year thesis for Electrical and Computer Systems Engineering."
       />
       <article className="group grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-8 lg:gap-12">
