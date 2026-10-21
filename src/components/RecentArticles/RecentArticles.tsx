@@ -16,8 +16,7 @@ interface JSONFeed {
     id: string
     url: string
     title: string
-    content_html?: string
-    content_text?: string
+    summary?: string
     image: string
     date_modified: string
     author: {
@@ -39,28 +38,6 @@ async function fetchFeed(): Promise<JSONFeed | null> {
   } catch {
     return null
   }
-}
-
-// Strip HTML so we render the article summary as plain text. The feed comes
-// from a trusted blog, but rendering raw HTML would couple this card layout
-// to whatever block markup the post starts with — and avoid an XSS surface.
-function htmlToText(html: string): string {
-  return html
-    .replace(/<[^>]*>/g, '')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-function getSummary(item: JSONFeed['items'][number]): string {
-  if (item.content_text) return item.content_text
-  if (item.content_html) return htmlToText(item.content_html)
-  return ''
 }
 
 export default async function RecentArticles() {
@@ -143,7 +120,7 @@ export default async function RecentArticles() {
                 </a>
               </h3>
               <p className="text-foreground/75 leading-relaxed max-w-2xl">
-                {getSummary(article)}
+                {article.summary}
               </p>
             </div>
           </li>
