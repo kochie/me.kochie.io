@@ -2,13 +2,15 @@ import { SectionHeader } from '@/components/SectionHeader/SectionHeader'
 
 interface Talk {
   title: string
-  date: string
-  event: string
+  date?: string
+  event?: string
   tags: string[]
   subtitle?: string
   description: string | string[]
   video?: string
   slides?: string
+  /** Upcoming talks have no date yet; archived ones render compactly. */
+  status?: 'upcoming' | 'archived'
 }
 
 const talks: Talk[] = [
@@ -44,11 +46,61 @@ const talks: Talk[] = [
       "This session shows you how to flip that script. I'll share a practical framework for designing and deploying AI agents that create measurable business impact, agents that align with real workflows, integrate securely, and deliver results people actually care about.",
       'If you want to stop wasting resources and start building AI agents that stick, this talk will show you how.',
     ],
+    video: 'https://www.youtube.com/watch?v=_vaIfRXXiIY',
     slides: '/AI_Agents_That_Dont_Suck.pdf',
+  },
+  {
+    title: 'Building secure RAG pipelines',
+    status: 'archived',
+    tags: ['AI', 'Security', 'Engineering'],
+    description: [
+      "In this session learn how to build Retrieval-Augmented Generation (RAG) pipelines for AI agents. We'll explore the principles of what looks good, and how to break down complex business problems so they can be reliably solved by RAG assisted AI Agents.",
+      "In this session we'll start from the basics and discover what RAG is, we'll then create a simple pipeline into a Large Language Model, finally we'll create a multi-modal RAG pipeline that can handle complex enterprise security requirements.",
+    ],
+  },
+  {
+    title: 'Python, But Fast',
+    status: 'archived',
+    subtitle: 'A Practical Playbook for Real-World Speedups',
+    tags: ['Python', 'Performance', 'Engineering'],
+    description:
+      "Python is slow… until it isn't. This talk shows a no nonsense playbook for squeezing 10x more performance out of real Python code without rewriting everything in C. Through live demos we'll profile, vectorize, batch, and compile hot paths turning sluggish scripts and services into production-ready speed demons. You'll leave with a clear checklist and the confidence to know which optimization matters most in your app.",
+  },
+  {
+    title: 'Space to Cloud',
+    status: 'archived',
+    subtitle: 'Building AI Pipelines from Free Satellite Data',
+    tags: ['AI', 'Cloud', 'Space'],
+    description: [
+      'What if you could tap into satellites orbiting the Earth right now - without a billion-dollar budget or your own dish farm? Thanks to cloud-connected ground stations, anyone can capture and stream downlink data directly from satellites, process it in real time, and feed it into modern AI pipelines.',
+      "In this talk, we'll go hands-on with the growing ecosystem of cloud ground stations and show how to transform raw space signals into usable datasets for computer vision, climate science, and machine learning.",
+      "Whether you're an AI engineer, data scientist, or just a space geek with cloud credits to burn, this session will show you how to bring the view from orbit straight into your ML models.",
+    ],
+  },
+  {
+    title: 'One word was churning our customers',
+    status: 'upcoming',
+    subtitle: 'Lessons from building FDE at a startup',
+    tags: ['Startups', 'Forward Deployed Engineering', 'AI'],
+    description: [
+      'The hardest part of building a startup is finding product-market fit while inventing the business around it. Forward deployed engineers fill the gap between what your product does and what customers actually need, and in AI, that gap is where deals die.',
+      'We built an FDE team and got most of it wrong first: a single word in our positioning was teaching customers to churn, deals closed without anyone owning deployment, and my team sat squarely in the crossfire between engineering and sales.',
+      'This talk covers what broke, what we fixed, and how FDEs can use their position in the middle to shape both sides - so customers get solutions, not handoffs.',
+    ],
   },
 ]
 
-const formatYear = (iso: string) => new Date(iso).getFullYear()
+const slugify = (title: string) =>
+  title
+    .toLowerCase()
+    .replace(/[‘’']/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+
+const featured = talks.filter((talk) => talk.status !== 'archived')
+const archived = talks.filter((talk) => talk.status === 'archived')
+
+const formatYear = (iso?: string) => (iso ? new Date(iso).getFullYear() : null)
 
 const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-AU', {
@@ -67,7 +119,7 @@ const X_HANDLE = '@kochie'
 // safe starting point; tweak phrasing, hashtags, or per-tag voice to taste.
 // Constraints: keep under ~240 chars (X appends a ~25-char t.co URL).
 const buildShareText = (talk: Talk): string =>
-  `"${talk.title}" — ${X_HANDLE} at ${talk.event}`
+  `"${talk.title}" — ${X_HANDLE}${talk.event ? ` at ${talk.event}` : ''}`
 
 const buildShareToXUrl = (talk: Talk, slug: string): string => {
   const params = new URLSearchParams({
@@ -86,20 +138,22 @@ export default function TalksSection() {
         title="On stage, occasionally."
       />
       <ol className="flex flex-col">
-        {talks.map((talk) => {
-          const slug = talk.title
-            .toLowerCase()
-            .replace(/[‘’']/g, '')
-            .replace(/[^a-z0-9]+/g, '-')
-            .replace(/^-|-$/g, '')
+        {featured.map((talk) => {
+          const slug = slugify(talk.title)
           return (
             <li
               key={slug}
               id={slug}
               className="flex flex-col gap-3 lg:grid lg:grid-cols-[5rem_1fr] lg:gap-x-12 lg:gap-y-2 py-10 border-t border-border last:border-b scroll-mt-7"
             >
-              <div className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground lg:pt-1">
-                {formatYear(talk.date)}
+              <div
+                className={`font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground lg:pt-1 ${talk.date || talk.status === 'upcoming' ? '' : 'hidden lg:block'}`}
+              >
+                {talk.date
+                  ? formatYear(talk.date)
+                  : talk.status === 'upcoming'
+                    ? 'Next'
+                    : null}
               </div>
               <div className="space-y-3">
                 {talk.tags.length > 0 && (
@@ -124,13 +178,29 @@ export default function TalksSection() {
                     {talk.subtitle}
                   </p>
                 )}
-                <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                  {talk.event}
-                  <span aria-hidden="true" className="mx-2 text-wheat">
-                    ·
-                  </span>
-                  <time dateTime={talk.date}>{formatDate(talk.date)}</time>
-                </p>
+                {(talk.event || talk.date || talk.status === 'upcoming') && (
+                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                    {talk.event}
+                    {talk.event && talk.date && (
+                      <span aria-hidden="true" className="mx-2 text-wheat">
+                        ·
+                      </span>
+                    )}
+                    {talk.date && (
+                      <time dateTime={talk.date}>{formatDate(talk.date)}</time>
+                    )}
+                    {!talk.date && talk.status === 'upcoming' && (
+                      <>
+                        {talk.event && (
+                          <span aria-hidden="true" className="mx-2 text-wheat">
+                            ·
+                          </span>
+                        )}
+                        <span className="text-wheat">Upcoming</span>
+                      </>
+                    )}
+                  </p>
+                )}
                 {Array.isArray(talk.description) ? (
                   talk.description.map((desc, i) => (
                     <p
@@ -181,6 +251,77 @@ export default function TalksSection() {
           )
         })}
       </ol>
+
+      {archived.length > 0 && (
+        <div className="mt-14">
+          <div className="flex items-baseline gap-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+            <span>Archive</span>
+            <span aria-hidden="true" className="text-wheat">
+              ·
+            </span>
+            <span>Other talks I give</span>
+          </div>
+          <ul className="mt-4 flex flex-col">
+            {archived.map((talk) => {
+              const slug = slugify(talk.title)
+              const paragraphs = Array.isArray(talk.description)
+                ? talk.description
+                : [talk.description]
+              return (
+                <li
+                  key={slug}
+                  id={slug}
+                  className="border-t border-border last:border-b scroll-mt-7"
+                >
+                  <details className="group py-4 lg:pl-32">
+                    <summary className="flex cursor-pointer list-none items-baseline justify-between gap-4 [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-wheat">
+                      <span>
+                        <span className="text-lg text-foreground group-hover:text-wheat transition-colors">
+                          {talk.title}
+                        </span>
+                        {talk.subtitle && (
+                          <span className="font-display italic text-muted-foreground">
+                            {' '}
+                            — {talk.subtitle}
+                          </span>
+                        )}
+                        <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                          {talk.tags.join(' · ')}
+                        </span>
+                      </span>
+                      <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                        <span className="group-open:hidden">Abstract +</span>
+                        <span className="hidden group-open:inline">
+                          Close −
+                        </span>
+                      </span>
+                    </summary>
+                    <div className="mt-3 space-y-3">
+                      {paragraphs.map((desc, i) => (
+                        <p
+                          key={`${slug}-${i}`}
+                          className="max-w-3xl text-sm leading-relaxed text-foreground/80"
+                        >
+                          {desc}
+                        </p>
+                      ))}
+                      <a
+                        href={buildShareToXUrl(talk, slug)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${linkClass} inline-block font-mono text-xs uppercase tracking-[0.18em]`}
+                        aria-label={`Share "${talk.title}" on X`}
+                      >
+                        Share on X ↗
+                      </a>
+                    </div>
+                  </details>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   )
 }
