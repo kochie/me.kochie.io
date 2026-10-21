@@ -3,7 +3,8 @@ import type { ReactNode } from 'react'
 interface SectionHeaderProps {
   number: string
   department: string
-  title: ReactNode
+  /** Omit for an eyebrow-and-rule only header. */
+  title?: ReactNode
   /** Optional editor's note rendered next to the title in italic body face. */
   note?: ReactNode
   /** id used for in-page anchors. */
@@ -23,7 +24,10 @@ export function SectionHeader({
   id,
 }: SectionHeaderProps) {
   return (
-    <header className="mb-8 lg:mb-12" id={id}>
+    <header
+      className={title || note ? 'mb-8 lg:mb-12' : 'mb-6 lg:mb-8'}
+      id={id}
+    >
       <div className="flex items-baseline gap-3 text-[11px] uppercase tracking-[0.22em] font-mono text-muted-foreground">
         <span>No. {number}</span>
         <span aria-hidden="true" className="text-wheat">
@@ -32,16 +36,18 @@ export function SectionHeader({
         <span>{department}</span>
       </div>
       <div className="mt-3 h-px bg-border" />
-      <div className="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3">
-        <h2 className="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none">
-          {title}
-        </h2>
-        {note && (
-          <p className="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right">
-            {note}
-          </p>
-        )}
-      </div>
+      {(title || note) && (
+        <div className="mt-5 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3">
+          <h2 className="text-[2rem] leading-[1.05] lg:text-5xl text-foreground tracking-tight max-w-[18ch] lg:max-w-none">
+            {title}
+          </h2>
+          {note && (
+            <p className="font-display italic text-[15px] lg:text-base text-muted-foreground lg:max-w-md lg:text-right">
+              {note}
+            </p>
+          )}
+        </div>
+      )}
     </header>
   )
 }

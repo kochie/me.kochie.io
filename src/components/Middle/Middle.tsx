@@ -20,18 +20,16 @@ export default function Middle(): ReactElement {
         <Hero />
 
         <section id="sec-introduction" className="my-16 lg:my-24 scroll-mt-12">
-          <SectionHeader
-            number="01"
-            department="Introduction"
-            title="A short bio."
-            note="The longer story is below — the short one is on the cover."
-          />
+          <SectionHeader number="01" department="Introduction" />
           <div className="intro-prose max-w-3xl">
             <Hello />
           </div>
         </section>
 
-        <section id="sec-correspondence" className="my-16 lg:my-24 scroll-mt-12">
+        <section
+          id="sec-correspondence"
+          className="my-16 lg:my-24 scroll-mt-12"
+        >
           <GetInTouch />
         </section>
 

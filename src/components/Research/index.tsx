@@ -19,7 +19,7 @@ export default function Research() {
         number="06"
         department="Research"
         title="Teaching networks to travel light."
-        note="My final-year thesis, written up properly rather than left as a PDF."
+        note="Final-year thesis for Electrical and Computer Systems Engineering."
       />
       <article className="group grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-8 lg:gap-12">
         <Link
