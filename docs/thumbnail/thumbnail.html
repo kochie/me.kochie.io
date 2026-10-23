@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<style>
+  :root { --coal:#161410; --coal-soft:#25211c; --cream:#f3ecdf; --cream-soft:#c9c1b3; --wheat:#d9b67a; }
+  * { box-sizing:border-box; margin:0; }
+  html,body { width:1280px; height:720px; background:var(--coal); overflow:hidden; }
+  .t { position:relative; width:1280px; height:720px; padding:64px 72px; color:var(--cream);
+       background:
+         radial-gradient(900px 600px at 82% 55%, #2a251d 0%, transparent 70%),
+         var(--coal); }
+  .eyebrow { font:500 22px/1 'JetBrains Mono',monospace; letter-spacing:.22em; text-transform:uppercase; color:var(--cream-soft); display:flex; gap:16px; align-items:center; }
+  .eyebrow i { color:var(--wheat); font-style:normal; }
+  .rule { margin-top:22px; height:2px; background:#f3ecdf33; width:100%; }
+  h1 { position:absolute; left:72px; top:168px; width:640px; font:500 96px/1 'Fraunces',serif; letter-spacing:-.02em; font-variation-settings:'opsz' 144; }
+  h1 em { font-style:italic; font-weight:400; color:var(--wheat); }
+  .sub { position:absolute; left:72px; bottom:64px; display:flex; flex-direction:column; gap:12px; }
+  .sub b { font:500 30px/1 'Fraunces',serif; color:var(--cream); }
+  .sub span { font:500 18px/1 'JetBrains Mono',monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--cream-soft); }
+  svg { position:absolute; right:56px; top:170px; width:470px; height:auto; }
+  .play { position:absolute; right:72px; bottom:60px; font:500 20px/1 'JetBrains Mono',monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--wheat); }
+</style>
+</head>
+<body>
+<div class="t">
+  <div class="eyebrow"><span>Final Year Project</span><i>·</i><span>ECE4095</span><i>·</i><span>2017</span></div>
+  <div class="rule"></div>
+  <h1>Neural networks for <em>small</em> devices.</h1>
+
+  <svg width="520" height="420" viewBox="0 0 520 420" fill="none" aria-hidden="true">
+    <!-- grid -->
+    <g stroke="#f3ecdf" stroke-opacity=".12" stroke-width="2">
+      <line x1="0" y1="210" x2="520" y2="210"/><line x1="260" y1="0" x2="260" y2="420"/>
+      <line x1="0" y1="50" x2="520" y2="50" stroke-dasharray="6 10"/><line x1="0" y1="370" x2="520" y2="370" stroke-dasharray="6 10"/>
+    </g>
+    <!-- tanh (smooth, the thing being replaced) -->
+    <path id="tanh" stroke="#f3ecdf" stroke-opacity=".45" stroke-width="5" stroke-linecap="round" d=""/>
+    <!-- ternary step -->
+    <path d="M10 370 H150 V210 H370 V50 H510" stroke="#d9b67a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+    <g fill="#d9b67a"><circle cx="150" cy="370" r="0"/></g>
+    <text x="16" y="400" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#c9c1b3">−1</text>
+    <text x="498" y="38" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#c9c1b3" text-anchor="end">+1</text>
+    <text x="272" y="236" font-family="JetBrains Mono" font-size="20" letter-spacing="3" fill="#c9c1b3">0</text>
+  </svg>
+
+  <div class="sub"><b>Robert Koch</b><span>Binary &amp; ternary activations</span></div>
+  <div class="play">Project presentation</div>
+</div>
+<script>
+  // tanh curve across the 520x420 box, centred at (260,210), x spans -5..5, y spans -1..1
+  const pts=[]; for(let i=0;i<=200;i++){const x=-5+i*0.05; const y=Math.tanh(x*0.9);
+    pts.push((260+x*52).toFixed(1)+' '+(210-y*160).toFixed(1));}
+  document.getElementById('tanh').setAttribute('d','M'+pts.join(' L'));
+</script>
+</body>
+</html>
