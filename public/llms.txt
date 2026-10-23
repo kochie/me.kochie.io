@@ -1,0 +1,48 @@
+# Robert Koch
+
+> Personal site of Robert Koch, an engineer, speaker and guitarist based in Melbourne, Australia. He is a Forward Deployed Engineer at Quarterzip AI, and the site covers his projects, research, conference talks and writing.
+
+Robert previously worked at Redactive AI (semantic security for enterprise AI, acquired by Recordpoint), Amazon Web Services (Cloud Architect, public sector) and Localz (last-mile delivery software). He graduated from Monash University in Electrical Engineering, Computer Science and Maths, and served on the national committee of Young Engineers Australia through 2025.
+
+## About and contact
+
+- [Home](https://me.kochie.io): Introduction, contact links, selected work, research, talks and recent writing on one page
+- [Resume (PDF)](https://me.kochie.io/Robert_Koch.pdf): Full work history and education
+- Email: robert@kochie.io
+- [Blog](https://blog.kochie.io): Articles and newsletter
+- [Blog RSS feed](https://blog.kochie.io/feed/rss.xml): Subscribe to new posts
+
+## Research
+
+- [Optimising Neural Networks for Embedded Systems](https://me.kochie.io/research/neural-networks): Final year thesis project on speeding up image-classification networks by quantising activation functions to binary and ternary states, with a purpose-built TensorFlow library (`pyNet`) and benchmarks against AlexNet, VGG and Inception
+- [Thesis report (PDF)](https://me.kochie.io/Optimising_Neural_Networks_for_Embedded_Systems.pdf)
+- [Thesis poster (PDF)](https://me.kochie.io/Optimising_Neural_Networks_for_Embedded_Systems_Poster.pdf)
+- [Project video](https://youtu.be/Vpi2-mYYwT8)
+- [Source code](https://bitbucket.org/kochie/fyp)
+
+## Talks
+
+Listed newest first.
+
+- One word was churning our customers (upcoming): Lessons from building a forward deployed engineering team at a startup
+- [AI Agents That Don't Suck](https://me.kochie.io/AI_Agents_That_Dont_Suck.pdf) (NDC Sydney, 30 April 2026): A practical framework for building AI agents that deliver measurable business value. [Video](https://www.youtube.com/watch?v=_vaIfRXXiIY)
+- [AI Data Security Risks](https://me.kochie.io/AI_Data_Security_Risks.pdf) (Programmable, 18 March 2025): Security risks that generative AI introduces to enterprise data, and how to defend against them
+- [What We Learnt Building Our AI Product](https://me.kochie.io/What_We_Learnt_Building_Our_AI_Product.pdf) (DDD By Night, 11 September 2024): Taking an AI product from prototype to customers. [Video](https://www.youtube.com/watch?v=YeH90OBy_cM)
+- Building secure RAG pipelines: Retrieval-Augmented Generation pipelines for AI agents, up to multi-modal pipelines with enterprise security requirements
+- Python, But Fast: A practical playbook for profiling, vectorising, batching and compiling hot paths
+- Space to Cloud: Building AI pipelines from free satellite data using cloud ground stations
+
+## Selected work
+
+- [MetaFixer](https://metafixer.kochie.io): Adds missing metadata to photos exported from Facebook so they import with the correct date and location
+- [Touch Typer](https://touch-typer.kochie.io): Open-source typing tutor for Linux, Windows and macOS
+- [Contact Tracing](https://ct.vercel.app): Contact-tracing demonstration built on the AWS Cloud Development Kit
+- [Particlez](https://3body.vercel.app): Real-time n-body particle simulator for the web
+- [Stonks](https://stonks.kochie.io): Trading platform for crypto-currencies
+- [benchtop-js](https://github.com/BenchTop/benchtop-js): Benchmarking tool for JavaScript projects
+- [Space](https://kochie.space): Small web app that follows the mouse
+
+## Optional
+
+- [Buy me a coffee](https://buymeacoffee.com/kochie)
+- [Cotton Bureau store](https://cottonbureau.com/people/robert-koch)
