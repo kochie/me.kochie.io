@@ -97,7 +97,14 @@ const slugify = (title: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
 
-const featured = talks.filter((talk) => talk.status !== 'archived')
+const featured = talks
+  .filter((talk) => talk.status !== 'archived')
+  .sort((a, b) => {
+    if (!a.date && !b.date) return 0
+    if (!a.date) return -1
+    if (!b.date) return 1
+    return b.date.localeCompare(a.date)
+  })
 const archived = talks.filter((talk) => talk.status === 'archived')
 
 const formatYear = (iso?: string) => (iso ? new Date(iso).getFullYear() : null)
