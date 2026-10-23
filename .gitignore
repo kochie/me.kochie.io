@@ -17,3 +17,6 @@ public/workbox-*.js.map
 tsconfig.tsbuildinfo
 .playwright-cli/
 .superpowers/
+
+# local env files
+.env*.local
